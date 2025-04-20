@@ -1,0 +1,11 @@
+spriteTypes = {	
+	#decisions
+    SpriteType = {
+		name = "GFX_decision_chi_generic_CHINA"
+		texturefile = "gfx/interface/decisions/decision_chi_generic_CHINA.png"
+	}
+	SpriteType = {
+		name = "GFX_event_CHI_victory"
+		texturefile = "gfx/event_pictures/report_event_chi_victory.png"
+	}
+}

@@ -1,0 +1,5972 @@
+focus_tree = {
+	id = MON_focus
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = MON
+		}
+	}
+	
+
+	default = no
+
+	continuous_focus_position = { x = 50 y = 1600 }
+
+#	focus = {
+#		id = MON_
+#		icon = GFX_
+#		prerequisite = { focus = }
+#		mutually_exclusive = { focus =  }
+#		x = -3
+#		y = 0
+#		relative_position_id = 
+#
+#		cost = 10
+#
+#		ai_will_do = {
+#			factor = 1
+#		}
+#
+#		available = {
+#
+#		}
+#		
+#		bypass = {
+#
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = no
+#
+#		complete_tooltip = {
+#
+#		}
+#
+#		completion_reward = {
+#
+#		}
+#	}
+
+#工业发展
+	focus = {
+		id =  MON_n00  
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 66
+		y = 0
+		cost = 2
+		ai_will_do = {			factor = 0.1		}
+		available = {	has_country_flag = ming_ecy_jl	}
+		bypass = {	}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {	   is_core_of = ROOT		}
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+				
+			}
+			random_owned_controlled_state = {
+				limit = {	   is_core_of = ROOT		}
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+				
+			}
+			random_owned_controlled_state = {
+				limit = {	   is_core_of = ROOT		}
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+				
+			}
+			random_owned_controlled_state = {
+				limit = {	   is_core_of = ROOT		}
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+				
+			}
+			random_owned_controlled_state = {
+				limit = {	   is_core_of = ROOT		}
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+				
+			}
+			random_owned_controlled_state = {
+				limit = {	   is_core_of = ROOT		}
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+				
+			}
+		}
+	}
+	#重新行省化
+focus = {
+		id = MON_n01
+		icon = GFX_focus_generic_self_management
+		cost = 3
+		prerequisite = {	focus = 	MON_n00		}
+		relative_position_id = MON_n00	
+		ai_will_do = {
+			factor = 0.1
+		}
+		x = -4
+		y = 1
+		completion_reward = {
+			add_political_power = -100
+			swap_ideas = {                                                              
+				remove_idea = MON_fenhuacaoy
+					add_idea = mon_xsz
+					}
+			}
+				
+
+	}
+	#军工发展
+focus = {
+		id = MON_n02
+		icon =  GFX_goal_generic_construct_mil_factory
+		cost = 3
+		prerequisite = {	focus = 	MON_n00		}
+		relative_position_id = MON_n00	
+		ai_will_do = {
+			factor = 0.1
+		}
+		x = -2
+		y = 1
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {	   is_core_of = ROOT		}
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			  }
+			  random_owned_controlled_state = {
+				limit = {	   is_core_of = ROOT		}
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			  }
+			  random_owned_controlled_state = {
+				limit = {	   is_core_of = ROOT		}
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			  }
+			  random_owned_controlled_state = {
+				limit = {	   is_core_of = ROOT		}
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			  }
+			  random_owned_controlled_state = {
+				limit = {	   is_core_of = ROOT		}
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			  }
+			  random_owned_controlled_state = {
+				limit = {	   is_core_of = ROOT		}
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			  }
+		}
+				
+
+	}
+	#金融改革
+focus = {
+		id = MON_n03
+		icon = GFX_focus_generic_self_management
+		cost = 3
+		prerequisite = {	focus = 	MON_n00		}
+		relative_position_id = MON_n00	
+		ai_will_do = {
+			factor = 0.1
+		}
+		x = 0
+		y = 1
+		completion_reward = {
+			add_political_power = -50                                                             
+					add_ideas = mon_jrgg
+			}
+				
+
+	}
+	#监察改革
+focus = {
+		id = MON_n030
+		icon = GFX_focus_generic_self_management
+		cost = 3
+		prerequisite = {	focus = 	MON_n00		}
+		relative_position_id = MON_n00	
+		ai_will_do = {
+			factor = 0.1
+		}
+		x = 2
+		y = 1
+		completion_reward = {
+			add_political_power = -50                                                             
+					add_ideas = mon_jcgg
+			}
+				
+
+	}
+	#建筑位扩展
+focus = {
+		id = MON_n031
+		icon = GFX_focus_generic_self_management
+		cost = 3
+		prerequisite = {	focus = 	MON_n00		}
+		relative_position_id = MON_n00	
+		ai_will_do = {
+			factor = 0.1
+		}
+		x = 4
+		y = 1
+		completion_reward = {
+			every_state = {
+					limit = {						
+						AND = {
+								is_controlled_by = ROOT
+								is_owned_by = ROOT
+								is_core_of = ROOT 
+						}					
+					}
+					add_extra_state_shared_building_slots = 4	
+				}
+		}
+				
+
+	}
+	#行省发展
+focus = {
+		id = MON_n04
+		icon = GFX_focus_generic_self_management
+		cost = 3
+		prerequisite = {	focus = 	MON_n01		}
+		prerequisite = {	focus = 	MON_n02		}
+		prerequisite = {	focus = 	MON_n03		}
+		relative_position_id = MON_n02
+		ai_will_do = {
+			factor = 0.5
+		}
+		x = 0
+		y = 1
+		completion_reward = {
+			every_state = {
+					limit = {						
+						AND = {
+								is_controlled_by = ROOT
+								is_owned_by = ROOT
+								is_core_of = ROOT 
+						}
+						OR = {
+						has_state_category = wasteland
+						has_state_category = pastoral
+						}
+						
+					}
+					set_state_category = town
+				}
+				every_state = {
+					limit = {						
+						AND = {
+								is_controlled_by = ROOT
+								is_owned_by = ROOT
+								is_core_of = ROOT 
+						}
+						OR = {
+						has_state_category = rural
+						has_state_category = enclave
+						}
+						
+					}
+					set_state_category = city
+				}
+				every_state = {
+					limit = {						
+						AND = {
+								is_controlled_by = ROOT
+								is_owned_by = ROOT
+								is_core_of = ROOT 
+						}
+						has_state_category = large_town
+						
+					}
+					set_state_category = large_city
+				}
+			}
+				
+
+	}
+#陆军改革
+focus = {
+		id = MON_n05
+		icon = GFX_focus_generic_self_management
+		cost = 7
+		prerequisite = {	focus = 	MON_n04		}
+		relative_position_id = MON_n04
+		ai_will_do = {
+			factor = 0.1
+		}
+		x = 0
+		y = 1
+		completion_reward = {
+					army_experience = 150
+					add_ideas = mon_ljgg
+			}
+				
+
+	}
+	focus = {
+		id = MON_n05x
+		icon = GFX_focus_generic_self_management
+		cost = 5
+		prerequisite = {	focus = 	MON_n05		}
+		relative_position_id = MON_n05
+		ai_will_do = {
+			factor = 0.1
+		}
+		x = 0
+		y = 1
+		completion_reward = {
+					army_experience = 150
+					add_ideas = mon_tkzz0
+			}
+				
+
+	}
+	#空军改革
+focus = {
+		id = MON_n050
+		icon = GFX_focus_generic_self_management
+		cost = 3
+		prerequisite = {	focus = 	MON_n04		}
+		relative_position_id = MON_n04
+		ai_will_do = {
+			factor = 0.1
+		}
+		x = 4
+		y = 1
+		completion_reward = {
+					air_experience = 150
+					add_ideas = mon_kjgg
+			}
+				
+
+	}
+	#建设计划
+focus = {
+		id = MON_n06
+		icon = GFX_focus_generic_self_management
+		cost = 3
+		prerequisite = {	focus = 	MON_n04		}
+		relative_position_id = MON_n04
+		ai_will_do = {
+			factor = 0.1
+		}
+		x = 2
+		y = 1
+		completion_reward = {
+					add_ideas = mon_jtjs
+			}
+				
+
+	}
+	#征兵计划
+focus = {
+		id = MON_n07
+		icon = GFX_goal_generic_army_doctrines
+		cost = 3
+		prerequisite = {	focus = 	MON_n04		}
+		relative_position_id = MON_n04
+		ai_will_do = {
+			factor = 0.1
+		}
+		x = -2
+		y = 1
+		completion_reward = {
+					add_ideas = mon_zbjh
+			}
+				
+
+	}
+	#反坦克计划
+focus = {
+		id = MON_n08
+		icon = GFX_goal_generic_army_tanks
+		cost = 2
+		prerequisite = {	focus = 	MON_n07		}
+		relative_position_id = MON_n07	
+		ai_will_do = {
+			factor = 0.2
+		}
+		x = 0
+		y = 1
+		completion_reward = {                                                          
+					add_ideas = mon_ftkjh					
+					set_technology = { ming_infantry_at = 1 }
+					set_technology = { ming_antitank3 = 1 }
+			}
+				
+
+	}
+
+#橡胶计划
+focus = {
+		id = MON_n09
+		icon = GFX_goal_generic_army_tanks
+		cost = 4
+		prerequisite = {	focus = 	MON_n06	}
+		relative_position_id = MON_n06	
+		ai_will_do = {
+			factor = 0.2
+		}
+		x = 0
+		y = 1
+		completion_reward = {                                                          
+					set_technology = { yuan_rubber_processing = 1 }
+			random_owned_controlled_state = {
+				limit = {	   is_core_of = ROOT		}
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 3
+					instant_build = yes
+				}
+			  }
+			 random_owned_controlled_state = {
+				limit = {	   is_core_of = ROOT		}
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 3
+					instant_build = yes
+				}
+			  }
+			}
+				
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	#质疑卖国政权
+	focus = {
+		id =  MON_01     
+		icon = GFX_focus_BUL_destroy_the_zveno
+		x = 5
+		y = 0
+		
+		mutually_exclusive = { focus = MON_40 }
+		cost = 4
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			remove_ideas = MON_goongchanyx
+		}
+	}
+	
+	#20世纪草原会议
+	focus = {
+		id = MON_02      
+		icon = GFX_focus_hol_the_foundations_of_defense
+		x = -1
+		y = 1
+		mutually_exclusive = { focus = MON_02x }
+		prerequisite = { focus = MON_01 }
+		relative_position_id = MON_01
+		cost = 4
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			country_event = min.1110
+			dmckdlp_become_leader = yes
+		}
+	}
+
+	#元帝
+	focus = {
+		id = MON_02x      
+		icon = GFX_focus_hol_the_foundations_of_defense
+		x = 1
+		y = 1
+
+		prerequisite = { focus = MON_01 }
+		relative_position_id = MON_01
+		mutually_exclusive = { focus = MON_02 }
+		cost = 4
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			country_event = min.1110
+			tieguo_become_leader = yes
+		}
+	}
+	
+	#收复唐努乌梁海
+	focus = {
+		id = MON_03      
+		icon = GFX_goal_tfv_saf_anti_colonialist_crusade
+		x = 0
+		y = 2
+
+		prerequisite = { focus = MON_02 focus = MON_02x}
+		relative_position_id = MON_01
+		cost = 4
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+			TAN = {
+				exists = yes
+			}
+		}
+
+		bypass = {
+			owns_state = 329
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = { owns_state = 329 }
+				}
+				transfer_state = 329
+				add_state_core = 329
+			}
+		}
+	}
+
+
+	focus = {
+		id = MON_03x      
+		icon = GFX_focus_research
+		x = 0
+		y = 1
+		prerequisite = { focus = MON_03 }
+		relative_position_id = MON_03
+		cost = 7
+		ai_will_do = {			factor = 5		}
+		available = {			always = yes		}
+		bypass = {		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	
+	#第一场胜利
+	focus = {
+		id = MON_04     
+		icon = GFX_goal_generic_propaganda
+		x = -3
+		y = 3
+
+		prerequisite = { focus = MON_03 }
+		relative_position_id = MON_01
+		cost = 4
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			TAN = {
+				exists = no
+			}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_stability = 0.05
+			add_war_support = 0.05
+			add_political_power = 120
+		}
+	}
+	
+	#重设枢密院
+	focus = {
+		id = MON_05     
+		icon = GFX_focus_generic_strike_at_democracy1
+		x = -3
+		y = 4
+
+		prerequisite = { focus = MON_04 }
+		relative_position_id = MON_01
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = MON_pai_yun_ti
+			
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = MON_qiao_bashan
+			add_ideas = mon_smy
+		}
+	}
+	
+	#设定西征计划
+	focus = {
+		id = MON_06    
+		icon = GFX_goal_generic_position_armies
+		x = -3
+		y = 5
+
+		prerequisite = { focus = MON_05 }
+		relative_position_id = MON_01
+		cost = 7
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			617 = { is_controlled_by = MON }
+			287 = { is_controlled_by = MON }
+			619 = { is_controlled_by = MON }
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			army_experience = 50
+			every_state = {
+				limit = { is_core_of = AFG }
+				add_core_of = ROOT
+			}
+			every_state = {
+				limit = { is_core_of = PER }
+				add_core_of = ROOT
+			}
+			every_state = {
+				limit = { is_core_of = IRQ }
+				add_core_of = ROOT
+			}
+			every_state = {
+				limit = { is_core_of = SAU }
+				add_core_of = ROOT
+			}
+			every_state = {
+				limit = { is_core_of = YEM }
+				add_core_of = ROOT
+			}
+			every_state = {
+				limit = { is_core_of = OMA }
+				add_core_of = ROOT
+			}
+			every_state = {
+				limit = { is_core_of = TUR }
+				add_core_of = ROOT
+			}
+			
+			617 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			
+			619 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			
+			287 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			add_ideas = mon_xzjh
+		}
+	}
+	
+	#碾碎大月氏
+	focus = {
+		id = MON_07    
+		icon = GFX_goal_ming_mgyewang
+		x = -10
+		y = 6
+
+		prerequisite = { focus = MON_06 }
+		relative_position_id = MON_01
+		cost = 2
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			AFG = {
+				exists = yes
+			}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = AFG
+				expire = 0
+			}
+		}
+	}
+
+	#碾碎大月氏
+	focus = {
+		id = MON_07x    
+		icon = GFX_goal_ming_mgyewang
+		x = -12
+		y = 6
+
+		prerequisite = { focus = MON_06 }
+		relative_position_id = MON_01
+		cost = 2
+
+		ai_will_do = {
+			factor = 0.1
+		}
+
+		available = {
+			TUR = {
+				exists = yes
+			}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = TUR
+				expire = 0
+			}
+		}
+	}
+	
+	#侵略波斯
+	focus = {
+		id = MON_08    
+		icon = GFX_focus_generic_attack_kurdistan
+		
+		x = -8
+		y = 6
+
+		prerequisite = { focus = MON_06 }
+		relative_position_id = MON_01
+		cost = 2
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			PER = {
+				exists = yes
+			}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = PER
+				expire = 0
+			}
+		}
+	}
+	
+	#入侵巴比伦
+	focus = {
+		id = MON_09    
+		icon = GFX_focus_TUR_support_the_golden_square
+		
+		x = -6
+		y = 6
+
+		prerequisite = { focus = MON_06 }
+		relative_position_id = MON_01
+		cost = 2
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			IQR = {
+				exists = yes
+			}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = IRQ
+				expire = 0
+			}
+		}
+	}
+	
+	#席卷阿拉伯
+	focus = {
+		id = MON_10    
+		icon = GFX_goal_ming_mgbbbbbbbbb
+		x = -4
+		y = 6
+
+		prerequisite = { focus = MON_06 }
+		relative_position_id = MON_01
+		cost = 2
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			SAU = {
+				exists = yes
+			}
+			YEM = {
+				exists = yes
+			}
+			OMA = {
+				exists = yes
+			}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = SAU
+				expire = 0
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = YEM
+				expire = 0
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = OMA
+				expire = 0
+			}
+		}
+	}
+	
+	#上帝之鞭
+	focus = {
+		id = MON_11    
+		icon = GFX_goal_ming_mgqima
+		x = -2
+		y = 6
+
+		prerequisite = { focus = MON_06 }
+		relative_position_id = MON_01
+		cost = 7
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			unlock_decision_tooltip = mon.udt0 
+			unlock_decision_tooltip = mon.udt1 
+			unlock_decision_tooltip = mon.udt2 
+		}
+	}
+	
+	#统治西域
+	focus = {
+		id = MON_12    
+		icon = GFX_focus_TUR_treaty_of_saadabad
+		x = -7
+		y = 7
+
+		prerequisite = { focus = MON_07 }
+		prerequisite = { focus = MON_08 }
+		prerequisite = { focus = MON_09 }
+		prerequisite = { focus = MON_10 }
+		relative_position_id = MON_01
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+				AFG = {
+					exists = no
+				}
+				PER = {
+					exists = no
+				}
+				SAU = {
+					exists = no
+				}
+				IRQ = {
+					exists = no
+				}
+				OMA = {
+					exists = no
+				}
+				YEM = {
+					exists = no
+				}
+				
+				
+			
+			
+			
+			
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = MON_tongzhi_xy
+			add_research_slot = 1
+			add_offsite_building = { type = arms_factory level = 8 }
+			add_offsite_building = { type = industrial_complex level = 2 }
+			custom_effect_tooltip = MON_tz_xy_tt
+			hidden_effect = {
+				create_corps_commander = {
+					name = "rashid al gaylani"
+					picture = "rashid_al_gaylani.dds"
+					skill = 1
+					attack_skill = 1
+					defense_skill = 1
+					planning_skill = 2
+					logistics_skill = 2
+					traits = { politically_connected }
+				}
+				
+				create_corps_commander = {
+					name = "Reza Shah Pahlavi"
+					picture = "Reza_Shah_Pahlavi.dds"
+					skill = 3
+					attack_skill = 3
+					defense_skill = 2
+					planning_skill = 1
+					logistics_skill = 3
+					traits = { infantry_officer }
+				}
+				
+				create_corps_commander = {
+					name = "Mohammed Zahir Shah"
+					picture = "Mohammed_Zahir_Shah.dds"
+					skill = 2
+					attack_skill = 4
+					defense_skill = 2
+					planning_skill = 1
+					logistics_skill = 2
+					traits = { trait_mountaineer }
+				}
+				
+				create_corps_commander = {
+					name = "said bin taimur"
+					picture = "said_bin_taimur.dds"
+					skill = 2
+					attack_skill = 4
+					defense_skill = 1
+					planning_skill = 1
+					logistics_skill = 1
+					traits = { trickster }
+				}
+				
+				create_field_marshal = {
+					name = "ghazi I"
+					picture = "ghazi.dds"
+					skill = 5
+					attack_skill = 3
+					defense_skill = 1
+					planning_skill = 2
+					logistics_skill = 6
+					traits = { career_officer }
+				}
+				add_manpower = 550000
+				
+				custom_effect_tooltip = available_political_advisor
+				show_ideas_tooltip = IRQ_amir_al_illah
+				
+				custom_effect_tooltip = available_political_advisor
+				show_ideas_tooltip = SAU_moukhled_al_asmari
+			
+				custom_effect_tooltip = available_high_command
+				show_ideas_tooltip = AFG_azam_ataullah
+				
+				custom_effect_tooltip = available_army_chief
+				show_ideas_tooltip = PER_abdolreza_afkhami
+
+			}
+		}
+	}
+	
+	#重现成吉思汗的辉煌
+	focus = {
+		id = MON_13    
+		icon = GFX_goal_generic_attack_allies
+		x = -3
+		y = 8
+
+		prerequisite = { focus = MON_12 }
+		prerequisite = { focus = MON_06 }
+		prerequisite = { focus = MON_11 }
+		relative_position_id = MON_01
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {	
+			add_ideas = MON_chenjisihan_yw
+		}
+	}
+	
+	#永不止步的铁蹄
+	focus = {
+		id = MON_14    
+		icon = GFX_focus_TUR_the_montreux_convention
+		x = -3
+		y = 9
+
+		prerequisite = { focus = MON_13 }
+		relative_position_id = MON_01
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			army_experience = 125
+			unlock_decision_tooltip = mon.udt3
+			unlock_decision_tooltip = mon.udt4
+			unlock_decision_tooltip = mon.udt5
+		}
+	}
+
+
+	#征服世界
+	focus = {
+		id =  MON_140
+		icon = GFX_goal_generic_major_alliance
+		x = -3
+		y = 10
+
+		prerequisite = { focus = MON_14 }
+		relative_position_id = MON_01
+		
+		cost = 7
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_stability = 0.05
+			add_war_support = 0.2
+			every_other_country = {
+				limit = {
+					NOT = { is_in_faction_with = ROOT }
+				}
+				MON = {
+					create_wargoal = {
+						target = PREV
+						type = annex_everything
+						expire = 0
+					}
+				}
+			}
+		}
+	}
+	
+	#重拾忽必烈的野望
+	focus = {
+		id = MON_15    
+		icon = GFX_goal_ming_mgqishe
+		x = 3
+		y = 3
+
+		prerequisite = { focus = MON_03 }
+		relative_position_id = MON_01
+		cost = 4
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+			CHI = {
+				exists = yes
+			}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			every_state = {
+				limit = { is_core_of = CHI }
+				add_core_of = ROOT
+			}
+			random_owned_state = { 
+			    limit = {
+			        NOT = {
+			            is_core_of = ROOT
+				    }
+				}
+			    add_core_of = ROOT
+			}
+		}
+	}
+	
+	#西域-大都 战争线
+	focus = {
+		id = MON_16    
+		icon = GFX_goal_generic_fortify_city
+		x = 2
+		y = 4
+
+		prerequisite = { focus = MON_15 }
+		relative_position_id = MON_01
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+			746 = { is_controlled_by = MON }
+			616 = { is_controlled_by = MON }
+			611 = { is_controlled_by = MON }
+			621 = { is_controlled_by = MON }
+			755 = { is_controlled_by = MON }
+			759 = { is_controlled_by = MON }
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			611 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			
+			621 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			
+			746 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			
+			616 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			755 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			
+			759 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	#强制明人奴役
+	focus = {
+		id = MON_17    
+		icon = GFX_focus_spr_crush_the_revolution
+		x = 2
+		y = 5
+
+		prerequisite = { focus = MON_16 }
+		relative_position_id = MON_01
+		cost = 7
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+					is_core_of = ROOT
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 8
+				add_building_construction = {
+					type = arms_factory
+					level = 4
+					instant_build = yes
+				}
+			}
+			
+			random_owned_controlled_state = {
+				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+					is_core_of = ROOT
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 8
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	#吸收南人
+	focus = {
+		id = MON_18    
+		icon = GFX_focus_CZE_german_puppet
+		x = 4
+		y = 4
+
+		prerequisite = { focus = MON_15 }
+		relative_position_id = MON_01
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_manpower = 420000
+		}
+	}
+	
+	#许诺投诚者
+	focus = {
+		id = MON_19    
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		x = 4
+		y = 5
+
+		prerequisite = { focus = MON_18 }
+		relative_position_id = MON_01
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			country_event = min.1111
+		}
+	}
+	
+	#重建大元
+	focus = {
+		id = MON_20    
+		icon = GFX_focus_man_claim_the_mandate_of_heaven
+		x = 3
+		y = 6
+
+		prerequisite = { focus = MON_17 }
+		prerequisite = { focus = MON_19 }
+		relative_position_id = MON_01
+		cost = 8
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+			is_subject = no
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			remove_ideas = MON_fenhuacaoy
+			MON = {
+				set_cosmetic_tag = MON_dayuan
+			}
+			add_ideas = mon_yuan
+		}
+	}
+	
+	#反攻大明
+	focus = {
+		id = MON_21    
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		x = 1
+		y = 7
+
+		prerequisite = { focus = MON_20 focus = MON_15}
+		relative_position_id = MON_01
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+			CHI = {
+				exists = yes
+			}
+		}
+
+		bypass = {
+			CHI = {
+				exists = no
+			}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = CHI
+				expire = 0
+			}
+			if = {
+				limit = { has_completed_focus = MON_02x}
+				add_timed_idea = {
+					idea = mon_jgdm
+					days = 360
+				}
+			}
+			if = {
+				limit = { NOT = {has_completed_focus = MON_02x} }
+				add_timed_idea = {
+					idea = man_jgdm
+					days = 480
+				}
+			}
+			
+		}
+	}
+	
+	#加冕中国皇帝
+	focus = {
+		id = MON_22    
+		icon = GFX_goal_ming_tianming
+		x = 1
+		y = 8
+
+		prerequisite = { focus = MON_21 }
+		relative_position_id = MON_01
+		cost = 7
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+			608 = { is_fully_controlled_by = ROOT }
+			CHI = {
+				exists = no
+			}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			set_capital = { state = 608 }
+			custom_effect_tooltip = MON_jm_hd_tt
+			if = {
+				limit = { has_completed_focus = MON_02x}
+				
+				add_country_leader_trait = zhongguo_tianzi1
+			}
+			if = {
+				limit = { NOT = {has_completed_focus = MON_02x} }
+				add_country_leader_trait = zhongguo_tianzi1
+				add_country_leader_trait = spirit_of_genghis
+				add_country_leader_trait = ming_dayuan
+			}
+		}
+	}
+	
+	#延续四等人政策
+	focus = {
+		id = MON_23    
+		icon = GFX_goal_ming_guixia
+		x = 0
+		y = 9
+
+		prerequisite = { focus = MON_22 }
+		mutually_exclusive = { focus = MON_24 }
+		relative_position_id = MON_01
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = MON_sidengren
+		}
+	}
+	
+	#蒙汉共存
+	focus = {
+		id = MON_24    
+		icon = GFX_goal_tripartite_pact
+		x = 2
+		y = 9
+
+		prerequisite = { focus = MON_22 }
+		mutually_exclusive = { focus = MON_23 }
+		relative_position_id = MON_01
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = MON_gongcun
+		}
+	}
+	
+	#东方政策
+	focus = {
+		id = MON_25   
+		icon = GFX_focus_jap_cast_the_die
+		x = 5
+		y = 7
+
+		prerequisite = { focus = MON_20 focus = MON_15}
+		relative_position_id = MON_01
+		cost = 4
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 150
+			add_war_support = 0.1
+			add_stability = 0.05
+		}
+	}
+	
+	#向清复仇
+	focus = {
+		id = MON_26   
+		icon = GFX_focus_generic_provoke_border_clashes
+		x = 5
+		y = 8
+
+		prerequisite = { focus = MON_25 }
+		mutually_exclusive = { focus = MON_27 }
+		relative_position_id = MON_01
+		cost = 3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			MAN = {
+				exists = yes
+			}
+		}
+
+		bypass = {
+			MAN = {
+				exists = no
+			}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = MAN
+				expire = 0
+			}
+		}
+	}
+	
+	#与清和解
+	focus = {
+		id = MON_27  
+		icon = GFX_goal_ming_ribenqing
+		x = 7
+		y = 8
+
+		prerequisite = { focus = MON_25 }
+		mutually_exclusive = { focus = MON_26 }
+		relative_position_id = MON_01
+		cost = 3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			MAN = {
+				exists = yes
+			}
+		}
+
+		bypass = {
+			MAN = {
+				exists = no
+			}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			MAN = {
+				country_event = min.1112
+			}
+		}
+	}
+	
+	#消灭朝鲜
+	focus = {
+		id = MON_28  
+		icon = GFX_goal_generic_more_territorial_claims
+		x = 5
+		y = 9
+
+		prerequisite = { focus = MON_26 focus = MON_27 }
+		mutually_exclusive = { focus = MON_29 }
+		relative_position_id = MON_01
+		cost = 3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			KOR = {
+				exists = yes
+			}
+		}
+
+		bypass = {
+			KOR = {
+				exists = no
+			}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = KOR
+				expire = 0
+			}
+		}
+	}
+	
+	#迫使朝鲜称臣
+	focus = {
+		id = MON_29  
+		icon = GFX_goal_generic_dangerous_deal
+		x = 7
+		y = 9
+
+		prerequisite = { focus = MON_26 focus = MON_27 }
+		mutually_exclusive = { focus = MON_28 }
+		relative_position_id = MON_01
+		cost = 3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			KOR = {
+				exists = yes
+			}
+		}
+
+		bypass = {
+			KOR = {
+				exists = no
+			}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			KOR = {
+				country_event = min.1115
+			}
+		}
+	}
+	
+	#挑战神风
+	focus = {
+		id = MON_30  
+		icon = GFX_focus_generic_japanese_imperial_glory
+		x = 5
+		y = 10
+
+		prerequisite = { focus = MON_28 focus = MON_29 }
+		mutually_exclusive = { focus = MON_31 }
+		relative_position_id = MON_01
+		cost = 3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			any_state = {
+				is_controlled_by = MON
+				is_coastal = yes
+			}
+			JAP = {
+				exists = yes
+			}
+		}
+
+		bypass = {
+			JAP = {
+				exists = no
+			}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			navy_experience = 140
+			random_owned_controlled_state = {
+				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+					is_core_of = ROOT
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = dockyard
+					level = 5
+					instant_build = yes
+				}
+			}
+			
+			random_owned_controlled_state = {
+				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+					is_core_of = ROOT
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = dockyard
+					level = 5
+					instant_build = yes
+				}
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = JAP
+				expire = 0
+			}
+		}
+	}
+	
+	#吸取先祖之痛
+	focus = {
+		id = MON_31  
+		icon = GFX_focus_spr_masters_of_our_own_fate
+		x = 7
+		y = 10
+
+		prerequisite = { focus = MON_28 focus = MON_29 }
+		mutually_exclusive = { focus = MON_30 }
+		relative_position_id = MON_01
+		cost = 3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+			random_owned_controlled_state = {
+				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+					is_core_of = ROOT
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = arms_factory
+					level = 4
+					instant_build = yes
+				}
+			}
+			
+			random_owned_controlled_state = {
+				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+					is_core_of = ROOT
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	
+	
+	
+	#寻求属于蒙古的新革命
+	focus = {
+		id =  MON_40     
+		icon = GFX_goal_generic_war_with_comintern
+		x = 19
+		y = 0
+		
+		mutually_exclusive = { focus = MON_01 }
+		cost = 4
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 225
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = MON_da_muba
+			MON = {
+				SOV = {	add_to_faction = MON }
+			}
+			SOV = {	add_to_faction = MON }
+		}
+	}
+	
+	#处理旧贵族
+	focus = {
+		id =  MON_41     
+		icon = GFX_goal_tfv_burn_the_royal_portraits
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = MON_40 }
+		relative_position_id = MON_40
+		
+		cost = 4
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			country_event = min.1118
+		}
+	}
+	
+	#整合部落资产
+	focus = {
+		id =  MON_42    
+		icon = GFX_focus_mex_privatisation
+		x = -1
+		y = 2
+		
+		prerequisite = { focus = MON_41 }
+		relative_position_id = MON_40
+		
+		cost = 4
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = MON_buluo_zic
+		}
+	}
+	
+	#稳定牧民
+	focus = {
+		id =  MON_43   
+		icon = GFX_focus_generic_self_management
+		x = 1
+		y = 2
+		
+		prerequisite = { focus = MON_41 }
+		relative_position_id = MON_40
+		
+		cost = 4
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_stability = 0.1
+			add_manpower = 76000
+		}
+	}
+	
+	#接受苏联影响
+	focus = {
+		id =  MON_44   
+		icon = GFX_focus_chi_mission_to_the_soviet_union
+		x = 0
+		y = 3
+		
+		prerequisite = { focus = MON_42 focus = MON_43 }
+		relative_position_id = MON_40
+		
+		cost = 4
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			MON = { has_government = communism }
+			SOV = { has_government = communism }
+			TAN = { has_government = communism }
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			custom_effect_tooltip = MON_sl_tan_tt
+			hidden_effect = {
+				annex_country = { 
+					target = TAN
+					transfer_troops = yes
+				}
+				create_field_marshal = {
+					name = "Salchak Toka"
+					picture = "salchak_toka.dds"
+					traits = { politically_connected }
+					skill = 2
+					attack_skill = 1
+					defense_skill = 3
+					planning_skill = 4
+					logistics_skill = 4
+				}
+			}
+		}
+	}
+	
+	#紧跟莫斯科
+	focus = {
+		id =  MON_45   
+		icon = GFX_focus_fra_loyalty_stalin
+		x = -3
+		y = 4
+		
+		prerequisite = { focus = MON_44 }
+		relative_position_id = MON_40
+		mutually_exclusive = { focus = MON_55 }
+		
+		cost = 5
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			SOV = { has_government = communism }
+			NOT = { has_war_with = SOV }
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			SOV = {
+				add_to_faction = MON
+			}
+			set_country_flag = MON_gsuisulian
+		}
+	}
+	
+	#接收革命援助
+	focus = {
+		id =  MON_46   
+		icon = GFX_focus_generic_concessions
+		x = -4
+		y = 5
+		
+		prerequisite = { focus = MON_45 }
+		relative_position_id = MON_40
+		
+		cost = 5
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			SOV = { has_government = communism }
+			NOT = { has_war_with = SOV }
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			MON = { 
+				add_equipment_to_stockpile = {
+			    type = infantry_equipment
+			    amount = 42000
+			    producer = SOV
+				}
+				add_equipment_to_stockpile = {
+			    type = support_equipment
+			    amount = 2250
+			    producer = SOV
+				}
+				add_equipment_to_stockpile = {
+			    type = artillery_equipment
+			    amount = 4460
+				producer = SOV	
+				}
+			}
+		}
+	}
+	
+	#共建军工企业
+	focus = {
+		id =  MON_47   
+		icon = GFX_goal_generic_soviet_construction
+		x = -4
+		y = 6
+		
+		prerequisite = { focus = MON_46 }
+		relative_position_id = MON_40
+		
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			SOV = { has_government = communism }
+			NOT = { has_war_with = SOV }
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			custom_effect_tooltip = available_designer
+			show_ideas_tooltip = stalingrad_tractor_factory
+			
+			custom_effect_tooltip = available_designer
+			show_ideas_tooltip = grabin_design_bureau
+			
+			custom_effect_tooltip = available_designer
+			show_ideas_tooltip = tula_arms_plant
+		}
+	}
+	
+	#任用苏联官员
+	focus = {
+		id =  MON_48   
+		icon = GFX_goal_tripartite_pact
+		x = -5
+		y = 7
+		
+		prerequisite = { focus = MON_47 }
+		relative_position_id = MON_40
+		
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			SOV = { has_government = communism }
+			NOT = { has_war_with = SOV }
+		}	
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = SOV_vyacheslav_molotov
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = SOV_nikolai_yezhov
+			custom_effect_tooltip = available_army_chief
+			show_ideas_tooltip = vasily_blucher
+			custom_effect_tooltip = available_air_chief
+			show_ideas_tooltip = alexander_novikov
+			custom_effect_tooltip = available_navy_chief
+			show_ideas_tooltip = nikolay_kuznetsov
+			add_ideas = mon_sulgy
+		}
+	}
+	
+	#蒙古的红色骑兵
+	focus = {
+		id =  MON_49  
+		icon = GFX_focus_secret_rearmament
+		x = -2
+		y = 5
+		
+		prerequisite = { focus = MON_45 }
+		relative_position_id = MON_40
+		
+		cost = 5
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			SOV = { has_government = communism }
+			NOT = { has_war_with = SOV }
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			army_experience = 125
+			create_corps_commander = {
+				name = "Issa Pliyev"
+				picture = "Issa_Pliyev.dds"
+				traits = { cavalry_officer }
+				skill = 1
+
+	
+				attack_skill = 1
+				defense_skill = 1
+				planning_skill = 1
+				logistics_skill = 1
+			}
+			
+			create_corps_commander = {
+				name = "Andrey Yeryomenko"
+				picture = "Andrey_Yeryomenko.dds"
+				traits = { cavalry_officer trait_reckless }
+				skill = 1 
+
+	
+				attack_skill = 1
+				defense_skill = 1
+				planning_skill = 1
+				logistics_skill = 1
+			}
+			
+			create_corps_commander = {
+				name = "Alexander Gorbatov"
+				picture = "Alexander_Gorbatov.dds"
+				traits = { career_officer cavalry_officer }
+				skill = 3
+	
+				attack_skill = 2
+				defense_skill = 3
+				planning_skill = 2
+				logistics_skill = 3
+			}
+
+			create_corps_commander = {
+				name = "Andrei Grechko"
+				picture = "Andrei_Grechko.dds"
+				traits = { cavalry_officer }
+				skill = 3
+
+
+	
+				attack_skill = 1
+				defense_skill = 3
+				planning_skill = 3
+				logistics_skill = 3
+			}
+			
+		}
+	}
+	
+	#先期特训师
+	focus = {
+		id =  MON_50  
+		icon = GFX_goal_generic_political_pressure
+		x = -2
+		y = 6
+		
+		prerequisite = { focus = MON_49 }
+		relative_position_id = MON_40
+		
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			SOV = { has_government = communism }
+			NOT = { has_war_with = SOV }
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			custom_effect_tooltip = MON_sl_txone_tt
+			hidden_effect = {
+				division_template = {
+					name = "特训师"
+					priority = 1
+					is_locked = yes
+					division_names_group = MON_CAV_01
+					regiments = {
+						motorized = { x = 0 y = 0 }
+						motorized = { x = 0 y = 1 }
+						motorized = { x = 0 y = 2 }
+						motorized = { x = 0 y = 3 }
+
+						motorized = { x = 1 y = 0 }
+						motorized = { x = 1 y = 1 }
+						motorized = { x = 1 y = 2 }
+						motorized = { x = 1 y = 3 }
+			
+						mot_artillery_brigade = { x = 2 y = 0 }
+						mot_artillery_brigade = { x = 2 y = 1 }
+					}	
+					support = {
+						engineer = { x = 0 y = 0 }
+					}				
+				}
+				capital_scope = {
+					create_unit = {
+						division = "name = \"特训1师\" division_template = \"特训师\" start_experience_factor = 1"  
+						owner = ROOT
+					}
+					create_unit = {
+						division = "name = \"特训2师\" division_template = \"特训师\" start_experience_factor = 1"  
+						owner = ROOT
+					}
+					create_unit = {
+						division = "name = \"特训3师\" division_template = \"特训师\" start_experience_factor = 1"  
+						owner = ROOT
+					}
+					create_unit = {
+						division = "name = \"特训4师\" division_template = \"特训师\" start_experience_factor = 1"  
+						owner = ROOT
+					}
+					create_unit = {
+						division = "name = \"特训5师\" division_template = \"特训师\" start_experience_factor = 1"  
+						owner = ROOT
+					}
+					create_unit = {
+						division = "name = \"特训6师\" division_template = \"特训师\" start_experience_factor = 1"  
+						owner = ROOT
+					}
+					create_unit = {
+						division = "name = \"特训7师\" division_template = \"特训师\" start_experience_factor = 1"  
+						owner = ROOT
+					}
+					create_unit = {
+						division = "name = \"特训8师\" division_template = \"特训师\" start_experience_factor = 1"  
+						owner = ROOT
+					}
+					create_unit = {
+						division = "name = \"特训9师\" division_template = \"特训师\" start_experience_factor = 1"  
+						owner = ROOT
+					}
+					create_unit = {
+						division = "name = \"红色骑兵卫队\" division_template = \"特训师\" start_experience_factor = 0.7"  
+						owner = ROOT
+					}	
+				}
+			}
+		}
+	}
+	
+	#现代特种部队
+	focus = {
+		id =  MON_51 
+		icon = GFX_focus_generic_little_entente
+		x = -3
+		y = 7
+		
+		prerequisite = { focus = MON_50 focus = MON_47 }
+		relative_position_id = MON_40
+		
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			SOV = { has_government = communism }
+			NOT = { has_war_with = SOV }
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = MON_51
+				bonus = 1.5
+				uses = 4
+				category = mountaineers_tech
+			}
+		}
+	}
+	
+	#二期特训师
+	focus = {
+		id =  MON_52 
+		icon = GFX_focus_generic_manpower
+		x = -1
+		y = 7
+		
+		prerequisite = { focus = MON_50 }
+		relative_position_id = MON_40
+		
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			SOV = { has_government = communism }
+			NOT = { has_war_with = SOV }
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			custom_effect_tooltip = MON_sl_txtwo_tt
+			hidden_effect = {
+				division_template = {
+					name = "二期特训师"
+					priority = 1
+					division_names_group = MON_INF_01
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 3 }
+					
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+					
+
+						artillery_brigade = { x = 2 y = 0 }
+						artillery_brigade = { x = 2 y = 1 }
+					}
+					support = {
+						engineer = { x = 0 y = 0 }
+					}
+				}	
+				capital_scope = {
+					create_unit = {
+						division = "name = \"特训16师\" division_template = \"二期特训师\" start_experience_factor = 1"  
+						owner = ROOT
+					}
+					create_unit = {
+						division = "name = \"特训17师\" division_template = \"二期特训师\" start_experience_factor = 1"  
+						owner = ROOT
+					}
+					create_unit = {
+						division = "name = \"特训18师\" division_template = \"二期特训师\" start_experience_factor = 1"  
+						owner = ROOT
+					}
+					create_unit = {
+						division = "name = \"特训19师\" division_template = \"二期特训师\" start_experience_factor = 1"  
+						owner = ROOT
+					}
+					create_unit = {
+						division = "name = \"特训11师\" division_template = \"二期特训师\" start_experience_factor = 1"  
+						owner = ROOT
+					}
+					create_unit = {
+						division = "name = \"特训12师\" division_template = \"二期特训师\" start_experience_factor = 1"  
+						owner = ROOT
+					}
+					create_unit = {
+						division = "name = \"特训13师\" division_template = \"二期特训师\" start_experience_factor = 1"  
+						owner = ROOT
+					}
+					create_unit = {
+						division = "name = \"特训14师\" division_template = \"二期特训师\" start_experience_factor = 1"  
+						owner = ROOT
+					}
+					create_unit = {
+						division = "name = \"特训15师\" division_template = \"二期特训师\" start_experience_factor = 1"  
+						owner = ROOT
+					}
+					create_unit = {
+						division = "name = \"首都卫队\" division_template = \"二期特训师\" start_experience_factor = 1"  
+						owner = ROOT
+					}
+					create_unit = {
+						division = "name = \"党部警备队\" division_template = \"二期特训师\" start_experience_factor = 1"  
+						owner = ROOT
+					}
+				}
+			}
+		}
+	}
+	
+	#结合草原精神
+	focus = {
+		id =  MON_53 
+		icon = GFX_goal_ming_mgqishe
+		x = -2
+		y = 8
+		
+		prerequisite = { focus = MON_51 }
+		prerequisite = { focus = MON_52 }
+		relative_position_id = MON_40
+		
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			remove_ideas = MON_fenhuacaoy
+			add_ideas = MON_caoyun_jins
+		}
+	}
+	
+	#红色风暴自北而来
+	focus = {
+		id =  MON_54
+		icon = GFX_focus_focus_fra_revolution_utmost
+		x = -2
+		y = 9
+		
+		prerequisite = { focus = MON_53 }
+		relative_position_id = MON_40
+		
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = CHI
+				expire = 0
+			}
+		}
+	}
+	
+	#勇敢且智慧的他
+	focus = {
+		id =  MON_55
+		icon = GFX_goal_support_fourth_int
+		x = 3
+		y = 4
+		
+		prerequisite = { focus = MON_44 }
+		relative_position_id = MON_40
+		mutually_exclusive = { focus = MON_45 }
+		
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			create_country_leader = {
+				name = "Leon Trotsky"
+				desc = "Leon Trotsky"
+				picture = "Leon_Trotsky.dds"
+				expire = "1965.1.1"
+				ideology = leninism
+				traits = {
+					gem_daoshi
+				}
+			}
+		}
+	}
+	
+	#真正的共产主义
+	focus = {
+		id =  MON_56
+		icon = GFX_focus_generic_join_comintern
+		x = 2
+		y = 5
+		
+		prerequisite = { focus = MON_55 }
+		relative_position_id = MON_40
+		
+		cost = 5
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			swap_ideas = {
+				add_idea = MON_zzd_gczy
+				remove_idea = MON_goongchanyx
+			}
+		}
+	}
+	
+	#宁夏协定
+	focus = {
+		id =  MON_57
+		icon = GFX_goal_generic_dangerous_deal
+		x = 2
+		y = 6
+		
+		prerequisite = { focus = MON_56 }
+		relative_position_id = MON_40
+		
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			CHI = {
+				country_event = min.1130
+			}
+		}
+	}
+	
+	
+	#国际精神
+	focus = {
+		id =  MON_59
+		icon = GFX_goal_support_communism
+		
+		x = 7
+		y = 5
+		
+		prerequisite = { focus = MON_55 }
+		relative_position_id = MON_40
+		
+		cost = 5
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			set_rule = { can_create_factions = yes }
+			add_political_power = 200
+		}
+	}
+	
+	#法兰西的奋斗者
+	focus = {
+		id =  MON_60
+		icon = GFX_focus_fra_french_union
+		x = 3
+		y = 8
+		
+		prerequisite = { focus = MON_59 }
+		relative_position_id = MON_40
+		
+		cost = 5
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			create_field_marshal = {
+				name = "Roger Gaston Ghislain"
+				picture = "France_Generic_land_1.dds"
+				traits = { politically_connected organizer }
+				skill = 2
+				attack_skill = 1
+				defense_skill = 1
+				planning_skill = 4
+				logistics_skill = 5
+			}
+
+			create_corps_commander = {
+				name = "Guy de polignac"
+				picture = "France_Generic_land_4.dds"
+				traits = { infantry_officer }
+				skill = 3
+				attack_skill = 3
+				defense_skill = 1
+				planning_skill = 1
+				logistics_skill = 2
+			}		
+
+			create_navy_leader = {
+				name = "Jacques yves"
+				picture = "France_Generic_navy_2.dds"
+				traits = { }
+				skill = 2
+				attack_skill = 1
+				defense_skill = 2
+				maneuvering_skill = 2
+				coordination_skill = 1
+			}
+			add_research_slot = 1
+			add_equipment_to_stockpile = {
+			    type = infantry_equipment
+			    amount = 30000
+			    producer = FRA
+			}
+		}
+	}
+	
+	#西班牙的勇士
+	focus = {
+		id =  MON_61
+		icon = GFX_focus_spr_no_pasaran
+		x = 5
+		y = 8
+		
+		prerequisite = { focus = MON_59 }
+		relative_position_id = MON_40
+		
+		cost = 5
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			create_corps_commander = {
+				name = "juan modesto"
+				picture = "juan_modesto.dds"
+				traits = { trait_mountaineer }
+				skill = 2
+				attack_skill = 1
+				defense_skill = 1
+				planning_skill = 2
+				logistics_skill = 3
+			}	
+
+			create_corps_commander = {
+				name = "vicente rojo lluch"
+				picture = "vicente_rojo_lluch.dds"
+				traits = { infantry_officer }
+				skill = 2
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 1
+			}	
+
+			add_manpower = 4800
+			add_equipment_to_stockpile = {
+			    type = infantry_equipment
+			    amount = 20000
+			    producer = SPR
+			}
+		}
+	}
+	
+	#保加利亚的反对者
+	focus = {
+		id =  MON_62
+		icon = GFX_focus_BUL_the_fatherland_front
+		x = 7
+		y = 8
+		
+		prerequisite = { focus = MON_59 }
+		relative_position_id = MON_40
+		
+		cost = 5
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			create_corps_commander = {
+				name = "Konstantin lukash"
+				picture = "konstantin_lukash.dds"
+				traits = { infantry_officer }
+				skill = 2
+				attack_skill = 3
+				defense_skill = 1
+				planning_skill = 1
+				logistics_skill = 1
+			}		
+
+			create_corps_commander = {
+				name = "Asen nikolov"
+				picture = "asen_nikolov.dds"
+				traits = { infantry_officer }
+				skill = 2
+				attack_skill = 1
+				defense_skill = 1
+				planning_skill = 2
+				logistics_skill = 2
+			}	
+			add_political_power = 60	
+			add_equipment_to_stockpile = {
+			    type = infantry_equipment
+			    amount = 23400
+			    producer = BUL
+			}
+		}
+	}
+	
+	#墨西哥的朋友
+	focus = {
+		id =  MON_63
+		icon = GFX_focus_mex_caudillo_private_armies
+		x = 9
+		y = 8
+		
+		prerequisite = { focus = MON_59 }
+		relative_position_id = MON_40
+		
+		cost = 5
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			create_corps_commander = {
+				name = "Luis farell"
+				picture = "mex_luis_farell.dds"
+				traits = { infantry_officer }
+				skill = 3
+				attack_skill = 4
+				defense_skill = 1
+				planning_skill = 2
+				logistics_skill = 2
+			}		
+
+			create_navy_leader = {
+				name = "Othon blanco"
+				picture = "mex_othon_blanco.dds"
+				traits = { }
+				skill = 3
+				attack_skill = 2
+				defense_skill = 1
+				maneuvering_skill = 2
+				coordination_skill = 4
+			}
+			army_experience = 35	
+			add_equipment_to_stockpile = {
+			    type = infantry_equipment
+			    amount = 24600
+			    producer = MEX
+			}
+		}
+	}
+	
+	#中国的红色兄弟
+	focus = {
+		id =  MON_64
+		icon = GFX_focus_chi_cooperation_with_the_communists
+		x = 11
+		y = 8
+		
+		prerequisite = { focus = MON_59 }
+		relative_position_id = MON_40
+		
+		cost = 5
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			create_field_marshal = {
+				name = "Wang Ming"
+				gfx = "GFX_portrait_prc_wang_ming"
+				traits = { politically_connected }
+				skill = 1
+				attack_skill = 1
+				defense_skill = 1
+				planning_skill = 1
+				logistics_skill = 1
+			}
+			
+			create_corps_commander = {
+				name = "Ye Ting"
+				portrait_path = "gfx/leaders/Asia/Portrait_Asia_Generic_land_2.dds"
+				skill = 4
+				attack_skill = 4
+				defense_skill = 3
+				planning_skill = 1
+				logistics_skill = 2
+				traits = { infantry_officer }
+			}
+			
+			create_corps_commander = {
+				name = "He Long"
+				portrait_path = "gfx/leaders/Asia/Portrait_Asia_Generic_land_1.dds"
+				skill = 4
+				attack_skill = 2
+				defense_skill = 4
+				planning_skill = 1
+				logistics_skill = 1
+				traits = { infantry_officer }
+			}
+			add_equipment_to_stockpile = {
+			    type = infantry_equipment
+			    amount = 10000
+			    producer = CHI
+			}
+			add_equipment_to_stockpile = {
+			    type = support_equipment
+			    amount = 8000
+			    producer = CHI
+			}
+			add_equipment_to_stockpile = {
+			    type = artillery_equipment
+			    amount = 11200
+			    producer = CHI
+			}
+		}
+	}
+	
+	#世界各地的志同道合者
+	focus = {
+		id =  MON_65
+		icon = GFX_focus_YUG_pan_slavic_congress
+		x = 7
+		y = 9
+		
+		prerequisite = { focus = MON_60 }
+		prerequisite = { focus = MON_61 }
+		prerequisite = { focus = MON_62 }
+		prerequisite = { focus = MON_63 }
+		prerequisite = { focus = MON_64 }
+		relative_position_id = MON_40
+		
+		cost = 5
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			custom_effect_tooltip = MON_gt_zt_tt
+			hidden_effect = {
+				custom_effect_tooltip = available_political_advisor
+				show_ideas_tooltip = maurice_thorez
+				custom_effect_tooltip = available_political_advisor
+				show_ideas_tooltip = ernst_thalmann
+				custom_effect_tooltip = available_political_advisor
+				show_ideas_tooltip = harry_pollitt
+				custom_effect_tooltip = available_political_advisor
+				show_ideas_tooltip = earl_browder
+				add_manpower = 180000
+				unlock_decision_tooltip = mon.udt6
+				unlock_decision_tooltip = mon.udt7
+				unlock_decision_tooltip = mon.udt8
+				unlock_decision_tooltip = mon.udt9
+				unlock_decision_tooltip = mon.udt10
+				unlock_decision_tooltip = mon.udt11
+			}
+		}
+	}
+	
+	#反对莫斯科
+	focus = {
+		id =  MON_66
+		icon = GFX_focus_ger_strike_at_the_source
+		x = 6
+		y = 10
+		
+		prerequisite = { focus = MON_65 }
+		relative_position_id = MON_40
+		
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = SOV
+				expire = 0
+			}
+		}
+	}
+	
+	#成立联合军事委员会
+	focus = {
+		id =  MON_67
+		icon = GFX_focus_ger_great_red_menace
+		x = 8
+		y = 10
+		
+		prerequisite = { focus = MON_65 }
+		relative_position_id = MON_40
+		
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			remove_ideas = MON_fenhuacaoy
+			add_ideas = MON_lhjs_wyh
+		}
+	}
+	
+	#共产世界 共同政府
+	focus = {
+		id =  MON_68
+		icon = GFX_goal_generic_major_alliance
+		x = 7
+		y = 11
+		
+		prerequisite = { focus = MON_66 }
+		prerequisite = { focus = MON_67 }
+		relative_position_id = MON_40
+		
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			MON = {
+				set_cosmetic_tag = MON_gtzhenfu
+			}
+			every_other_country = {
+				limit = {
+					NOT = { is_in_faction_with = ROOT }
+				}
+				MON = {
+					create_wargoal = {
+						target = PREV
+						type = annex_everything
+						expire = 0
+					}
+				}
+			}
+		}
+	}
+	
+	
+	
+	
+	#武装军备
+	focus = {
+		id =  MON_101
+		icon = GFX_focus_secret_rearmament
+		x = 37
+		y = 0
+		
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_war_support = 0.1
+			add_manpower = 15000
+		}
+	}
+	
+	#唐努图瓦协定
+	focus = {
+		id =  MON_102
+		icon = GFX_goal_generic_dangerous_deal
+		x = -5
+		y = 5
+		
+		prerequisite = { focus = MON_101 }
+		prerequisite = { focus = MON_44 }
+		relative_position_id = MON_101
+		
+		cost = 5
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			has_country_flag = MON_gsuisulian
+			is_subject = no
+			MON = { has_government = communism }
+			SOV = { has_government = communism }
+			NOT = { has_war_with = SOV }
+			SOV = {
+				exists = yes
+			}
+			TAN = {
+				exists = no
+			}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			SOV = {
+				country_event = min.1133
+			}
+		}
+	}
+	
+	#苏联军购许可证
+	focus = {
+		id =  MON_103
+		icon = GFX_goal_generic_war_with_comintern
+		x = -6
+		y = 6
+		
+		prerequisite = { focus = MON_102 }
+		relative_position_id = MON_101
+		
+		cost = 5
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			has_country_flag = MON_tntwxd
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = MON_license_foreign
+		}
+	}
+	
+	#包办工厂
+	focus = {
+		id =  MON_104
+		icon = GFX_goal_generic_construct_civ_factory
+		x = -4
+		y = 6
+		
+		prerequisite = { focus = MON_102 }
+		relative_position_id = MON_101
+		
+		cost = 5
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			has_country_flag = MON_tntwxd
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_offsite_building = { type = industrial_complex level = 8 }
+			add_offsite_building = { type = arms_factory level = 8 }
+		}
+	}
+	
+	#援建研究所
+	focus = {
+		id =  MON_105
+		icon = GFX_focus_research
+		x = -5
+		y = 7
+		
+		prerequisite = { focus = MON_103 }
+		prerequisite = { focus = MON_104 }
+		relative_position_id = MON_101
+		
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_research_slot = 1
+			add_offsite_building = { type = industrial_complex level = 4 }
+		}
+	}
+	
+	#整编蒙古陆军
+	focus = {
+		id =  MON_106
+		icon = GFX_goal_generic_army_doctrines
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = MON_101 }
+		relative_position_id = MON_101
+		
+		cost = 5
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			army_experience = 15
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+	
+	#重视骑兵
+	focus = {
+		id =  MON_107
+		icon = GFX_goal_generic_cavalry
+		x = -1
+		y = 2
+		
+		prerequisite = { focus = MON_106 }
+		relative_position_id = MON_101
+		
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = MON_107
+				cost_reduction = 0.5			
+				uses = 3
+				category = land_doctrine
+			}
+		}
+	}
+	
+	#组建工厂
+	focus = {
+		id =  MON_108
+		icon = GFX_goal_generic_production
+		x = -2
+		y = 3
+		
+		prerequisite = { focus = MON_107 }
+		relative_position_id = MON_101
+		
+		cost = 5
+
+		ai_will_do = {
+			factor = 6
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+					is_core_of = ROOT
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	#吉达汽车
+	focus = {
+		id =  MON_109
+		icon = GFX_goal_generic_army_motorized
+		x = -3
+		y = 4
+		
+		prerequisite = { focus = MON_108 }
+		
+		relative_position_id = MON_101
+		
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = MON_109
+				bonus = 1.5
+				uses = 2
+				ahead_reduction = 2
+				category = motorized_equipment
+			}
+			add_tech_bonus = {
+				name = MON_109x
+				bonus = 1.5
+				uses = 1
+				ahead_reduction = 2
+				category = logistics_tech
+			}
+		}
+	}
+	
+	#阿拉坦胡雅志
+	focus = {
+		id =  MON_110
+		icon = GFX_goal_generic_army_tanks
+		x = -1
+		y = 4
+		
+		prerequisite = { focus = MON_108 }
+		
+		relative_position_id = MON_101
+		
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = MON_110a
+				ahead_reduction = 2
+				bonus = 1.5
+				uses = 1
+				category = armor
+			}
+			add_tech_bonus = {
+				name = MON_110x
+				ahead_reduction = 2
+				bonus = 1.5
+				uses = 3
+				category = armor
+			}
+		}
+	}
+	
+	#天赋
+	focus = {
+		id =  MON_112
+		icon = GFX_goal_ming_mgqima
+		x = 0
+		y = 3
+		
+		prerequisite = { focus = MON_107 }
+		relative_position_id = MON_101
+		
+		cost = 5
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = MON_tainfu
+		}
+	}
+	
+	#重视步兵
+	focus = {
+		id =  MON_113
+		icon = GFX_goal_generic_special_forces
+		x = 1
+		y = 2
+		
+		prerequisite = { focus = MON_106 }
+		relative_position_id = MON_101
+		
+		cost = 5
+
+		ai_will_do = {
+			factor = 6
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = MON_zhongshibb
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+	
+	#巴特尔一式
+	focus = {
+		id =  MON_114
+		icon = GFX_goal_generic_small_arms
+		x = 1
+		y = 4
+		
+		prerequisite = { focus = MON_113 }
+		
+		relative_position_id = MON_101
+		
+		cost = 5
+
+		ai_will_do = {
+			factor = 6
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = MON_114
+				bonus = 1.00
+				uses = 1
+				category = infantry_weapons
+				ahead_reduction = 1
+			}
+			add_tech_bonus = {
+				name = MON_114x
+				bonus = 1.0
+				uses = 1
+				category = engineers_tech
+				ahead_reduction = 1
+			}
+		}
+	}
+	
+	#苏格日火炮
+	focus = {
+		id =  MON_115
+		icon = GFX_goal_generic_army_artillery2
+		x = 1
+		y = 5
+		
+		prerequisite = { focus = MON_114 }
+		
+		relative_position_id = MON_101
+		
+		cost = 5
+
+		ai_will_do = {
+			factor = 6
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = MON_115
+				bonus = 1.00
+				uses = 1
+				ahead_reduction = 1
+				category = artillery
+			}
+			add_tech_bonus = {
+				name = MON_115
+				bonus = 1.0
+				uses = 2
+				ahead_reduction = 1
+				category = cat_anti_tank
+			}
+		}
+	}
+	
+	#蒙古军事挑战
+	focus = {
+		id =  MON_117
+		icon = GFX_focus_generic_support_the_left_right
+		x = 7
+		y = 1
+		
+		prerequisite = { focus = MON_101 }
+		
+		relative_position_id = MON_101
+		
+		cost = 5
+
+		ai_will_do = {
+			factor = 8
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			remove_ideas = MON_luohouwuzhuang
+		}
+	}
+	
+	#建立空军
+	focus = {
+		id =  MON_118
+		icon = GFX_goal_generic_air_doctrine
+		x = 5
+		y = 2
+		
+		prerequisite = { focus = MON_117 }
+		
+		relative_position_id = MON_101
+		
+		cost = 6
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = air_doc_bonus
+				cost_reduction = 0.5
+				uses = 2
+				category = air_doctrine
+			}
+		}
+	}
+	
+	#主动设计
+	focus = {
+		id =  MON_119
+		icon = GFX_goal_generic_air_production
+		x = 4
+		y = 3
+		
+		prerequisite = { focus = MON_118 }
+		mutually_exclusive = { focus = MON_123 }
+		relative_position_id = MON_101
+		
+		cost = 6
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = MON_zdsheji
+		}
+	}
+	
+	#博日格得
+	focus = {
+		id =  MON_121
+		icon = GFX_goal_generic_air_fighter2
+		x = 3
+		y = 4
+		
+		prerequisite = { focus = MON_119 }
+		
+		relative_position_id = MON_101
+		
+		cost = 6
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = MON_121
+				bonus = 1.5
+				uses = 6
+				category = air_equipment
+				category = plane_modules_tech
+			}
+		}
+	}
+	
+	#嘎尔迪
+	focus = {
+		id =  MON_122
+		icon = GFX_goal_poland_goal
+		x = 5
+		y = 4
+		
+		prerequisite = { focus = MON_119 }
+		
+		relative_position_id = MON_101
+		
+		cost = 6
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = MON_122
+				bonus = 1.5
+				uses = 6
+				category = air_equipment
+				category = plane_modules_tech
+			}
+		}
+	}
+	
+	#一劳永逸
+	focus = {
+		id =  MON_123
+		icon = GFX_goal_generic_trade
+		x = 6
+		y = 3
+		
+		prerequisite = { focus = MON_118 }
+		mutually_exclusive = { focus = MON_119 }
+		relative_position_id = MON_101
+		
+		cost = 6
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			custom_effect_tooltip = MON_yl_yy_tt
+			hidden_effect = {
+				unlock_decision_tooltip = mon.udt12
+				unlock_decision_tooltip = mon.udt13
+				unlock_decision_tooltip = mon.udt14
+				unlock_decision_tooltip = mon.udt15
+				unlock_decision_tooltip = mon.udt16
+				unlock_decision_tooltip = mon.udt17
+			}
+		}
+	}
+
+	focus = {
+		id =  MON_123x
+		icon = GFX_goal_generic_trade
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = MON_123 }
+		relative_position_id = MON_123
+		
+		cost = 5
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = mon_wgfj
+			ENG = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = huge_increase
+				}
+				add_ai_strategy = {
+					type = protect
+					id = "MON"
+					value = 20
+				}
+				add_offsite_building = { type = arms_factory level = 1 }
+			}
+			ITA = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = huge_increase
+				}
+				add_ai_strategy = {
+					type = protect
+					id = "MON"
+					value = 20
+				}
+				add_offsite_building = { type = arms_factory level = 1 }
+			}
+			JAP = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = huge_increase
+				}
+				add_ai_strategy = {
+					type = protect
+					id = "MON"
+					value = 20
+				}
+				add_offsite_building = { type = arms_factory level = 1 }
+			}
+			USA = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = huge_increase
+				}
+				add_ai_strategy = {
+					type = protect
+					id = "MON"
+					value = 20
+				}
+				add_offsite_building = { type = arms_factory level = 1 }
+			}
+			GER = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = huge_increase
+				}
+				add_ai_strategy = {
+					type = protect
+					id = "MON"
+					value = 20
+				}
+				add_offsite_building = { type = arms_factory level = 1 }
+			}
+			FRA = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = huge_increase
+				}
+				add_ai_strategy = {
+					type = protect
+					id = "MON"
+					value = 20
+				}
+				add_offsite_building = { type = arms_factory level = 1 }
+			}
+		}
+	}
+	
+	#海洋?
+	focus = {
+		id =  MON_124
+		icon = GFX_goal_generic_occupy_states_coastal
+		x = 9
+		y = 2
+		
+		prerequisite = { focus = MON_117 }
+		
+		relative_position_id = MON_101
+		
+		cost = 2
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+			any_state = {
+				is_controlled_by = MON
+				is_coastal = yes
+			}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			navy_experience = 25
+			add_doctrine_cost_reduction = {
+				name = MON_124
+				cost_reduction = 0.5
+				uses = 1
+				category = naval_doctrine
+			}
+			random_owned_controlled_state = {
+				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+					is_core_of = ROOT
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+			
+			random_owned_controlled_state = {
+				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+					is_core_of = ROOT
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	#未知的开始
+	focus = {
+		id =  MON_125
+		icon = GFX_goal_generic_more_territorial_claims
+		x = 9
+		y = 3
+		
+		prerequisite = { focus = MON_124 }
+		
+		relative_position_id = MON_101
+		
+		cost = 2
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			navy_experience = 25
+			add_doctrine_cost_reduction = {
+				name = MON_124
+				cost_reduction = 0.5
+				uses = 2
+				category = naval_doctrine
+			}
+		}
+	}
+	
+	#沉痛的畏惧
+	focus = {
+		id =  MON_126
+		icon = GFX_focus_CZE_german_puppet
+		x = 8
+		y = 4
+		
+		prerequisite = { focus = MON_125 }
+		mutually_exclusive = { focus = MON_127 }
+		relative_position_id = MON_101
+		
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			custom_effect_tooltip = MON_CT_wj_tt
+			hidden_effect = {
+				random_owned_controlled_state = {
+					limit = {
+						ROOT = { has_full_control_of_state = PREV }
+						is_core_of = ROOT
+						free_building_slots = {
+							building = dockyard
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_building_construction = {
+						type = coastal_bunker
+						level = 5
+						instant_build = yes
+					}
+				}
+			
+				random_owned_controlled_state = {
+					limit = {
+						ROOT = { has_full_control_of_state = PREV }
+						is_core_of = ROOT
+						free_building_slots = {
+							building = dockyard
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_building_construction = {
+						type = coastal_bunker
+						level = 5
+						instant_build = yes
+					}
+				}
+				
+				random_owned_controlled_state = {
+					limit = {
+						ROOT = { has_full_control_of_state = PREV }
+						is_core_of = ROOT
+						free_building_slots = {
+							building = dockyard
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_building_construction = {
+						type = coastal_bunker
+						level = 5
+						instant_build = yes
+					}
+				}
+				
+				random_owned_controlled_state = {
+					limit = {
+						ROOT = { has_full_control_of_state = PREV }
+						is_core_of = ROOT
+						free_building_slots = {
+							building = dockyard
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_building_construction = {
+						type = coastal_bunker
+						level = 5
+						instant_build = yes
+					}
+				}
+				
+				random_owned_controlled_state = {
+					limit = {
+						ROOT = { has_full_control_of_state = PREV }
+						is_core_of = ROOT
+						free_building_slots = {
+							building = dockyard
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_building_construction = {
+						type = coastal_bunker
+						level = 5
+						instant_build = yes
+					}
+				}
+				
+				random_owned_controlled_state = {
+					limit = {
+						ROOT = { has_full_control_of_state = PREV }
+						is_core_of = ROOT
+						free_building_slots = {
+							building = dockyard
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_building_construction = {
+						type = coastal_bunker
+						level = 5
+						instant_build = yes
+					}
+				}
+				
+				random_owned_controlled_state = {
+					limit = {
+						ROOT = { has_full_control_of_state = PREV }
+						is_core_of = ROOT
+						free_building_slots = {
+							building = dockyard
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_building_construction = {
+						type = coastal_bunker
+						level = 5
+						instant_build = yes
+					}
+				}
+				
+				random_owned_controlled_state = {
+					limit = {
+						ROOT = { has_full_control_of_state = PREV }
+						is_core_of = ROOT
+						free_building_slots = {
+							building = dockyard
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_building_construction = {
+						type = coastal_bunker
+						level = 5
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						ROOT = { has_full_control_of_state = PREV }
+						is_core_of = ROOT
+						free_building_slots = {
+							building = dockyard
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_building_construction = {
+						type = coastal_bunker
+						level = 5
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						ROOT = { has_full_control_of_state = PREV }
+						is_core_of = ROOT
+						free_building_slots = {
+							building = dockyard
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_building_construction = {
+						type = coastal_bunker
+						level = 5
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						ROOT = { has_full_control_of_state = PREV }
+						is_core_of = ROOT
+						free_building_slots = {
+							building = dockyard
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_building_construction = {
+						type = coastal_bunker
+						level = 5
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						ROOT = { has_full_control_of_state = PREV }
+						is_core_of = ROOT
+						free_building_slots = {
+							building = dockyard
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_building_construction = {
+						type = coastal_bunker
+						level = 5
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						ROOT = { has_full_control_of_state = PREV }
+						is_core_of = ROOT
+						free_building_slots = {
+							building = dockyard
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_building_construction = {
+						type = coastal_bunker
+						level = 5
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						ROOT = { has_full_control_of_state = PREV }
+						is_core_of = ROOT
+						free_building_slots = {
+							building = dockyard
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_building_construction = {
+						type = coastal_bunker
+						level = 5
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						ROOT = { has_full_control_of_state = PREV }
+						is_core_of = ROOT
+						free_building_slots = {
+							building = dockyard
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_building_construction = {
+						type = coastal_bunker
+						level = 5
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						ROOT = { has_full_control_of_state = PREV }
+						is_core_of = ROOT
+						free_building_slots = {
+							building = dockyard
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_building_construction = {
+						type = coastal_bunker
+						level = 5
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						ROOT = { has_full_control_of_state = PREV }
+						is_core_of = ROOT
+						free_building_slots = {
+							building = dockyard
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_building_construction = {
+						type = coastal_bunker
+						level = 5
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						ROOT = { has_full_control_of_state = PREV }
+						is_core_of = ROOT
+						free_building_slots = {
+							building = dockyard
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_building_construction = {
+						type = coastal_bunker
+						level = 5
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+	
+	#千里之海始于水下 
+	focus = {
+		id =  MON_127
+		icon = GFX_goal_generic_navy_anti_submarine
+		x = 10
+		y = 4
+		
+		prerequisite = { focus = MON_125 }
+		mutually_exclusive = { focus = MON_127 }
+		relative_position_id = MON_101
+		
+		cost = 2
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = MON_127
+				bonus = 1.0
+				uses = 2
+				category = ss_tech
+			}
+		}
+	}
+	
+	#七武海的奇迹
+	focus = {
+		id =  MON_128
+		icon = GFX_goal_ming_chufang
+		x = 10
+		y = 5
+		
+		prerequisite = { focus = MON_127 }
+		relative_position_id = MON_101
+		
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = MON_qiwuhai
+		}
+	}
+	
+
+	#发展蒙古海军
+	focus = {
+		id =  MON_128n
+		icon = GFX_goal_ming_chufang
+		x = 10
+		y = 6
+		
+		prerequisite = { focus = MON_128 }
+		relative_position_id = MON_101
+		
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = MON_menguhaijun
+		}
+	}
+	
+	
+	
+	
+	#解决悲惨的现状
+	focus = {
+		id =  MON_201
+		icon = GFX_goal_generic_demand_territory
+		x = 53
+		y = 0
+		
+		
+		cost = 3
+
+		ai_will_do = {
+			factor = 8
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			remove_ideas = MON_bcanxianz
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 2
+				category = industry
+			}
+		}
+	}
+	
+	#优先北部发展
+	focus = {
+		id =  MON_202
+		icon = GFX_goal_generic_national_unity
+		x = -1
+		y = 1
+		
+		prerequisite = { focus = MON_201 }
+		relative_position_id = MON_201
+		cost = 3
+
+		ai_will_do = {
+			factor = 8
+		}
+
+		available = {
+			330 = { is_controlled_by = MON }
+			618 = { is_controlled_by = MON }
+			564 = { is_controlled_by = MON }
+			563 = { is_controlled_by = MON }
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			330 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			
+			564 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			
+			618 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			
+			563 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_stability = 0.05
+		}
+	}
+	
+	#北部基建扩张
+	focus = {
+		id =  MON_203
+		icon = GFX_goal_generic_construct_infrastructure
+		x = -2
+		y = 2
+		
+		prerequisite = { focus = MON_202 }
+		relative_position_id = MON_201
+		cost = 5
+
+		ai_will_do = {
+			factor = 8
+		}
+
+		available = {
+			330 = { is_controlled_by = MON }
+			618 = { is_controlled_by = MON }
+			564 = { is_controlled_by = MON }
+			563 = { is_controlled_by = MON }
+			617 = { is_controlled_by = MON }
+			760 = { is_controlled_by = MON }
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			330 = {
+				add_extra_state_shared_building_slots = 3
+			}
+			
+			564 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			
+			618 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			
+			563 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			
+			617 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			
+			760 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	#从零开始的城市化
+	focus = {
+		id =  MON_204
+		icon = GFX_focus_generic_industry_1
+		x = -4
+		y = 2
+		
+		prerequisite = { focus = MON_202 }
+		relative_position_id = MON_201
+		cost = 5
+
+		ai_will_do = {
+			factor = 7
+		}
+
+		available = {
+			330 = { is_controlled_by = MON }
+			618 = { is_controlled_by = MON }
+			564 = { is_controlled_by = MON }
+			563 = { is_controlled_by = MON }
+			617 = { is_controlled_by = MON }
+			760 = { is_controlled_by = MON }
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			330 = {
+				add_extra_state_shared_building_slots = 4
+			}
+			
+			564 = {
+				add_extra_state_shared_building_slots = 4
+			}
+			
+			618 = {
+				add_extra_state_shared_building_slots = 4
+			}
+			
+			563 = {
+				add_extra_state_shared_building_slots = 4
+			}
+			
+			617 = {
+				add_extra_state_shared_building_slots = 4
+			}
+			
+			760 = {
+				add_extra_state_shared_building_slots = 4
+			}
+		}
+	} 
+	
+	#阿木尔计划
+	focus = {
+		id =  MON_205
+		icon = GFX_goal_generic_position_armies
+		x = -3
+		y = 3
+		
+		prerequisite = { focus = MON_203 }
+		prerequisite = { focus = MON_204 }
+		relative_position_id = MON_201
+		cost = 5
+
+		ai_will_do = {
+			factor = 9
+		}
+
+		available = {
+			330 = { is_controlled_by = MON }
+			618 = { is_controlled_by = MON }
+			564 = { is_controlled_by = MON }
+			563 = { is_controlled_by = MON }
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			330 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			
+			564 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			
+			618 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			
+			563 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	} 
+	
+	#土地换取外国投资
+	focus = {
+		id =  MON_206
+		icon = GFX_focus_usa_reestablish_the_gold_standard
+		x = -3
+		y = 5
+		
+		prerequisite = { focus = MON_205 }
+		relative_position_id = MON_201
+		cost = 5
+
+		ai_will_do = {
+			factor = 6
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = -100
+			add_offsite_building = { type = industrial_complex level = 5 }
+			add_offsite_building = { type = arms_factory level = 5 }
+		}
+	} 
+	
+	#扩大赤塔钢产
+	focus = {
+		id =  MON_207
+		icon = GFX_goal_generic_consumer_goods
+		x = -1
+		y = 4
+		
+		prerequisite = { focus = MON_205 focus = MON_209 }
+		relative_position_id = MON_201
+		cost = 5
+
+		ai_will_do = {
+			factor = 8 
+		}
+
+		available = {
+			563 = { is_controlled_by = MON }
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_resource = {
+				type = steel 
+				amount = 147
+				state = 563
+			}
+		}
+	} 
+	
+	#兴建中部铁路
+	focus = {
+		id =  MON_208
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 0
+		y = 2
+		
+		prerequisite = { focus = MON_202 focus = MON_211 } 
+		relative_position_id = MON_201
+		cost = 3
+
+		ai_will_do = {
+			factor = 6
+		}
+
+		available = {
+			330 = { is_controlled_by = MON }
+			756 = { is_controlled_by = MON }
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			330 = {
+				add_extra_state_shared_building_slots = 3
+			}
+			
+			756 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 4
+					instant_build = yes
+				}
+			}
+			
+			756 = {
+				add_extra_state_shared_building_slots = 3
+			}
+		}
+	} 
+	
+	#国家科学研究院
+	focus = {
+		id =  MON_209
+		icon = GFX_focus_research
+		x = 0
+		y = 3
+		
+		prerequisite = { focus = MON_208 } 
+		relative_position_id = MON_201
+		cost = 5
+
+		ai_will_do = {
+			factor = 8
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+	} 
+	
+	#重视南向发展
+	focus = {
+		id =  MON_211
+		icon = GFX_goal_generic_neutrality_focus
+		x = 1
+		y = 1
+		
+		prerequisite = { focus = MON_201 } 
+		relative_position_id = MON_201
+		cost = 3
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			755 = { is_controlled_by = MON }
+			616 = { is_controlled_by = MON }
+			746 = { is_controlled_by = MON }
+			621 = { is_controlled_by = MON }
+			611 = { is_controlled_by = MON }
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			755 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			
+			616 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			
+			746 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			
+			621 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			611 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_war_support = 0.1
+		}
+	} 
+	
+	#边境堡垒一体化
+	focus = {
+		id =  MON_212
+		icon = GFX_goal_generic_construct_military
+		x = 2
+		y = 2
+		
+		prerequisite = { focus = MON_211 } 
+		relative_position_id = MON_201
+		cost = 5
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+			755 = { is_controlled_by = MON }
+			616 = { is_controlled_by = MON }
+			746 = { is_controlled_by = MON }
+			621 = { is_controlled_by = MON }
+			611 = { is_controlled_by = MON }
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			755 = {
+				add_building_construction = {
+					type = bunker
+					province = {
+						all_provinces = yes
+					}
+					level = 5
+					instant_build = yes
+				}
+			}
+			616 = {
+				add_building_construction = {
+					type = bunker
+					province = {
+						all_provinces = yes
+					}
+					level = 5
+					instant_build = yes
+				}
+			}
+			746 = {
+				add_building_construction = {
+					type = bunker
+					province = {
+						all_provinces = yes
+					}
+					level = 5
+					instant_build = yes
+				}
+			}
+			621 = {
+				add_building_construction = {
+					type = bunker
+					province = {
+						all_provinces = yes
+					}
+					level = 5
+					instant_build = yes
+				}
+			}
+			611 = {
+				add_building_construction = {
+					type = bunker
+					province = {
+						all_provinces = yes
+					}
+					level = 5
+					instant_build = yes
+				}
+			}
+		}
+	} 
+	
+	#南方城市群
+	focus = {
+		id =  MON_213
+		icon = GFX_goal_generic_construct_civilian
+		x = 4
+		y = 2
+		
+		prerequisite = { focus = MON_211 } 
+		relative_position_id = MON_201
+		cost = 5
+
+		ai_will_do = {
+			factor = 8
+		}
+
+		available = {
+			755 = { is_controlled_by = MON }
+			616 = { is_controlled_by = MON }
+			746 = { is_controlled_by = MON }
+			621 = { is_controlled_by = MON }
+			611 = { is_controlled_by = MON }
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			755 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			616 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			746 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			621 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			611 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			755 = {
+				add_extra_state_shared_building_slots = 2
+			}
+			
+			616 = {
+				add_extra_state_shared_building_slots = 2
+			}
+			
+			746 = {
+				add_extra_state_shared_building_slots = 2
+			}
+			
+			621 = {
+				add_extra_state_shared_building_slots = 2
+			}
+			
+			611 = {
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+	} 
+	
+	#阿古达木计划
+	focus = {
+		id =  MON_214
+		icon = GFX_focus_generic_the_giant_wakes
+		x = 3
+		y = 3
+		
+		prerequisite = { focus = MON_213 } 
+		prerequisite = { focus = MON_212 } 
+		relative_position_id = MON_201
+		cost = 5
+
+		ai_will_do = {
+			factor = 6
+		}
+
+		available = {
+			611 = { is_controlled_by = MON }
+			612 = { is_controlled_by = MON }
+			621 = { is_controlled_by = MON }
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 2
+				category = industry
+			}
+			611 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			612 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			621 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	} 
+	
+	#莎车矿物公司
+	focus = {
+		id =  MON_215
+		icon = GFX_goal_generic_construction
+		x = 1
+		y = 4
+		
+		prerequisite = { focus = MON_214 focus = MON_209 } 
+		relative_position_id = MON_201
+		cost = 5
+
+		ai_will_do = {
+			factor = 8
+		}
+
+		available = {
+			619 = { is_controlled_by = MON }
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_resource = {
+				type = tungsten 
+				amount = 68
+				state = 619
+			}
+			add_resource = {
+				type = steel 
+				amount = 72
+				state = 619
+			}
+		}
+	} 
+	
+	#蒙古资源集团
+	focus = {
+		id =  MON_215x
+		icon = GFX_goal_generic_construction
+		x = 1
+		y = 1
+		
+		prerequisite = { focus = MON_215 focus = MON_207 } 
+		relative_position_id = MON_207
+		cost = 10
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		available = {
+			621 = { is_controlled_by = MON }
+			618 = { is_controlled_by = MON }
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_resource = {
+				type = tungsten 
+				amount = 142 
+				state = 621
+			}
+			add_resource = {
+				type = steel 
+				amount = 247
+				state = 621
+			}
+			add_resource = {
+				type = aluminium
+				amount = 120
+				state = 621
+			}
+			add_resource = {
+				type = chromium
+				amount = 176
+				state = 621
+			}
+			add_resource = {
+				type = oil
+				amount = 436
+				state = 618
+			}
+		}
+	} 
+	
+	#统计劫掠资源
+	focus = {
+		id =  MON_216
+		icon = GFX_goal_generic_secret_weapon
+		x = 3
+		y = 5
+		
+		prerequisite = { focus = MON_214 } 
+		relative_position_id = MON_201
+		cost = 5
+
+		ai_will_do = {
+			factor = 7
+		}
+
+		available = {
+			755 = { is_controlled_by = MON }
+			616 = { is_controlled_by = MON }
+			746 = { is_controlled_by = MON }
+			621 = { is_controlled_by = MON }
+			611 = { is_controlled_by = MON }
+			287 = { is_controlled_by = MON }
+			759 = { is_controlled_by = MON }
+			612 = { is_controlled_by = MON }
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_manpower = 500000
+			755 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			
+			616 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			
+			746 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			
+			621 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			611 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			
+			287 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			
+			759 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			612 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	} 
+}

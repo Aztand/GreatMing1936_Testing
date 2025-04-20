@@ -1,0 +1,123 @@
+MAN_historical_plan = {
+	name = "Manchukuo historical plan"
+	desc = "Historical behavior for Manchukuo"
+
+	allowed = {
+		original_tag = MAN
+	}
+	enable = {
+			AND = {
+				is_historical_focus_on = yes
+				has_game_rule = {
+					rule = MAN_ai_behavior
+					option = default
+				}
+			}
+	}
+	abort = {
+	}
+
+	ai_national_focuses = {
+		MAN_01
+		MAN_02
+		MAN_03
+		MAN_14
+		MAN_201
+		MAN_501
+		#1937 
+		MAN_501
+		MAN_506
+		MAN_507
+		MAN_508
+		MAN_509
+		#1938 
+		MAN_510
+		MAN_210
+		MAN_211
+		MAN_212
+		MAN_16
+		#1939 
+		MAN_15
+		MAN_17
+		MAN_19
+		MAN_22
+		MAN_20
+		#1940
+		MAN_21
+		MAN_23
+		MAN_522
+		MAN_523
+		MAN_524
+		MAN_525
+		
+	}
+
+	focus_factors = {
+		#MAN_vassalize_mengukuo = 0
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}
+
+MAN_random_plan = {
+	name = "Manchukuo random plan"
+	desc = "random behavior for Manchukuo"
+
+	allowed = {
+		original_tag = MAN
+	}
+	enable = {
+		OR = {
+				is_historical_focus_on = no
+				has_game_rule = {
+					rule = MAN_ai_behavior
+					option = random				
+			}
+		}
+	}
+	abort = {
+	}
+
+	ai_national_focuses = {
+		
+		
+	}
+
+	focus_factors = {
+		
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}

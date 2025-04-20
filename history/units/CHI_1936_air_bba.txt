@@ -1,0 +1,109 @@
+﻿
+
+
+
+
+#AIRCRAFT
+air_wings = {
+	### CHI Air Forces ###
+	# 1 Hikodan -- Tokyo
+	613 = { 
+		# 1 Hiko Rentai -- Kawasaki Ki-10
+		small_plane_airframe_1 = {
+			owner = "CHI" 
+			amount = 100
+			version_name = "大明1931型战斗机"
+		}
+		small_plane_airframe_1 = {
+			owner = "CHI" 
+			amount = 100
+			version_name = "大明1931型战斗机"
+		}
+		small_plane_airframe_1 = {
+			owner = "CHI" 
+			amount = 100
+			version_name = "大明1931型战斗机"
+		}
+		small_plane_airframe_1 = {
+			owner = "CHI" 
+			amount = 100
+			version_name = "大明1931型战斗机"
+		}
+		small_plane_airframe_1 = {
+			owner = "CHI" 
+			amount = 100
+			version_name = "大明1931型战斗机"
+		}
+		small_plane_airframe_1 = {
+			owner = "CHI" 
+			amount = 100
+			version_name = "大明1931型战斗机"
+		}
+		transport_plane_equipment_1 = { owner = "CHI" amount = 100 }	
+		# 16 Hiko Rentai -- Kawasaki Ki-10
+		
+	}
+	592 = {
+		small_plane_airframe_1 = {
+			owner = "CHI" 
+			amount = 100
+			version_name = "大明1931型战斗机"
+		}
+		transport_plane_equipment_1 = { owner = "CHI" amount = 100 }	
+	}
+	597 = {
+		small_plane_airframe_1 = {
+			owner = "CHI" 
+			amount = 100
+			version_name = "大明1931型战斗机"
+		}
+		transport_plane_equipment_1 = { owner = "CHI" amount = 100 }	
+	}
+	608 = {
+		small_plane_airframe_1 = {
+			owner = "CHI" 
+			amount = 100
+			version_name = "大明1931型战斗机"
+		}
+		small_plane_airframe_1 = {
+			owner = "CHI" 
+			amount = 100
+			version_name = "大明1931型战斗机"
+		}
+		small_plane_cas_airframe_1 = {
+			owner = "CHI" 
+			amount = 100
+			version_name = "大明1931型近地支援机"
+		}
+		small_plane_cas_airframe_1 = {
+			owner = "CHI" 
+			amount = 100
+			version_name = "大明1931型近地支援机"
+		}
+		transport_plane_equipment_1 = { owner = "CHI" amount = 100 }	
+	}
+
+	
+}
+
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+instant_effect = 
+{
+	
+
+	add_equipment_production = {
+		equipment = {
+			type = small_plane_airframe_1
+			creator = "CHI" 
+			version_name = "大明1931型战斗机"
+		}
+		requested_factories = 1
+		progress = 0.15
+		efficiency = 50
+	}
+
+
+}

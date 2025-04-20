@@ -1,0 +1,516 @@
+equipment_modules = {
+	limit = {
+		has_dlc = "No Step Back" 
+	}
+### Engine Types
+
+	tank_high_velocity_cannon_a36 = {
+		abbreviation = "hv1"
+		category = tank_small_main_armament
+		gfx = high_velocity_cannon_a
+		sfx = sfx_ui_sd_module_turret
+		allow_equipment_type = anti_tank
+		add_stats = {
+			soft_attack = 13
+			hard_attack = 34
+			ap_attack = 88
+			build_cost_ic = 3.3
+			maximum_speed = -0.05
+			reliability = -0.05
+		}
+		dismantle_cost_ic = 1
+		xp_cost = 1
+		can_convert_from = {		}
+		build_cost_resources = {
+			tungsten = 2
+			steel = 2
+		}
+	}
+	
+	tank_high_velocity_cannon_a39 = {
+		abbreviation = "hv1"
+		category = tank_small_main_armament
+		gfx = high_velocity_cannon_a
+		sfx = sfx_ui_sd_module_turret
+		allow_equipment_type = anti_tank
+		add_stats = {
+			soft_attack = 16
+			hard_attack = 39
+			ap_attack = 102
+			build_cost_ic = 3.6
+			maximum_speed = -0.05
+			reliability = -0.05
+		}
+		dismantle_cost_ic = 1
+		xp_cost = 1
+		can_convert_from = {		}
+		build_cost_resources = {
+			tungsten = 2
+			steel = 2
+		}
+	}
+	
+	tank_high_velocity_cannon_a41 = {
+		abbreviation = "hv1"
+		category = tank_small_main_armament
+		gfx = high_velocity_cannon_a
+		sfx = sfx_ui_sd_module_turret
+		allow_equipment_type = anti_tank
+		add_stats = {
+			soft_attack = 18
+			hard_attack = 45
+			ap_attack = 117
+			build_cost_ic = 4
+			maximum_speed = -0.05
+			reliability = -0.05
+		}
+		dismantle_cost_ic = 1
+		xp_cost = 1
+		can_convert_from = {		}
+		build_cost_resources = {
+			tungsten = 2
+			steel = 2
+		}
+	}
+	
+	tank_high_velocity_cannon_a43 = {
+		abbreviation = "hv1"
+		category = tank_small_main_armament
+		gfx = high_velocity_cannon_a
+		sfx = sfx_ui_sd_module_turret
+		allow_equipment_type = anti_tank
+		add_stats = {
+			soft_attack = 22
+			hard_attack = 54
+			ap_attack = 140
+			build_cost_ic = 4.4
+			maximum_speed = -0.05
+			reliability = -0.05
+		}
+		dismantle_cost_ic = 1
+		xp_cost = 1
+		can_convert_from = {		}
+		build_cost_resources = {
+			tungsten = 2
+			steel = 2
+		}
+	}
+	
+	tank_high_velocity_cannon_a45 = {
+		abbreviation = "hv1"
+		category = tank_small_main_armament
+		gfx = high_velocity_cannon_a
+		sfx = sfx_ui_sd_module_turret
+		allow_equipment_type = anti_tank
+		add_stats = {
+			soft_attack = 27
+			hard_attack = 67
+			ap_attack = 175
+			build_cost_ic = 5.1
+			maximum_speed = -0.05
+			reliability = -0.05
+		}
+		dismantle_cost_ic = 1
+		xp_cost = 1
+		can_convert_from = {		}
+		build_cost_resources = {
+			tungsten = 2
+			steel = 2
+		}
+	}
+	
+	tank_high_velocity_cannon_a47 = {
+		abbreviation = "hv1"
+		category = tank_small_main_armament
+		gfx = high_velocity_cannon_a
+		sfx = sfx_ui_sd_module_turret
+		allow_equipment_type = anti_tank
+		add_stats = {
+			soft_attack = 35
+			hard_attack = 87
+			ap_attack = 228
+			build_cost_ic = 5.6
+			maximum_speed = -0.05
+			reliability = -0.05
+		}
+		dismantle_cost_ic = 1
+		xp_cost = 1
+		can_convert_from = {		}
+		build_cost_resources = {
+			tungsten = 2
+			steel = 2
+		}
+	}
+	
+	tank_high_velocity_cannon_a50 = {
+		abbreviation = "hv1"
+		category = tank_small_main_armament
+		gfx = high_velocity_cannon_a
+		sfx = sfx_ui_sd_module_turret
+		allow_equipment_type = anti_tank
+		add_stats = {
+			soft_attack = 47
+			hard_attack = 118
+			ap_attack = 296
+			build_cost_ic = 6.1
+			maximum_speed = -0.025
+			reliability = -0.025
+		}
+		dismantle_cost_ic = 1
+		xp_cost = 1
+		can_convert_from = {		}
+		build_cost_resources = {
+			tungsten = 2
+			steel = 2
+		}
+	}
+	#中高速炮
+	tank_high_velocity_cannon_b36 = {
+		abbreviation = "hv2"
+		category = tank_medium_main_armament
+		gfx = high_velocity_cannon_b
+		sfx = sfx_ui_sd_module_turret
+		allow_equipment_type = anti_tank
+
+		add_stats = {
+			soft_attack = 26
+			hard_attack = 45
+			ap_attack = 162
+			build_cost_ic = 5.5
+			maximum_speed = -0.15
+			reliability = -0.125
+		}
+		dismantle_cost_ic = 1
+		xp_cost = 1
+		can_convert_from = {		}
+		build_cost_resources = {
+			tungsten = 2
+			chromium = 1
+			steel = 2
+		}
+	}
+	tank_high_velocity_cannon_b39 = {
+		abbreviation = "hv2"
+		category = tank_medium_main_armament
+		gfx = high_velocity_cannon_b
+		sfx = sfx_ui_sd_module_turret
+		allow_equipment_type = anti_tank
+
+		add_stats = {
+			soft_attack = 30
+			hard_attack = 55
+			ap_attack = 187
+			build_cost_ic = 6
+			maximum_speed = -0.15
+			reliability = -0.125
+		}
+		dismantle_cost_ic = 1
+		xp_cost = 1
+		can_convert_from = {		}
+		build_cost_resources = {
+			tungsten = 2
+			chromium = 1
+			steel = 2
+		}
+	}
+	tank_high_velocity_cannon_b41 = {
+		abbreviation = "hv2"
+		category = tank_medium_main_armament
+		gfx = high_velocity_cannon_b
+		sfx = sfx_ui_sd_module_turret
+		allow_equipment_type = anti_tank
+
+		add_stats = {
+			soft_attack = 36
+			hard_attack = 63
+			ap_attack = 215
+			build_cost_ic = 6.7
+			maximum_speed = -0.15
+			reliability = -0.125
+		}
+		dismantle_cost_ic = 1
+		xp_cost = 1
+		can_convert_from = {		}
+		build_cost_resources = {
+			tungsten = 2
+			chromium = 1
+			steel = 2
+		}
+	}
+	tank_high_velocity_cannon_b43 = {
+		abbreviation = "hv2"
+		category = tank_medium_main_armament
+		gfx = high_velocity_cannon_b
+		sfx = sfx_ui_sd_module_turret
+		allow_equipment_type = anti_tank
+
+		add_stats = {
+			soft_attack = 45
+			hard_attack = 78
+			ap_attack = 258
+			build_cost_ic = 7.7
+			maximum_speed = -0.15
+			reliability = -0.125
+		}
+		dismantle_cost_ic = 1
+		xp_cost = 1
+		can_convert_from = {		}
+		build_cost_resources = {
+			tungsten = 2
+			chromium = 1
+			steel = 2
+		}
+	}
+	tank_high_velocity_cannon_b45 = {
+		abbreviation = "hv2"
+		category = tank_medium_main_armament
+		gfx = high_velocity_cannon_b
+		sfx = sfx_ui_sd_module_turret
+		allow_equipment_type = anti_tank
+
+		add_stats = {
+			soft_attack = 58
+			hard_attack = 102
+			ap_attack = 335
+			build_cost_ic = 8.8
+			maximum_speed = -0.15
+			reliability = -0.125
+		}
+		dismantle_cost_ic = 1
+		xp_cost = 1
+		build_cost_resources = {
+			tungsten = 2
+			chromium = 1
+			steel = 2
+		}
+		can_convert_from = {		}
+	}
+	tank_high_velocity_cannon_b47 = {
+		abbreviation = "hv2"
+		category = tank_medium_main_armament
+		gfx = high_velocity_cannon_b
+		sfx = sfx_ui_sd_module_turret
+		allow_equipment_type = anti_tank
+
+		add_stats = {
+			soft_attack = 79
+			hard_attack = 138
+			ap_attack = 436
+			build_cost_ic = 9.7
+			maximum_speed = -0.15
+			reliability = -0.125
+		}
+		dismantle_cost_ic = 1
+		xp_cost = 1
+		build_cost_resources = {
+			tungsten = 2
+			chromium = 1
+			steel = 2
+		}
+		can_convert_from = {		}
+	}
+	tank_high_velocity_cannon_b50 = {
+		abbreviation = "hv2"
+		category = tank_medium_main_armament
+		gfx = high_velocity_cannon_b
+		sfx = sfx_ui_sd_module_turret
+		allow_equipment_type = anti_tank
+
+		add_stats = {
+			soft_attack = 110
+			hard_attack = 193
+			ap_attack = 567
+			build_cost_ic = 10.6
+			maximum_speed = -0.125
+			reliability = -0.1
+		}
+		dismantle_cost_ic = 1
+		xp_cost = 1
+		build_cost_resources = {
+			tungsten = 2
+			chromium = 1
+			steel = 2
+		}
+		can_convert_from = {		}
+	}
+		##重高速炮
+	tank_high_velocity_cannon_c36 = {
+		abbreviation = "hv3"
+		category = tank_heavy_main_armament
+		gfx = high_velocity_cannon_c
+		sfx = sfx_ui_sd_module_turret
+		allow_equipment_type = anti_tank
+
+		add_stats = {
+			soft_attack = 34
+			hard_attack = 61
+			ap_attack = 270
+			build_cost_ic = 8
+			maximum_speed = -0.2
+			reliability = -0.125
+		}
+		dismantle_cost_ic = 1
+		xp_cost = 1
+		can_convert_from = {		}
+		build_cost_resources = {
+			tungsten = 2
+			chromium = 1
+			steel = 3
+		}
+	}
+
+	tank_high_velocity_cannon_c39 = {
+		abbreviation = "hv3"
+		category = tank_heavy_main_armament
+		gfx = high_velocity_cannon_c
+		sfx = sfx_ui_sd_module_turret
+		allow_equipment_type = anti_tank
+
+		add_stats = {
+			soft_attack = 40
+			hard_attack = 73
+			ap_attack = 324
+			build_cost_ic = 8.9
+			maximum_speed = -0.2
+			reliability = -0.125
+		}
+		dismantle_cost_ic = 1
+		xp_cost = 1
+		can_convert_from = {		}
+		build_cost_resources = {
+			tungsten = 2
+			chromium = 1
+			steel = 3
+		}
+	}
+	
+	tank_high_velocity_cannon_c41 = {
+		abbreviation = "hv3"
+		category = tank_heavy_main_armament
+		gfx = high_velocity_cannon_c
+		sfx = sfx_ui_sd_module_turret
+		allow_equipment_type = anti_tank
+
+		add_stats = {
+			soft_attack = 49
+			hard_attack = 87
+			ap_attack = 389
+			build_cost_ic = 9.7
+			maximum_speed = -0.2
+			reliability = -0.125
+		}
+		dismantle_cost_ic = 1
+		xp_cost = 1
+		can_convert_from = {		}
+		build_cost_resources = {
+			tungsten = 2
+			chromium = 1
+			steel = 3
+		}
+	}
+	
+	tank_high_velocity_cannon_c43 = {
+		abbreviation = "hv3"
+		category = tank_heavy_main_armament
+		gfx = high_velocity_cannon_c
+		sfx = sfx_ui_sd_module_turret
+		allow_equipment_type = anti_tank
+
+		add_stats = {
+			soft_attack = 61
+			hard_attack = 109
+			ap_attack = 467
+			build_cost_ic = 10.7
+			maximum_speed = -0.2
+			reliability = -0.125
+		}
+		dismantle_cost_ic = 1
+		xp_cost = 1
+		can_convert_from = {		}
+		build_cost_resources = {
+			tungsten = 2
+			chromium = 1
+			steel = 3
+		}
+	}
+	
+	tank_high_velocity_cannon_c45 = {
+		abbreviation = "hv3"
+		category = tank_heavy_main_armament
+		gfx = high_velocity_cannon_c
+		sfx = sfx_ui_sd_module_turret
+		allow_equipment_type = anti_tank
+
+		add_stats = {
+			soft_attack = 79
+			hard_attack = 142
+			ap_attack = 607
+			build_cost_ic = 12.3
+			maximum_speed = -0.2
+			reliability = -0.125
+		}
+		dismantle_cost_ic = 1
+		xp_cost = 1
+		can_convert_from = {		}
+		build_cost_resources = {
+			tungsten = 2
+			chromium = 1
+			steel = 3
+		}
+	}
+	
+	tank_high_velocity_cannon_c47 = {
+		abbreviation = "hv3"
+		category = tank_heavy_main_armament
+		gfx = high_velocity_cannon_c
+		sfx = sfx_ui_sd_module_turret
+		allow_equipment_type = anti_tank
+
+		add_stats = {
+			soft_attack = 107
+			hard_attack = 192
+			ap_attack = 788
+			build_cost_ic = 13.6
+			maximum_speed = -0.2
+			reliability = -0.125
+		}
+		dismantle_cost_ic = 1
+		xp_cost = 1
+		can_convert_from = {		}
+		build_cost_resources = {
+			tungsten = 2
+			chromium = 1
+			steel = 3
+		}
+	}
+	
+	tank_high_velocity_cannon_c50 = {
+		abbreviation = "hv3"
+		category = tank_heavy_main_armament
+		gfx = high_velocity_cannon_c
+		sfx = sfx_ui_sd_module_turret
+		allow_equipment_type = anti_tank
+
+		add_stats = {
+			soft_attack = 155
+			hard_attack = 269
+			ap_attack = 1025
+			build_cost_ic = 14.9
+			maximum_speed = -0.15
+			reliability = -0.1
+		}
+		dismantle_cost_ic = 1
+		xp_cost = 1
+		can_convert_from = {		}
+		build_cost_resources = {
+			tungsten = 2
+			chromium = 1
+			steel = 3
+		}
+	}
+	
+	
+	
+	
+	
+}

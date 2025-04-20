@@ -1,0 +1,322 @@
+
+js_lgb_become_leader = {
+	retire_country_leader = yes
+	custom_effect_tooltip = js_lgb_become_leader_tt
+	hidden_effect = {
+		set_country_leader_name = { name = js_lgb }
+		set_country_leader_portrait = { portrait = "gfx/leaders/js/js_lgb.png" }
+		set_country_leader_description = { desc = "POLITICS_js_lgb_DESC" }
+	}
+	add_country_leader_trait = js_hx    	
+	add_country_leader_trait = js_sx  
+	add_country_leader_trait = js_rr
+	add_country_leader_trait = js_kjds
+	add_country_leader_trait = js_gyzj
+}
+Gu_Weijun_become_leader = {
+	retire_country_leader = yes
+	custom_effect_tooltip = Gu_Weijun_become_leader_tt
+	hidden_effect = {
+		set_country_leader_name = { name = Gu_Weijun }
+		set_country_leader_portrait = { portrait = "gfx/leaders/MAL/Gu_weijun.dds" }
+		set_country_leader_description = { desc = "Gu_Weijun_DESC" }
+	}
+	ideology = despotism
+}
+Chen_Bingqiang_become_leader = {
+	retire_country_leader = yes
+	custom_effect_tooltip = Chen_Bingqiang_become_leader_tt
+	hidden_effect = {
+		set_country_leader_name = { name = Chen_Bingqiang }
+		set_country_leader_portrait = { portrait = "gfx/leaders/VIN/Chen_bingqiang.dds" }
+		set_country_leader_description = { desc = "Chen_Bingqiang_DESC" }
+	}
+	ideology = despotism
+}
+Wang_Jingwei_become_leader = {
+	retire_country_leader = yes
+	custom_effect_tooltip = Wang_Jingwei_become_leader_tt
+	hidden_effect = {
+		set_country_leader_name = { name = Wang_Jingwei }
+		set_country_leader_portrait = { portrait = "gfx/leaders/BRM/wang_jingwei.dds" }
+		set_country_leader_description = { desc = "wang_jingwei_DESC" }
+	}
+	ideology = despotism
+}
+Zhang_Jinghui_become_leader = {
+	retire_country_leader = yes
+	custom_effect_tooltip = Zhang_Jinghui_become_leader_tt
+	hidden_effect = {
+		set_country_leader_name = { name = Zhang_Jinghui }
+		set_country_leader_portrait = { portrait = "gfx/leaders/MAN/Zhang_jinghui.dds" }
+		set_country_leader_description = { desc = "Zhang_jinghui_DESC" }
+	}
+	ideology = despotism
+}
+Zhang_Zuoling_become_leader = {
+	retire_country_leader = yes
+	custom_effect_tooltip = Zhang_Zuoling_become_leader_tt
+	hidden_effect = {
+		set_country_leader_name = { name = Zhang_Zuoling }
+		set_country_leader_portrait = { portrait = "gfx/leaders/JAP/Zhang_zuolin.dds" }
+		set_country_leader_description = { desc = "Zhang_Zuoling_DESC" }
+	}
+	ideology = despotism
+}
+Showa_become_leader = {
+	retire_country_leader = yes
+	custom_effect_tooltip = Showa_become_leader_tt
+	hidden_effect = {
+		set_country_leader_name = { name = Showa }
+		set_country_leader_portrait = { portrait = "gfx/leaders/JAP/Yu_ren.dds" }
+		set_country_leader_description = { desc = "Showa_DESC" }
+	}
+	ideology = despotism
+}
+Zhou_Enlai_become_leader = {
+	retire_country_leader = yes
+	custom_effect_tooltip = Zhou_Enlai_become_leader_tt
+	hidden_effect = {
+		set_country_leader_name = { name = Zhou_Enlai }
+		set_country_leader_portrait = { portrait = "gfx/leaders/MON/Zhou_enlai.dds" }
+		set_country_leader_description = { desc = "Zhou_Enlai_DESC" }
+	}
+	ideology = despotism
+}
+V_D_Savarkar_become_leader = {
+	retire_country_leader = yes
+	custom_effect_tooltip = V_D_Savarkar_become_leader_tt
+	hidden_effect = {
+		set_country_leader_name = { name = V_D_Savarkar }
+		set_country_leader_portrait = { portrait = "gfx/leaders/RAJ/veer_savarkar.dds" }
+		set_country_leader_description = { desc = "V_D_Savarkar_DESC" }
+	}
+	ideology = despotism
+}
+Zhang_Lan_become_leader = {
+	retire_country_leader = yes
+	custom_effect_tooltip = Zhang_Lan_become_leader_tt
+	hidden_effect = {
+		set_country_leader_name = { name = Zhang_Lan }
+		set_country_leader_portrait = { portrait = "gfx/leaders/INS/zhang_lan.dds" }
+		set_country_leader_description = { desc = "Zhang_Lan_DESC" }
+	}
+	ideology = despotism
+}
+Wang_Ming_become_leader = {
+	retire_country_leader = yes
+	custom_effect_tooltip = Wang_Ming_become_leader_tt
+	hidden_effect = {
+		set_country_leader_name = { name = Wang_Ming }
+		set_country_leader_portrait = { portrait = "gfx/leaders/PHI/wang_ming.dds" }
+		set_country_leader_description = { desc = "Wang_Ming_DESC" }
+	}
+	ideology = despotism
+}
+Weng_Wenhao_become_leader = {
+	retire_country_leader = yes
+	custom_effect_tooltip = Weng_Wenhao_become_leader_tt
+	hidden_effect = {
+		set_country_leader_name = { name = Weng_Wenhao }
+		set_country_leader_portrait = { portrait = "gfx/leaders/PAK/Weng_Wenhao.dds" }
+		set_country_leader_description = { desc = "Weng_Wenhao_DESC" }
+	}
+	ideology = despotism
+}
+mzd_become_leader = {
+	retire_country_leader = yes
+	custom_effect_tooltip = mzd_become_leader_tt
+	hidden_effect = {
+		set_country_leader_name = { name = ming_mrz }
+		set_country_leader_portrait = { portrait = "GFX_portrait_prc_mao_zedong" }
+		set_country_leader_description = { desc = "ming_mrz_DESC" }
+	}
+	add_country_leader_trait = ming_ymdtz
+}
+Hideki_Tojo_become_leader = {
+	retire_country_leader = yes
+	custom_effect_tooltip = Hideki_Tojo_become_leader_tt
+	hidden_effect = {
+		set_country_leader_name = { name = Hideki_Tojo }
+		set_country_leader_portrait = { portrait = "gfx/leaders/JAP/Hideki_tojo.dds" }
+		set_country_leader_description = { desc = "Hideki Tojo_DESC" }
+	}
+	ideology = fascism_ideology
+	add_country_leader_trait = riben_dongtiao
+}
+Fumimaro_Konoe_become_leader = {
+	retire_country_leader = yes
+	custom_effect_tooltip = Fumimaro_Konoe_become_leader_tt
+	hidden_effect = {
+		set_country_leader_name = { name = Fumimaro_Konoe }
+		set_country_leader_portrait = { portrait = "gfx/leaders/JAP/Fumimaro_konoe.dds" }
+		set_country_leader_description = { desc = "Fumimaro Konoe_DESC" }
+	}
+	ideology = fascism_ideology
+	add_country_leader_trait = riben_jingwei
+}
+Keisuke_Okada_become_leader = {
+	retire_country_leader = yes
+	custom_effect_tooltip = Keisuke_Okada_become_leader_tt
+	hidden_effect = {
+		set_country_leader_name = { name = Keisuke_Okada }
+		set_country_leader_portrait = { portrait = "gfx/leaders/JAP/Keisuke_okada.dds" }
+		set_country_leader_description = { desc = "Keisuke Okada_DESC" }
+	}
+	ideology = fascism_ideology
+	add_country_leader_trait = riben_qijie
+}
+Tetsu_Katayama_become_leader = {
+	retire_country_leader = yes
+	custom_effect_tooltip = Tetsu_Katayama_become_leader_tt
+	hidden_effect = {
+		set_country_leader_name = { name = Tetsu_Katayama }
+		set_country_leader_portrait = { portrait = "GFX_Portrait_tetsu_katayama" }
+		set_country_leader_description = { desc = "POLITICS_Hirohito_DESC" }
+	}
+	ideology = liberalism
+	add_country_leader_trait = riben_jianding
+}
+Hirota_koki_become_leader = {
+	retire_country_leader = yes
+	custom_effect_tooltip = Hirota_koki_become_leader_tt
+	hidden_effect = {
+		set_country_leader_name = { name = Hirota_koki }
+		set_country_leader_portrait = { portrait = "gfx/leaders/JAP/Hirota_koki.dds" }
+		set_country_leader_description = { desc = "Hirota Kōki_DESC" }
+	}
+	ideology = liberalism
+	add_country_leader_trait = riben_niudai
+}
+
+Tokugawa_iesato_become_leader = {
+	retire_country_leader = yes
+	custom_effect_tooltip = Tokugawa_iesato_become_leader_tt
+	hidden_effect = {
+		set_country_leader_name = { name = Tokugawa_iesato }
+		set_country_leader_portrait = { portrait = "gfx/leaders/JAP/Tokugawa_iesato.dds" }
+		set_country_leader_description = { desc = "Tokugawa iesato_DESC" }
+	}
+	ideology = liberalism
+	add_country_leader_trait = riben_houdai
+}
+
+Aisin_Gioro_Puyi_become_leader = {
+	retire_country_leader = yes
+	custom_effect_tooltip = Aisin_Gioro_Puyi_tt
+	hidden_effect = {
+		set_country_leader_name = { name = Aisin_Gioro_Puyi }
+		set_country_leader_portrait = { portrait = "gfx/leaders/MAN/Pu_yi.dds" }
+		set_country_leader_description = { desc = "Aisin_Gioro_Puyi_DESC" }
+	}
+	
+	add_country_leader_trait = daqing_zhenhuang
+}
+
+
+Aisin_Gioro_Xianyu_become_leader = {
+	retire_country_leader = yes
+	custom_effect_tooltip = Aisin_Gioro_Xianyu_tt
+	hidden_effect = {
+		set_country_leader_name = { name = Aisin_Gioro_Xianyu }
+		set_country_leader_portrait = { portrait = "gfx/leaders/MAN/Yoshiko_kawashima.dds" }
+		set_country_leader_description = { desc = "Aisin_Gioro_Xianyu_DESC" }
+	}	
+	add_country_leader_trait = daqing_dihua
+}
+
+Aisin_Xiqia_become_leader = {
+	retire_country_leader = yes
+	custom_effect_tooltip = Aisin_Xiqia_tt
+	hidden_effect = {
+		set_country_leader_name = { name = Aisin_Xiqia }
+		set_country_leader_portrait = { portrait = "gfx/leaders/MAN/xiqia.dds" }
+		set_country_leader_description = { desc = "Aisin_Xiqia_DESC" }
+	}	
+	add_country_leader_trait = daqing_xinpai
+}
+
+dmckdlp_become_leader = {
+	retire_country_leader = yes
+	custom_effect_tooltip = dmckdlp_tt
+	hidden_effect = {
+		set_country_leader_name = { name = "德穆楚克栋鲁普" }
+		set_country_leader_portrait = { portrait = "GFX_portrait_men_demchugdongrub" }
+		set_country_leader_description = { desc = "POLITICS_DEMCHUGDONGRUB_DESC" }
+	}	
+	add_country_leader_trait = spirit_of_genghis
+	add_country_leader_trait = ming_dayuan
+}
+
+tieguo_become_leader = {
+	retire_country_leader = yes
+	custom_effect_tooltip = tieguo_tt
+	hidden_effect = {
+		set_country_leader_name = { name = "孛儿只斤·妥懽帖睦尔" }
+		set_country_leader_portrait = { portrait = "gfx/mon_tguo.png" }
+		set_country_leader_description = { desc = "POLITICS_tieguo_DESC" }
+	}	
+	add_country_leader_trait = spirit_of_genghis1
+	add_country_leader_trait = mon_xl
+	add_country_leader_trait = mon_zthd
+}
+
+anton_become_leader = {
+	retire_country_leader = yes
+	custom_effect_tooltip = anton_tt
+	hidden_effect = {
+		set_country_leader_name = { name = "安童" }
+		set_country_leader_portrait = { portrait = "gfx/js_01979.png" }
+		set_country_leader_description = { desc = "POLITICS_at_DESC" }
+	}	
+	add_country_leader_trait = spirit_of_genghis
+	add_country_leader_trait = ming_dayuan
+	add_country_leader_trait = ming_youcx2
+}
+
+a_become_leader = {
+	retire_country_leader = yes
+	custom_effect_tooltip = anton_tt
+	hidden_effect = {
+		set_country_leader_name = { name = "安童" }
+		set_country_leader_portrait = { portrait = "gfx/js_01974.png" }
+		set_country_leader_description = { desc = "POLITICS_at_DESC" }
+	}	
+	add_country_leader_trait = spirit_of_genghis
+	add_country_leader_trait = ming_dayuan
+	add_country_leader_trait = ming_youcx2
+}
+
+
+yuren_become_leader = {
+	retire_country_leader = yes
+	custom_effect_tooltip = yuren_tt
+	hidden_effect = {
+		set_country_leader_name = { name = "裕仁" }
+		set_country_leader_portrait = { portrait = "Yu_ren.dds" }
+		set_country_leader_description = { desc = "Hirohito Iesato" }
+	}	
+	add_country_leader_trait = emperor_showa
+}
+
+Park_Chung_hee_become_leader = {
+	retire_country_leader = yes
+	custom_effect_tooltip = Park_Chung_hee_tt
+	hidden_effect = {
+		set_country_leader_name = { name = "Park Chung-hee" }
+		set_country_leader_portrait = { portrait = "park_chung_hee.dds" }
+		set_country_leader_description = { desc = "Park Chung-hee_DESC" }
+	}	
+}
+
+Mao_Zedong_become_leader = {
+	retire_country_leader = yes
+	custom_effect_tooltip = Mao_Zedong_tt
+	hidden_effect = {
+		set_country_leader_name = { name = "毛泽东" }
+		set_country_leader_portrait = { portrait = "GFX_portrait_prc_mao_zedong" }
+		set_country_leader_description = { desc = "Mao Zedong" }
+	}	
+	add_country_leader_trait = cornered_fox
+	add_country_leader_trait = kor_mao
+}

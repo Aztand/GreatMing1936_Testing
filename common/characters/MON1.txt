@@ -1,0 +1,675 @@
+characters={
+	mon_jl0={
+		name=mon_hjw
+		portraits={
+			army = {
+				large="gfx/leaders/MON/0.png"
+				small="gfx/0.png"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = mon_hjw
+			allowed = {
+				original_tag = MON
+			}
+			available = {
+				always = yes
+			}
+			visible = { has_country_flag = ming_ecy_jl NOT = {has_country_flag = ming_not_jl} }
+			traits = {
+				ming_ljtp
+				ming_hjw1
+			}
+			cost = 200
+			ai_will_do = {
+				factor = 0.000
+			}
+		}
+		field_marshal = {
+			traits = { inflexible_strategist trait_cautious engineer_officer mjs_hjw}			 
+			skill = 2
+			attack_skill = 2
+			defense_skill = 8
+			planning_skill = 5
+			logistics_skill = 8
+			visible = { has_country_flag = ming_ecy_jl NOT = {has_country_flag = ming_not_jl} }
+		}
+	}
+
+	mon_lxj={
+		name=mon_lxj
+		portraits={
+			army = {
+				large="gfx/js_01735.png"
+				small="gfx/js_01735x.png"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = mon_lxj
+			allowed = {
+				original_tag = MON
+			}
+			available = {
+				always = yes
+			}
+			visible = { has_country_flag = ming_ecy_jl NOT = {has_country_flag = ming_not_jl} }
+			traits = {
+				ming_qqyzz
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 0.000
+			}
+		}
+		field_marshal = {
+			traits = { inflexible_strategist trait_cautious engineer_officer mon_lxj mon_dxzz }			 
+			skill = 5
+			attack_skill = 6
+			defense_skill = 7
+			planning_skill = 7
+			logistics_skill = 7
+			visible = { has_country_flag = ming_ecy_jl NOT = {has_country_flag = ming_not_jl} }
+		}
+	}
+
+
+
+	mon_tz0 ={
+		name= lizhiyan
+		portraits={
+			army = {
+				large= "gfx/leaders/Asia/Portrait_Asia_Generic_land_3.dds"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 5
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			traits = { career_officer inflexible_strategist}
+		}
+	}
+	mon_tz1 ={
+		name= hechunfe
+		portraits={
+			army = {
+				large= "gfx/leaders/Asia/Portrait_Asia_Generic_land_2.dds"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+			traits = { career_officer engineer_officer}
+		}
+	}
+	mon_tz2 ={
+		name= lizhishen
+		portraits={
+			army = {
+				large= "gfx/leaders/Asia/Portrait_Asia_Generic_land_5.dds"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+			traits = { infantry_officer }
+		}
+	}
+	mon_tz3 ={
+		name= guzhoutu
+		portraits={
+			army = {
+				large= "gfx/leaders/Asia/Portrait_Asia_Generic_land_4.dds"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+			traits = { career_officer armor_officer}
+		}
+	}
+
+
+
+
+
+
+
+
+
+	mon_tw0 ={
+		name= Qi_xieyuan
+		portraits={
+			army = {
+				large= "gfx/leaders/Asia/Portrait_Asia_Generic_land_3.dds"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			traits = { career_officer }
+			visible = {				has_country_flag = mon_lwz			}
+		}
+	}
+
+	mon_tw1 ={
+		name = Wang_qinghan
+		portraits={
+			army = {
+				large= "gfx/leaders/Asia/Portrait_Asia_Generic_land_5.dds"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			traits = { career_officer }
+			visible = {				has_country_flag = mon_lwz			}
+		}
+	}
+	mon_tw2 ={
+		name = Wu_huaweng
+		portraits={
+			army = {
+				large= "gfx/leaders/Asia/Portrait_Asia_Generic_land_2.dds"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+			traits = { career_officer }
+			visible = {				has_country_flag = mon_lwz			}
+		}
+	}
+	mon_tw3 ={
+		name = Lu_fengce
+		portraits={
+			army = {
+				large= "gfx/leaders/Asia/Portrait_Asia_Generic_land_4.dds"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 3
+			traits = { infantry_officer }
+			visible = {				has_country_flag = mon_lwz			}
+		}
+	}
+	mon_tw4 ={
+		name= liu_zhiguang
+		portraits={
+			army = {
+				large= "gfx/leaders/Asia/Portrait_Asia_Generic_land_3.dds"
+			}
+		}
+		corps_commander = {
+			name = "Qi xieyuan"
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 3
+			visible = {				has_country_flag = mon_lwz			}
+		}
+	}
+
+
+
+	mon_tw5 ={
+		name = xu_jitan
+		portraits={
+			army = {
+				large= "gfx/leaders/Asia/Portrait_Asia_Generic_navy_1.dds"
+			}
+		}
+		navy_leader = {
+			traits = { }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 3
+			maneuvering_skill = 2
+			coordination_skill = 1
+			visible = {				has_country_flag = mon_lwz			}
+		}
+	}
+	mon_tw6 ={
+		name = huangdawei
+		portraits={
+			army = {
+				large= "gfx/leaders/Asia/Portrait_Asia_Generic_navy_2.dds"
+			}
+		}
+		navy_leader = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			maneuvering_skill = 2
+			coordination_skill = 3
+			visible = {				has_country_flag = mon_lwz			}
+		}
+	}
+	mon_jl1={
+		name=mon_hmr
+		portraits={
+			army = {
+				large="gfx/js_01525.png"
+				small="gfx/js_01525x.png"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = ming_hmr
+			allowed = {
+				original_tag = MON
+			}
+			available = {
+				always = yes
+			}
+			visible = { has_country_flag = ming_ecy_jl NOT = {has_country_flag = ming_not_jl} }
+			traits = {
+				ming_zscz
+			}
+			cost = 200
+			ai_will_do = {
+				factor = 2.000
+			}
+		}
+		field_marshal = {
+			traits = { inflexible_strategist trait_cautious engineer_officer mjs_hmr}			 
+			skill = 3
+			attack_skill = 7
+			defense_skill = 2
+			planning_skill = 6
+			logistics_skill = 6
+			visible = { has_country_flag = ming_ecy_jl NOT = {has_country_flag = ming_not_jl} }
+		}
+	}
+	mon_tl0 ={
+		name= heshanghong
+		portraits={
+			army = {
+				large= "gfx/leaders/Asia/Portrait_Asia_Generic_land_3.dds"
+				small="GFX_idea_generic_army_asia_3"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 1
+			traits = { inflexible_strategist}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = ming_hsh
+			allowed = {
+				original_tag = MON
+			}
+			available = {
+				always = yes
+			}
+			traits = {
+				ming_gbss
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 20.000
+			}
+		}
+	}
+	mon_tl1 ={
+		name= qijianjun
+		portraits={
+			army = {
+				large= "gfx/leaders/Asia/Portrait_Asia_Generic_land_1.dds"
+				small="GFX_idea_generic_army_asia_1"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			traits = { career_officer }
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = ming_qjj
+			allowed = {
+				original_tag = MON
+			}
+			available = {
+				always = yes
+			}
+			traits = {
+				ming_zsylz
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 12.000
+			}
+		}
+	}
+
+	mon_tl2 ={
+		name= songlibing
+		portraits={
+			army = {
+				large= "gfx/leaders/Asia/Portrait_Asia_Generic_land_4.dds"
+				small="GFX_idea_generic_army_asia_4"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+			traits = { career_officer }
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = ming_slb
+			allowed = {
+				original_tag = MON
+			}
+			available = {
+				always = yes
+			}
+			traits = {
+				ming_lbss
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 10.000
+			}
+		}
+	}
+
+	mon_tl3 ={
+		name= hujiandu
+		portraits={
+			army = {
+				large= "gfx/leaders/Asia/Portrait_Asia_Generic_land_4.dds"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 5
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 3
+			traits = { career_officer armor_officer cavalry_officer}
+		}
+		advisor={
+			slot = high_command
+			idea_token = ming_hjd
+			allowed = {
+				original_tag = MON
+			}
+			available = {
+				always = yes
+			}
+			traits = {
+				ming_tkbfj
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 15.000
+			}
+		}
+	}
+
+	mon_bhm={
+		name= mon_buhumu
+		portraits={
+			army = {
+				large= "gfx/js_01989.png"
+				small="gfx/js_01989x.png"
+			}
+		}
+		corps_commander = {
+			skill = 4
+			attack_skill = 5
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 5
+			traits = { career_officer armor_officer cavalry_officer inflexible_strategist  organizer mon_yuanx1 mon_buhumu1} 
+			visible = { NOT = {has_country_flag = ming_ecy_jl }   has_completed_focus = MON_02x }
+		}
+
+		advisor={
+			slot = political_advisor
+			idea_token = ming_buhumu
+			allowed = {
+				original_tag = MON
+			}
+			available = {
+				has_completed_focus = MON_02x
+			}
+			traits = {
+				ming_zspz1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 100.000
+			}
+			visible = { NOT = {has_country_flag = ming_ecy_jl } }
+		}
+	}
+
+	mon_bhm1={
+		name= mon_buhumu1
+		portraits={
+			army = {
+				large= "gfx/js_01989.png"
+				small="gfx/js_01989x.png"
+			}
+		}
+		corps_commander = {
+			skill = 4
+			attack_skill = 5
+			defense_skill = 6
+			planning_skill = 6
+			logistics_skill = 5
+			traits = { career_officer armor_officer cavalry_officer inflexible_strategist  organizer mon_yuanx mon_buhumu} 
+			visible = { has_country_flag = ming_ecy_jl NOT = {has_country_flag = ming_not_jl} has_completed_focus = MON_02x}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = ming_buhumu1
+			allowed = {
+				original_tag = MON
+			}
+			available = {
+				has_completed_focus = MON_02x
+			}
+			traits = {
+				ming_zspz
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 100.000
+			}
+			visible = { has_country_flag = ming_ecy_jl NOT = {has_country_flag = ming_not_jl} }
+		}
+	}
+
+
+	mon_antong ={
+		name= mon_antong
+		portraits={
+			army = {
+				large= "gfx/js_01979.png"
+				small="gfx/js_01979x.png"
+			}
+		}
+		corps_commander = {
+			skill = 6
+			attack_skill = 7
+			defense_skill = 7
+			planning_skill = 7
+			logistics_skill = 8
+			traits = { career_officer armor_officer cavalry_officer inflexible_strategist  organizer mon_yuanx mon_antong} 
+			visible = { has_country_flag = ming_ecy_jl NOT = {has_country_flag = ming_not_jl} has_completed_focus = MON_02x }
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = ming_antong
+			allowed = {
+				original_tag = MON
+			}
+			available = {
+				has_completed_focus = MON_02x
+			}
+			traits = {
+				ming_youcx
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 100.000
+			}
+			visible = { has_country_flag = ming_ecy_jl NOT = {has_country_flag = ming_not_jl} }
+		}
+	}
+
+	mon_antong1 ={
+		name= mon_antong1
+		portraits={
+			army = {
+				large= "gfx/js_01979.png"
+				small="gfx/js_01979x.png"
+			}
+		}
+		corps_commander = {
+			skill = 5
+			attack_skill = 4
+			defense_skill = 5
+			planning_skill = 3
+			logistics_skill = 8
+			traits = { career_officer armor_officer cavalry_officer inflexible_strategist  organizer mon_yuanx1 } 
+			visible = { NOT = {has_country_flag = ming_ecy_jl } has_completed_focus = MON_02x}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = ming_antong1
+			allowed = {
+				original_tag = MON
+			}
+			available = {
+				has_completed_focus = MON_02x
+			}
+			traits = {
+				ming_youcx1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 100.000
+			}
+			visible = { NOT = {has_country_flag = ming_ecy_jl } }
+		}
+	}
+
+
+	mon_tuotuo ={
+		name= mon_tuotuo
+		portraits={
+			army = {
+				large= "gfx/js_00072.png"
+				small="gfx/js_00072x.png"
+			}
+		}
+		field_marshal={
+			traits={ trait_cautious politically_connected logistics_wizard brilliant_strategist thorough_planner expert_improviser mon_tuotuo}
+			skill= 4
+			attack_skill= 5
+			defense_skill= 3
+			planning_skill= 3
+			logistics_skill= 5
+			legacy_id=-1
+			visible = { OR = {has_country_flag = ming_ecy_jl  has_completed_focus = MON_02x } NOT = {AND = {has_country_flag = ming_ecy_jl  has_completed_focus = MON_02x}}}
+		}
+		advisor={
+			slot = high_command
+			idea_token = mon_tuotuo
+			allowed = {
+				original_tag = MON
+			}
+			available = {
+				is_ai = no 
+			}
+			traits = {
+				mon_zsmys
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 0
+			}
+			visible = { OR = {has_country_flag = ming_ecy_jl  has_completed_focus = MON_02x } NOT = {AND = {has_country_flag = ming_ecy_jl  has_completed_focus = MON_02x}}}
+		}
+	}
+
+	mon_tuotuo1 ={
+		name= mon_tuotuo1
+		portraits={
+			army = {
+				large= "gfx/js_00072.png"
+				small="gfx/js_00072x.png"
+			}
+		}
+		field_marshal={
+			traits={ trait_cautious politically_connected logistics_wizard brilliant_strategist thorough_planner expert_improviser mon_tuotuo1}
+			skill= 6
+			attack_skill= 7
+			defense_skill= 4
+			planning_skill= 5
+			logistics_skill= 7
+			legacy_id=-1
+			visible = { has_country_flag = ming_ecy_jl NOT = {has_country_flag = ming_not_jl} has_completed_focus = MON_02x}
+		}
+		advisor={
+			slot = high_command
+			idea_token = mon_tuotuo1
+			allowed = {
+				original_tag = MON
+			}
+			available = {
+				is_ai = no 
+			}
+			traits = {
+				mon_zsmys1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 0
+			}
+			visible = { has_country_flag = ming_ecy_jl NOT = {has_country_flag = ming_not_jl} has_completed_focus = MON_02x}
+		}
+	}
+
+}

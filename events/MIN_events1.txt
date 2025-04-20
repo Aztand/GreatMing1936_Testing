@@ -1,0 +1,92 @@
+﻿#########################
+## MIN Mod Events ##
+#########################
+
+add_namespace = minx
+
+#整治步枪
+country_event = {
+	id = minx.1
+	title = minx.1.t
+	picture = GFX_idea_js_begin
+	desc = minx.1.d
+	is_triggered_only = yes	
+	option = {
+		name = minx.1.a	
+		set_country_flag = min_zhengzwgc	
+	}	
+	option = {
+		name = minx.1.b		
+	}	
+	
+}
+
+country_event = {
+	id = minx.2
+	title = minx.2.t
+	picture = GFX_idea_js_begin
+	desc = minx.2.d
+	is_triggered_only = yes	
+	option = {
+		name = minx.2.a	
+		clr_country_flag = min_zhengzwgc	
+	}		
+	
+}
+
+country_event = {
+	id = minx.3
+	title = minx.3.t
+	picture = GFX_idea_js_begin
+	desc = minx.3.d
+	is_triggered_only = yes	
+	option = {
+		name = minx.3.a	
+		clr_country_flag = min_zhengzwgc	
+	}			
+}
+
+country_event = {
+	id = minx.4
+	title = minx.4.t
+	picture = GFX_idea_js_begin
+	desc = minx.4.d
+	is_triggered_only = yes	
+	option = {
+		name = minx.4.a	
+
+	}			
+}
+
+country_event = { #黄河水灾 好好对待
+	id = minx.6
+	title = minx.6.t
+	picture = GFX_idea_js_begin
+	desc = minx.6.d
+	is_triggered_only = yes	
+	option = {
+		name = minx.6.a	
+
+	}			
+}
+
+country_event = { #黄河水灾 不管
+	id = minx.5
+	title = minx.5.t
+	picture = GFX_idea_js_begin
+	desc = minx.5.d
+	is_triggered_only = yes	
+	option = {
+		name = minx.5.a	
+		stability_factor = -0.05
+	}	
+	option = {
+		name = minx.5.b	
+		add_political_power = -50
+	}		
+}
+
+
+
+
+

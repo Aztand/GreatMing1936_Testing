@@ -1,0 +1,11 @@
+version="1.15.0.8"
+tags={
+	"Alternative History"
+	"National Focuses"
+	"Fixes"
+}
+name="日月不落-大明1936(重置测试版)"
+replace_path="common/bookmarks"
+supported_version="1.15.*"
+path="D:/Documents/Paradox Interactive/Hearts of Iron IV/mod/GreatMing1936_Testing"
+remote_file_id="3378344672"

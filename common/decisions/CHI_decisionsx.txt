@@ -1,0 +1,6727 @@
+内政改革 = {
+	屯田事务 = {
+		icon = generic_army_support		
+		available = {
+			has_completed_focus = CHI_18
+		}
+		cost = 0
+		ai_will_do = {			factor = 0		}		
+		visible = {
+			is_ai = no
+		}
+		fire_only_once = yes
+		remove_effect = {
+			country_event = min.1137
+			
+		}
+	}
+	筹措屯田事务 = {
+		icon = generic_army_support		
+		available = {
+			has_completed_focus = CHI_18
+		}
+		cost = 50
+		ai_will_do = {			factor = 0		}		
+		visible = {
+			has_country_flag = accept_tuntian
+		}
+		fire_only_once = yes
+		days_remove = 60
+		remove_effect = {
+			add_ideas = chi_tuntian
+			country_event = min.1138
+			
+		}
+	}
+	教育改革 = {
+		icon = generic_scorched_earth	
+		available = {
+			has_completed_focus = CHI_18
+		}
+		fire_only_once = yes
+		cost = 0
+		ai_will_do = {			factor = 0		}		
+		visible = {
+			is_ai = no
+		}
+		remove_effect = {
+			country_event = min.1139
+			set_country_flag = min_jygg	
+		}
+	}
+	改革王恭厂 = {
+		icon = generic_scorched_earth	
+		available = {
+			has_completed_focus = CHI_18
+			NOT = { has_country_flag = min_zhengzwgc   }
+			date > 1938.1.1
+		}
+		fire_only_once = yes
+		cost = 50
+		ai_will_do = {			factor = 20		}		
+		visible = {
+			is_ai = yes
+		}
+		days_remove = 60
+		remove_effect = {
+			remove_ideas = chi_liezbq
+			country_event = minx.1
+		}
+	}
+	改革王恭厂1 = {
+		icon = generic_scorched_earth	
+		available = {
+			has_completed_focus = CHI_18
+			NOT = { has_country_flag = min_zhengzwgc   }
+		}
+		fire_only_once = yes
+		cost = 50
+		ai_will_do = {			factor = 0		}		
+		visible = {
+			is_ai = no
+		}
+		days_remove = 60
+		remove_effect = {
+			remove_ideas = chi_liezbq
+			country_event = minx.1
+		}
+	}
+
+	深掘王恭厂低能原因 = {
+		icon = generic_scorched_earth	
+		available = {
+			has_country_flag = min_zhengzwgc
+		}
+		cost = 100
+		ai_will_do = {			factor = 0		}		
+		visible = {
+			is_ai = no has_country_flag = min_zhengzwgc
+		}
+		fire_only_once = yes
+		days_remove = 60
+		remove_effect = {
+			add_ideas = chi_xianjbq
+			country_event = minx.2
+		}
+	}
+
+	建立行政研究院 = {
+		icon = generic_scorched_earth	
+		available = {
+			has_completed_focus = CHI_18
+			
+		}
+		cost = 20
+		ai_will_do = {			factor = 0		}		
+		visible = {
+			is_ai = no has_country_flag = min_jygg	
+			NOT = {  has_idea =  chi_xzyjy  }
+		}
+		days_remove = 60
+		remove_effect = {
+			add_ideas = chi_xzyjy
+			country_event = minx.3
+		}
+	}
+
+	建立新工程院校 = {
+		icon = generic_scorched_earth	
+		available = {
+			has_completed_focus = CHI_18
+			
+		}
+		cost = 20
+		ai_will_do = {			factor = 0		}		
+		visible = {
+			is_ai = no has_country_flag = min_jygg	
+			NOT = {  has_idea =  chi_xgcyx  }
+		}
+		days_remove = 60
+		remove_effect = {
+			add_ideas = chi_xgcyx
+			country_event = minx.4
+		}
+	}
+
+	
+
+	发展湖广工业区 = {
+		icon = generic_scorched_earth	
+		available = {
+			has_completed_focus = CHI_18
+			owns_state = 750
+			controls_state = 750
+			owns_state = 602
+			controls_state = 602
+			owns_state = 620
+			controls_state = 620
+		}
+		cost = 100
+		ai_will_do = {			factor = 0		}		
+		visible = {
+			is_ai = no 
+		}
+		fire_only_once = yes
+		days_remove = 60
+		remove_effect = {
+			750 = {
+				add_dynamic_modifier = {					modifier = ming_huguan_industrial_area1				}
+				add_building_construction = {type = industrial_complex level = 1}
+				add_extra_state_shared_building_slots = 2
+				set_state_category = large_city
+			}
+			602 = {
+				add_dynamic_modifier = {					modifier = ming_huguan_industrial_area1				}
+				add_building_construction = {type = industrial_complex level = 1}
+				add_extra_state_shared_building_slots = 2
+				set_state_category = large_city
+			}
+			620 = {
+				add_dynamic_modifier = {					modifier = ming_huguan_industrial_area1				}
+				add_building_construction = {type = industrial_complex level = 1}
+				add_extra_state_shared_building_slots = 2
+				set_state_category = metropolis
+			}
+		}
+	}
+	发展两广工业区 = {
+		icon = generic_scorched_earth	
+		available = {
+			has_completed_focus = CHI_18
+			owns_state = 599
+			controls_state = 599
+			owns_state = 594
+			controls_state = 594
+			owns_state = 591
+			controls_state = 591
+			owns_state = 592
+			controls_state = 592
+			owns_state = 593
+			controls_state = 593
+			owns_state = 326
+			controls_state = 326
+		}
+		cost = 120
+		ai_will_do = {			factor = 0		}		
+		visible = {
+			is_ai = no 	
+		}
+		fire_only_once = yes
+		days_remove = 60
+		remove_effect = {
+			599 = {
+				add_dynamic_modifier = {					modifier = ming_huguan_industrial_area2				}
+				set_state_category = large_city
+			}
+			594 = {
+				add_dynamic_modifier = {					modifier = ming_huguan_industrial_area2				}
+				set_state_category = large_city
+			}
+			591 = {
+				add_dynamic_modifier = {					modifier = ming_huguan_industrial_area2				}
+				set_state_category = city
+			}
+
+			592 = {
+				add_dynamic_modifier = {					modifier = ming_huguan_industrial_area2				}
+				set_state_category = megalopolis
+			}
+			593 = {
+				add_dynamic_modifier = {					modifier = ming_huguan_industrial_area2				}
+				set_state_category = large_city
+			}
+			326 = {
+				add_dynamic_modifier = {					modifier = ming_huguan_industrial_area2				}
+				set_state_category = city
+			}
+		}
+	}
+	建立武汉钢铁厂 = {
+		icon = steel	
+		available = {
+			owns_state = 620
+			controls_state = 620
+			has_tech = excavation2
+		}
+		highlight_states = {			highlight_state_targets = {				state = 620			}		}
+		cost = 40
+		ai_will_do = {			factor = 0		}		
+		visible = {
+			is_ai = no 
+		}
+		fire_only_once = yes
+		days_remove = 60
+		remove_effect = {
+			620 = {
+				add_building_construction = {type = industrial_complex level = 1}
+				add_extra_state_shared_building_slots = 1
+				add_resource = {					type = steel					amount = 193			}
+			}
+		}
+	}
+	扩大广西钢铁产出 = {
+		icon = steel	
+		available = {
+			owns_state = 594
+			controls_state = 594
+			has_tech = excavation1
+		}
+		highlight_states = {			highlight_state_targets = {				state = 594			}		}
+		cost = 40
+		ai_will_do = {			factor = 0		}		
+		visible = {
+			is_ai = no always = no
+		}
+		fire_only_once = yes
+		days_remove = 60
+		remove_effect = {
+			594 = {
+				add_building_construction = {type = industrial_complex level = 1}
+				add_extra_state_shared_building_slots = 1
+				add_resource = {					type = steel					amount = 120				}
+			}
+		}
+	}
+	扩大广东钢铁厂规模 = {
+		icon = steel	
+		available = {
+			owns_state = 592
+			controls_state = 592
+			has_tech = excavation2
+		}
+		highlight_states = {			highlight_state_targets = {				state = 592			}		}
+		cost = 80
+		ai_will_do = {			factor = 0		}		
+		visible = {
+			is_ai = no 
+		}
+		fire_only_once = yes
+		days_remove = 60
+		remove_effect = {
+			592 = {
+				add_building_construction = {type = industrial_complex level = 1}
+				add_extra_state_shared_building_slots = 1
+				add_resource = {					type = steel					amount = 198			}
+			}
+		}
+	}
+
+	开发陕西工业 = {
+		icon = generic_scorched_earth	
+		available = {
+			owns_state = 622
+			controls_state = 622
+		}
+		highlight_states = {			highlight_state_targets = {				state = 622		}		}
+		cost = 30
+		ai_will_do = {			factor = 0		}		
+		visible = {
+			is_ai = no  always = no
+		}
+		fire_only_once = yes
+		days_remove = 30
+		remove_effect = {
+			622 = {
+				add_building_construction = {type = industrial_complex level = 3}
+				add_extra_state_shared_building_slots = 3
+			}
+		}
+	}
+	开发西安工业 = {
+		icon = generic_scorched_earth	
+		available = {
+			owns_state = 744
+			controls_state = 744
+		}
+		highlight_states = {		highlight_state_targets = {				state = 744			}	}
+		cost = 30
+		ai_will_do = {			factor = 0		}		
+		visible = {
+			is_ai = no
+			always = no			
+		}
+		fire_only_once = yes
+		days_remove = 60
+		remove_effect = {
+			744 = {
+				add_building_construction = {type = industrial_complex level = 3}
+				add_extra_state_shared_building_slots = 3
+			}
+		}
+	}
+	建立湖南矿产开发公司 = {
+		icon = tungsten
+		available = {
+			owns_state = 602
+			controls_state = 602
+			has_tech = excavation2
+		}
+		highlight_states = {			highlight_state_targets = {				state = 602		}		}
+		cost = 40
+		ai_will_do = {			factor = 0		}		
+		visible = {
+			is_ai = no 
+		}
+		fire_only_once = yes
+		days_remove = 60
+		remove_effect = {
+			602 = {
+				add_building_construction = {type = industrial_complex level = 1}
+				add_extra_state_shared_building_slots = 1
+				add_resource = {					type = tungsten					amount = 209				}
+			}
+		}
+	}
+	建立上海造船厂 = {
+		icon = generic_scorched_earth
+		available = {
+			has_completed_focus = CHI_73
+			owns_state = 613
+			controls_state = 613
+		}
+		highlight_states = {			highlight_state_targets = {				state = 613		}		}
+		cost = 40
+		ai_will_do = {			factor = 0		}		
+		visible = {
+			is_ai = no 
+		}
+		fire_only_once = yes
+		days_remove = 60
+		remove_effect = {
+			613 = {
+				add_building_construction = {type = dockyard level = 3}
+				add_extra_state_shared_building_slots = 3
+			}
+			add_ideas = ming_shzcc
+		}
+	}
+
+	建立贵州铝业集团 = {
+		icon = aluminium
+		available = {
+			owns_state = 603
+			controls_state = 603
+			has_tech = excavation3
+		}
+		highlight_states = {			highlight_state_targets = {				state = 603		}		}
+		cost = 40
+		ai_will_do = {			factor = 0		}		
+		visible = {
+			is_ai = no 
+		}
+		fire_only_once = yes
+		days_remove = 60
+		remove_effect = {
+			603 = {
+				add_building_construction = {type = industrial_complex level = 1}
+				add_extra_state_shared_building_slots = 1
+				add_resource = {					type = aluminium					amount = 121				}
+			}
+			
+		}
+	}
+
+	建立广东资源集团 = {
+		icon = aluminium
+		available = {
+			owns_state = 592
+			controls_state = 592
+			has_tech = excavation1
+		}
+		highlight_states = {			highlight_state_targets = {				state = 592		}		}
+		cost = 120
+		ai_will_do = {			factor = 0		}		
+		visible = {
+			is_ai = no 
+		}
+		modifier = {			civilian_factory_use = 12		}
+		fire_only_once = yes
+		days_remove = 120
+		remove_effect = {
+			592 = {
+				add_building_construction = {type = industrial_complex level = 1}
+				add_extra_state_shared_building_slots = 1
+				add_resource = {					type = aluminium					amount = 107			}
+				add_resource = {					type = chromium					amount = 231			}
+				add_resource = {					type = oil				amount = 146	}
+			}
+			
+		}
+	}
+	建立广汉火炮厂 = {
+		icon = generic_scorched_earth
+		available = {
+			has_completed_focus = CHI_33
+			owns_state = 605
+			controls_state = 605
+		}
+		highlight_states = {			highlight_state_targets = {				state = 605		}		}
+		cost = 60
+		ai_will_do = {			factor = 0		}		
+		visible = {
+			is_ai = no 
+		}
+		fire_only_once = yes
+		days_remove = 60
+		remove_effect = {
+			605 = {
+				add_building_construction = {type = arms_factory level = 3}
+				add_extra_state_shared_building_slots = 3
+			}
+			add_ideas = ming_guanghhpc
+		}
+	}
+	发展大明的民用工业 = {
+		icon = generic_construction
+		available = {			has_completed_focus = CHI_02		}
+		#highlight_states = {			highlight_state_targets = {				state = 533		}		}
+		cost = 40
+		ai_will_do = {			factor = 1		}		
+		visible = {			is_ai = no 		}
+		modifier = {			civilian_factory_use = 3		}
+		fire_only_once = yes
+		days_remove = 120
+		#cancel_trigger = { 533 = { NOT = { is_controlled_by = ROOT } } }
+		remove_effect = {
+			random_owned_controlled_state = {
+				limit = {					is_core_of = ROOT				}
+				add_building_construction = {type = industrial_complex level = 2}
+				add_extra_state_shared_building_slots = 2
+			}
+			random_owned_controlled_state = {
+				limit = {					is_core_of = ROOT				}
+				add_building_construction = {type = industrial_complex level = 2}
+				add_extra_state_shared_building_slots = 2
+			}
+			random_owned_controlled_state = {
+				limit = {					is_core_of = ROOT				}
+				add_building_construction = {type = industrial_complex level = 2}
+				add_extra_state_shared_building_slots = 2
+			}
+			
+		}
+	}
+	发展浙江工业 = {
+		icon = generic_construction
+		available = {
+			controls_state = 596
+			has_completed_focus = CHI_02
+		}
+		highlight_states = {			highlight_state_targets = {				state = 596		}		}
+		cost = 60
+		ai_will_do = {			factor = 1		}		
+		visible = {		}
+		modifier = {			civilian_factory_use = 3		}
+		fire_only_once = yes
+		days_remove = 90
+		cancel_trigger = { 596 = { NOT = { is_controlled_by = ROOT } } }
+		remove_effect = {
+			596 = {
+				add_building_construction = {type = industrial_complex level = 1}
+				add_extra_state_shared_building_slots = 3
+				add_resource = {					type = aluminium					amount = 46			}
+			}
+			
+		}
+	}
+
+	建立湖南装甲兵工业集团 = {
+		icon = generic_construction
+		available = {
+			controls_state = 602
+			has_completed_focus = CHI_33
+		}
+		highlight_states = {			highlight_state_targets = {				state = 602	}		}
+		cost = 80
+		ai_will_do = {			factor = 0		}		
+		visible = {		}
+		modifier = {			civilian_factory_use = 6		}
+		fire_only_once = yes
+		days_remove = 90
+		cancel_trigger = { 602 = { NOT = { is_controlled_by = ROOT } } }
+		remove_effect = {
+			602 = {
+				add_building_construction = {type = arms_factory level = 4}
+				add_extra_state_shared_building_slots = 12
+			}
+			add_ideas = ming_hnzjbjt
+		}
+	}
+
+	发展山东工业 = {
+		icon = generic_construction
+		available = {
+			controls_state = 597
+			has_completed_focus = CHI_02
+		}
+		highlight_states = {			highlight_state_targets = {				state = 597		}		}
+		cost = 60
+		ai_will_do = {			factor = 0		}		
+		visible = {		}
+		modifier = {			civilian_factory_use = 6		}
+		fire_only_once = yes
+		days_remove = 120
+		cancel_trigger = { 597 = { NOT = { is_controlled_by = ROOT } } }
+		remove_effect = {
+			597 = {
+				add_building_construction = {type = industrial_complex level = 1}
+				add_extra_state_shared_building_slots = 5
+				add_resource = {					type = aluminium					amount = 53		}
+			}
+			
+		}
+	}
+
+	发展安徽工业 = {
+		icon = generic_construction
+		available = {
+			controls_state = 606
+			has_completed_focus = CHI_02
+		}
+		highlight_states = {			highlight_state_targets = {				state = 606		}		}
+		cost = 50
+		ai_will_do = {			factor = 1		}		
+		visible = {	always = no	}
+		modifier = {			civilian_factory_use = 3		}
+		fire_only_once = yes
+		days_remove = 60
+		cancel_trigger = { 606 = { NOT = { is_controlled_by = ROOT } } }
+		remove_effect = {
+			606 = {
+				add_building_construction = {type = industrial_complex level = 1}
+				add_extra_state_shared_building_slots = 4
+			}
+			
+		}
+	}
+
+	发展黄山工业 = {
+		icon = generic_construction
+		available = {
+			controls_state = 749
+			has_completed_focus = CHI_02
+		}
+		highlight_states = {			highlight_state_targets = {				state = 749		}		}
+		cost = 50
+		ai_will_do = {			factor = 1		}		
+		visible = {	always = no	}
+		modifier = {			civilian_factory_use = 3		}
+		fire_only_once = yes
+		days_remove = 60
+		cancel_trigger = { 749 = { NOT = { is_controlled_by = ROOT } } }
+		remove_effect = {
+			749 = {
+				add_building_construction = {type = industrial_complex level = 1}
+				add_extra_state_shared_building_slots = 4
+			}
+			
+		}
+	}
+
+	开发西康地区 = {
+		icon = generic_construction
+		available = {
+			controls_state = 601
+			has_completed_focus = CHI_02
+		}
+		highlight_states = {			highlight_state_targets = {				state = 601	}		}
+		cost = 80
+		ai_will_do = {			factor = 0		}		
+		visible = {		}
+		modifier = {			civilian_factory_use = 6		}
+		fire_only_once = yes
+		days_remove = 60
+		cancel_trigger = { 601 = { NOT = { is_controlled_by = ROOT } } }
+		remove_effect = {
+			601 = {
+				add_building_construction = {type = industrial_complex level = 1}
+				add_building_construction = {type = infrastructure level = 2 }
+				add_extra_state_shared_building_slots = 4
+				add_resource = {					type = oil					amount = 20		}
+			}
+			
+		}
+	}
+
+	开发海南岛 = {
+		icon = generic_construction
+		available = {
+			controls_state = 591
+			has_completed_focus = CHI_02
+		}
+		highlight_states = {			highlight_state_targets = {				state = 591	}		}
+		cost = 80
+		ai_will_do = {			factor = 0		}		
+		visible = {		}
+		modifier = {			civilian_factory_use = 7		}
+		fire_only_once = yes
+		days_remove = 60
+		cancel_trigger = { 591 = { NOT = { is_controlled_by = ROOT } } }
+		remove_effect = {
+			591 = {
+				add_building_construction = {type = industrial_complex level = 1}
+				add_building_construction = {type = infrastructure level = 1 }
+				add_extra_state_shared_building_slots = 5
+				add_resource = {					type = rubber					amount = 107		}
+			}
+			
+		}
+	}
+
+}
+
+大明的战争措施 = {
+	建立西藏果洛防御线 = {
+		icon = generic_scorched_earth	
+		available = {
+			controls_state = 758
+			controls_state = 322
+			controls_state = 604
+			controls_state = 754
+		}
+		cost = 80
+		ai_will_do = {			factor = 0		}		
+		visible = {
+			always = no
+			#is_ai = no 
+			#is_ai = yes
+		}
+		fire_only_once = yes
+		days_remove = 60
+		remove_effect = {
+				758 = {
+					add_building_construction = {			type = coastal_bunker				province = 12801		level = 3			instant_build = yes					}	
+					}				
+				322 = {
+					add_building_construction = {
+						type = bunker
+						level = 3
+						instant_build = yes
+						province = {
+							all_provinces = yes
+							limit_to_border = yes
+						}
+					}
+				}
+			604 = {
+					add_building_construction = {
+						type = bunker
+						level = 3
+						instant_build = yes
+						province = {
+							all_provinces = yes
+							limit_to_border = yes
+						}
+					}
+				}
+				754 = {
+					add_building_construction = {
+						type = bunker
+						level = 3
+						instant_build = yes
+						province = {
+							all_provinces = yes
+							limit_to_border = yes
+						}
+					}
+				}
+
+		}
+	}
+
+	加强现有防御线 = {
+		icon = generic_scorched_earth	
+		available = {
+			controls_state = 283
+			controls_state = 622
+			controls_state = 615
+			controls_state = 608
+		}
+		cost = 80
+		ai_will_do = {			factor = 0		}		
+		visible = {
+			always = no
+			#is_ai = no 
+		}
+		fire_only_once = yes
+		days_remove = 60
+		remove_effect = {
+			283 = {
+					add_building_construction = {
+						type = bunker
+						level = 3
+						instant_build = yes
+						province = {
+							all_provinces = yes
+							limit_to_border = yes
+						}
+					}
+			}
+			622 = {
+					add_building_construction = {
+						type = bunker
+						level = 3
+						instant_build = yes
+						province = {
+							all_provinces = yes
+							limit_to_border = yes
+						}
+					}
+			}
+			615 = {
+					add_building_construction = {
+						type = bunker
+						level = 3
+						instant_build = yes
+						province = {
+							all_provinces = yes
+							limit_to_border = yes
+						}
+					}
+			}
+			608 = {
+					add_building_construction = {
+						type = bunker
+						level = 3
+						instant_build = yes
+						province = {
+							all_provinces = yes
+							limit_to_border = yes
+						}
+					}
+			}
+			
+			
+
+		}
+	}
+
+	建立热河辽东防御线 = {
+		icon = generic_scorched_earth	
+		available = {
+			controls_state = 610
+			controls_state = 716
+			controls_state = 715
+		}
+		cost = 100
+		ai_will_do = {			factor = 0		}		
+		visible = {
+			always = no 
+		}
+		fire_only_once = yes
+		days_remove = 60
+		remove_effect = {
+			610 = {
+					add_building_construction = {
+						type = bunker
+						level = 3
+						instant_build = yes
+						province = {
+							all_provinces = yes
+							limit_to_border = yes
+						}
+					}
+			}
+			715 = {
+					add_building_construction = {
+						type = bunker
+						level = 3
+						instant_build = yes
+						province = {
+							all_provinces = yes
+							limit_to_border = yes
+						}
+					}
+			}
+			716 = {
+					add_building_construction = {
+						type = bunker
+						level = 3
+						instant_build = yes
+						province = {
+							all_provinces = yes
+							limit_to_border = yes
+						}
+					}
+			}
+			
+			
+
+		}
+	}
+
+
+	北进苏联 = {
+		icon = generic_scorched_earth	
+		available = {
+			date > 1938.1.1
+		}
+		cost = 20
+		ai_will_do = {			factor = 0		}		
+		visible = {
+			is_ai = no
+			date > 1938.1.1
+		}
+		fire_only_once = yes
+		days_remove = 1
+		remove_effect = {
+			create_wargoal = {
+				type = annex_everything
+				target = SOV
+				expire = 0
+			}					
+		}
+	}
+
+	对抗轴心国 = {
+		icon = generic_scorched_earth	
+		available = {
+			date > 1938.1.1
+		}
+		cost = 20
+		ai_will_do = {			factor = 0		}		
+		visible = {
+			is_ai = no
+			date > 1938.1.1
+		}
+		fire_only_once = yes
+		days_remove = 1
+		remove_effect = {
+			create_wargoal = {
+				type = annex_everything
+				target = GER
+				expire = 0
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = ITA
+				expire = 0
+			}					
+		}
+	}
+
+	对抗美国 = {
+		icon = generic_scorched_earth	
+		available = {
+			date > 1938.1.1
+		}
+		cost = 20
+		ai_will_do = {			factor = 0		}		
+		visible = {
+			is_ai = no
+			date > 1938.1.1
+		}
+		fire_only_once = yes
+		days_remove = 1
+		remove_effect = {
+			create_wargoal = {
+				type = annex_everything
+				target = USA
+				expire = 0
+			}					
+		}
+	}
+
+	进攻英国 = {
+		icon = generic_scorched_earth	
+		available = {
+			date > 1938.1.1
+		}
+		cost = 20
+		ai_will_do = {			factor = 0		}		
+		visible = {
+			is_ai = no
+			date > 1938.1.1
+		}
+		fire_only_once = yes
+		days_remove = 1
+		remove_effect = {
+			create_wargoal = {
+				type = annex_everything
+				target = ENG
+				expire = 0
+			}					
+		}
+	}
+
+	重视后勤补给 = {
+		icon = generic_scorched_earth	
+		available = {
+			has_war = yes
+			NOT = {has_country_flag = chi_cyjjl}
+		}
+		cost = 20
+		ai_will_do = {			factor = 0		}		
+		visible = {
+			has_war = yes
+			NOT = {has_country_flag = chi_cyjys }
+		}
+		fire_only_once = yes
+		days_remove = 1
+		remove_effect = {
+			add_ideas = chi_gaishanbuji
+			set_country_flag = chi_cyjys
+			country_event = min.1142					
+		}
+	}
+
+	加强大明山地作战 = {
+		icon = generic_scorched_earth	
+		available = {
+			has_war = yes
+		}
+		cost = 20
+		ai_will_do = {			factor = 0		}		
+		visible = {
+			has_war = yes
+			is_ai = no
+		}
+		fire_only_once = yes
+		days_remove = 1
+		remove_effect = {
+			set_technology = { chi_shandixunlian = 1 }				
+		}
+	}
+
+
+	改善前线补给条件 = {
+		icon = generic_prepare_civil_war
+		available = {					}
+		cost = 30		
+		fire_only_once = no
+		days_remove = 7
+		ai_will_do = {			factor = 1		}
+		modifier = {			civilian_factory_use = 2		}
+		visible = {	has_war = yes	}		
+		remove_effect = {
+			add_timed_idea = {
+				idea = chi_gaisanqx
+				days = 180
+			}
+		}
+		days_re_enable = 186
+	}
+
+
+}
+
+
+
+大明难度调整 = {
+	min_nandu1 = {
+		icon = generic_army_support		
+		available = {			is_ai = no		}
+		cost = 0
+		ai_will_do = {			factor = 0		}		
+		visible = {			is_ai = no		}
+		days_remove = 0
+		remove_effect = {			add_ideas = min_nandu1					}
+	}
+
+	min_nandu2 = {
+		icon = generic_army_support		
+		available = {			is_ai = no		}
+		cost = 0
+		ai_will_do = {			factor = 0		}		
+		visible = {			is_ai = no		}
+		days_remove = 0
+		remove_effect = {			add_ideas = min_nandu2				}
+	}
+
+	min_nandu3 = {
+		icon = generic_army_support		
+		available = {			is_ai = no		}
+		cost = 0
+		ai_will_do = {			factor = 0		}		
+		visible = {			is_ai = no		}
+		days_remove = 0
+		remove_effect = {			add_ideas = min_nandu3					}
+	}
+
+	min_nandu4 = {
+		icon = generic_army_support		
+		available = {			is_ai = no		}
+		cost = 0
+		ai_will_do = {			factor = 0		}		
+		visible = {			is_ai = no		}
+		days_remove = 0
+		remove_effect = {			add_ideas = min_nandu4					}
+	}
+
+	min_nandu5 = {
+		icon = generic_army_support		
+		available = {			is_ai = no		}
+		cost = 0
+		ai_will_do = {			factor = 0		}		
+		visible = {			is_ai = no		}
+		days_remove = 0
+		remove_effect = {			add_ideas = min_nandu5					}
+	}
+
+	min_ycnandu = {
+		icon = generic_army_support		
+		available = {			is_ai = no		}
+		cost = 0
+		ai_will_do = {			factor = 0		}		
+		visible = {			is_ai = no		}
+		days_remove = 0
+		remove_effect = {			remove_ideas = min_nandu5	remove_ideas = min_nandu4	remove_ideas = min_nandu3	remove_ideas = min_nandu2	remove_ideas = min_nandu1	
+		remove_ideas = min_nandu6	remove_ideas = min_nandu7			}
+	}
+
+	min_nandu6 = {
+		icon = generic_army_support		
+		available = {			is_ai = no		}
+		cost = 0
+		ai_will_do = {			factor = 0		}		
+		visible = {			is_ai = no		}
+		days_remove = 0
+		remove_effect = {			add_ideas = min_nandu6					}
+	}
+
+	min_nandu7 = {
+		icon = generic_army_support		
+		available = {			is_ai = no		}
+		cost = 0
+		ai_will_do = {			factor = 0		}		
+		visible = {			is_ai = no		}
+		days_remove = 0
+		remove_effect = {			add_ideas = min_nandu7					}
+	}
+
+	关闭难度调节系统 = {
+		icon = generic_army_support		
+		available = {			is_ai = no		}
+		cost = 0
+		ai_will_do = {			factor = 0		}		
+		visible = {			is_ai = no		}
+		days_remove = 0
+		remove_effect = {			set_country_flag = chi_gbndxt				}
+	}
+}
+
+大明兵部改革 = {
+	改组国防部 = {
+		icon = generic_army_support		
+		available = {			has_completed_focus = CHI_214		}
+		cost = 50
+		ai_will_do = {			factor = 0		}		
+		visible = {		NOT = {has_idea  = chi_gfbgg   }		}
+		days_remove = 30
+		remove_effect = {			add_ideas = chi_gfbgg					}
+	}
+	设立国防部总参谋部 = {
+		icon = generic_army_support		
+		available = {			has_idea = 	chi_gfbgg	}
+		cost = 30
+		ai_will_do = {			factor = 0		}		
+		visible = {		NOT = {has_idea  = chi_gfbcmb   }	has_completed_focus = CHI_214	}
+		days_remove = 30
+		remove_effect = {			add_ideas = chi_gfbcmb					}
+	}
+	设立国防部总训练部 = {
+		icon = generic_army_support		
+		available = {			has_idea = 	chi_gfbgg	}
+		cost = 30
+		ai_will_do = {			factor = 0		}		
+		visible = {		NOT = {has_idea  = chi_gfbxlb   }	has_completed_focus = CHI_214	}
+		days_remove = 30
+		remove_effect = {			add_ideas = chi_gfbxlb					}
+	}
+	设立国防部总政治部 = {
+		icon = generic_army_support		
+		available = {			has_idea = 	chi_gfbgg	}
+		cost = 30
+		ai_will_do = {			factor = 0		}		
+		visible = {		NOT = {has_idea  = chi_gfbzzzb	   }	has_completed_focus = CHI_214	}
+		days_remove = 30
+		remove_effect = {			add_ideas = chi_gfbzzzb					}
+	}
+	设立国防部总后勤部 = {
+		icon = generic_army_support		
+		available = {			has_idea = 	chi_gfbgg	}
+		cost = 30
+		ai_will_do = {			factor = 0		}		
+		visible = {		NOT = {has_idea  = chi_gfbzhqb		   }	has_completed_focus = CHI_214	}
+		days_remove = 30
+		remove_effect = {			add_ideas = chi_gfbzhqb				}
+	}
+	设立国防部总装备部 = {
+		icon = generic_army_support		
+		available = {			has_idea = 	chi_gfbgg	}
+		cost = 30
+		ai_will_do = {			factor = 0		}		
+		visible = {		NOT = {has_idea  = chi_gfbzzbb		   }	has_completed_focus = CHI_214	}
+		days_remove = 30
+		remove_effect = {			add_ideas = chi_gfbzzbb				}
+	}
+	规范国防部征兵条例及改组征兵系统 = {
+		icon = generic_army_support		
+		available = {			has_idea = 	chi_gfbgg	}
+		cost = 30
+		ai_will_do = {			factor = 0		}		
+		visible = {		NOT = {has_idea  = chi_gfbzbc		   }	has_completed_focus = CHI_214	}
+		days_remove = 30
+		remove_effect = {			add_ideas = chi_gfbzbc				}
+	}
+	进行步兵作战特训 = {
+		icon = generic_scorched_earth	
+		available = {
+			has_completed_focus = CHI_50
+		}
+		cost = 20
+		ai_will_do = {			factor = 0		}		
+		visible = {
+			has_completed_focus = CHI_214
+			is_ai = no 
+			NOT = {has_idea  = chi_bubingzuoz		   }
+		}
+		days_remove = 60
+		remove_effect = {
+			add_ideas = chi_bubingzuoz
+		}
+	}
+
+	进行坦克兵作战特训 = {
+		icon = generic_scorched_earth	
+		available = {
+			has_completed_focus = CHI_58
+			
+		}
+		cost = 20
+		ai_will_do = {			factor = 0		}		
+		visible = {
+			is_ai = no 
+			NOT = {  has_idea =  chi_tkbzuoz }
+			has_completed_focus = CHI_214
+		}
+		days_remove = 60
+		remove_effect = {
+			add_ideas = chi_tkbzuoz
+		}
+	}
+	紧急生产军用物资 = {
+		icon = generic_army_support		
+		available = {			has_idea = 	chi_gfbgg	has_war = yes}
+		cost = 100
+		ai_will_do = {			factor = 0		}		
+		visible = {				}
+		fire_only_once = yes
+		days_remove = 60
+		remove_effect = {		
+			add_equipment_to_stockpile = {		type =  support_equipment		amount = 200 		}	
+			add_equipment_to_stockpile = {		type =  infantry_equipment		amount = 11000 		}	
+			add_equipment_to_stockpile = {		type =  artillery_equipment		amount = 200 		}	
+			add_equipment_to_stockpile = {		type =  motorized_equipment		amount = 300 		}
+			add_equipment_to_stockpile = {		type =  train_equipment_1		amount = 50 		}	
+					}
+	}
+}
+
+大明灾难 = {
+	河南大水 = {
+		icon = generic_civil_support
+		allowed = {
+			original_tag = CHI
+		}		
+		available = {
+			has_idea = chi_henanzhenzai
+		}
+		days_mission_timeout = 50
+		#days_remove = 1
+		activation = {
+			has_country_flag = chi_henandashui
+		}
+		fixed_random_seed = no
+		fire_only_once = yes
+		is_good = no
+		timeout_effect = {
+			607 = {
+				set_state_category = pastoral
+				add_manpower = -2000000
+				add_manpower= -2000000
+				add_manpower =-2000000
+				add_manpower =-2000000
+				add_manpower =-2000000
+				damage_building = {
+					type = industrial_complex
+					damage = 2
+				}
+				damage_building = {
+					type = infrastructure
+					damage = 3
+				}
+			}
+			add_stability = -0.1
+			country_event = min.2001
+		}
+	}
+	对河南大水进行大力赈灾 = {
+		available = {				}
+		cost = 50
+		ai_will_do = {			factor = 1000		}		
+		visible = {			has_country_flag = chi_henandashui		}
+		days_remove = 0
+		remove_effect = {	
+					add_timed_idea = { 
+						idea = chi_henanzhenzai
+						days = 180   
+					 }		
+					country_event = min.2000	
+					clr_country_flag = 	chi_henandashui	
+		}
+		
+	}
+
+
+}
+
+大明情报部门改革 = {
+	增加间谍数量 = {	
+		available = {			has_completed_focus = CHI_34		}
+		cost = 50
+		ai_will_do = {			factor = 0		}		
+		visible = {		NOT = {  has_idea =  chi_kuodajdrs  }	has_completed_focus = CHI_34	}
+		modifier = {			civilian_factory_use = 10		}
+		days_remove = 45
+		remove_effect = {			add_ideas = chi_kuodajdrs					}
+	}
+	增加间谍特工能力1 = {	
+		available = {			has_completed_focus = CHI_34		}
+		cost = 40
+		ai_will_do = {			factor = 0		}		
+		visible = {		NOT = {  has_idea =  chi_tegongzuozhan1 }	has_completed_focus = CHI_34	}
+		modifier = {			civilian_factory_use = 10		}
+		days_remove = 30
+		remove_effect = {			add_ideas = chi_tegongzuozhan1					}
+	}
+	增加间谍特工能力2 = {	
+		available = {			has_completed_focus = CHI_34		}
+		cost = 40
+		ai_will_do = {			factor = 0		}		
+		visible = {		NOT = {  has_idea =  chi_tegongzuozhan2 }	has_completed_focus = CHI_34	}
+		modifier = {			civilian_factory_use = 10		}
+		days_remove = 30
+		remove_effect = {			add_ideas = chi_tegongzuozhan2					}
+	}
+	增加情报获取能力 = {	
+		available = {			has_completed_focus = CHI_34		}
+		cost = 50
+		ai_will_do = {			factor = 0		}		
+		visible = {		NOT = {  has_idea =  chi_zengjiaqbhq }	has_completed_focus = CHI_34	}
+		modifier = {			civilian_factory_use = 10		}
+		days_remove = 50
+		remove_effect = {			add_ideas = chi_zengjiaqbhq					}
+	}
+	增加情报分析与反间谍能力 = {	
+		available = {			has_completed_focus = CHI_34		}
+		cost = 50
+		ai_will_do = {			factor = 0		}		
+		visible = {		NOT = {  has_idea = chi_zengjiaqbhq1 }	has_completed_focus = CHI_34	}
+		modifier = {			civilian_factory_use = 10		}
+		days_remove = 50
+		remove_effect = {			add_ideas = chi_zengjiaqbhq1				}
+	}
+	整肃官场腐败 = {	
+		available = {			has_completed_focus = CHI_34		}
+		cost = 60
+		ai_will_do = {			factor = 0		}		
+		visible = {	NOT = {  has_idea =  chi_zhengsugc }	has_completed_focus = CHI_34		}
+		modifier = {			civilian_factory_use = 10		}
+		days_remove = 60
+		remove_effect = {			add_ideas = chi_zhengsugc				}
+	}
+
+	为国家生产物资 = {
+		icon = generic_prepare_civil_war
+		available = {		has_war = yes		NOT = {has_country_flag = chi_weiguoscwz1   }	}
+		cost = 30		
+		fire_only_once = no
+		days_remove = 7
+		days_re_enable = 126
+		ai_will_do = {			factor = 1		}
+		modifier = {			civilian_factory_use = 0		}
+		visible = {	surrender_progress >0.12	}	
+		complete_effect = {			set_country_flag = chi_weiguoscwz		}	
+		remove_effect = {
+			clr_country_flag = chi_weiguoscwz
+			add_timed_idea = {
+				idea = chi_weiguoscwz
+				days = 120
+			}
+		}
+	}
+
+	为国家生产物资1 = {
+		icon = generic_prepare_civil_war
+		available = {		has_war = yes		NOT = {has_country_flag = chi_weiguoscwz   }	}
+		cost = 40		
+		fire_only_once = no
+		days_remove = 7
+		days_re_enable = 126
+		ai_will_do = {			factor = 0		}
+		modifier = {			civilian_factory_use = 0		}
+		visible = {	surrender_progress >0.35	}		
+		complete_effect = {			set_country_flag = chi_weiguoscwz1		}	
+		remove_effect = {
+			clr_country_flag = chi_weiguoscwz1
+			add_timed_idea = {
+				idea = chi_weiguoscwz1
+				days = 120
+			}
+		}
+	}
+	永不放弃 = {
+		icon = generic_prepare_civil_war
+		available = {		has_war = yes			}
+		cost = 10		
+		fire_only_once = no
+		days_remove = 180
+		ai_will_do = {			factor = 350		}
+		modifier = {		
+				war_support_factor = 0.25
+				command_power_gain = 0.5
+				surrender_limit = 0.1	
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+					}
+		visible = {	surrender_progress >0.35	}	
+		complete_effect = {			
+				
+				}	
+		remove_effect = {
+		}
+	}
+	为国家战斗到最后一刻 = {
+		icon = generic_army_support		
+		available = {				has_war = yes}
+		cost = 60
+		ai_will_do = {			factor = 0		}		
+		visible = {			surrender_progress >0.5	}
+		fire_only_once = yes
+		days_remove = 180
+		modifier = {			
+			supply_consumption_factor = -0.1 
+			industrial_capacity_factory = 0.35
+			industrial_capacity_dockyard = 0.4		
+			training_time_army_factor = -0.33
+			minimum_training_level = -0.9
+			army_core_attack_factor = 0.15
+			army_core_defence_factor = 0.2
+			mobilization_speed = 1.8
+			conscription_factor = 0.45
+				}
+		complete_effect = {			
+			add_equipment_to_stockpile = {		type =  support_equipment		amount = 1500 		}	
+			add_equipment_to_stockpile = {		type =  infantry_equipment		amount = 48000 		}	
+			add_equipment_to_stockpile = {		type =  artillery_equipment		amount = 1600 		}	
+			add_equipment_to_stockpile = {		type =  motorized_equipment		amount = 1700 		}	
+			add_equipment_to_stockpile = {		type =  train_equipment_1		amount = 150 		}	
+				}	
+		remove_effect = {
+			set_country_flag = chi_weiguoscwz2
+		}
+	}
+
+	为国家战斗到最后一刻1 = {
+		icon = generic_army_support		
+		available = {				has_war = yes  }
+		cost = 70
+		ai_will_do = {			factor = 0		}		
+		visible = {	has_country_flag = chi_weiguoscwz2	surrender_progress >0.55 		}
+		fire_only_once = yes
+		days_remove = 365
+		modifier = {			
+			supply_consumption_factor = -0.05 
+			industrial_capacity_factory = 0.25
+			industrial_capacity_dockyard = 0.3	
+			training_time_army_factor = -0.15
+			minimum_training_level = -0.6
+			army_core_attack_factor = 0.1
+			army_core_defence_factor = 0.15
+			mobilization_speed = 1.5
+			conscription_factor = 0.4
+				}
+		remove_effect = {
+		}
+	}
+
+	ai的卫国战争 = {
+		icon = generic_army_support		
+		available = {			surrender_progress >0.15	has_war = yes}
+		cost = 0
+		ai_will_do = {			factor = 10		}		
+		visible = {		is_ai = yes		}
+		fire_only_once = no
+		days_remove = 360
+		modifier = {			
+			supply_consumption_factor = -0.05 
+			industrial_capacity_factory = 0.1
+			industrial_capacity_dockyard = 0.15	
+			training_time_army_factor = -0.15
+			minimum_training_level = -0.2
+			army_core_attack_factor = 0.1
+			army_core_defence_factor = 0.15
+			mobilization_speed = 1.75
+			conscription_factor = 0.35
+				}
+		complete_effect = {			
+			add_equipment_to_stockpile = {		type =  support_equipment		amount = 300 		}	
+			add_equipment_to_stockpile = {		type =  infantry_equipment		amount = 18000 		}	
+			add_equipment_to_stockpile = {		type =  artillery_equipment		amount = 300 		}	
+			add_equipment_to_stockpile = {		type =  motorized_equipment		amount = 600 		}	
+			add_equipment_to_stockpile = {		type =  train_equipment_1		amount = 30 		}		
+				}	
+	}
+	ai的伟大卫国战争 = {
+		icon = generic_army_support		
+		available = {			surrender_progress >0.45	has_war = yes }
+		cost = 0
+		ai_will_do = {			factor = 10		}		
+		visible = {		is_ai = yes		}
+		fire_only_once = no
+		days_remove = 360
+		modifier = {			
+			supply_consumption_factor = -0.1 
+			industrial_capacity_factory = 0.2
+			industrial_capacity_dockyard = 0.3	
+			training_time_army_factor = -0.35
+			minimum_training_level = -0.6
+			army_core_attack_factor = 0.25
+			army_core_defence_factor = 0.3
+			mobilization_speed = 1.2
+			conscription_factor = 0.3
+				}
+		complete_effect = {			
+			add_equipment_to_stockpile = {		type =  support_equipment		amount = 700 		}	
+			add_equipment_to_stockpile = {		type =  infantry_equipment		amount = 52000 		}	
+			add_equipment_to_stockpile = {		type =  artillery_equipment		amount = 700 		}	
+			add_equipment_to_stockpile = {		type =  motorized_equipment		amount = 1500 		}	
+			add_equipment_to_stockpile = {		type =  train_equipment_1		amount = 70 		}		
+				}	
+	}
+	
+
+
+
+
+
+}
+
+大明的灵活外交 = {
+	提升大明的法西斯支持率 = {
+		icon = generic_army_support		
+		available = {			is_ai = no		}
+		cost = 20
+		ai_will_do = {			factor = 0		}		
+		visible = {			is_ai = no		}
+		days_remove = 0
+		remove_effect = {			add_popularity = { ideology = fascism popularity = 0.10 }					}
+	}
+	提升大明的民主支持率 = {
+		icon = generic_army_support		
+		available = {			is_ai = no		}
+		cost = 20
+		ai_will_do = {			factor = 0		}		
+		visible = {			is_ai = no		}
+		days_remove = 0
+		remove_effect = {			add_popularity = { ideology = democratic popularity = 0.10 }					}
+	}
+	提升大明的共产支持率 = {
+		icon = generic_army_support		
+		available = {			is_ai = no		}
+		cost = 20
+		ai_will_do = {			factor = 0		}		
+		visible = {			is_ai = no		}
+		days_remove = 0
+		remove_effect = {			add_popularity = { ideology = communism popularity = 0.10 }					}
+	}
+	提升大明的中立支持率 = {
+		icon = generic_army_support		
+		available = {			is_ai = no		}
+		cost = 20
+		ai_will_do = {			factor = 0		}		
+		visible = {			is_ai = no		}
+		days_remove = 0
+		remove_effect = {			add_popularity = { ideology = neutrality popularity = 0.10 }					}
+	}
+	与德国改善关系 = {
+		icon = generic_army_support		
+		available = {			has_completed_focus = CHI_103		}
+		cost = 20
+		ai_will_do = {			factor = 0		}		
+		visible = {			is_ai = no		}
+		days_remove = 0
+		fire_only_once = yes
+		remove_effect = {		
+				GER = {
+					add_opinion_modifier = {
+						target = ROOT
+						modifier = huge_increase 
+					}
+				}		
+				ROOT = {
+					add_opinion_modifier = {
+						target = GER
+						modifier = large_increase 
+					}
+				}
+				set_country_flag = chi_ger_gsgx	
+				
+		}
+	}
+	与苏联改善关系 = {
+		icon = generic_army_support		
+		available = {			has_completed_focus = CHI_110x		}
+		cost = 20
+		ai_will_do = {			factor = 0		}		
+		visible = {			is_ai = no		}
+		days_remove = 0
+		fire_only_once = yes
+		remove_effect = {		
+				SOV = {
+					add_opinion_modifier = {
+						target = ROOT
+						modifier = huge_increase 
+					}
+				}		
+				ROOT = {
+					add_opinion_modifier = {
+						target = SOV
+						modifier = large_increase 
+					}
+				}
+				set_country_flag = chi_sov_gsgx	
+				
+		}
+	}
+	与英国改善关系 = {
+		icon = generic_army_support		
+		available = {			has_completed_focus = CHI_116		}
+		cost = 20
+		ai_will_do = {			factor = 0		}		
+		visible = {			is_ai = no		}
+		days_remove = 0
+		fire_only_once = yes
+		remove_effect = {		
+				ENG = {
+					add_opinion_modifier = {
+						target = ROOT
+						modifier = huge_increase 
+					}
+				}		
+				ROOT = {
+					add_opinion_modifier = {
+						target = ENG
+						modifier = large_increase 
+					}
+				}
+				set_country_flag = chi_eng_gsgx	
+				
+		}
+	}
+
+
+
+}
+
+扩大大明的疆域 = {
+	吞并朝鲜 = {
+		icon = generic_army_support		
+		available = {
+			OR = {
+				KOR = { is_subject_of = ROOT }
+				CHI = { owns_state = 527 owns_state = 525 }
+			}
+			has_completed_focus = CHI_144		
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 527
+				state = 525
+			}
+		}
+
+		cost = 20
+		ai_will_do = {			factor = 0		}		
+		visible = {			is_ai = no		}
+		days_remove = 0
+		fire_only_once = yes
+		remove_effect = {		
+			if = {
+				limit = {					NOT = { owns_state = 525 }				}
+				transfer_state = 525
+			}	
+			if = {
+				limit = {					NOT = { owns_state = 527 }				}
+				transfer_state = 527
+			}		
+			525 = { add_core_of = ROOT }	
+			527 = { add_core_of = ROOT }	
+		}
+	}
+
+	整合蒙古区域 = {
+		icon = generic_army_support		
+		available = {				
+			OR = {
+				has_completed_focus = CHI_205
+				AND = {
+					329 = { is_controlled_by = CHI }
+					818 = { is_controlled_by = CHI }
+					820 = { is_controlled_by = CHI }
+					330 = { is_controlled_by = CHI }
+					817 = { is_controlled_by = CHI }	
+					819 = { is_controlled_by = CHI }	
+					566 = { is_controlled_by = CHI }	
+					564 = { is_controlled_by = CHI }	
+					563 = { is_controlled_by = CHI }
+					565 = { is_controlled_by = CHI }	
+					579 = { is_controlled_by = CHI }	
+					824 = { is_controlled_by = CHI }	
+					516 = { is_controlled_by = CHI }	
+					577 = { is_controlled_by = CHI }	
+					576 = { is_controlled_by = CHI }	
+					578 = { is_controlled_by = CHI }	
+					575 = { is_controlled_by = CHI }	
+					570 = { is_controlled_by = CHI }	
+					882 = { is_controlled_by = CHI }	
+					588 = { is_controlled_by = CHI }	
+					40 = { is_controlled_by = CHI }	
+					569 = { is_controlled_by = CHI }	
+					654 = { is_controlled_by = CHI }	
+					987 = { is_controlled_by = CHI }	
+					820 = { is_controlled_by = CHI }	
+					567 = { is_controlled_by = CHI }	
+					568 = { is_controlled_by = CHI }	
+				}
+			}	
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 329
+				state = 818
+				state = 820
+				state = 330
+				state = 817
+				state = 819
+				state = 566
+				state = 564
+				state = 563
+				state = 565
+				state = 579
+				state = 824
+				state = 516
+				state = 577
+				state = 576
+				state = 578
+				state = 575
+				state = 570
+				state = 882
+				state = 588
+				state = 40
+				state = 569
+				state = 654
+				state = 987
+				state = 820
+				state = 567
+				state = 568
+				state = 618
+				state = 760
+				state = 756
+				state = 612
+				state = 761
+			}
+		}
+		cost = 20
+		ai_will_do = {			factor = 0		}		
+		visible = {			is_ai = no		}
+		days_remove = 0
+		fire_only_once = yes
+		remove_effect = {		
+			329 = {
+				limit = {	is_controlled_by = ROOT		NOT = { is_core_of = ROOT     }				}
+				add_core_of = ROOT
+			}	
+			818= {
+				limit = {	is_controlled_by = ROOT		NOT = { is_core_of = ROOT     }				}
+				add_core_of = ROOT
+			}	
+			820 = {
+				limit = {	is_controlled_by = ROOT		NOT = { is_core_of = ROOT     }				}
+				add_core_of = ROOT
+			}	
+			330 = {
+				limit = {	is_controlled_by = ROOT		NOT = { is_core_of = ROOT     }				}
+				add_core_of = ROOT
+			}	
+			817 = {
+				limit = {	is_controlled_by = ROOT		NOT = { is_core_of = ROOT     }				}
+				add_core_of = ROOT
+			}	
+			819 = {
+				limit = {	is_controlled_by = ROOT		NOT = { is_core_of = ROOT     }				}
+				add_core_of = ROOT
+			}	
+			566 = {
+				limit = {	is_controlled_by = ROOT		NOT = { is_core_of = ROOT     }				}
+				add_core_of = ROOT
+			}	
+			564 = {
+				limit = {	is_controlled_by = ROOT		NOT = { is_core_of = ROOT     }				}
+				add_core_of = ROOT
+			}	
+			563 = {
+				limit = {	is_controlled_by = ROOT		NOT = { is_core_of = ROOT     }				}
+				add_core_of = ROOT
+			}	
+			565 = {
+				limit = {	is_controlled_by = ROOT		NOT = { is_core_of = ROOT     }				}
+				add_core_of = ROOT
+			}	
+			579 = {
+				limit = {	is_controlled_by = ROOT		NOT = { is_core_of = ROOT     }				}
+				add_core_of = ROOT
+			}	
+			824 = {
+				limit = {	is_controlled_by = ROOT		NOT = { is_core_of = ROOT     }				}
+				add_core_of = ROOT
+			}	
+			516 = {
+				limit = {	is_controlled_by = ROOT		NOT = { is_core_of = ROOT     }				}
+				add_core_of = ROOT
+			}	
+			577 = {
+				limit = {	is_controlled_by = ROOT		NOT = { is_core_of = ROOT     }				}
+				add_core_of = ROOT
+			}	
+			576 = {
+				limit = {	is_controlled_by = ROOT		NOT = { is_core_of = ROOT     }				}
+				add_core_of = ROOT
+			}	
+			578 = {
+				limit = {	is_controlled_by = ROOT		NOT = { is_core_of = ROOT     }				}
+				add_core_of = ROOT
+			}	
+			575 = {
+				limit = {	is_controlled_by = ROOT		NOT = { is_core_of = ROOT     }				}
+				add_core_of = ROOT
+			}	
+			570 = {
+				limit = {	is_controlled_by = ROOT		NOT = { is_core_of = ROOT     }				}
+				add_core_of = ROOT
+			}	
+			882 = {
+				limit = {	is_controlled_by = ROOT		NOT = { is_core_of = ROOT     }				}
+				add_core_of = ROOT
+			}	
+			588 = {
+				limit = {	is_controlled_by = ROOT		NOT = { is_core_of = ROOT     }				}
+				add_core_of = ROOT
+			}	
+			40 = {
+				limit = {	is_controlled_by = ROOT		NOT = { is_core_of = ROOT     }				}
+				add_core_of = ROOT
+			}	
+			569 = {
+				limit = {	is_controlled_by = ROOT		NOT = { is_core_of = ROOT     }				}
+				add_core_of = ROOT
+			}	
+			654 = {
+				limit = {	is_controlled_by = ROOT		NOT = { is_core_of = ROOT     }				}
+				add_core_of = ROOT
+			}	
+			987 = {
+				limit = {	is_controlled_by = ROOT		NOT = { is_core_of = ROOT     }				}
+				add_core_of = ROOT
+			}	
+			820 = {
+				limit = {	is_controlled_by = ROOT		NOT = { is_core_of = ROOT     }				}
+				add_core_of = ROOT
+			}	
+			567 = {
+				limit = {	is_controlled_by = ROOT		NOT = { is_core_of = ROOT     }				}
+				add_core_of = ROOT
+			}	
+			568 = {
+				limit = {	is_controlled_by = ROOT		NOT = { is_core_of = ROOT     }				}
+				add_core_of = ROOT
+			}	
+			
+		}
+	}
+
+	整合满清区域 = {
+		icon = generic_army_support		
+		available = {			
+			OR = {
+				has_completed_focus = CHI_208
+				AND = {
+					561 = { is_controlled_by = CHI }
+					560 = { is_controlled_by = CHI }
+					657 = { is_controlled_by = CHI }
+					409 = { is_controlled_by = CHI }
+					408 = { is_controlled_by = CHI }	
+					655 = { is_controlled_by = CHI }
+					537 = { is_controlled_by = CHI }	
+					574 = { is_controlled_by = CHI }	
+					562 = { is_controlled_by = CHI }	
+					874 = { is_controlled_by = CHI }	
+					637 = { is_controlled_by = CHI }	
+					822 = { is_controlled_by = CHI }	
+					644 = { is_controlled_by = CHI }	
+					877 = { is_controlled_by = CHI }	
+					876 = { is_controlled_by = CHI }	
+					878 = { is_controlled_by = CHI }	
+				}
+			}	
+		}
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 561
+				state = 560
+				state = 657
+				state = 409
+				state = 408
+				state = 655
+				state = 537
+				state = 574
+				state = 562
+				state = 874
+				state = 637
+				state = 822
+				state = 644
+				state = 877
+				state = 876
+				state = 878
+				state = 328
+				state = 714
+				state = 717
+				state = 555
+				state = 650
+				state = 875
+				state = 463
+			}
+		}
+		
+		cost = 20
+		ai_will_do = {			factor = 0		}		
+		visible = {			is_ai = no		}
+		days_remove = 0
+		fire_only_once = yes
+		remove_effect = {		
+			650 = {
+				limit = {	is_controlled_by = ROOT		NOT = { is_core_of = ROOT     }				}
+				add_core_of = ROOT
+			}	
+			875 = {
+				limit = {	is_controlled_by = ROOT		NOT = { is_core_of = ROOT     }				}
+				add_core_of = ROOT
+			}	
+			463	 = {
+				limit = {	is_controlled_by = ROOT		NOT = { is_core_of = ROOT     }				}
+				add_core_of = ROOT
+			}	
+			555 = {
+				limit = {	is_controlled_by = ROOT		NOT = { is_core_of = ROOT     }				}
+				add_core_of = ROOT
+			}	
+			561 = {
+				limit = {	is_controlled_by = ROOT		NOT = { is_core_of = ROOT     }				}
+				add_core_of = ROOT
+			}	
+			560 = {
+				limit = {	is_controlled_by = ROOT		NOT = { is_core_of = ROOT     }				}
+				add_core_of = ROOT
+			}	
+			657 = {
+				limit = {	is_controlled_by = ROOT		NOT = { is_core_of = ROOT     }				}
+				add_core_of = ROOT
+			}	
+			409 = {
+				limit = {	is_controlled_by = ROOT		NOT = { is_core_of = ROOT     }				}
+				add_core_of = ROOT
+			}	
+			408 = {
+				limit = {	is_controlled_by = ROOT		NOT = { is_core_of = ROOT     }				}
+				add_core_of = ROOT
+			}	
+			655 = {
+				limit = {	is_controlled_by = ROOT		NOT = { is_core_of = ROOT     }				}
+				add_core_of = ROOT
+			}	
+			537 = {
+				limit = {	is_controlled_by = ROOT		NOT = { is_core_of = ROOT     }				}
+				add_core_of = ROOT
+			}	
+			574 = {
+				limit = {	is_controlled_by = ROOT		NOT = { is_core_of = ROOT     }				}
+				add_core_of = ROOT
+			}	
+			562 = {
+				limit = {	is_controlled_by = ROOT		NOT = { is_core_of = ROOT     }				}
+				add_core_of = ROOT
+			}	
+			874 = {
+				limit = {	is_controlled_by = ROOT		NOT = { is_core_of = ROOT     }				}
+				add_core_of = ROOT
+			}	
+			637 = {
+				limit = {	is_controlled_by = ROOT		NOT = { is_core_of = ROOT     }				}
+				add_core_of = ROOT
+			}	
+			822 = {
+				limit = {	is_controlled_by = ROOT		NOT = { is_core_of = ROOT     }				}
+				add_core_of = ROOT
+			}	
+			644 = {
+				limit = {	is_controlled_by = ROOT		NOT = { is_core_of = ROOT     }				}
+				add_core_of = ROOT
+			}	
+			877 = {
+				limit = {	is_controlled_by = ROOT		NOT = { is_core_of = ROOT     }				}
+				add_core_of = ROOT
+			}	
+			876 = {
+				limit = {	is_controlled_by = ROOT		NOT = { is_core_of = ROOT     }				}
+				add_core_of = ROOT
+			}	
+			878 = {
+				limit = {	is_controlled_by = ROOT		NOT = { is_core_of = ROOT     }				}
+				add_core_of = ROOT
+			}	
+						
+		}
+	}
+
+
+	索要阿克赛钦地区 = {
+		icon = generic_army_support		
+		available = {
+			OR = {
+				RAJ = {has_war = yes}
+				ROOT = {
+					owns_state = 787
+					owns_state = 441
+				}
+			}
+		}
+		cost = 20
+		ai_will_do = {			factor = 0		}		
+		visible = {
+			is_ai = no		
+			NOT = { 787 = { is_core_of = ROOT }	}
+			NOT = { 441 = { is_core_of = ROOT }	}
+		
+		}
+		days_remove = 0
+		fire_only_once = yes
+		highlight_states = {
+			highlight_state_targets = {
+				state = 441
+				state = 787
+			}
+		}
+		remove_effect = {		
+			if = {
+				limit = {					NOT = { owns_state = 441 }				}
+				transfer_state = 441
+			}	
+			if = {
+				limit = {					NOT = { owns_state = 787 }				}
+				transfer_state = 787
+			}		
+			441 = { add_core_of = ROOT }	
+			787 = { add_core_of = ROOT }	
+		}
+	}
+	直辖阿萨姆 = {
+		icon = generic_army_support		
+		available = {
+				ROOT = {
+					owns_state = 432
+				}
+		}
+		cost = 20
+		ai_will_do = {			factor = 0		}		
+		visible = {			
+			is_ai = no	
+			NOT = { 432 = { is_core_of = ROOT }	}
+		}
+		days_remove = 0
+		fire_only_once = yes
+		highlight_states = {
+			highlight_state_targets = {
+				state = 432
+			}
+		}
+		remove_effect = {
+			432 = { add_core_of = ROOT }
+		}
+	}
+	瓦罕走廊回归 = {
+		icon = generic_army_support		
+		available = {	
+			984 = { is_controlled_by = CHI }
+		}
+		cost = 5
+		ai_will_do = {			factor = 0		}		
+		visible = {
+			is_ai = no
+			NOT = { 984 = { is_core_of = ROOT }	}
+		}
+		days_remove = 0
+		fire_only_once = yes
+		highlight_states = {
+			highlight_state_targets = {
+				state = 984
+			}
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					NOT = { owns_state = 984 }
+				}
+				transfer_state = 984
+			}	
+			984 = {
+				limit = {	is_controlled_by = ROOT		NOT = { is_core_of = ROOT     }				}
+				add_core_of = ROOT
+			}	
+		}
+	}
+
+	吞并喜马拉雅 = {
+		icon = generic_army_support		
+		available = {			has_completed_focus = CHI_145	has_completed_focus = CHI_147	}
+		cost = 20
+		ai_will_do = {			factor = 0		}		
+		visible = {			is_ai = no		}
+		days_remove = 0
+		fire_only_once = yes
+		highlight_states = {
+			highlight_state_targets = {
+				state = 323
+				state = 324
+			}
+		}
+		remove_effect = {	
+			every_state = {
+				limit = { or = { is_core_of = NEP is_core_of = BHU} }
+				add_core_of = ROOT
+			}	
+			if = {
+				limit = {
+					NOT = { owns_state = 323  owns_state = 324}
+				}
+				transfer_state = 323
+				transfer_state = 324
+			}	
+		}
+	}
+
+	锄倒墙头草 = {
+		icon = generic_army_support	
+		available = {
+			ITA = { is_subject_of = ROOT }
+		}	
+		cost = 20
+		ai_will_do = { factor = 0 }
+		visible = {
+			 is_ai = no 
+			ITA = { 
+				is_subject_of = ROOT 
+				NOT = { has_idea = CHI_duhufu_chaogong }
+			}
+		}
+		days_remove = 0
+		fire_only_once = yes
+
+		remove_effect = {
+			ROOT = { annex_country = { target = ITA } }
+		}
+	}
+
+	要求北印度分裂势力臣服 = {
+		icon = generic_army_support	
+		available = {
+			NOT = { country_exists = RAJ }
+			OR = {
+				country_exists = PAK
+				country_exists = BAN
+			}
+		}	
+		cost = 20
+		ai_will_do = { factor = 0 }
+		visible = { is_ai = no }
+		days_remove = 0
+		fire_only_once = yes
+		remove_effect = {
+			if = {
+				limit = { country_exists = PAK }
+				ROOT = { annex_country = { target = PAK } }
+			}
+			if = {
+				limit = { country_exists = BAN }
+				ROOT = { annex_country = {target = BAN } }
+			}
+		}
+	}
+
+	对不丹进行核心化 = {
+		icon = generic_army_support		
+		available = {			has_completed_focus = CHI_147		}
+		cost = 20
+		ai_will_do = {			factor = 0		}		
+		visible = {			is_ai = no	always=no	}
+		days_remove = 0
+		fire_only_once = yes
+		remove_effect = {	
+			every_state = {
+				limit = { is_core_of = BHU }
+				add_core_of = ROOT
+			}	
+			if = {
+				limit = {
+					NOT = { owns_state = 324 }
+				}
+				transfer_state = 324
+			}	
+		}
+	}
+
+
+	对缅甸进行核心化 = {
+		icon = generic_army_support		
+		available = {			has_completed_focus = CHI_150		}
+		cost = 20
+		ai_will_do = {			factor = 0		}		
+		visible = {			is_ai = no		}
+		days_remove = 0
+		fire_only_once = yes
+		remove_effect = {	
+			every_state = {
+				limit = { is_core_of = BRM }
+				add_core_of = ROOT
+			}	
+			if = {
+				limit = {
+					NOT = { owns_state = 640 }
+				}
+				transfer_state = 640
+			}	
+			if = {
+				limit = {
+					NOT = { owns_state = 288 }
+				}
+				transfer_state = 288
+			}	
+		}
+	}
+
+	对马来亚进行核心化 = {
+		icon = generic_army_support		
+		available = {			has_completed_focus = CHI_153		}
+		cost = 20
+		ai_will_do = {			factor = 0		}		
+		visible = {			is_ai = no		}
+		days_remove = 0
+		fire_only_once = yes
+		remove_effect = {	
+			every_state = {
+				limit = { is_core_of = MAL }
+				add_core_of = ROOT
+			}	
+			if = {
+				limit = {
+					NOT = { owns_state = 336 }
+				}
+				transfer_state = 336
+			}	
+			if = {
+				limit = {
+					NOT = { owns_state = 333 }
+				}
+				transfer_state = 333
+			}	
+		}
+	}
+
+	对越南进行核心化 = {
+		icon = generic_army_support		
+		available = {			has_completed_focus = CHI_155		}
+		cost = 20
+		ai_will_do = {			factor = 0		}		
+		visible = {			is_ai = no		}
+		days_remove = 0
+		fire_only_once = yes
+		remove_effect = {	
+			every_state = {
+				limit = { is_core_of = VIN }
+				add_core_of = ROOT
+			}	
+			if = {
+				limit = {
+					NOT = { owns_state = 671 }
+				}
+				transfer_state = 671
+			}	
+			if = {
+				limit = {
+					NOT = { owns_state = 286 }
+				}
+				transfer_state = 286
+			}	
+			every_state = {
+				limit = { is_core_of = LAO }
+				add_core_of = ROOT
+			}	
+			every_state = {
+				limit = { is_core_of = CAM }
+				add_core_of = ROOT
+			}	
+			if = {
+				limit = {
+					NOT = { owns_state = 670 }
+				}
+				transfer_state = 670
+			}	
+			if = {
+				limit = {
+					NOT = { owns_state = 741 }
+				}
+				transfer_state = 741
+			}	
+		}
+	}
+
+	对泰国核心化 = {
+		icon = generic_army_support		
+		available = {			has_completed_focus = CHI_141		}
+		cost = 20
+		ai_will_do = {			factor = 0		}		
+		visible = {			is_ai = no		}
+		days_remove = 0
+		fire_only_once = yes
+		remove_effect = {	
+			every_state = {
+				limit = { is_core_of = SIA }
+				add_core_of = ROOT
+			}	
+			if = {
+				limit = {
+					NOT = { owns_state = 869 }
+				}
+				transfer_state = 869
+			}
+			if = {
+				limit = {
+					NOT = { owns_state = 289 }
+				}
+				transfer_state = 289
+			}
+			if = {
+				limit = {
+					NOT = { owns_state = 868 }
+				}
+				transfer_state = 868
+			}
+			if = {
+				limit = {
+					NOT = { owns_state = 724 }
+				}
+				transfer_state = 724
+			}	
+		}
+	}
+
+	对荷属东印度进行核心化 = {
+		icon = generic_army_support		
+		available = {			has_completed_focus = CHI_bc002	
+				OR = {
+					has_completed_focus = CHI_bc002	
+				AND = {
+					672 = { is_controlled_by = CHI }
+					334 = { is_controlled_by = CHI }
+					335 = { is_controlled_by = CHI }
+					667 = { is_controlled_by = CHI }
+					668 = { is_controlled_by = CHI }	
+					669 = { is_controlled_by = CHI }	
+					673 = { is_controlled_by = CHI }	
+					738 = { is_controlled_by = CHI }	
+				}
+			}	
+			}
+		cost = 20
+		ai_will_do = {			factor = 0		}		
+		visible = {			
+			is_ai = no		
+			AND = {
+				672 = { is_controlled_by = CHI }
+				334 = { is_controlled_by = CHI }
+				335 = { is_controlled_by = CHI }
+				667 = { is_controlled_by = CHI }
+				668 = { is_controlled_by = CHI }	
+				669 = { is_controlled_by = CHI }	
+				673 = { is_controlled_by = CHI }	
+				738 = { is_controlled_by = CHI }	
+			}
+		}
+		days_remove = 0
+		fire_only_once = yes
+		remove_effect = {	
+			every_state = {
+				limit = { is_core_of = INS }
+				add_core_of = ROOT
+			}	
+			if = {
+				limit = {
+					NOT = { owns_state = 672 }
+				}
+				transfer_state = 672
+			}
+			if = {
+				limit = {
+					NOT = { owns_state = 334 }
+				}
+				transfer_state = 334
+			}
+			if = {
+				limit = {
+					NOT = { owns_state = 335 }
+				}
+				transfer_state = 335
+			}
+			if = {
+				limit = {
+					NOT = { owns_state = 667 }
+				}
+				transfer_state = 667
+			}	
+			
+			if = {
+				limit = {
+					NOT = { owns_state = 673 }
+				}
+				transfer_state = 673
+			}
+			if = {
+				limit = {
+					NOT = { owns_state = 668 }
+				}
+				transfer_state = 668
+			}
+			if = {
+				limit = {
+					NOT = { owns_state = 669 }
+				}
+				transfer_state = 669
+			}
+			if = {
+				limit = {
+					NOT = { owns_state = 738 }
+				}
+				transfer_state = 738
+			}
+			set_country_flag = ming_hxh_hsdyd			
+		}
+	}
+
+	对菲律宾进行核心化 = {
+		icon = generic_army_support		
+		available = {			has_completed_focus = CHI_bc002		
+				OR = {
+				has_completed_focus = CHI_bc002	
+				AND = {
+					623 = { is_controlled_by = CHI }
+					624 = { is_controlled_by = CHI }
+					625 = { is_controlled_by = CHI }
+					626 = { is_controlled_by = CHI }
+					627 = { is_controlled_by = CHI }	
+					628 = { is_controlled_by = CHI }	
+					327 = { is_controlled_by = CHI }		
+				}
+			}	
+		}
+		cost = 20
+		ai_will_do = {			factor = 0		}		
+		visible = {			is_ai = no		}
+		days_remove = 0
+		fire_only_once = yes
+		remove_effect = {	
+			every_state = {
+				limit = { is_core_of = PHI }
+				add_core_of = ROOT
+			}	
+			if = {
+				limit = {
+					NOT = { owns_state = 623}
+				}
+				transfer_state = 623
+			}
+			if = {
+				limit = {
+					NOT = { owns_state = 327 }
+				}
+				transfer_state = 327
+			}
+			if = {
+				limit = {
+					NOT = { owns_state = 624 }
+				}
+				transfer_state = 624
+			}	
+			
+			if = {
+				limit = {
+					NOT = { owns_state = 625 }
+				}
+				transfer_state = 625
+			}
+			if = {
+				limit = {
+					NOT = { owns_state = 626 }
+				}
+				transfer_state = 626
+			}
+			if = {
+				limit = {
+					NOT = { owns_state = 627 }
+				}
+				transfer_state = 627
+			}
+			if = {
+				limit = {
+					NOT = { owns_state = 628 }
+				}
+				transfer_state = 628
+			}	
+		}
+	}
+
+
+}
+
+大明的科技突破 = {
+	ming_dzdxxsxy = { #大忠大学学说研究
+		icon = xingdong2
+		visible = {		always = yes	}	
+		priority = 2
+		cost = 80
+		fire_only_once = no
+		available = {			
+			has_completed_focus = CHI_12
+			has_completed_focus = CHI_33
+			has_completed_focus = CHI_18
+										}		
+		ai_will_do = {			factor = 1				}
+		days_remove = 40
+		remove_effect = {
+			random_list = {
+				33 = {
+					add_doctrine_cost_reduction = {
+						cost_reduction = 0.5
+						name = ming_dzdxxs1
+						uses = 2
+						category = land_doctrine
+						category = naval_doctrine
+						category = air_doctrine
+					}
+				}
+				67 = {
+					add_doctrine_cost_reduction = {
+						cost_reduction = 0.25
+						name = ming_dzdxxs2
+						uses = 2
+						category = land_doctrine
+						category = naval_doctrine
+						category = air_doctrine
+					}
+				}
+			}
+		}
+	}
+
+	ming_dzdxzbyj = { #大忠大学装备研究
+		icon = xingdong2
+		visible = {		always = yes	}	
+		priority = 2
+		cost = 120
+		fire_only_once = no
+		available = {			
+			has_completed_focus = CHI_12
+			has_completed_focus = CHI_54
+			has_completed_focus = CHI_65
+			has_completed_focus = CHI_73
+			 	}		
+		ai_will_do = {			factor = 3				}
+		days_remove = 40
+		remove_effect = {random_list = {
+			10 = {
+				add_tech_bonus = {
+					name = dzg_dzdxzb1
+					bonus = 1.75
+					uses = 2
+					ahead_reduction = 2
+					category = artillery
+					category = rocketry
+					category = armor
+					category = air_equipment
+					category = infantry_tech
+					category = support_tech
+					category = train_tech					
+					category = ship_modules_tech
+					category = infantry_weapons
+					category = night_vision
+					category = para_tech
+					category = marine_tech
+					category = jet_technology
+					category = plane_modules_tech
+					category = naval_equipment
+				}
+			}
+			10 = {
+				add_tech_bonus = {
+					bonus = 1.25
+					name = dzg_dzdxzb2
+					uses = 2
+					ahead_reduction = 1
+					category = artillery
+					category = rocketry
+					category = armor
+					category = air_equipment
+					category = infantry_tech
+					category = support_tech
+					category = train_tech					
+					category = ship_modules_tech
+					category = infantry_weapons
+					category = night_vision
+					category = para_tech
+					category = marine_tech
+					category = jet_technology
+					category = plane_modules_tech
+					category = naval_equipment
+				}
+			}
+			35 = {
+				add_tech_bonus = {
+					bonus = 1.25
+					name = dzg_dzdxzb3
+					uses = 2
+					category = artillery
+					category = rocketry
+					category = armor
+					category = air_equipment
+					category = infantry_tech
+					category = support_tech
+					category = train_tech					
+					category = ship_modules_tech
+					category = infantry_weapons
+					category = night_vision
+					category = para_tech
+					category = marine_tech
+					category = jet_technology
+					category = plane_modules_tech
+					category = naval_equipment
+				}
+			}
+			45 = {
+				add_tech_bonus = {
+					bonus = 0.75
+					uses = 2
+					name = dzg_dzdxzb4
+					category = artillery
+					category = rocketry
+					category = armor
+					category = air_equipment
+					category = infantry_tech
+					category = support_tech
+					category = train_tech					
+					category = ship_modules_tech
+					category = infantry_weapons
+					category = night_vision
+					category = para_tech
+					category = marine_tech
+					category = jet_technology
+					category = plane_modules_tech
+					category = naval_equipment
+				}
+			}
+		}}
+	}
+
+    ming_pjjcjy= { #普及基础教育
+		icon = xingdong2
+		visible = {		always = yes	}	
+		priority = 7
+		cost = 50
+		fire_only_once = yes
+		available = {			
+			has_completed_focus = CHI_12
+			has_completed_focus = CHI_18	
+				}		
+		ai_will_do = {			factor = 5					}
+		days_remove = 70
+		remove_effect = {
+			add_ideas = chi_gcjy
+		}
+	}
+
+
+
+
+
+}
+
+#城乡一体化
+ming_cxyth = {
+	建设大明的基础设施 = {
+		icon = generic_army_support		
+		available = {			
+			has_completed_focus = CHI_18 
+			date > 1936.6.1	
+			}
+		cost = 200
+		ai_will_do = {			factor = 0		}		
+		visible = {			is_ai = no		}
+		days_remove = 0
+		remove_effect = {			
+			every_state = {
+				limit = {			     is_owned_of = ROOT  	  is_controlled_of = ROOT           is_core_of = ROOT				    				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+							}
+	}
+
+	改造大明的荒漠 = {
+		available = { 			is_ai = no	has_completed_focus = CHI_07	}
+		fire_only_once = no
+		visible = {
+			any_owned_state = { 
+				OR = {
+					has_state_category = tiny_island
+					has_state_category = wasteland	
+					has_state_category = enclave	
+						}
+					is_core_of = ROOT
+					is_controlled_of = ROOT
+				
+			}		
+			has_completed_focus = CHI_04
+		}
+		cost = 100
+		days_remove = 10
+		remove_effect = { 			
+			random_owned_controlled_state = { 
+			limit = {
+			        OR = {
+					has_state_category = tiny_island
+					has_state_category = wasteland	
+					has_state_category = enclave	
+			}
+					is_core_of = ROOT
+				}
+			    set_state_category = pastoral
+				
+			}				
+		}
+		ai_will_do = {
+			factor = 0
+			
+		}
+	}
+
+	发展大明的牧业 = {
+		available = { 			is_ai = no	has_completed_focus = CHI_07	}
+		fire_only_once = no
+		visible = {
+			any_owned_state = { 
+				OR = {
+					has_state_category = pastoral
+					has_state_category = small_island
+						}
+					is_core_of = ROOT
+					is_controlled_of = ROOT
+				
+			}		
+			has_completed_focus = CHI_04
+		}
+		cost = 100
+		days_remove = 10
+		remove_effect = { 			
+			random_owned_controlled_state = { 
+			limit = {
+			        OR = {
+					has_state_category = pastoral
+					has_state_category = small_island	
+			}
+					is_core_of = ROOT
+				}
+			    set_state_category = rural
+				
+			}	
+			
+		}
+		ai_will_do = {
+			factor = 0
+			
+		}
+	}
+
+	加强大明农村建设 = {
+		available = { 			is_ai = no	has_completed_focus = CHI_07	}
+		fire_only_once = no
+		visible = {
+			any_owned_state = { 
+					has_state_category = rural
+					is_core_of = ROOT
+					is_controlled_of = ROOT
+				
+			}		
+			has_completed_focus = CHI_04
+		}
+		cost = 200
+		days_remove = 10
+		remove_effect = { 			
+			random_owned_controlled_state = { 
+			limit = {
+			        has_state_category = rural
+					is_core_of = ROOT
+				}
+			    set_state_category = town
+				
+			}	
+		}
+		ai_will_do = {
+			factor = 0
+			
+		}
+	}
+
+	发达农村城市化 = {
+		available = { 			is_ai = no	has_completed_focus = CHI_07	}
+		fire_only_once = no
+		visible = {
+			any_owned_state = { 
+					has_state_category = town
+					is_core_of = ROOT
+					is_controlled_of = ROOT
+				
+			}		
+			has_completed_focus = CHI_04
+		}
+		cost = 100
+		days_remove = 10
+		remove_effect = { 			
+			random_owned_controlled_state = { 
+			limit = {
+			        has_state_category = town
+					is_core_of = ROOT
+				}
+			    set_state_category = large_town
+				
+			}	
+		}
+		ai_will_do = {
+			factor = 0
+			
+		}
+
+		
+	}
+
+	完成大明的城市化 = {
+		available = { 			is_ai = no	has_completed_focus = CHI_07	}
+		fire_only_once = no
+		visible = {
+			any_owned_state = { 
+					has_state_category = large_town
+					is_core_of = ROOT
+					is_controlled_of = ROOT
+				
+			}	
+			has_completed_focus = CHI_04	
+		}
+		cost = 100
+		days_remove = 10
+		remove_effect = { 			
+			random_owned_controlled_state = { 
+			limit = {
+			        has_state_category = large_town
+					is_core_of = ROOT
+				}
+			    set_state_category = city
+				
+			}	
+		}
+		ai_will_do = {
+			factor = 0
+			
+		}
+	}
+
+	加强基层控制 = {
+		icon = generic_army_support		
+		available = {			has_completed_focus = CHI_18 has_completed_focus = CHI_04		}
+		cost = 100
+		ai_will_do = {			factor = 0		}		
+		visible = {		NOT = {has_idea  = chi_jqjckz  }		}
+		days_remove = 30
+		fire_only_once = yes
+		remove_effect = {			add_ideas = chi_jqjckz					}
+	}
+
+	打击地主阶级 = {
+		icon = generic_army_support		
+		available = {			has_idea  = chi_jqjckz  		}
+		cost = 100
+		ai_will_do = {			factor = 0		}		
+		visible = {		NOT = {has_idea  = chi_djdz  }		}
+		days_remove = 30
+		fire_only_once = yes
+		remove_effect = {			add_ideas = chi_djdz					}
+	}
+
+	征收农业税 = {
+		icon = generic_army_support		
+		available = {				has_idea  = chi_djdz	}
+		cost = 50
+		ai_will_do = {			factor = 0		}		
+		visible = {		NOT = {has_idea  = chi_nongys  }		}
+		days_remove = 30
+		fire_only_once = yes
+		remove_effect = {			add_ideas = chi_nongys					}
+	}
+
+	完成基层控制 = {
+		icon = generic_army_support		
+		available = {			has_idea  = chi_nongys 	}
+		cost = 50
+		ai_will_do = {			factor = 0		}		
+		visible = {		has_idea  = chi_nongys  		}
+		days_remove = 0
+		fire_only_once = yes
+		remove_effect = {			remove_ideas = chi_nongys		remove_ideas = chi_djdz remove_ideas = chi_jqjckz	add_ideas = chi_wcjckz		}
+	}
+
+	增强动员力 = {
+		icon = generic_army_support		
+		available = {			has_idea  = chi_wcjckz 	}
+		cost = 100
+		ai_will_do = {			factor = 0		}		
+		visible = {		NOT = {has_idea  = chi_tsdyl  }		}
+		days_remove = 0
+		fire_only_once = yes
+		remove_effect = {		add_ideas =	chi_tsdyl		}
+	}
+
+	发展轻工业 = {
+		icon = generic_army_support		
+		available = {			has_idea  = chi_wcjckz 	}
+		cost = 100
+		ai_will_do = {			factor = 0		}		
+		visible = {		is_ai = no	}
+		days_remove = 60
+		fire_only_once = no
+		remove_effect = {		
+			random_owned_controlled_state = {
+				limit = {					is_core_of = ROOT				}
+				add_building_construction = {type = industrial_complex level = 3}
+				add_extra_state_shared_building_slots = 3
+			}	
+			random_owned_controlled_state = {
+				limit = {					is_core_of = ROOT				}
+				add_building_construction = {type = industrial_complex level = 3}
+				add_extra_state_shared_building_slots = 3
+			}	
+			random_owned_controlled_state = {
+				limit = {					is_core_of = ROOT				}
+				add_building_construction = {type = industrial_complex level = 3}
+				add_extra_state_shared_building_slots = 3
+			}	
+		}
+	}
+
+	工业集群化 = {
+		icon = generic_army_support		
+		available = {			has_idea  = chi_wcjckz 	}
+		cost = 100
+		ai_will_do = {			factor = 0		}		
+		visible = {		NOT = {has_idea  = chi_gyjqh  }		}
+		days_remove = 0
+		fire_only_once = yes
+		remove_effect = {		add_ideas =	chi_gyjqh		}
+	}
+
+	提升农业科技 = {
+		icon = generic_army_support		
+		available = {			has_idea  = chi_wcjckz 	}
+		cost = 100
+		ai_will_do = {			factor = 0		}		
+		visible = {		NOT = {has_idea  = chi_xnykj  }		}
+		days_remove = 0
+		fire_only_once = yes
+		remove_effect = {		add_ideas =	chi_xnykj		}
+	}
+
+	拓展工业园区 = {
+		icon = generic_army_support		
+		available = {			
+			has_idea  = chi_wcjckz
+			}
+		cost = 300
+		ai_will_do = {			factor = 0		}		
+		visible = {			is_ai = no		}
+		days_remove = 60
+		remove_effect = {			
+			every_state = {
+				limit = {			     is_owned_of = ROOT  	  is_controlled_of = ROOT           is_core_of = ROOT				    				}
+				add_extra_state_shared_building_slots = 1
+			}
+							}
+	}
+
+
+
+
+}
+
+Set_DHF = {
+	MON_DHF = {
+		icon = generic_army_support
+		cost = 40
+		ai_will_do = { factor = 0 }
+		days_remove = 0
+		fire_only_once = yes
+		available = {
+			NOT = { country_exists = MON }
+			custom_trigger_tooltip = {
+				tooltip = "拥有蒙古全部领土以及哈坦斯基"
+				ROOT = {
+					owns_state = 563
+					owns_state = 564
+					owns_state = 566
+					owns_state = 567
+					owns_state = 576
+					owns_state = 878
+					owns_state = 516
+					owns_state = 568
+					owns_state = 569
+					owns_state = 654
+					owns_state = 987
+					owns_state = 588
+					owns_state = 882
+					owns_state = 40
+					owns_state = 570
+					owns_state = 578
+					owns_state = 577
+					owns_state = 579
+					owns_state = 824
+				}
+			}
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 563
+				state = 564
+				state = 566
+				state = 567
+				state = 576
+				state = 878
+				state = 516
+				state = 568
+				state = 569
+				state = 654
+				state = 987
+				state = 588
+				state = 882
+				state = 40
+				state = 570
+				state = 578
+				state = 577
+				state = 579
+				state = 824
+			}
+		}
+		visible = {
+			is_ai = no
+		}
+
+		remove_effect = {
+			ROOT = {
+				set_autonomy = {
+					target = MON
+					autonomy_state = autonomy_duhufu
+				}
+			}
+			MON = {
+				set_cosmetic_tag = MON_duhufu
+				add_ideas = CHI_duhufu_chaogong
+				remove_ideas = MON_goongchanyx
+				remove_ideas = MON_fenhuacaoy
+			}
+			custom_effect_tooltip = "漠北都护府成立"
+			hidden_effect = {
+				MON = {
+					transfer_state = 563
+					transfer_state = 564
+					transfer_state = 566
+					transfer_state = 567
+					transfer_state = 576
+					transfer_state = 878
+					transfer_state = 516
+					transfer_state = 568
+					transfer_state = 569
+					transfer_state = 654
+					transfer_state = 987
+					transfer_state = 588
+					transfer_state = 882
+					transfer_state = 40
+					transfer_state = 570
+					transfer_state = 578
+					transfer_state = 577
+					transfer_state = 579
+					transfer_state = 824
+					every_state = {
+						limit = { NOT = { is_core_of = PREV }  is_owned_by = PREV }
+						add_core_of = PREV
+					}
+				}
+			}
+		}
+	}
+
+	MAN_DHF = {
+		icon = generic_army_support
+		cost = 40
+		ai_will_do = { factor = 0 }
+		days_remove = 0
+		fire_only_once = yes
+		available = {
+			NOT = { country_exists = MAN }
+			custom_trigger_tooltip = {
+				tooltip = "控制清帝国全部区域"
+				ROOT = {
+					owns_state = 637
+					owns_state = 822
+					owns_state = 644
+					owns_state = 874
+					owns_state = 562
+					owns_state = 877
+					owns_state = 574
+					owns_state = 876
+					owns_state = 575
+					owns_state = 565
+				}
+			}
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 637
+				state = 822
+				state = 644
+				state = 874
+				state = 562
+				state = 877
+				state = 574
+				state = 876
+				state = 575
+				state = 565
+			}
+		}
+		visible = {
+			is_ai = no
+		}
+
+		remove_effect = {
+			ROOT = {
+				set_autonomy = {
+					target = MAN
+					autonomy_state = autonomy_duhufu
+				}
+			}
+			MAN = {
+				set_cosmetic_tag = MAN_duhufu
+				add_ideas = CHI_duhufu_chaogong
+			}
+			custom_effect_tooltip = "晨东都护府成立"
+			hidden_effect = {
+				MAN = {
+					remove_ideas = MAN_feizhengtong
+					remove_ideas = MAN_jianguodacheng
+					transfer_state = 637
+					transfer_state = 822
+					transfer_state = 644
+					transfer_state = 874
+					transfer_state = 562
+					transfer_state = 877
+					transfer_state = 574
+					transfer_state = 876
+					transfer_state = 575
+					transfer_state = 565
+					every_state = {
+						limit = { NOT = { is_core_of = PREV }  is_owned_by = PREV }
+						add_core_of = PREV
+					}
+				}
+			}
+		}
+	}
+
+	KAZ_DHF = {
+		icon = generic_army_support
+		cost = 40
+		ai_will_do = { factor = 0 }
+		days_remove = 0
+		fire_only_once = yes
+		available = {
+			NOT = { country_exists = KAZ }
+			custom_trigger_tooltip = {
+				tooltip = "控制中亚主要区域"
+				ROOT = {
+					owns_state = 589
+					owns_state = 586
+					owns_state = 732
+					owns_state = 986
+					owns_state = 742
+					owns_state = 830
+					owns_state = 405
+					owns_state = 404
+					owns_state = 881
+					owns_state = 402
+					owns_state = 587
+					owns_state = 584
+					owns_state = 831
+					owns_state = 823
+					owns_state = 832
+					owns_state = 585
+				}
+			}
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 589
+				state = 586
+				state = 732
+				state = 986
+				state = 742
+				state = 830
+				state = 405
+				state = 404
+				state = 881
+				state = 402
+				state = 587
+				state = 584
+				state = 831
+				state = 823
+				state = 832
+				state = 585
+			}
+		}
+		visible = {
+			is_ai = no
+			OR = {
+				NOT = { country_exists = MON }
+				MON = { is_subject_of = ROOT }
+			}
+		}
+
+		remove_effect = {
+			ROOT = {
+				set_autonomy = {
+					target = KAZ
+					autonomy_state = autonomy_duhufu
+				}
+			}
+			KAZ = {
+				set_cosmetic_tag = KAZ_duhufu
+				add_ideas = CHI_duhufu_chaogong
+			}
+			custom_effect_tooltip = "西域都护府成立"
+			hidden_effect = {
+				KAZ = {
+					transfer_state = 589
+					transfer_state = 586
+					transfer_state = 732
+					transfer_state = 986
+					transfer_state = 742
+					transfer_state = 830
+					transfer_state = 405
+					transfer_state = 404
+					transfer_state = 881
+					transfer_state = 402
+					transfer_state = 587
+					transfer_state = 584
+					transfer_state = 831
+					transfer_state = 823
+					transfer_state = 832
+					transfer_state = 585
+					every_state = {
+						limit = { NOT = { is_core_of = PREV }  is_owned_by = PREV }
+						add_core_of = PREV
+					}
+				}
+			}
+		}
+	}
+
+	SOV_DHF = {
+		icon = generic_army_support
+		cost = 40
+		ai_will_do = { factor = 0 }
+		days_remove = 0
+		fire_only_once = yes
+		available = {
+			NOT = { country_exists = SOV }
+			custom_trigger_tooltip = {
+				tooltip = "拥有苏联全部领土"
+				ROOT = {
+					owns_state = 590
+					owns_state = 571
+					owns_state = 403
+					owns_state = 580
+					owns_state = 581
+					owns_state = 825
+					owns_state = 262
+					owns_state = 397
+					owns_state = 398
+					owns_state = 653
+					owns_state = 573
+					owns_state = 572
+					owns_state = 583
+					owns_state = 582
+					owns_state = 651
+					owns_state = 652
+					owns_state = 407
+					owns_state = 406
+					owns_state = 400
+					owns_state = 249
+					owns_state = 399
+					owns_state = 833
+					owns_state = 251
+					owns_state = 250
+					owns_state = 256
+					owns_state = 255
+					owns_state = 214
+					owns_state = 880
+					owns_state = 351
+					owns_state = 248
+					owns_state = 253
+					owns_state = 236
+					owns_state = 217
+					owns_state = 237
+					owns_state = 232
+					owns_state = 229
+					owns_state = 230
+					owns_state = 231
+					owns_state = 827
+					owns_state = 826
+					owns_state = 233
+					owns_state = 234
+					owns_state = 137
+					owns_state = 235
+					owns_state = 821
+					owns_state = 238
+					owns_state = 218
+					owns_state = 245
+					owns_state = 227
+					owns_state = 401
+					owns_state = 239
+					owns_state = 265
+					owns_state = 829
+					owns_state = 828
+					owns_state = 228
+					owns_state = 260
+					owns_state = 240
+					owns_state = 257
+					owns_state = 254
+					owns_state = 252
+					owns_state = 879
+					owns_state = 213
+					owns_state = 215
+					owns_state = 216
+					owns_state = 264
+					owns_state = 247
+					owns_state = 244
+					owns_state = 195
+					owns_state = 219
+					owns_state = 258
+					owns_state = 222
+					owns_state = 224
+					owns_state = 220
+					owns_state = 225
+					owns_state = 259
+					owns_state = 223
+					owns_state = 205
+					owns_state = 221
+					owns_state = 226
+					owns_state = 200
+					owns_state = 196
+					owns_state = 197
+					owns_state = 192
+					owns_state = 834
+					owns_state = 203
+					owns_state = 202
+					owns_state = 198
+					owns_state = 199
+					owns_state = 201
+					owns_state = 194
+					owns_state = 204
+					owns_state = 206
+					owns_state = 207
+					owns_state = 210
+					owns_state = 209
+					owns_state = 208
+					owns_state = 193
+					owns_state = 241
+					owns_state = 243
+					owns_state = 242
+					owns_state = 246
+					owns_state = 263
+				}
+			}
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 590
+				state = 571
+				state = 403
+				state = 580
+				state = 581
+				state = 825
+				state = 262
+				state = 397
+				state = 398
+				state = 653
+				state = 573
+				state = 572
+				state = 583
+				state = 582
+				state = 651
+				state = 652
+				state = 407
+				state = 406
+				state = 400
+				state = 249
+				state = 399
+				state = 833
+				state = 251
+				state = 250
+				state = 256
+				state = 255
+				state = 214
+				state = 880
+				state = 351
+				state = 248
+				state = 253
+				state = 236
+				state = 217
+				state = 237
+				state = 232
+				state = 229
+				state = 230
+				state = 231
+				state = 827
+				state = 826
+				state = 233
+				state = 234
+				state = 137
+				state = 235
+				state = 821
+				state = 238
+				state = 218
+				state = 245
+				state = 227
+				state = 401
+				state = 239
+				state = 265
+				state = 829
+				state = 828
+				state = 228
+				state = 260
+				state = 240
+				state = 257
+				state = 254
+				state = 252
+				state = 879
+				state = 213
+				state = 215
+				state = 216
+				state = 264
+				state = 247
+				state = 244
+				state = 195
+				state = 219
+				state = 258
+				state = 222
+				state = 224
+				state = 220
+				state = 225
+				state = 259
+				state = 223
+				state = 205
+				state = 221
+				state = 226
+				state = 200
+				state = 196
+				state = 197
+				state = 192
+				state = 834
+				state = 203
+				state = 202
+				state = 198
+				state = 199
+				state = 201
+				state = 194
+				state = 204
+				state = 206
+				state = 207
+				state = 210
+				state = 209
+				state = 208
+				state = 193
+				state = 241
+				state = 243
+				state = 242
+				state = 246
+				state = 263
+			}
+		}
+		visible = {
+			is_ai = no
+			AND = {
+				OR = {
+					NOT = { country_exists = MAN }
+					MAN = { is_subject_of = ROOT }
+				}
+				OR = {
+					NOT = { country_exists = MON }
+					MON = { is_subject_of = ROOT }
+				}
+			}
+		}
+
+		remove_effect = {
+			ROOT = {
+				set_autonomy = {
+					target = SOV
+					autonomy_state = autonomy_duhufu
+				}
+			}
+			SOV = {
+				set_cosmetic_tag = SOV_duhufu
+				add_ideas = CHI_duhufu_chaogong
+				remove_ideas = home_of_revolution
+				remove_ideas = trotskyite_plot_nsb
+			}
+			custom_effect_tooltip = "振西都护府成立"
+			hidden_effect = {
+				SOV = {
+					transfer_state = 590
+					transfer_state = 571
+					transfer_state = 403
+					transfer_state = 580
+					transfer_state = 581
+					transfer_state = 825
+					transfer_state = 262
+					transfer_state = 397
+					transfer_state = 398
+					transfer_state = 653
+					transfer_state = 573
+					transfer_state = 572
+					transfer_state = 583
+					transfer_state = 582
+					transfer_state = 651
+					transfer_state = 652
+					transfer_state = 407
+					transfer_state = 406
+					transfer_state = 400
+					transfer_state = 249
+					transfer_state = 399
+					transfer_state = 833
+					transfer_state = 251
+					transfer_state = 250
+					transfer_state = 256
+					transfer_state = 255
+					transfer_state = 214
+					transfer_state = 880
+					transfer_state = 351
+					transfer_state = 248
+					transfer_state = 253
+					transfer_state = 236
+					transfer_state = 217
+					transfer_state = 237
+					transfer_state = 232
+					transfer_state = 229
+					transfer_state = 230
+					transfer_state = 231
+					transfer_state = 827
+					transfer_state = 826
+					transfer_state = 233
+					transfer_state = 234
+					transfer_state = 137
+					transfer_state = 235
+					transfer_state = 821
+					transfer_state = 238
+					transfer_state = 218
+					transfer_state = 245
+					transfer_state = 227
+					transfer_state = 401
+					transfer_state = 239
+					transfer_state = 265
+					transfer_state = 829
+					transfer_state = 828
+					transfer_state = 228
+					transfer_state = 260
+					transfer_state = 240
+					transfer_state = 257
+					transfer_state = 254
+					transfer_state = 252
+					transfer_state = 879
+					transfer_state = 213
+					transfer_state = 215
+					transfer_state = 216
+					transfer_state = 264
+					transfer_state = 247
+					transfer_state = 244
+					transfer_state = 195
+					transfer_state = 219
+					transfer_state = 258
+					transfer_state = 222
+					transfer_state = 224
+					transfer_state = 220
+					transfer_state = 225
+					transfer_state = 259
+					transfer_state = 223
+					transfer_state = 205
+					transfer_state = 221
+					transfer_state = 226
+					transfer_state = 200
+					transfer_state = 196
+					transfer_state = 197
+					transfer_state = 192
+					transfer_state = 834
+					transfer_state = 203
+					transfer_state = 202
+					transfer_state = 198
+					transfer_state = 199
+					transfer_state = 201
+					transfer_state = 194
+					transfer_state = 204
+					transfer_state = 206
+					transfer_state = 207
+					transfer_state = 210
+					transfer_state = 209
+					transfer_state = 208
+					transfer_state = 193
+					transfer_state = 241
+					transfer_state = 243
+					transfer_state = 242
+					transfer_state = 246
+					transfer_state = 263
+					every_state = {
+						limit = { NOT = { is_core_of = PREV }  is_owned_by = PREV }
+						add_core_of = PREV
+					}
+				}
+			}
+		}
+	}
+
+	GER_DHF = {
+		icon = generic_army_support
+		cost = 40
+		ai_will_do = { factor = 0 }
+		days_remove = 0
+		fire_only_once = yes
+		available = {
+			NOT = { country_exists = GER }
+			custom_trigger_tooltip = {
+				tooltip = "控制大德意志地区"
+				ROOT = {
+					owns_state = 96
+					owns_state = 784
+					owns_state = 95
+					owns_state = 94
+					owns_state = 93
+					owns_state = 91
+					owns_state = 89
+					owns_state = 97
+					owns_state = 92
+					owns_state = 73
+					owns_state = 88
+					owns_state = 71
+					owns_state = 664
+					owns_state = 70
+					owns_state = 75
+					owns_state = 72
+					owns_state = 67
+					owns_state = 66
+					owns_state = 87
+					owns_state = 10
+					owns_state = 90
+					owns_state = 98
+					owns_state = 5
+					owns_state = 763
+					owns_state = 9
+					owns_state = 972
+					owns_state = 53
+					owns_state = 52
+					owns_state = 848
+					owns_state = 153
+					owns_state = 976
+					owns_state = 975
+					owns_state = 4
+					owns_state = 152
+					owns_state = 69
+					owns_state = 74
+					owns_state = 762
+					owns_state = 807
+					owns_state = 63
+					owns_state = 68
+					owns_state = 62
+					owns_state = 61
+					owns_state = 58
+					owns_state = 909
+					owns_state = 59
+					owns_state = 64
+					owns_state = 86
+					owns_state = 65
+					owns_state = 60
+					owns_state = 54
+					owns_state = 56
+					owns_state = 57
+					owns_state = 51
+					owns_state = 42
+					owns_state = 978
+					owns_state = 50
+					owns_state = 55	
+					owns_state = 85	
+				}
+			}
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 96
+				state = 784
+				state = 95
+				state = 94
+				state = 93
+				state = 91
+				state = 89
+				state = 97
+				state = 92
+				state = 73
+				state = 88
+				state = 71
+				state = 664
+				state = 70
+				state = 75
+				state = 72
+				state = 67
+				state = 66
+				state = 87
+				state = 10
+				state = 90
+				state = 98
+				state = 5
+				state = 763
+				state = 9
+				state = 972
+				state = 53
+				state = 52
+				state = 848
+				state = 153
+				state = 976
+				state = 975
+				state = 4
+				state = 152
+				state = 69
+				state = 74
+				state = 762
+				state = 807
+				state = 63
+				state = 68
+				state = 62
+				state = 61
+				state = 58
+				state = 909
+				state = 59
+				state = 64
+				state = 86
+				state = 65
+				state = 60
+				state = 54
+				state = 56
+				state = 57
+				state = 51
+				state = 42
+				state = 978
+				state = 50
+				state = 55
+				state = 85
+			}
+		}
+		visible = {
+			is_ai = no
+			OR = {
+				NOT = { country_exists = SOV }
+				SOV = { is_subject_of = ROOT }
+			}
+		}
+
+		remove_effect = {
+			ROOT = {
+				set_autonomy = {
+					target = GER
+					autonomy_state = autonomy_duhufu
+				}
+			}
+			GER = {
+				set_cosmetic_tag = GER_duhufu
+				add_ideas = CHI_duhufu_chaogong
+			}
+			custom_effect_tooltip = "定西都护府成立"
+			hidden_effect = {
+				GER = {
+					transfer_state = 96
+					transfer_state = 784
+					transfer_state = 95
+					transfer_state = 94
+					transfer_state = 93
+					transfer_state = 91
+					transfer_state = 89
+					transfer_state = 97
+					transfer_state = 92
+					transfer_state = 73
+					transfer_state = 88
+					transfer_state = 71
+					transfer_state = 664
+					transfer_state = 70
+					transfer_state = 75
+					transfer_state = 72
+					transfer_state = 67
+					transfer_state = 66
+					transfer_state = 87
+					transfer_state = 10
+					transfer_state = 90
+					transfer_state = 98
+					transfer_state = 5
+					transfer_state = 763
+					transfer_state = 9
+					transfer_state = 972
+					transfer_state = 53
+					transfer_state = 52
+					transfer_state = 848
+					transfer_state = 153
+					transfer_state = 976
+					transfer_state = 975
+					transfer_state = 4
+					transfer_state = 152
+					transfer_state = 69
+					transfer_state = 74
+					transfer_state = 762
+					transfer_state = 807
+					transfer_state = 63
+					transfer_state = 68
+					transfer_state = 62
+					transfer_state = 61
+					transfer_state = 58
+					transfer_state = 909
+					transfer_state = 59
+					transfer_state = 64
+					transfer_state = 86
+					transfer_state = 65
+					transfer_state = 60
+					transfer_state = 54
+					transfer_state = 56
+					transfer_state = 57
+					transfer_state = 51
+					transfer_state = 42
+					transfer_state = 978
+					transfer_state = 50
+					transfer_state = 55
+					transfer_state = 85
+					every_state = {
+						limit = { NOT = { is_core_of = PREV }  is_owned_by = PREV }
+						add_core_of = PREV
+					}
+				}
+			}
+		}
+	}
+
+	ENG_DHF = {
+		icon = generic_army_support
+		cost = 40
+		ai_will_do = { factor = 0 }
+		days_remove = 0
+		fire_only_once = yes
+		available = {
+			NOT = { country_exists = ENG }
+			custom_trigger_tooltip = {
+				tooltip = "控制法兰西北部以及不列颠、爱尔兰、格陵兰、冰岛"
+				ROOT = {
+					owns_state = 36
+					owns_state = 7
+					owns_state = 35
+					owns_state = 977
+					owns_state = 980
+					owns_state = 8
+					owns_state = 28
+					owns_state = 17
+					owns_state = 18
+					owns_state = 34
+					owns_state = 6
+					owns_state = 29
+					owns_state = 785
+					owns_state = 15
+					owns_state = 16
+					owns_state = 27
+					owns_state = 24
+					owns_state = 33
+					owns_state = 23
+					owns_state = 30
+					owns_state = 14
+					owns_state = 127
+					owns_state = 123
+					owns_state = 338
+					owns_state = 126
+					owns_state = 125
+					owns_state = 129
+					owns_state = 128
+					owns_state = 122
+					owns_state = 132
+					owns_state = 130
+					owns_state = 931
+					owns_state = 131
+					owns_state = 133
+					owns_state = 121
+					owns_state = 932
+					owns_state = 136
+					owns_state = 120
+					owns_state = 933
+					owns_state = 119
+					owns_state = 134
+					owns_state = 113
+					owns_state = 135
+					owns_state = 933
+					owns_state = 337
+					owns_state = 100
+					owns_state = 101
+					owns_state = 914
+				}
+			}
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 36
+				state = 7
+				state = 35
+				state = 977
+				state = 980
+				state = 8
+				state = 28
+				state = 17
+				state = 18
+				state = 34
+				state = 6
+				state = 29
+				state = 785
+				state = 15
+				state = 16
+				state = 27
+				state = 24
+				state = 33
+				state = 23
+				state = 30
+				state = 14
+				state = 127
+				state = 123
+				state = 338
+				state = 126
+				state = 125
+				state = 129
+				state = 128
+				state = 122
+				state = 132
+				state = 130
+				state = 931
+				state = 131
+				state = 133
+				state = 121
+				state = 932
+				state = 136
+				state = 120
+				state = 933
+				state = 119
+				state = 134
+				state = 113
+				state = 135
+				state = 933
+				state = 337
+				state = 100
+				state = 101
+				state = 914
+			}
+		}
+		visible = {
+			is_ai = no
+			OR = {
+				NOT = { country_exists = GER }
+				GER = { is_subject_of = ROOT }
+			}
+		}
+
+		remove_effect = {
+			ROOT = {
+				set_autonomy = {
+					target = ENG
+					autonomy_state = autonomy_duhufu
+				}
+			}
+			ENG = {
+				set_cosmetic_tag = ENG_duhufu
+				add_ideas = CHI_duhufu_chaogong
+			}
+			custom_effect_tooltip = "远西都护府成立"
+			hidden_effect = {
+				ENG = {
+					transfer_state = 36
+					transfer_state = 7
+					transfer_state = 35
+					transfer_state = 977
+					transfer_state = 980
+					transfer_state = 8
+					transfer_state = 28
+					transfer_state = 17
+					transfer_state = 18
+					transfer_state = 34
+					transfer_state = 6
+					transfer_state = 29
+					transfer_state = 785
+					transfer_state = 15
+					transfer_state = 16
+					transfer_state = 27
+					transfer_state = 24
+					transfer_state = 33
+					transfer_state = 23
+					transfer_state = 30
+					transfer_state = 14
+					transfer_state = 127
+					transfer_state = 123
+					transfer_state = 338
+					transfer_state = 126
+					transfer_state = 125
+					transfer_state = 129
+					transfer_state = 128
+					transfer_state = 122
+					transfer_state = 132
+					transfer_state = 130
+					transfer_state = 931
+					transfer_state = 131
+					transfer_state = 133
+					transfer_state = 121
+					transfer_state = 932
+					transfer_state = 136
+					transfer_state = 120
+					transfer_state = 933
+					transfer_state = 119
+					transfer_state = 134
+					transfer_state = 113
+					transfer_state = 135
+					transfer_state = 933
+					transfer_state = 337
+					transfer_state = 100
+					transfer_state = 101
+					transfer_state = 914
+					every_state = {
+						limit = { NOT = { is_core_of = PREV }  is_owned_by = PREV }
+						add_core_of = PREV
+					}
+				}
+			}
+		}
+	}
+
+	ITA_DHF = {
+		icon = generic_army_support
+		cost = 40
+		ai_will_do = { factor = 0 }
+		days_remove = 0
+		fire_only_once = yes
+		available = {
+			NOT = { country_exists = ITA }
+			custom_trigger_tooltip = {
+				tooltip = "控制地中海北岸全部领土"
+
+				ROOT = {
+					owns_state = 183
+					owns_state = 345
+					owns_state = 348
+					owns_state = 798
+					owns_state = 356
+					owns_state = 49
+					owns_state = 346
+					owns_state = 347
+					owns_state = 797
+					owns_state = 343
+					owns_state = 340
+					owns_state = 339
+					owns_state = 342
+					owns_state = 164
+					owns_state = 187
+					owns_state = 341
+					owns_state = 182
+					owns_state = 186
+					owns_state = 185
+					owns_state = 731
+					owns_state = 805
+					owns_state = 44
+					owns_state = 934
+					owns_state = 970
+					owns_state = 106
+					owns_state = 212
+					owns_state = 211
+					owns_state = 801
+					owns_state = 48
+					owns_state = 77
+					owns_state = 971
+					owns_state = 766
+					owns_state = 78
+					owns_state = 80
+					owns_state = 79
+					owns_state = 76
+					owns_state = 83
+					owns_state = 84
+					owns_state = 82
+					owns_state = 81
+					owns_state = 46
+					owns_state = 184
+					owns_state = 47
+					owns_state = 802
+					owns_state = 803
+					owns_state = 108
+					owns_state = 105
+					owns_state = 107
+					owns_state = 764
+					owns_state = 45
+					owns_state = 109
+					owns_state = 104
+					owns_state = 804
+					owns_state = 103
+					owns_state = 853
+					owns_state = 102
+					owns_state = 163
+					owns_state = 155
+					owns_state = 974
+					owns_state = 973
+					owns_state = 154
+					owns_state = 43
+					owns_state = 736
+					owns_state = 852
+					owns_state = 160
+					owns_state = 39
+					owns_state = 850
+					owns_state = 159
+					owns_state = 158
+					owns_state = 161
+					owns_state = 162
+					owns_state = 157
+					owns_state = 2
+					owns_state = 849
+					owns_state = 117
+					owns_state = 156
+					owns_state = 115
+					owns_state = 116
+					owns_state = 1
+					owns_state = 114
+					owns_state = 845
+					owns_state = 847
+					owns_state = 3
+					owns_state = 151
+					owns_state = 846
+					owns_state = 20
+					owns_state = 26
+					owns_state = 25
+					owns_state = 19
+					owns_state = 806
+					owns_state = 31
+					owns_state = 22
+					owns_state = 21
+					owns_state = 851
+					owns_state = 32
+					owns_state = 735
+					owns_state = 177
+					owns_state = 165
+					owns_state = 794
+					owns_state = 166
+					owns_state = 172
+					owns_state = 176
+					owns_state = 793
+					owns_state = 168
+					owns_state = 167
+					owns_state = 118
+					owns_state = 173
+					owns_state = 789
+					owns_state = 169
+					owns_state = 750
+					owns_state = 41
+					owns_state = 788
+					owns_state = 791
+					owns_state = 790
+					owns_state = 174
+					owns_state = 171
+					owns_state = 180
+					owns_state = 112
+					owns_state = 181
+					owns_state = 795
+					owns_state = 179
+					owns_state = 175
+					owns_state = 792
+				}
+			}
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 183
+				state = 345
+				state = 348
+				state = 798
+				state = 356
+				state = 49
+				state = 346
+				state = 347
+				state = 797
+				state = 343
+				state = 340
+				state = 339
+				state = 342
+				state = 164
+				state = 187
+				state = 341
+				state = 182
+				state = 186
+				state = 185
+				state = 731
+				state = 805
+				state = 44
+				state = 934
+				state = 970
+				state = 106
+				state = 212
+				state = 211
+				state = 801
+				state = 48
+				state = 77
+				state = 971
+				state = 766
+				state = 78
+				state = 80
+				state = 79
+				state = 76
+				state = 83
+				state = 84
+				state = 82
+				state = 81
+				state = 46
+				state = 184
+				state = 47
+				state = 802
+				state = 803
+				state = 108
+				state = 105
+				state = 107
+				state = 764
+				state = 45
+				state = 109
+				state = 104
+				state = 804
+				state = 103
+				state = 853
+				state = 102
+				state = 163
+				state = 155
+				state = 974
+				state = 973
+				state = 154
+				state = 43
+				state = 736
+				state = 852
+				state = 160
+				state = 39
+				state = 850
+				state = 159
+				state = 158
+				state = 161
+				state = 162
+				state = 157
+				state = 2
+				state = 849
+				state = 117
+				state = 156
+				state = 115
+				state = 116
+				state = 1
+				state = 114
+				state = 845
+				state = 847
+				state = 3
+				state = 151
+				state = 846
+				state = 20
+				state = 26
+				state = 25
+				state = 19
+				state = 806
+				state = 31
+				state = 22
+				state = 21
+				state = 851
+				state = 32
+				state = 735
+				state = 177
+				state = 165
+				state = 794
+				state = 166
+				state = 172
+				state = 176
+				state = 793
+				state = 168
+				state = 167
+				state = 118
+				state = 173
+				state = 789
+				state = 169
+				state = 170
+				state = 41
+				state = 788
+				state = 791
+				state = 790
+				state = 174
+				state = 171
+				state = 180
+				state = 112
+				state = 181
+				state = 795
+				state = 179
+				state = 175
+				state = 792
+			}
+		}
+		visible = {
+			is_ai = no
+			OR = {
+				NOT = { country_exists = ITA }
+				ITA = { is_subject_of = ROOT }
+			}
+		}
+
+		remove_effect = {
+			ROOT = {
+				set_autonomy = {
+					target = ITA
+					autonomy_state = autonomy_duhufu
+				}
+			}
+			ITA = {
+				set_cosmetic_tag = ITA_duhufu
+				add_ideas = CHI_duhufu_chaogong
+			}
+			effect_tooltip = "秦北都护府成立"
+			hidden_effect = {
+				ITA = {
+					transfer_state = 183
+					transfer_state = 345
+					transfer_state = 348
+					transfer_state = 798
+					transfer_state = 356
+					transfer_state = 49
+					transfer_state = 346
+					transfer_state = 347
+					transfer_state = 797
+					transfer_state = 343
+					transfer_state = 340
+					transfer_state = 339
+					transfer_state = 342
+					transfer_state = 164
+					transfer_state = 187
+					transfer_state = 341
+					transfer_state = 182
+					transfer_state = 186
+					transfer_state = 185
+					transfer_state = 731
+					transfer_state = 805
+					transfer_state = 44
+					transfer_state = 934
+					transfer_state = 970
+					transfer_state = 106
+					transfer_state = 212
+					transfer_state = 211
+					transfer_state = 801
+					transfer_state = 48
+					transfer_state = 77
+					transfer_state = 971
+					transfer_state = 766
+					transfer_state = 78
+					transfer_state = 80
+					transfer_state = 79
+					transfer_state = 76
+					transfer_state = 83
+					transfer_state = 84
+					transfer_state = 82
+					transfer_state = 81
+					transfer_state = 46
+					transfer_state = 184
+					transfer_state = 47
+					transfer_state = 802
+					transfer_state = 803
+					transfer_state = 108
+					transfer_state = 105
+					transfer_state = 107
+					transfer_state = 764
+					transfer_state = 45
+					transfer_state = 109
+					transfer_state = 104
+					transfer_state = 804
+					transfer_state = 103
+					transfer_state = 853
+					transfer_state = 102
+					transfer_state = 163
+					transfer_state = 155
+					transfer_state = 974
+					transfer_state = 973
+					transfer_state = 154
+					transfer_state = 43
+					transfer_state = 736
+					transfer_state = 852
+					transfer_state = 160
+					transfer_state = 39
+					transfer_state = 850
+					transfer_state = 159
+					transfer_state = 158
+					transfer_state = 161
+					transfer_state = 162
+					transfer_state = 157
+					transfer_state = 2
+					transfer_state = 849
+					transfer_state = 117
+					transfer_state = 156
+					transfer_state = 115
+					transfer_state = 116
+					transfer_state = 1
+					transfer_state = 114
+					transfer_state = 845
+					transfer_state = 847
+					transfer_state = 3
+					transfer_state = 151
+					transfer_state = 846
+					transfer_state = 20
+					transfer_state = 26
+					transfer_state = 25
+					transfer_state = 19
+					transfer_state = 806
+					transfer_state = 31
+					transfer_state = 22
+					transfer_state = 21
+					transfer_state = 851
+					transfer_state = 32
+					transfer_state = 735
+					transfer_state = 177
+					transfer_state = 165
+					transfer_state = 794
+					transfer_state = 166
+					transfer_state = 172
+					transfer_state = 176
+					transfer_state = 793
+					transfer_state = 168
+					transfer_state = 167
+					transfer_state = 118
+					transfer_state = 173
+					transfer_state = 789
+					transfer_state = 169
+					transfer_state = 170
+					transfer_state = 41
+					transfer_state = 788
+					transfer_state = 791
+					transfer_state = 790
+					transfer_state = 174
+					transfer_state = 171
+					transfer_state = 180
+					transfer_state = 112
+					transfer_state = 181
+					transfer_state = 795
+					transfer_state = 179
+					transfer_state = 175
+					transfer_state = 792
+					every_state = {
+						limit = { NOT = { is_core_of = PREV }  is_owned_by = PREV }
+						add_core_of = PREV
+					}
+				}
+			}
+		}
+	}
+
+	SAU_DHF = {
+		icon = generic_army_support
+		cost = 40
+		ai_will_do = { factor = 0 }
+		days_remove = 0
+		fire_only_once = yes
+		available = {
+			NOT = { country_exists = SAU }
+			custom_trigger_tooltip = {
+				tooltip = "控制阿拉伯半岛主要区域"
+				ROOT = {
+					owns_state = 294
+					owns_state = 658
+					owns_state = 765
+					owns_state = 678
+					owns_state = 858
+					owns_state = 856
+					owns_state = 292
+					owns_state = 859
+					owns_state = 857
+					owns_state = 656
+					owns_state = 679
+					owns_state = 675
+					owns_state = 291
+					owns_state = 676
+					owns_state = 799
+					owns_state = 680
+					owns_state = 553
+					owns_state = 554
+					owns_state = 454
+					owns_state = 455
+					owns_state = 453
+					owns_state = 446
+					owns_state = 677
+					owns_state = 854
+					owns_state = 855
+					owns_state = 293
+					owns_state = 659
+					owns_state = 344
+					owns_state = 349
+					owns_state = 355
+					owns_state = 353
+					owns_state = 350
+					owns_state = 352
+					owns_state = 800
+					owns_state = 354
+				}
+			}
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 294
+				state = 658
+				state = 765
+				state = 678
+				state = 858
+				state = 856
+				state = 292
+				state = 859
+				state = 857
+				state = 656
+				state = 679
+				state = 675
+				state = 291
+				state = 676
+				state = 799
+				state = 680
+				state = 553
+				state = 554
+				state = 454
+				state = 455
+				state = 453
+				state = 446
+				state = 677
+				state = 854
+				state = 855
+				state = 293
+				state = 659
+				state = 344
+				state = 349
+				state = 355
+				state = 353
+				state = 350
+				state = 352
+				state = 800
+				state = 354
+			}
+		}
+		visible = {
+			is_ai = no
+			OR = {
+				NOT = { country_exists = ENG }
+				ENG = { is_subject_of = ROOT }
+			}
+		}
+
+		remove_effect = {
+			ROOT = {
+				set_autonomy = {
+					target = SAU
+					autonomy_state = autonomy_duhufu
+				}
+			}
+			SAU = {
+				set_cosmetic_tag = SAU_duhufu
+				add_ideas = CHI_duhufu_chaogong
+			}
+			custom_effect_tooltip = "天方都护府成立"
+			hidden_effect = {
+				SAU = {
+					transfer_state = 294
+					transfer_state = 658
+					transfer_state = 765
+					transfer_state = 678
+					transfer_state = 858
+					transfer_state = 856
+					transfer_state = 292
+					transfer_state = 859
+					transfer_state = 857
+					transfer_state = 656
+					transfer_state = 679
+					transfer_state = 675
+					transfer_state = 291
+					transfer_state = 676
+					transfer_state = 799
+					transfer_state = 680
+					transfer_state = 553
+					transfer_state = 554
+					transfer_state = 454
+					transfer_state = 455
+					transfer_state = 453
+					transfer_state = 446
+					transfer_state = 677
+					transfer_state = 854
+					transfer_state = 855
+					transfer_state = 293
+					transfer_state = 659
+					transfer_state = 344
+					transfer_state = 349
+					transfer_state = 355
+					transfer_state = 353
+					transfer_state = 350
+					transfer_state = 352
+					transfer_state = 800
+					transfer_state = 354
+					every_state = {
+						limit = { NOT = { is_core_of = PREV }  is_owned_by = PREV }
+						add_core_of = PREV
+					}
+				}
+			}
+		}
+	}
+
+	CAN_DHF = {
+		icon = generic_army_support
+		cost = 40
+		ai_will_do = { factor = 0 }
+		days_remove = 0
+		fire_only_once = yes
+		available = {
+			NOT = { country_exists = CAN }
+			custom_trigger_tooltip = {
+				tooltip = "控制美洲西部全部区域"
+				ROOT = {
+					owns_state = 463
+					owns_state = 864
+					owns_state = 471
+					owns_state = 473
+					owns_state = 740
+					owns_state = 739
+					owns_state = 472
+					owns_state = 470
+					owns_state = 865
+					owns_state = 469
+					owns_state = 386
+					owns_state = 387
+					owns_state = 388
+					owns_state = 389
+					owns_state = 390
+					owns_state = 384
+					owns_state = 382
+					owns_state = 376
+					owns_state = 377
+					owns_state = 380
+					owns_state = 381
+					owns_state = 383
+					owns_state = 382
+					owns_state = 378
+					owns_state = 379
+					owns_state = 385
+				}
+			}
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 463
+				state = 864
+				state = 471
+				state = 473
+				state = 740
+				state = 739
+				state = 472
+				state = 470
+				state = 865
+				state = 469
+				state = 386
+				state = 387
+				state = 388
+				state = 389
+				state = 390
+				state = 384
+				state = 382
+				state = 376
+				state = 377
+				state = 380
+				state = 381
+				state = 383
+				state = 382
+				state = 378
+				state = 379
+				state = 385
+			}
+		}
+		visible = {
+			is_ai = no
+			OR = {
+				NOT = { country_exists = USA }
+				USA = { is_subject_of = ROOT }
+			}
+		}
+
+		remove_effect = {
+			ROOT = {
+				set_autonomy = {
+					target = CAN
+					autonomy_state = autonomy_duhufu
+				}
+			}
+			CAN = {
+				set_cosmetic_tag = CAN_duhufu
+				add_ideas = CHI_duhufu_chaogong
+			}
+			custom_effect_tooltip = "殷西都护府成立"
+			hidden_effect = {
+				CAN = {
+					transfer_state = 463
+					transfer_state = 864
+					transfer_state = 471
+					transfer_state = 473
+					transfer_state = 740
+					transfer_state = 739
+					transfer_state = 472
+					transfer_state = 470
+					transfer_state = 865
+					transfer_state = 469
+					transfer_state = 386
+					transfer_state = 387
+					transfer_state = 388
+					transfer_state = 389
+					transfer_state = 390
+					transfer_state = 384
+					transfer_state = 382
+					transfer_state = 376
+					transfer_state = 377
+					transfer_state = 380
+					transfer_state = 381
+					transfer_state = 383
+					transfer_state = 382
+					transfer_state = 378
+					transfer_state = 379
+					transfer_state = 385
+					every_state = {
+						limit = { NOT = { is_core_of = PREV }  is_owned_by = PREV }
+						add_core_of = PREV
+					}
+				}
+			}
+		}
+	}
+
+
+	USA_DHF = {
+		icon = generic_army_support
+		cost = 40
+		ai_will_do = { factor = 0 }
+		days_remove = 0
+		fire_only_once = yes
+		available = {
+			NOT = { country_exists = USA }
+			custom_trigger_tooltip = {
+				tooltip = "控制美洲东部全部区域"
+				ROOT = {
+					owns_state = 683
+					owns_state = 867
+					owns_state = 467
+					owns_state = 866
+					owns_state = 862
+					owns_state = 276
+					owns_state = 466
+					owns_state = 861
+					owns_state = 332
+					owns_state = 860
+					owns_state = 465
+					owns_state = 464
+					owns_state = 468
+					owns_state = 331
+					owns_state = 730
+					owns_state = 696
+					owns_state = 682
+					owns_state = 863
+					owns_state = 357
+					owns_state = 358
+					owns_state = 360
+					owns_state = 359
+					owns_state = 361
+					owns_state = 362
+					owns_state = 363
+					owns_state = 364
+					owns_state = 365
+					owns_state = 366
+					owns_state = 367
+					owns_state = 368
+					owns_state = 369
+					owns_state = 370
+					owns_state = 372
+					owns_state = 373
+					owns_state = 374
+					owns_state = 816
+					owns_state = 261
+					owns_state = 393
+					owns_state = 396
+					owns_state = 395
+					owns_state = 394
+					owns_state = 391
+					owns_state = 392
+				}
+			}
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 683
+				state = 867
+				state = 467
+				state = 866
+				state = 862
+				state = 276
+				state = 466
+				state = 861
+				state = 332
+				state = 860
+				state = 465
+				state = 464
+				state = 468
+				state = 331
+				state = 730
+				state = 696
+				state = 682
+				state = 863
+				state = 357
+				state = 358
+				state = 360
+				state = 359
+				state = 361
+				state = 362
+				state = 363
+				state = 364
+				state = 365
+				state = 366
+				state = 367
+				state = 368
+				state = 369
+				state = 370
+				state = 372
+				state = 373
+				state = 374
+				state = 816
+				state = 261
+				state = 393
+				state = 396
+				state = 395
+				state = 394
+				state = 391
+				state = 392
+			}
+		}
+		visible = {
+			is_ai = no
+			OR = {
+				NOT = { country_exists = USA }
+				USA = { is_subject_of = ROOT }
+			}
+		}
+
+		remove_effect = {
+			ROOT = {
+				set_autonomy = {
+					target = USA
+					autonomy_state = autonomy_duhufu
+				}
+			}
+			USA = {
+				set_cosmetic_tag = USA_duhufu
+				add_ideas = CHI_duhufu_chaogong
+			}
+			custom_effect_tooltip = "殷东都护府成立"
+			hidden_effect = {
+				USA = {
+					transfer_state = 683
+					transfer_state = 867
+					transfer_state = 467
+					transfer_state = 866
+					transfer_state = 862
+					transfer_state = 276
+					transfer_state = 466
+					transfer_state = 861
+					transfer_state = 332
+					transfer_state = 860
+					transfer_state = 465
+					transfer_state = 464
+					transfer_state = 468
+					transfer_state = 331
+					transfer_state = 730
+					transfer_state = 696
+					transfer_state = 682
+					transfer_state = 863
+					transfer_state = 357
+					transfer_state = 358
+					transfer_state = 360
+					transfer_state = 359
+					transfer_state = 361
+					transfer_state = 362
+					transfer_state = 363
+					transfer_state = 364
+					transfer_state = 365
+					transfer_state = 366
+					transfer_state = 367
+					transfer_state = 368
+					transfer_state = 369
+					transfer_state = 370
+					transfer_state = 372
+					transfer_state = 373
+					transfer_state = 374
+					transfer_state = 816
+					transfer_state = 261
+					transfer_state = 393
+					transfer_state = 396
+					transfer_state = 395
+					transfer_state = 394
+					transfer_state = 391
+					transfer_state = 392
+					every_state = {
+						limit = { NOT = { is_core_of = PREV }  is_owned_by = PREV }
+						add_core_of = PREV
+					}
+				}
+			}
+		}
+	}
+
+	MEX_DHF = {
+		icon = generic_army_support
+		cost = 40
+		ai_will_do = { factor = 0 }
+		days_remove = 0
+		fire_only_once = yes
+		available = {
+			NOT = { country_exists = MEX }
+			custom_trigger_tooltip = {
+				tooltip = "控制中美洲主要区域及德克萨斯、路易斯安娜"
+				ROOT = {
+					owns_state = 375
+					owns_state = 484
+					owns_state = 371
+					owns_state = 483
+					owns_state = 482
+					owns_state = 481
+					owns_state = 480
+					owns_state = 479
+					owns_state = 478
+					owns_state = 477
+					owns_state = 476
+					owns_state = 475
+					owns_state = 474
+					owns_state = 277
+					owns_state = 485
+					owns_state = 313
+					owns_state = 311
+					owns_state = 314
+					owns_state = 312
+					owns_state = 317
+					owns_state = 316
+					owns_state = 304
+					owns_state = 685
+					owns_state = 315
+					owns_state = 689
+					owns_state = 318
+					owns_state = 319
+					owns_state = 690
+					owns_state = 693
+					owns_state = 686
+					owns_state = 308
+					owns_state = 694
+					owns_state = 692
+				}
+			}
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 375
+				state = 484
+				state = 371
+				state = 483
+				state = 482
+				state = 481
+				state = 480
+				state = 479
+				state = 478
+				state = 477
+				state = 476
+				state = 475
+				state = 474
+				state = 277
+				state = 485
+				state = 313
+				state = 311
+				state = 314
+				state = 312
+				state = 317
+				state = 316
+				state = 304
+				state = 685
+				state = 315
+				state = 689
+				state = 318
+				state = 319
+				state = 690
+				state = 693
+				state = 686
+				state = 308
+				state = 694
+				state = 692
+			}
+		}
+		visible = {
+			is_ai = no
+			OR = {
+				NOT = { country_exists = MEX }
+				MEX = { is_subject_of = ROOT }
+				NOT = { country_exists = USA }
+				USA = { is_subject_of = ROOT }
+			}
+		}
+
+		remove_effect = {
+			ROOT = {
+				set_autonomy = {
+					target = MEX
+					autonomy_state = autonomy_duhufu
+				}
+			}
+			MEX = {
+				set_cosmetic_tag = MEX_duhufu
+				add_ideas = CHI_duhufu_chaogong
+			}
+			custom_effect_tooltip = "殷南都护府成立"
+			hidden_effect = {
+				MEX = {
+					transfer_state = 375
+					transfer_state = 484
+					transfer_state = 483
+					transfer_state = 482
+					transfer_state = 481
+					transfer_state = 480
+					transfer_state = 479
+					transfer_state = 478
+					transfer_state = 477
+					transfer_state = 476
+					transfer_state = 475
+					transfer_state = 474
+					transfer_state = 277
+					transfer_state = 485
+					transfer_state = 371
+					transfer_state = 313
+					transfer_state = 311
+					transfer_state = 314
+					transfer_state = 312
+					transfer_state = 317
+					transfer_state = 316
+					transfer_state = 304
+					transfer_state = 685
+					transfer_state = 315
+					transfer_state = 689
+					transfer_state = 318
+					transfer_state = 319
+					transfer_state = 690
+					transfer_state = 693
+					transfer_state = 686
+					transfer_state = 308
+					transfer_state = 694
+					transfer_state = 692
+					every_state = {
+						limit = { NOT = { is_core_of = PREV }  is_owned_by = PREV }
+						add_core_of = PREV
+					}
+				}
+			}
+		}
+	}
+
+
+	AST_DHF = {
+		icon = generic_army_support
+		cost = 40
+		ai_will_do = { factor = 0 }
+		days_remove = 0
+		fire_only_once = yes
+		available = {
+			NOT = { country_exists = AST }
+			custom_trigger_tooltip = {
+				tooltip = "控制澳大利亚全部领土"
+				ROOT = {
+					owns_state = 669
+					owns_state = 979
+					owns_state = 523
+					owns_state = 737
+					owns_state = 634
+					owns_state = 738
+					owns_state = 520
+					owns_state = 870
+					owns_state = 872
+					owns_state = 521
+					owns_state = 873
+					owns_state = 674
+					owns_state = 285
+					owns_state = 517
+					owns_state = 517
+					owns_state = 519
+					owns_state = 871
+					owns_state = 522
+					owns_state = 284
+					owns_state = 723
+					owns_state = 518
+				}
+			}
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 669
+				state = 979
+				state = 523
+				state = 737
+				state = 634
+				state = 738
+				state = 520
+				state = 870
+				state = 872
+				state = 521
+				state = 873
+				state = 674
+				state = 285
+				state = 517
+				state = 517
+				state = 519
+				state = 871
+				state = 522
+				state = 284
+				state = 723
+				state = 518
+			}
+		}
+		visible = {
+			is_ai = no
+			OR = {
+				NOT = { country_exists = AST }
+				AST = { is_subject_of = ROOT }
+			}
+		}
+
+		remove_effect = {
+			ROOT = {
+				set_autonomy = {
+					target = AST
+					autonomy_state = autonomy_duhufu
+				}
+			}
+			AST = {
+				set_cosmetic_tag = AST_duhufu
+				add_ideas = CHI_duhufu_chaogong
+			}
+			custom_effect_tooltip = "远南都护府成立"
+			hidden_effect = {
+				AST = {
+					transfer_state = 669
+					transfer_state = 979
+					transfer_state = 523
+					transfer_state = 737
+					transfer_state = 634
+					transfer_state = 738
+					transfer_state = 520
+					transfer_state = 870
+					transfer_state = 872
+					transfer_state = 521
+					transfer_state = 873
+					transfer_state = 674
+					transfer_state = 285
+					transfer_state = 517
+					transfer_state = 517
+					transfer_state = 519
+					transfer_state = 871
+					transfer_state = 522
+					transfer_state = 284
+					transfer_state = 723
+					transfer_state = 518
+					every_state = {
+						limit = { NOT = { is_core_of = PREV }  is_owned_by = PREV }
+						add_core_of = PREV
+					}
+				}
+			}
+		}
+	}
+
+	EGY_DHF = {
+		icon = generic_army_support
+		cost = 40
+		ai_will_do = { factor = 0 }
+		days_remove = 0
+		fire_only_once = yes
+		available = {
+			NOT = { country_exists = EGY }
+			custom_trigger_tooltip = {
+				tooltip = "控制北非全部区域"
+				ROOT = {
+					owns_state = 907
+					owns_state = 447
+					owns_state = 452
+					owns_state = 552
+					owns_state = 456
+					owns_state = 457
+					owns_state = 767
+					owns_state = 551
+					owns_state = 883
+					owns_state = 886
+					owns_state = 549
+					owns_state = 887
+					owns_state = 550
+					owns_state = 842
+					owns_state = 841
+					owns_state = 843
+					owns_state = 840
+					owns_state = 839
+					owns_state = 271
+					owns_state = 908
+					owns_state = 268
+					owns_state = 273
+					owns_state = 661
+					owns_state = 662
+					owns_state = 663
+					owns_state = 448
+					owns_state = 449
+					owns_state = 450
+					owns_state = 451
+					owns_state = 458
+					owns_state = 459
+					owns_state = 460
+					owns_state = 461
+					owns_state = 290
+					owns_state = 665
+					owns_state = 514
+					owns_state = 462
+					owns_state = 699
+					owns_state = 557
+					owns_state = 786
+					owns_state = 782
+					owns_state = 515
+					owns_state = 775
+					owns_state = 513
+					owns_state = 898
+					owns_state = 783
+				}
+			}
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 907
+				state = 447
+				state = 452
+				state = 552
+				state = 456
+				state = 457
+				state = 767
+				state = 551
+				state = 883
+				state = 886
+				state = 549
+				state = 887
+				state = 550
+				state = 842
+				state = 841
+				state = 843
+				state = 840
+				state = 839
+				state = 271
+				state = 908
+				state = 268
+				state = 273
+				state = 661
+				state = 662
+				state = 663
+				state = 448
+				state = 449
+				state = 450
+				state = 451
+				state = 458
+				state = 459
+				state = 460
+				state = 461
+				state = 290
+				state = 665
+				state = 514
+				state = 462
+				state = 699
+				state = 557
+				state = 786
+				state = 782
+				state = 515
+				state = 775
+				state = 513
+				state = 898
+				state = 783
+			}
+		}
+		visible = {
+			is_ai = no
+			OR = { NOT = { country_exists = ITA } ITA = { is_subject_of = CHI } }
+			OR = { NOT = { country_exists = FRA } FRA = { is_subject_of = CHI } }
+			OR = { NOT = { country_exists = ENG } ENG = { is_subject_of = CHI } }
+		}
+
+		remove_effect = {
+			ROOT = {
+				set_autonomy = {
+					target = EGY
+					autonomy_state = autonomy_duhufu
+				}
+			}
+			EGY = {
+				set_cosmetic_tag = EGY_duhufu
+				add_ideas = CHI_duhufu_chaogong
+			}
+			custom_effect_tooltip = "瀚海都护府成立"
+			hidden_effect = {
+				EGY = {
+					transfer_state = 907
+					transfer_state = 447
+					transfer_state = 452
+					transfer_state = 552
+					transfer_state = 456
+					transfer_state = 457
+					transfer_state = 767
+					transfer_state = 551
+					transfer_state = 883
+					transfer_state = 886
+					transfer_state = 549
+					transfer_state = 887
+					transfer_state = 550
+					transfer_state = 842
+					transfer_state = 841
+					transfer_state = 843
+					transfer_state = 840
+					transfer_state = 839
+					transfer_state = 271
+					transfer_state = 908
+					transfer_state = 268
+					transfer_state = 273
+					transfer_state = 661
+					transfer_state = 662
+					transfer_state = 663
+					transfer_state = 448
+					transfer_state = 449
+					transfer_state = 450
+					transfer_state = 451
+					transfer_state = 458
+					transfer_state = 459
+					transfer_state = 460
+					transfer_state = 461
+					transfer_state = 290
+					transfer_state = 665
+					transfer_state = 514
+					transfer_state = 462
+					transfer_state = 699
+					transfer_state = 557
+					transfer_state = 786
+					transfer_state = 782
+					transfer_state = 515
+					transfer_state = 775
+					transfer_state = 513
+					transfer_state = 898
+					transfer_state = 783
+					every_state = {
+						limit = { NOT = { is_core_of = PREV }  is_owned_by = PREV }
+						add_core_of = PREV
+					}
+				}
+			}
+		}
+	}
+
+	DAH_DHF = {
+		icon = generic_army_support
+		cost = 40
+		ai_will_do = { factor = 0 }
+		days_remove = 0
+		fire_only_once = yes
+		available = {
+			NOT = { country_exists = DAH }
+			custom_trigger_tooltip = {
+				tooltip = "控制西非全部区域"
+				ROOT = {
+					owns_state = 272
+					owns_state = 701
+					owns_state = 296
+					owns_state = 780
+					owns_state = 700
+					owns_state = 298
+					owns_state = 899
+					owns_state = 556
+					owns_state = 779
+					owns_state = 778
+					owns_state = 274
+					owns_state = 777
+					owns_state = 776
+					owns_state = 781
+					owns_state = 902
+					owns_state = 558
+					owns_state = 901
+					owns_state = 900
+					owns_state = 774
+					owns_state = 773
+					owns_state = 660
+					owns_state = 538
+					owns_state = 888
+					owns_state = 295
+					owns_state = 796
+					owns_state = 539
+					owns_state = 772
+					owns_state = 297
+					owns_state = 540
+					owns_state = 892
+					owns_state = 891
+					owns_state = 895
+					owns_state = 894
+					owns_state = 541
+				}
+			}
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 272
+				state = 701
+				state = 296
+				state = 780
+				state = 700
+				state = 298
+				state = 899
+				state = 556
+				state = 779
+				state = 778
+				state = 274
+				state = 777
+				state = 776
+				state = 781
+				state = 902
+				state = 558
+				state = 901
+				state = 900
+				state = 774
+				state = 773
+				state = 660
+				state = 538
+				state = 888
+				state = 295
+				state = 796
+				state = 539
+				state = 772
+				state = 297
+				state = 540
+				state = 892
+				state = 891
+				state = 895
+				state = 894
+				state = 541
+			}
+		}
+		visible = {
+			is_ai = no
+			NOT = { country_exists = FRA }
+		}
+
+		remove_effect = {
+			ROOT = {
+				set_autonomy = {
+					target = DAH
+					autonomy_state = autonomy_duhufu
+				}
+			}
+			DAH = {
+				set_cosmetic_tag = DAH_duhufu
+				add_ideas = CHI_duhufu_chaogong
+			}
+			custom_effect_tooltip = "昆仑都护府成立"
+			hidden_effect = {
+				DAH = {
+					transfer_state = 272
+					transfer_state = 701
+					transfer_state = 296
+					transfer_state = 780
+					transfer_state = 700
+					transfer_state = 298
+					transfer_state = 899
+					transfer_state = 556
+					transfer_state = 779
+					transfer_state = 778
+					transfer_state = 274
+					transfer_state = 777
+					transfer_state = 776
+					transfer_state = 781
+					transfer_state = 902
+					transfer_state = 558
+					transfer_state = 901
+					transfer_state = 900
+					transfer_state = 774
+					transfer_state = 773
+					transfer_state = 660
+					transfer_state = 538
+					transfer_state = 888
+					transfer_state = 295
+					transfer_state = 796
+					transfer_state = 539
+					transfer_state = 772
+					transfer_state = 297
+					transfer_state = 540
+					transfer_state = 892
+					transfer_state = 891
+					transfer_state = 895
+					transfer_state = 894
+					transfer_state = 541
+					every_state = {
+						limit = { NOT = { is_core_of = PREV }  is_owned_by = PREV }
+						add_core_of = PREV
+					}
+				}
+			}
+		}
+	}
+
+	SOM_DHF = {
+		icon = generic_army_support
+		cost = 40
+		ai_will_do = { factor = 0 }
+		days_remove = 0
+		fire_only_once = yes
+		available = {
+			NOT = { country_exists = SOM }
+			custom_trigger_tooltip = {
+				tooltip = "控制东非全部区域"
+				ROOT = {
+					owns_state = 269
+					owns_state = 559
+					owns_state = 844
+					owns_state = 835
+					owns_state = 836
+					owns_state = 837
+					owns_state = 838
+					owns_state = 884
+					owns_state = 885
+					owns_state = 718
+					owns_state = 890
+					owns_state = 768
+					owns_state = 769
+					owns_state = 889
+					owns_state = 546
+					owns_state = 771
+					owns_state = 770
+					owns_state = 897
+					owns_state = 903
+					owns_state = 905
+					owns_state = 547
+					owns_state = 904
+					owns_state = 548
+					owns_state = 981
+					owns_state = 542
+					owns_state = 893
+					owns_state = 681
+					owns_state = 275
+					owns_state = 719
+					owns_state = 544
+					owns_state = 896
+					owns_state = 543
+					owns_state = 545
+				}
+			}
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 269
+				state = 559
+				state = 844
+				state = 835
+				state = 836
+				state = 837
+				state = 838
+				state = 884
+				state = 885
+				state = 718
+				state = 890
+				state = 768
+				state = 769
+				state = 889
+				state = 546
+				state = 771
+				state = 770
+				state = 897
+				state = 903
+				state = 905
+				state = 547
+				state = 904
+				state = 548
+				state = 981
+				state = 542
+				state = 893
+				state = 681
+				state = 275
+				state = 719
+				state = 544
+				state = 896
+				state = 543
+				state = 545
+			}
+		}
+		visible = {
+			is_ai = no
+			OR = {
+				NOT = { country_exists = ENG }
+				ENG = { is_subject_of = ROOT }
+			}
+		}
+
+		remove_effect = {
+			ROOT = {
+				set_autonomy = {
+					target = SOM
+					autonomy_state = autonomy_duhufu
+				}
+			}
+			SOM = {
+				set_cosmetic_tag = SOM_duhufu
+				add_ideas = CHI_duhufu_chaogong
+			}
+			custom_effect_tooltip = "永昌都护府成立"
+			hidden_effect = {
+				SOM = {
+					transfer_state = 269
+					transfer_state = 559
+					transfer_state = 844
+					transfer_state = 835
+					transfer_state = 836
+					transfer_state = 837
+					transfer_state = 838
+					transfer_state = 884
+					transfer_state = 885
+					transfer_state = 718
+					transfer_state = 890
+					transfer_state = 768
+					transfer_state = 769
+					transfer_state = 889
+					transfer_state = 546
+					transfer_state = 771
+					transfer_state = 770
+					transfer_state = 897
+					transfer_state = 903
+					transfer_state = 905
+					transfer_state = 547
+					transfer_state = 904
+					transfer_state = 548
+					transfer_state = 981
+					transfer_state = 542
+					transfer_state = 893
+					transfer_state = 681
+					transfer_state = 275
+					transfer_state = 719
+					transfer_state = 544
+					transfer_state = 896
+					transfer_state = 543
+					transfer_state = 545
+					every_state = {
+						limit = { NOT = { is_core_of = PREV }  is_controlled_by = PREV }
+						add_core_of = PREV
+					}
+				}
+			}
+		}
+	}
+
+	BRA_DHF = {
+		icon = generic_army_support
+		cost = 40
+		ai_will_do = { factor = 0 }
+		days_remove = 0
+		fire_only_once = yes
+		available = {
+			NOT = { country_exists = BRA }
+			custom_trigger_tooltip = {
+				tooltip = "控制整个南美洲"
+				ROOT = {
+					owns_state = 695
+					owns_state = 489
+					owns_state = 307
+					owns_state = 488
+					owns_state = 493
+					owns_state = 306
+					owns_state = 486
+					owns_state = 305
+					owns_state = 490
+					owns_state = 687
+					owns_state = 309
+					owns_state = 310
+					owns_state = 491
+					owns_state = 303
+					owns_state = 494
+					owns_state = 492
+					owns_state = 947
+					owns_state = 487
+					owns_state = 302
+					owns_state = 951
+					owns_state = 506
+					owns_state = 952
+					owns_state = 279
+					owns_state = 950
+					owns_state = 949
+					owns_state = 507
+					owns_state = 953
+					owns_state = 954
+					owns_state = 955
+					owns_state = 512
+					owns_state = 278
+					owns_state = 511
+					owns_state = 958
+					owns_state = 956
+					owns_state = 510
+					owns_state = 509
+					owns_state = 960
+					owns_state = 508
+					owns_state = 959
+					owns_state = 957
+					owns_state = 946
+					owns_state = 945
+					owns_state = 300
+					owns_state = 502
+					owns_state = 503
+					owns_state = 944
+					owns_state = 504
+					owns_state = 501
+					owns_state = 280
+					owns_state = 505
+					owns_state = 496
+					owns_state = 500
+					owns_state = 943
+					owns_state = 499
+					owns_state = 936
+					owns_state = 498
+					owns_state = 935
+					owns_state = 937
+					owns_state = 497
+					owns_state = 938
+					owns_state = 966
+					owns_state = 965
+					owns_state = 942
+					owns_state = 495
+					owns_state = 963
+					owns_state = 940
+					owns_state = 964
+					owns_state = 961
+					owns_state = 967
+					owns_state = 969
+					owns_state = 968
+					owns_state = 941
+					owns_state = 939
+					owns_state = 691
+					owns_state = 688
+					owns_state = 301
+					owns_state = 962
+				}
+			}
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 695
+				state = 489
+				state = 307
+				state = 488
+				state = 493
+				state = 306
+				state = 486
+				state = 305
+				state = 490
+				state = 687
+				state = 309
+				state = 310
+				state = 491
+				state = 303
+				state = 494
+				state = 492
+				state = 947
+				state = 487
+				state = 302
+				state = 951
+				state = 506
+				state = 952
+				state = 279
+				state = 950
+				state = 949
+				state = 507
+				state = 953
+				state = 954
+				state = 955
+				state = 512
+				state = 278
+				state = 511
+				state = 958
+				state = 956
+				state = 510
+				state = 509
+				state = 960
+				state = 508
+				state = 959
+				state = 957
+				state = 946
+				state = 945
+				state = 300
+				state = 502
+				state = 503
+				state = 944
+				state = 504
+				state = 501
+				state = 280
+				state = 505
+				state = 496
+				state = 500
+				state = 943
+				state = 499
+				state = 936
+				state = 498
+				state = 935
+				state = 937
+				state = 497
+				state = 938
+				state = 966
+				state = 965
+				state = 942
+				state = 495
+				state = 963
+				state = 940
+				state = 964
+				state = 961
+				state = 967
+				state = 969
+				state = 968
+				state = 941
+				state = 939
+				state = 691
+				state = 688
+				state = 301
+				state = 962
+			}
+		}
+		visible = {
+			is_ai = no
+			NOT = { country_exists = BRA }
+		}
+
+		remove_effect = {
+			ROOT = {
+				set_autonomy = {
+					target = BRA
+					autonomy_state = autonomy_duhufu
+				}
+			}
+			BRA = {
+				set_cosmetic_tag = BRA_duhufu
+				add_ideas = CHI_duhufu_chaogong
+			}
+			custom_effect_tooltip = "万安都护府成立"
+			hidden_effect = {
+				BRA = {
+					transfer_state = 695
+					transfer_state = 489
+					transfer_state = 307
+					transfer_state = 488
+					transfer_state = 493
+					transfer_state = 306
+					transfer_state = 486
+					transfer_state = 305
+					transfer_state = 490
+					transfer_state = 687
+					transfer_state = 309
+					transfer_state = 310
+					transfer_state = 491
+					transfer_state = 303
+					transfer_state = 494
+					transfer_state = 492
+					transfer_state = 947
+					transfer_state = 487
+					transfer_state = 302
+					transfer_state = 951
+					transfer_state = 506
+					transfer_state = 952
+					transfer_state = 279
+					transfer_state = 950
+					transfer_state = 949
+					transfer_state = 507
+					transfer_state = 953
+					transfer_state = 954
+					transfer_state = 955
+					transfer_state = 512
+					transfer_state = 278
+					transfer_state = 511
+					transfer_state = 958
+					transfer_state = 956
+					transfer_state = 510
+					transfer_state = 509
+					transfer_state = 960
+					transfer_state = 508
+					transfer_state = 959
+					transfer_state = 957
+					transfer_state = 946
+					transfer_state = 945
+					transfer_state = 300
+					transfer_state = 502
+					transfer_state = 503
+					transfer_state = 944
+					transfer_state = 504
+					transfer_state = 501
+					transfer_state = 280
+					transfer_state = 505
+					transfer_state = 496
+					transfer_state = 500
+					transfer_state = 943
+					transfer_state = 499
+					transfer_state = 936
+					transfer_state = 498
+					transfer_state = 935
+					transfer_state = 937
+					transfer_state = 497
+					transfer_state = 938
+					transfer_state = 966
+					transfer_state = 965
+					transfer_state = 942
+					transfer_state = 495
+					transfer_state = 963
+					transfer_state = 940
+					transfer_state = 964
+					transfer_state = 961
+					transfer_state = 967
+					transfer_state = 969
+					transfer_state = 968
+					transfer_state = 941
+					transfer_state = 939
+					transfer_state = 691
+					transfer_state = 688
+					transfer_state = 301
+					transfer_state = 962
+					every_state = {
+						limit = { NOT = { is_core_of = PREV }  is_owned_by = PREV }
+						add_core_of = PREV
+					}
+				}
+			}
+		}
+	}
+
+	RAJ_DHF = {
+		icon = generic_army_support
+		cost = 3
+		ai_will_do = { factor = 0 }
+		days_remove = 0
+		fire_only_once = yes
+		available = {
+			NOT = { country_exists = RAJ }
+			custom_trigger_tooltip = {
+				tooltip = "控制北印度主要区域"
+				ROOT = {
+					owns_state = 445
+					owns_state = 442
+					owns_state = 440
+					owns_state = 439
+					owns_state = 443
+					owns_state = 433
+					owns_state = 428
+					owns_state = 437
+					owns_state = 438
+					owns_state = 435
+					owns_state = 431
+					owns_state = 430
+					owns_state = 436			
+				}
+			}
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 445
+				state = 442
+				state = 440
+				state = 439
+				state = 443
+				state = 433
+				state = 428
+				state = 437
+				state = 438
+				state = 435
+				state = 431
+				state = 430
+				state = 436
+			}
+		}
+		visible = {
+			is_ai = no
+		}
+
+		remove_effect = {
+			ROOT = {
+				set_autonomy = {
+					target = RAJ
+					autonomy_state = autonomy_duhufu
+				}
+			}
+
+			RAJ = {
+				set_cosmetic_tag = RAJ_XuanZang
+				add_ideas = CHI_duhufu_chaogong
+				Wang_Jingwei_become_leader = yes
+			}
+
+			custom_effect_tooltip = "玄奘都护府成立"
+			hidden_effect = {
+				RAJ = {
+					transfer_state = 445
+					transfer_state = 442
+					transfer_state = 440
+					transfer_state = 439
+					transfer_state = 443
+					transfer_state = 433
+					transfer_state = 428
+					transfer_state = 437
+					transfer_state = 438
+					transfer_state = 435
+					transfer_state = 431
+					transfer_state = 430
+					transfer_state = 436	
+					every_state = {
+						limit = { NOT = { is_core_of = PREV }  is_owned_by = PREV }
+						add_core_of = PREV
+					}
+				}
+			}
+		}
+	}
+
+	BMW_DHF = {
+		icon = generic_army_support
+		cost = 328
+		ai_will_do = { factor = 0 }
+		days_remove = 0
+		fire_only_once = yes
+		available = {
+			NOT = { country_exists = BMW }
+			custom_trigger_tooltip = {
+				tooltip = "控制南印度主要区域"
+				ROOT = {
+					owns_state = 426
+					owns_state = 429
+					owns_state = 427
+					owns_state = 321
+					owns_state = 425
+					owns_state = 424
+					owns_state = 423
+					owns_state = 320
+					owns_state = 422		
+				}
+			}
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 426
+				state = 429
+				state = 427
+				state = 321
+				state = 425
+				state = 424
+				state = 423
+				state = 320
+				state = 422		
+			}
+		}
+		visible = {
+			is_ai = no
+		}
+
+		remove_effect = {
+			ROOT = {
+				set_autonomy = {
+					target = BMW
+					autonomy_state = autonomy_duhufu
+				}
+			}
+			BMW = {
+				add_ideas = CHI_duhufu_chaogong
+			}
+			set_province_name = { id = 1349 name = "游戏科学" }
+			custom_effect_tooltip = "黑猴都护府成立"
+
+			hidden_effect = {
+				BMW = {
+					set_cosmetic_tag = BMW_duhufu
+					transfer_state = 426
+					transfer_state = 429
+					transfer_state = 427
+					transfer_state = 321
+					transfer_state = 425
+					transfer_state = 424
+					transfer_state = 423
+					transfer_state = 320
+					transfer_state = 422	
+					every_state = {
+						limit = { NOT = { is_core_of = PREV }  is_owned_by = PREV }
+						add_core_of = PREV
+					}	
+				}
+			}
+			
+		}
+	}
+
+	PER_DHF = {
+		icon = generic_army_support
+		cost = 40
+		ai_will_do = { factor = 0 }
+		days_remove = 0
+		fire_only_once = yes
+		available = {
+			NOT = { country_exists = PER }
+			custom_trigger_tooltip = {
+				tooltip = "拥有伊朗、阿富汗全部领土，以及俾路支斯坦"
+				ROOT = {
+					owns_state = 444
+					owns_state = 415
+					owns_state = 267
+					owns_state = 410
+					owns_state = 417
+					owns_state = 416
+					owns_state = 418
+					owns_state = 266
+					owns_state = 417
+					owns_state = 411
+					owns_state = 412
+					owns_state = 413		
+					owns_state = 420
+					owns_state = 421
+					owns_state = 419
+					owns_state = 414
+				}
+			}
+
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 444
+				state = 415
+				state = 267
+				state = 410
+				state = 417
+				state = 416
+				state = 418
+				state = 266
+				state = 417
+				state = 411
+				state = 412
+				state = 413		
+				state = 420
+				state = 421
+				state = 419
+				state = 414
+			}
+		}
+		visible = {
+			is_ai = no
+			OR = {
+				NOT = { country_exists = SOV }
+				SOV = { is_subject_of = ROOT }
+			}
+		}
+
+		remove_effect = {
+			ROOT = {
+				set_autonomy = {
+					target = PER
+					autonomy_state = autonomy_duhufu
+				}
+			}
+			PER = {
+				set_cosmetic_tag = PER_duhufu
+				add_ideas = CHI_duhufu_chaogong
+			}
+
+			custom_effect_tooltip = "安西都护府成立"
+
+			hidden_effect = {
+				PER = {
+					transfer_state = 444
+					transfer_state = 415
+					transfer_state = 267
+					transfer_state = 410
+					transfer_state = 417
+					transfer_state = 416
+					transfer_state = 418
+					transfer_state = 266
+					transfer_state = 417
+					transfer_state = 411
+					transfer_state = 412
+					transfer_state = 413		
+					transfer_state = 420
+					transfer_state = 421
+					transfer_state = 419
+					transfer_state = 414
+					every_state = {
+						limit = { NOT = { is_core_of = PREV }  is_owned_by = PREV }
+						add_core_of = PREV
+					}
+				}
+			}
+
+		}
+	}
+
+	FIN_DHF = {
+		icon = generic_army_support
+		cost = 40
+		ai_will_do = { factor = 0 }
+		days_remove = 0
+		fire_only_once = yes
+		available = {
+			NOT = { country_exists = FIN }
+			custom_trigger_tooltip = {
+				tooltip = "拥有北欧三国、波罗的海三国、丹麦的全部领土"	
+				ROOT = {
+					owns_state = 146
+					owns_state = 928
+					owns_state = 930
+					owns_state = 927
+					owns_state = 111
+					owns_state = 926
+					owns_state = 149
+					owns_state = 150
+					owns_state = 929
+					owns_state = 147
+					owns_state = 148
+					owns_state = 722
+					owns_state = 145
+					owns_state = 811
+					owns_state = 812
+					owns_state = 813
+					owns_state = 13
+					owns_state = 191
+					owns_state = 12
+					owns_state = 808
+					owns_state = 809
+					owns_state = 810
+					owns_state = 190
+					owns_state = 189
+					owns_state = 188
+					owns_state = 815
+					owns_state = 11
+					owns_state = 814
+					owns_state = 124
+					owns_state = 138
+					owns_state = 139
+					owns_state = 140
+					owns_state = 141
+					owns_state = 915
+					owns_state = 139
+					owns_state = 913
+					owns_state = 919
+					owns_state = 916
+					owns_state = 38
+					owns_state = 917
+					owns_state = 918
+					owns_state = 666
+					owns_state = 910
+					owns_state = 37
+					owns_state = 911
+					owns_state = 912
+					owns_state = 99
+					owns_state = 922
+					owns_state = 921
+					owns_state = 142
+					owns_state = 110
+					owns_state = 920
+					owns_state = 143
+					owns_state = 923
+					owns_state = 144
+					owns_state = 924
+					owns_state = 925
+				}
+			}
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 146
+				state = 928
+				state = 930
+				state = 927
+				state = 111
+				state = 926
+				state = 149
+				state = 150
+				state = 929
+				state = 147
+				state = 148
+				state = 722
+				state = 145
+				state = 811
+				state = 812
+				state = 813
+				state = 13
+				state = 191
+				state = 12
+				state = 808
+				state = 809
+				state = 810
+				state = 190
+				state = 189
+				state = 188
+				state = 815
+				state = 11
+				state = 814
+				state = 124
+				state = 138
+				state = 139
+				state = 140
+				state = 141
+				state = 915
+				state = 139
+				state = 913
+				state = 919
+				state = 916
+				state = 38
+				state = 917
+				state = 918
+				state = 666
+				state = 910
+				state = 37
+				state = 911
+				state = 912
+				state = 99
+				state = 922
+				state = 921
+				state = 142
+				state = 110
+				state = 920
+				state = 143
+				state = 923
+				state = 144
+				state = 924
+				state = 925
+			}
+		}
+		visible = {
+			is_ai = no
+			OR = {
+				NOT = { country_exists = SOV }
+				SOV = { is_subject_of = ROOT }
+			}
+		}
+
+		remove_effect = {
+			ROOT = {
+				set_autonomy = {
+					target = FIN
+					autonomy_state = autonomy_duhufu
+				}
+			}
+			FIN = {
+				set_cosmetic_tag = FIN_duhufu
+				add_ideas = CHI_duhufu_chaogong
+			}
+			custom_effect_tooltip = "晨北都护府成立"
+			hidden_effect = {
+				FIN = {
+					transfer_state = 146
+					transfer_state = 928
+					transfer_state = 930
+					transfer_state = 927
+					transfer_state = 111
+					transfer_state = 926
+					transfer_state = 149
+					transfer_state = 150
+					transfer_state = 929
+					transfer_state = 147
+					transfer_state = 148
+					transfer_state = 722
+					transfer_state = 145
+					transfer_state = 811
+					transfer_state = 812
+					transfer_state = 813
+					transfer_state = 13
+					transfer_state = 191
+					transfer_state = 12
+					transfer_state = 808
+					transfer_state = 809
+					transfer_state = 810
+					transfer_state = 190
+					transfer_state = 189
+					transfer_state = 188
+					transfer_state = 815
+					transfer_state = 11
+					transfer_state = 814
+					transfer_state = 124
+					transfer_state = 138
+					transfer_state = 139
+					transfer_state = 140
+					transfer_state = 141
+					transfer_state = 915
+					transfer_state = 139
+					transfer_state = 913
+					transfer_state = 919
+					transfer_state = 916
+					transfer_state = 38
+					transfer_state = 917
+					transfer_state = 918
+					transfer_state = 666
+					transfer_state = 910
+					transfer_state = 37
+					transfer_state = 911
+					transfer_state = 912
+					transfer_state = 99
+					transfer_state = 922
+					transfer_state = 921
+					transfer_state = 142
+					transfer_state = 110
+					transfer_state = 920
+					transfer_state = 143
+					transfer_state = 923
+					transfer_state = 144
+					transfer_state = 924
+					transfer_state = 925
+					every_state = {
+						limit = { NOT = { is_core_of = PREV }  is_owned_by = PREV }
+						add_core_of = PREV
+					}
+				}
+			}
+		}
+	}
+
+}
+
+END_JAP = {
+
+	get_jap_pp = {
+		icon = steel
+		cost = 1
+		days_remove = 0
+		fire_only_once = yes
+		allowed = {
+			is_ai = no
+		}
+		available = {
+			
+		}
+		remove_effect = {
+			add_political_power = 1213
+		}
+	}
+
+	流放日本伪天皇 = {
+		icon = SWI_guisan_speech
+		cost = 1
+		days_re_enable = 0
+		fire_only_once = yes
+		allowed = {
+			always = no
+		}
+		available = {
+
+		}
+		remove_effect = {
+			#set_province_name = { 10011 , "伪皇居"}
+		}
+	}
+
+	建立倭寇集中营 = {
+		icon = generic_ignite_civil_war
+		cost = 1213
+		days_remove = 0
+		fire_only_once = yes
+		allowed = {
+			is_ai = no
+		}
+		available = {
+			#always = yes
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 528
+				state = 530
+				state = 529
+				state = 531
+				state = 532
+				state = 535
+				state = 282
+				state = 534
+				state = 533
+				state = 536
+				state = 988
+			}
+		}
+		remove_effect = {
+			CHI = {
+				set_autonomy = {
+					target = JAP
+					autonomy_state = autonomy_nuketest
+				}
+				set_autonomy = {
+					target = DOG
+					autonomy_state = autonomy_liufang
+				}
+				add_state_core = 645
+				add_state_core = 646
+				add_state_core = 647
+				add_state_core = 684
+				add_state_core = 633
+				add_state_core = 648
+			}
+			JAP = {
+				set_cosmetic_tag = JAP_jizhongying
+				set_country_flag = Jizhongying
+				transfer_state = 528
+				transfer_state = 530
+				transfer_state = 529
+				transfer_state = 531
+				transfer_state = 532
+				transfer_state = 535
+				transfer_state = 282
+				transfer_state = 534
+				transfer_state = 533
+				transfer_state = 536
+				transfer_state = 988
+				remove_state_core = 645
+				remove_state_core = 646
+				retire_character = JAP_emperor_hirohito
+			}
+			988 = {
+				set_state_name = "招核动物园"
+			}
+			DOG = {
+				recruit_character = DOG_emperor_hirohito
+				transfer_state = 988
+			}
+		}
+	}
+
+	核爆日本 = {
+		icon = generic_ignite_civil_war
+		cost = 500
+		days_remove = 3
+		fire_only_once = no
+		allowed = {
+			is_ai = no
+		}
+		visible = {
+				JAP = {has_country_flag = Jizhongying}
+		}
+		available = {
+			JAP = {has_country_flag = Jizhongying}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 528
+				state = 530
+				state = 529
+				state = 531
+				state = 532
+				state = 535
+				state = 282
+				state = 534
+				state = 533
+				state = 536
+				state = 988
+			}
+		}
+
+		remove_effect = {
+
+			IF = {
+				limit = { NOT = { JAP = {has_country_flag = Nuked } } }
+				JAP = { 
+					set_country_flag = Nuked 
+					set_cosmetic_tag = JAP_Nuked
+					add_manpower = 	-2100000
+				}
+			
+				every_state = {
+					limit = { is_owned_of = JAP is_controlled_by = JAP }
+					set_state_category = wasteland
+					#add_manpower = -10000000000
+					add_state_modifier = {
+						modifier = {
+							local_manpower = -1
+						}
+					}
+				}
+			}
+						
+
+			launch_nuke = {province = 4576}
+			launch_nuke = {province = 1642}
+			launch_nuke = {province = 4646}
+			launch_nuke = {province = 12352}
+			launch_nuke = {province = 12421}
+			launch_nuke = {province = 7595}
+			launch_nuke = {province = 1512}
+			launch_nuke = {province = 12493}
+			launch_nuke = {province = 10512}
+			launch_nuke = {province = 10444}
+			launch_nuke = {province = 7532}
+			launch_nuke = {province = 3962}
+			launch_nuke = {province = 9859}
+			launch_nuke = {province = 6873}
+			launch_nuke = {province = 6994}
+			launch_nuke = {province = 11847}
+			launch_nuke = {province = 9865}
+			launch_nuke = {province = 3848}
+			launch_nuke = {province = 9807}
+			launch_nuke = {province = 6870}
+			launch_nuke = {province = 9807}
+			launch_nuke = {province = 12056}
+			launch_nuke = {province = 1165}
+			launch_nuke = {province = 1063}
+			launch_nuke = {province = 4067}
+			launch_nuke = {province = 7169}
+			launch_nuke = {province = 11930}
+			launch_nuke = {province = 4153}
+			launch_nuke = {province = 1024}
+			launch_nuke = {province = 4118}
+			launch_nuke = {province = 4122}
+			launch_nuke = {province = 1117}
+			launch_nuke = {province = 9952}
+			launch_nuke = {province = 12007}
+			launch_nuke = {province = 11989}
+			launch_nuke = {province = 4000}
+			launch_nuke = {province = 1113}
+			launch_nuke = {province = 7016}
+			launch_nuke = {province = 993}
+			launch_nuke = {province = 4100}
+			launch_nuke = {province = 4188}
+			launch_nuke = {province = 4184}
+			launch_nuke = {province = 1182}
+			launch_nuke = {province = 1097}
+			launch_nuke = {province = 11908}
+			launch_nuke = {province = 10128}
+			launch_nuke = {province = 10015}
+			launch_nuke = {province = 12072}
+			launch_nuke = {province = 9998}
+			launch_nuke = {province = 7157}
+			launch_nuke = {province = 7087}
+			launch_nuke = {province = 10100}
+			launch_nuke = {province = 12097}
+			launch_nuke = {province = 4069}
+			launch_nuke = {province = 7187}
+			launch_nuke = {province = 7217}
+			launch_nuke = {province = 10032}
+			launch_nuke = {province = 998}
+			launch_nuke = {province = 10125}
+			launch_nuke = {province = 4172}
+			launch_nuke = {province = 7102}
+			launch_nuke = {province = 1067}
+			launch_nuke = {province = 4142}
+			launch_nuke = {province = 4054}
+			launch_nuke = {province = 1051}
+			launch_nuke = {province = 11960}
+			launch_nuke = {province = 1133}
+			launch_nuke = {province = 7113}
+			launch_nuke = {province = 7072}
+			launch_nuke = {province = 1136}
+			launch_nuke = {province = 9985}
+			launch_nuke = {province = 12031}
+			launch_nuke = {province = 10055}
+			launch_nuke = {province = 7212}
+			launch_nuke = {province = 1167}
+			launch_nuke = {province = 4197}
+			launch_nuke = {province = 7145}
+			launch_nuke = {province = 9968}
+			launch_nuke = {province = 11946}
+			launch_nuke = {province = 1191}
+			launch_nuke = {province = 1092}
+			launch_nuke = {province = 7050}
+			launch_nuke = {province = 10052}
+			launch_nuke = {province = 11985}
+			launch_nuke = {province = 9965}
+			launch_nuke = {province = 40994}
+			launch_nuke = {province = 12028}
+			launch_nuke = {province = 7194}
+			launch_nuke = {province = 4179}
+			launch_nuke = {province = 7046}
+			launch_nuke = {province = 11997}
+			launch_nuke = {province = 1025}
+			launch_nuke = {province = 4027}
+			launch_nuke = {province = 10092}
+			launch_nuke = {province = 10020}
+			launch_nuke = {province = 7178}
+			launch_nuke = {province = 11925}
+			launch_nuke = {province = 4164}
+			launch_nuke = {province = 7110}
+			launch_nuke = {province = 1158}
+			launch_nuke = {province = 9950}
+			launch_nuke = {province = 1183}
+			launch_nuke = {province = 11949}
+			launch_nuke = {province = 12032}
+			launch_nuke = {province = 4102}
+			launch_nuke = {province = 4198}
+			launch_nuke = {province = 4094}
+		}
+	}
+}

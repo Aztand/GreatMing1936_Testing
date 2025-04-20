@@ -1,0 +1,2517 @@
+﻿#########################
+## MIN Mod Events ##
+#########################
+
+add_namespace = min
+
+#新皇登基
+news_event = {
+	id = min.101
+	title = min.101.t
+	desc = min.101.d
+	picture = GFX_news_event_ming_dengji
+
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = min.101.a
+		trigger = {
+			original_tag = CHI
+		}
+	}
+	
+	option = {
+		name = min.101.b
+		trigger = {
+			NOT = {
+				original_tag = CHI
+			}
+		}
+	}
+	
+	option = {
+		name = min.101.c
+		trigger = {
+			original_tag = JAP
+		}
+	}
+}
+
+#朝鲜进贡
+news_event = {
+	id = min.102
+	title = min.102.t
+	desc = min.102.d
+	picture = GFX_news_event_ming_chaogong
+
+	major = no
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = min.102.a
+		trigger = {
+			original_tag = KOR
+		}
+	}
+}
+
+#朝鲜拒绝朝贡
+news_event = {
+	id = min.103
+	title = min.103.t
+	desc = min.103.d
+	picture = GFX_news_event_ming_chaogong
+
+	major = no
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = min.103.a
+		trigger = {
+			original_tag = CHI
+		}
+	}
+	
+	option = {
+		name = min.103.b
+		trigger = {
+			original_tag = KOR
+		}
+	}
+}
+
+#鸽派
+country_event = {
+	id = min.501
+	title = min.501.t
+	desc = min.501.d
+	picture = GFX_report_event_china_politicians_captured
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = min.501.a
+		add_ideas = CHI_gepai
+	}
+}
+
+#鹰派
+country_event = {
+	id = min.502
+	title = min.502.t
+	desc = min.502.d
+	picture = GFX_report_event_china_politicians_captured
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = min.502.a
+		add_ideas = CHI_yinpai
+	}
+}
+
+#出访德国
+country_event = {
+	id = min.503
+	title = min.503.t
+	desc = min.503.d
+	picture = GFX_report_event_hitler_china
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = min.503.a
+		add_political_power = 75
+	}
+}
+
+#出访意大利
+country_event = {
+	id = min.504
+	title = min.504.t
+	desc = min.504.d
+	picture = GFX_report_event_british_artillery
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = min.504.a	
+		add_equipment_to_stockpile = {
+			type = artillery_equipment
+		    amount = 5
+			producer = ITA	
+		
+		}
+	}
+}
+
+#出访法国
+country_event = {
+	id = min.505
+	title = min.505.t
+	desc = min.505.d
+	picture = GFX_report_event_france_victory_syria
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = min.505.a	
+		add_political_power = 75
+	}
+}
+
+#出访英国
+country_event = {
+	id = min.506
+	title = min.506.t
+	desc = min.506.d
+	picture = GFX_report_event_eng_royal_family
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = min.506.a
+		add_political_power = 75
+	}
+}
+
+#出访罗马尼亚
+country_event = {
+	id = min.507
+	title = min.507.t
+	desc = min.507.d
+	picture = GFX_report_event_rom_mistress
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = min.507.a
+		add_political_power = 75		
+	}
+}
+
+#出访荷兰
+country_event = {
+	id = min.508
+	title = min.508.t
+	desc = min.508.d
+	picture = GFX_report_event_hol_polderen
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = min.508.a	
+		add_offsite_building = { type = dockyard level = 1 }
+	}
+}
+
+#出访南斯拉夫
+country_event = {
+	id = min.509
+	title = min.509.t
+	desc = min.509.d
+	picture = GFX_report_event_yugoslavian_split
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = min.509.a	
+		add_stability = 0.03
+	}
+}
+
+#出访葡萄牙
+country_event = {
+	id = min.510
+	title = min.510.t
+	desc = min.510.d
+	picture = GFX_report_event_por_return_of_the_monarchy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = min.510.a	
+		add_political_power = 75
+	}
+}
+
+#失控
+country_event = {
+	id = min.511
+	title = min.511.t
+	desc = min.511.d
+	picture = GFX_report_event_spr_spanish_civil_war2
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = min.511.a	
+		swap_ideas = {
+			remove_idea = CHI_xinanwenti
+			add_idea = CHI_shikong
+		}
+	}
+}
+
+#瘫痪
+country_event = {
+	id = min.512
+	title = min.512.t
+	desc = min.512.d
+	picture = GFX_report_event_long_march
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = min.512.a	
+		add_ideas = CHI_tanhuan
+	}
+}
+
+#吐蕃独立派宣布吐蕃独立
+country_event = {
+	id = min.513
+	title = min.513.t
+	desc = min.513.d
+	picture = GFX_report_event_long_march
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = min.513.a	
+		add_stability = -0.1
+		add_political_power = -75
+	}
+}
+
+#蒙古劫掠者1
+country_event = {
+	id = min.514
+	title = min.514.t
+	desc = min.514.d
+	picture = GFX_report_event_long_march
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = min.514.a	
+		add_manpower = -10000
+		MON = { 
+			add_manpower = 8000
+		}
+	}
+}
+
+#蒙古劫掠者2
+country_event = {
+	id = min.515
+	title = min.515.t
+	desc = min.515.d
+	picture = GFX_report_event_long_march
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = min.515.a	
+		add_equipment_to_stockpile = {
+		    type = infantry_equipment
+			amount = -800
+			producer = CHI
+		}
+		MON = { 
+			add_equipment_to_stockpile = {
+		    type = infantry_equipment
+			amount = 800
+			producer = CHI
+			}
+		}
+	}
+}
+
+#蒙古劫掠者3
+country_event = {
+	id = min.516
+	title = min.516.t
+	desc = min.516.d
+	picture = GFX_report_event_long_march
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = min.516.a	
+		add_manpower = -3000
+		add_stability = -0.01
+	}
+}
+
+#满洲破坏1
+country_event = {
+	id = min.517
+	title = min.517.t
+	desc = min.517.d
+	picture = GFX_report_event_long_march
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = min.517.a	
+		add_manpower = -15000
+		add_stability = -0.01
+		MAN = { 
+			add_manpower = 14000
+		}
+	}
+}
+
+#满洲破坏2
+country_event = {
+	id = min.518
+	title = min.518.t
+	desc = min.518.d
+	picture = GFX_report_event_long_march
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = min.518.a	
+		random_owned_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				industrial_complex > 0
+			}
+			damage_building = {
+				type = industrial_complex
+				damage = 0.8
+			}
+		}
+	}
+}
+
+#满洲破坏3
+country_event = {
+	id = min.519
+	title = min.519.t
+	desc = min.519.d
+	picture = GFX_report_event_long_march
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = min.519.a	
+		random_owned_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				infrastructure > 0
+			}
+			damage_building = {
+				type = infrastructure
+				damage = 0.8
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#武将离开1
+country_event = {
+	id = min.701
+	title = min.701.t
+	desc = min.701.d
+	picture = GFX_report_event_chinese_soldiers_running
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = min.701.a	
+		remove_unit_leader = 9771
+		XSM = {
+			transfer_state = 756
+		}
+		XSM = {
+			transfer_state = 755
+		}
+		XSM = {
+			transfer_state = 616
+		}
+		XSM = {
+			transfer_state = 754
+		}
+		XSM = {
+			transfer_state = 283
+		}
+		XSM = {
+			transfer_state = 753
+		}
+		XSM = {
+			transfer_state = 604
+		}
+		XSM = {
+			set_cosmetic_tag = XSM_restored
+		}
+	}
+}
+
+#武将离开2
+country_event = {
+	id = min.702
+	title = min.702.t
+	desc = min.702.d
+	picture = GFX_report_event_chinese_soldiers_running
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = min.702.a	
+		remove_unit_leader = 9772
+		SIK = {
+			transfer_state = 758
+		}
+		SIK = {
+			transfer_state = 322
+		}
+		SIK = {
+			transfer_state = 757
+		}
+		SIK = {
+			transfer_state = 601
+		}
+		SIK = {
+			transfer_state = 434
+		}
+		SIK = {
+			set_cosmetic_tag = SIK_restored
+		}
+	}
+}
+
+#武将离开3
+country_event = {
+	id = min.703
+	title = min.703.t
+	desc = min.703.d
+	picture = GFX_report_event_chinese_soldiers_running
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = min.703.a	
+		remove_unit_leader = 9773
+		YUN = {
+			transfer_state = 747
+		}
+		YUN = {
+			transfer_state = 752
+		}
+		YUN = {
+			transfer_state = 751
+		}
+		YUN = {
+			transfer_state = 605
+		}
+		YUN = {
+			transfer_state = 325
+		}
+		YUN = {
+			transfer_state = 748
+		}
+		YUN = {
+			transfer_state = 603
+		}
+		YUN = {
+			transfer_state = 750
+		}
+		YUN = {
+			set_cosmetic_tag = YUN_restored
+		}
+	}
+}
+
+#武将离开4
+country_event = {
+	id = min.704
+	title = min.704.t
+	desc = min.704.d
+	picture = GFX_report_event_chinese_soldiers_running
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = min.704.a	
+		remove_unit_leader = 9774
+		GXC = {
+			transfer_state = 599
+		}
+		GXC = {
+			transfer_state = 594
+		}
+		GXC = {
+			transfer_state = 591
+		}
+		GXC = {
+			transfer_state = 602
+		}
+		GXC = {
+			transfer_state = 592
+		}
+		GXC = {
+			transfer_state = 728
+		}
+		GXC = {
+			transfer_state = 729
+		}
+		GXC = {
+			transfer_state = 326
+		}
+		GXC = {
+			transfer_state = 593
+		}
+		GXC = {
+			transfer_state = 595
+		}
+		GXC = {
+			transfer_state = 600
+		}
+		GXC = {
+			transfer_state = 524
+		}
+		GXC = {
+			transfer_state = 671
+		}
+		GXC = {
+			set_cosmetic_tag = GXC_restored
+		}
+	}
+}
+
+#武将离开5
+country_event = {
+	id = min.705
+	title = min.705.t
+	desc = min.705.d
+	picture = GFX_report_event_chinese_soldiers_running
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = min.705.a	
+		remove_unit_leader = 9775
+		SHX = {
+			transfer_state = 746
+		}
+		SHX = {
+			transfer_state = 622
+		}
+		SHX = {
+			transfer_state = 615
+		}
+		SHX = {
+			transfer_state = 744
+		}
+		SHX = {
+			transfer_state = 607
+		}
+		SHX = {
+			transfer_state = 597
+		}
+		SHX = {
+			transfer_state = 620
+		}
+		SHX = {
+			set_cosmetic_tag = SHX_restored
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#朝鲜发展委员会
+country_event = {
+	id = min.301
+	title = min.301.t
+	desc = min.301.d
+	picture = GFX_report_event_generic_factory
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = min.301.a	
+		ai_chance = { factor = 40 }
+		add_timed_idea = { days = 1200 idea = KOR_mingyong }
+	}
+	
+	option = {
+		name = min.301.b	
+		ai_chance = { factor = 60 }
+		add_timed_idea = { days = 1200 idea = KOR_junyong }
+	}
+}
+
+#朝鲜重塑工业体系
+country_event = {
+	id = min.302
+	title = min.302.t
+	desc = min.302.d
+	picture = GFX_report_event_spr_civil_war_faction_defeated
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = min.302.a	
+		add_offsite_building = { type = industrial_complex level = 3 }
+	}
+}
+
+#朝鲜建设计划处
+country_event = {
+	id = min.303
+	title = min.303.t
+	desc = min.303.d
+	picture = GFX_report_event_spr_civil_war_faction_defeated
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = min.303.a	
+		ai_chance = { factor = 34 }
+		add_offsite_building = { type = industrial_complex level = 2 }
+	}
+	
+	option = {
+		name = min.303.b
+		ai_chance = { factor = 33 }
+		add_offsite_building = { type = arms_factory level = 1 }
+	}
+	
+	option = {
+		name = min.303.c
+		ai_chance = { factor = 33 }
+		add_political_power = 120
+	}
+}
+
+#朝鲜的领袖
+country_event = {
+	id = min.304
+	title = min.304.t
+	desc = min.304.d
+	picture = GFX_report_event_election_vote
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = min.304.a	
+		ai_chance = { factor = 60 }
+		create_country_leader = {
+			name = "Park Chung-hee"
+			desc = "Park Chung-hee_DESC"
+			picture = "park_chung_hee.dds"
+			expire = "1965.1.1"
+			ideology = stalinism
+			traits = {
+			}
+		}
+		Park_Chung_hee_become_leader = yes
+	}
+	
+	option = {
+		name = min.304.b
+		ai_chance = { factor = 40 }
+		add_political_power = 100
+	}
+}
+
+#朝鲜红色革命团队
+country_event = {
+	id = min.305
+	title = min.305.t
+	desc = min.305.d
+	picture = GFX_report_event_japan_army_mountainside
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = min.305.a	
+		remove_unit_leader = 9881
+		remove_unit_leader = 9882
+		remove_unit_leader = 9883
+		remove_unit_leader = 9903
+	}
+}
+
+
+
+
+
+
+
+
+
+
+#日本西方的老朋友
+country_event = {
+	id = min.801
+	title = min.801.t
+	desc = min.801.d
+	picture = GFX_report_event_japan_europe_pact
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = min.801.a	
+		diplomatic_relation = {
+			country = ENG
+			relation = non_aggression_pact
+			active = yes
+		}
+	}
+}
+
+#日本民主内阁首相
+country_event = {
+	id = min.802
+	title = min.802.t
+	desc = min.802.d
+	picture = GFX_report_event_japan_europe_pact
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = min.802.a	
+		ai_chance = { factor = 34 }
+		Tetsu_Katayama_become_leader = yes
+	}
+	
+	option = {
+		name = min.802.b	
+		ai_chance = { factor = 33 }		
+		Hirota_koki_become_leader = yes
+	}
+	
+	option = {
+		name = min.802.c	
+		ai_chance = { factor = 33 }
+		
+		Tokugawa_iesato_become_leader = yes
+	}
+}
+
+#日本军方内阁首相
+country_event = {
+	id = min.803
+	title = min.803.t
+	desc = min.803.d
+	picture = GFX_report_event_japan_europe_pact
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = min.803.a	
+		ai_chance = { factor = 34 }
+		Hideki_tojo_become_leader = yes
+	}
+	
+	option = {
+		name = min.803.b	
+		ai_chance = { factor = 33 }
+		Fumimaro_Konoe_become_leader = yes
+	}
+	
+	option = {
+		name = min.803.c	
+		ai_chance = { factor = 33 }
+		Keisuke_okada_become_leader = yes
+	}
+}
+
+#大清的使臣
+country_event = {
+	id = min.804
+	title = min.804.t
+	desc = min.804.d
+	picture = GFX_report_event_japan_europe_pact
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = min.804.a	
+		ai_chance = { factor = 85 }
+		JAP = {
+			country_event = min.884
+		}
+	}
+	
+	option = {
+		name = min.804.b	
+		ai_chance = { factor = 15 }
+		JAP = {
+			country_event = min.894
+		}
+	}
+}
+
+#同意
+country_event = {
+	id = min.884
+	title = min.884.t
+	desc = min.884.d
+	picture = GFX_report_event_chinese_soldiers_running
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = min.884.a	
+		diplomatic_relation = {
+			country = MAN
+			relation = non_aggression_pact
+			active = yes
+		}
+		set_country_flag = JAP_qintongyi
+	}
+}
+
+#拒绝
+country_event = {
+	id = min.894
+	title = min.894.t
+	desc = min.894.d
+	picture = GFX_report_event_chinese_soldiers_running
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = min.894.a	
+		
+	}
+}
+
+#蒙古的使臣
+country_event = {
+	id = min.1804
+	title = min.1804.t
+	desc = min.1804.d
+	picture = GFX_report_event_japan_europe_pact
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = min.1804.a	
+		ai_chance = { factor = 75 
+			modifier = {
+				factor = 0
+				MAN = {				is_subject = yes			}
+			}
+	
+		}
+		JAP = {
+			country_event = min.1884
+		}
+	}
+	
+	option = {
+		name = min.1804.b	
+		ai_chance = { factor = 25 }
+		JAP = {
+			country_event = min.1894
+		}
+	}
+}
+
+#同意
+country_event = {
+	id = min.1884
+	title = min.1884.t
+	desc = min.1884.d
+	picture = GFX_report_event_chinese_soldiers_running
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = min.1884.a	
+		add_to_faction = MON
+		unlock_decision_tooltip = 向蒙古提供步枪
+		unlock_decision_tooltip = 向蒙古提供火炮
+		unlock_decision_tooltip = 接收蒙古志愿军
+		division_template = {
+			name = "蒙古志愿师"
+			priority = 1
+			is_locked = yes
+			division_names_group = JAP_CAV_01
+			regiments = {
+				cavalry = { x = 0 y = 0 }
+				cavalry = { x = 0 y = 1 }
+				cavalry = { x = 0 y = 2 }
+
+				cavalry = { x = 1 y = 0 }
+				cavalry = { x = 1 y = 1 }
+				cavalry = { x = 1 y = 2 }
+					
+				cavalry = { x = 2 y = 0 }
+				cavalry = { x = 2 y = 1 }
+				cavalry = { x = 2 y = 2 }
+			}
+		}
+	}
+}
+
+#拒绝
+country_event = {
+	id = min.1894
+	title = min.1894.t
+	desc = min.1894.d
+	picture = GFX_report_event_chinese_soldiers_running
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = min.1894.a	
+		
+	}
+}
+
+#蒙古的使臣1
+country_event = {
+	id = min.18040
+	title = min.18040.t
+	desc = min.18040.d
+	picture = GFX_report_event_chinese_soldiers_running
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = min.18040.a	
+		ai_chance = { factor = 100 }
+		SOV = {
+			country_event = min.18840
+		}
+	}
+	option = {
+		name = min.18940.a	
+		ai_chance = { factor = 0 }
+		SOV = {
+			country_event = min.18940
+		}
+	}
+}
+#同意
+country_event = {
+	id = min.18840
+	title = min.1884.t
+	desc = min.1884.d
+	picture = GFX_report_event_chinese_soldiers_running
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = min.1884.a	
+		add_to_faction = MON
+	}
+}
+#拒绝
+country_event = {
+	id = min.18940
+	title = min.1894.t
+	desc = min.1894.d
+	picture = GFX_report_event_chinese_soldiers_running
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = min.1894.a	
+		
+	}
+}
+
+#请求大明册封
+country_event = {
+	id = min.805
+	title = min.805.t
+	desc = min.805.d
+	picture = GFX_report_event_jap_imperial_family
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = min.805.a	
+		add_ideas = CHI_cg001
+	}
+}
+
+#金陵会议
+country_event = {
+	id = min.806
+	title = min.806.t
+	desc = min.806.d
+	picture = GFX_report_event_japanese_chinese_surrender
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = min.806.a	
+		diplomatic_relation = {
+			country = CHI
+			relation = non_aggression_pact
+			active = yes
+		}
+	}
+}
+
+#金陵会议2
+news_event = {
+	id = min.807
+	title = min.807.t
+	desc = min.807.d
+	picture = GFX_news_event_ming_dengji
+
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = min.807.a
+		trigger = {
+			original_tag = CHI
+		}
+	}
+	
+	option = {
+		name = min.807.b
+		trigger = {
+			NOT = {
+				original_tag = CHI
+				original_tag = JAP
+			}
+		}
+	}
+	
+	option = {
+		name = min.807.c
+		trigger = {
+			original_tag = JAP
+		}
+	}
+}
+
+
+
+#大阪会议
+country_event = {
+	id = min.901
+	title = min.901.t
+	desc = min.901.d
+	picture = GFX_report_event_japanese_chinese_surrender
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = min.901.a	
+		ai_chance = { factor = 34 }
+		add_research_slot = 1
+		JAP = { 
+			add_political_power = 150		
+		}
+	}
+	
+	option = {
+		name = min.901.b
+		ai_chance = { factor = 33 }
+		add_offsite_building = { type = arms_factory level = 2 }
+		add_offsite_building = { type = dockyard level = 2 }
+		JAP = { 
+			add_political_power = 150		
+		}
+	}
+	
+	option = {
+		name = min.901.c
+		ai_chance = { factor = 33 }
+		add_political_power = 50
+		add_offsite_building = { type = industrial_complex level = 2 }
+		JAP = { 
+			add_political_power = 150		
+		}
+	}
+}
+
+
+#蒙古内附
+country_event = {
+	id = min.902
+	title = min.902.t
+	desc = min.902.d
+	picture = GFX_report_event_chinese_soldiers_running
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = min.902.a	
+		ai_chance = {
+			base = 50
+			modifier = {
+				factor = -100
+				CHI = { is_ai = NO }
+			}
+			modifier = {
+				factor = -100
+				MON = { is_ai = NO }
+			}
+			modifier = {
+				factor = -100
+				MON = { has_army_manpower = { size > 200000 } }
+			}
+			modifier = {
+				factor = -100
+				MON = { has_completed_focus = MON_22}
+			}
+			modifier = {
+				factor = -100
+				MON = { has_war = yes}
+			}
+		}
+		MAN = {
+			country_event = min.991
+		}
+	}
+	
+	option = {
+		name = min.902.b
+		ai_chance = {
+			base = 50
+			modifier = {
+				factor = 0
+				CHI = { is_ai = YES }
+			}
+			modifier = {
+				factor = 100
+				MON = { has_army_manpower = { size > 200000 } }
+			}
+			modifier = {
+				factor = 100
+				MON = { has_completed_focus = MON_22}
+			}
+			modifier = {
+				factor = 100
+				MON = { has_war = yes}
+			}
+		}
+		MAN = {
+			country_event = min.992
+		}
+	}
+}
+
+#同意
+country_event = {
+	id = min.991
+	title = min.991.t
+	desc = min.991.d
+	picture = GFX_report_event_chinese_soldiers_running
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = min.991.a	
+		annex_country = { 
+			target = MON
+			transfer_troops = yes
+		}
+	}
+}
+
+#拒绝
+country_event = {
+	id = min.992
+	title = min.992.t
+	desc = min.992.d
+	picture = GFX_report_event_chinese_soldiers_running
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = min.992.a	
+		create_wargoal = {
+		    type = annex_everything
+			target = MON
+			expire = 0
+		}
+	}
+}
+
+
+
+
+
+#威慑朝鲜
+country_event = {
+	id = min.903
+	title = min.903.t
+	desc = min.903.d
+	picture = GFX_report_event_chinese_soldiers_running
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = min.903.a	
+		ai_chance = {
+			base = 90
+			modifier = {
+				factor = 0
+				CHI = { is_ai = NO }
+			}
+			modifier = {
+				factor = 0
+				KOR = { has_war_with = JAP }
+			}
+		}
+		MAN = {
+			country_event = min.993
+		}
+	}
+	
+	option = {
+		name = min.903.b
+		ai_chance = {
+			base = 10
+			modifier = {
+				factor = 0
+				CHI = { is_ai = YES }
+			}
+			modifier = {
+				factor = 100
+				KOR = { NOT = {has_war_with = JAP }}
+			}
+		}
+		MAN = {
+			country_event = min.994
+		}
+	}
+}
+
+
+#同意
+country_event = {
+	id = min.993
+	title = min.993.t
+	desc = min.993.d
+	picture = GFX_report_event_chinese_soldiers_running
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = min.993.a	
+		annex_country = { 
+			target = KOR
+			transfer_troops = yes
+		}
+	}
+}
+
+#拒绝
+country_event = {
+	id = min.994
+	title = min.994.t
+	desc = min.994.d
+	picture = GFX_report_event_chinese_soldiers_running
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = min.994.a	
+		add_war_support = -0.1
+	}
+}
+
+
+#与苏联的交易
+country_event = {
+	id = min.904
+	title = min.904.t
+	desc = min.904.d
+	picture = GFX_report_event_chinese_soldiers_running
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = min.904.a	
+		ai_chance = { factor = 99 }
+		MAN = {
+			country_event = min.995
+		}
+	}
+	
+	option = {
+		name = min.904.b
+		ai_chance = { factor = 1 }
+		MAN = {
+			country_event = min.996
+		}
+	}
+}
+
+#同意
+country_event = {
+	id = min.995
+	title = min.995.t
+	desc = min.995.d
+	picture = GFX_report_event_chinese_soldiers_running
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = min.995.a	
+		SOV = {
+			add_state_core = 644
+			add_state_core = 574
+			transfer_state = 644
+			transfer_state = 574
+			
+			add_state_core = 876
+			add_state_core = 877
+			transfer_state = 876
+			transfer_state = 877
+		}
+	}
+}
+
+#拒绝
+country_event = {
+	id = min.996
+	title = min.996.t
+	desc = min.996.d
+	picture = GFX_report_event_chinese_soldiers_running
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = min.996.a	
+		add_war_support = -0.1
+		add_stability = -0.2
+	}
+}
+
+#萨尔多瓦的信使
+country_event = {
+	id = min.905
+	title = min.905.t
+	desc = min.905.d
+	picture = GFX_report_event_japan_europe_pact
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = min.905.a	
+		add_political_power = 80
+		diplomatic_relation = {
+			country = ELS
+			relation = non_aggression_pact
+			active = yes
+		}
+	}
+}
+
+#寻求日本技术
+country_event = {
+	id = min.906
+	title = min.906.t
+	desc = min.906.d
+	picture = GFX_report_event_hol_polderen
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = min.906.a	
+		MAN = {
+			country_event = min.981
+		}
+	}
+}
+
+#同意
+country_event = {
+	id = min.981
+	title = min.981.t
+	desc = min.981.d
+	picture = GFX_report_event_hol_polderen
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = min.981.a	
+		ai_chance = { factor = 50 }
+		set_technology = { torpedo_cruiser_mtg = 1 }
+	}
+	
+	option = {
+		name = min.981.b
+		ai_chance = { factor = 50 }
+		add_ideas = the_long_lance
+	}
+}
+
+#颐和园
+country_event = {
+	id = min.907
+	title = min.907.t
+	desc = min.907.d
+	picture = GFX_report_event_generic_factory
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = min.907.a	
+		add_war_support = -0.2
+		add_stability = -0.1
+		328 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 4
+				instant_build = yes
+			}
+		}
+	}
+}
+
+#精锐绿营兵
+country_event = {
+	id = min.908
+	title = min.908.t
+	desc = min.908.d
+	picture = GFX_report_event_long_march
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = min.908.a	
+		ai_chance = { factor = 50 }
+		add_war_support = 0.15
+	}
+	
+	option = {
+		name = min.908.b
+		ai_chance = { factor = 50 }
+		division_template = {
+			name = "精锐绿营军"
+			priority = 1
+			division_names_group = MAN_INF_01
+			regiments = {
+				infantry = { x = 0 y = 0 }
+				infantry = { x = 0 y = 1 }
+				infantry = { x = 0 y = 2 }
+					
+			    infantry = { x = 1 y = 0 }
+				infantry = { x = 1 y = 1 }
+				infantry = { x = 1 y = 2 }
+					
+			    infantry = { x = 2 y = 0 }
+				artillery_brigade = { x = 2 y = 1 }
+				artillery_brigade = { x = 2 y = 2 }
+			}
+			support = {
+				engineer = { x = 0 y = 0 }
+			}
+		}
+		capital_scope = {
+			create_unit = {
+				division = "name = \"拱卫师\" division_template = \"精锐绿营军\" start_experience_factor = 1"  
+				owner = ROOT
+			}
+			create_unit = {
+				division = "name = \"新编皇家禁卫军\" division_template = \"精锐绿营军\" start_experience_factor = 1"  
+				owner = ROOT
+			}
+			create_unit = {
+				division = "name = \"绿营模范第一师\" division_template = \"精锐绿营军\" start_experience_factor = 1"  
+				owner = ROOT
+			}
+			create_unit = {
+				division = "name = \"绿营模范第二师\" division_template = \"精锐绿营军\" start_experience_factor = 1"  
+				owner = ROOT
+			}
+			create_unit = {
+				division = "name = \"绿营模范第三师\" division_template = \"精锐绿营军\" start_experience_factor = 1"  
+				owner = ROOT
+			}
+			create_unit = {
+				division = "name = \"绿营整编旅\" division_template = \"精锐绿营军\" start_experience_factor = 1"  
+				owner = ROOT
+			}
+		}
+	}
+}
+
+
+#危地马拉
+country_event = {
+	id = min.1101
+	title = min.1101.t
+	desc = min.1101.d
+	picture = GFX_report_event_japan_europe_pact
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = min.1101.a	
+		ai_chance = { factor = 99 }
+		MAN = {
+			country_event = min.1121
+			annex_country = { 
+				target = GUA
+				transfer_troops = yes
+			}
+		}
+	}
+	
+	option = {
+		name = min.1101.b
+		ai_chance = { factor = 1 }
+		MAN = {
+			country_event = min.1122
+			create_wargoal = {
+				type = annex_everything
+				target = GUA
+				expire = 0
+			}
+		}
+	}
+}
+
+#洪都拉斯
+country_event = {
+	id = min.1102
+	title = min.1102.t
+	desc = min.1102.d
+	picture = GFX_report_event_japan_europe_pact
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = min.1102.a	
+		ai_chance = { factor = 99 }
+		MAN = {
+			country_event = min.1121
+			annex_country = { 
+				target = HON
+				transfer_troops = yes
+			}
+		}
+	}
+	
+	option = {
+		name = min.1102.b
+		ai_chance = { factor = 1 }
+		MAN = {
+			country_event = min.1122
+			create_wargoal = {
+				type = annex_everything
+				target = HON
+				expire = 0
+			}
+		}
+	}
+}
+
+#尼加拉瓜
+country_event = {
+	id = min.1103
+	title = min.1103.t
+	desc = min.1103.d
+	picture = GFX_report_event_japan_europe_pact
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = min.1103.a	
+		ai_chance = { factor = 99 }
+		MAN = {
+			country_event = min.1121
+			annex_country = { 
+				target = NIC
+				transfer_troops = yes
+			}
+		}
+	}
+	
+	option = {
+		name = min.1103.b
+		ai_chance = { factor = 1 }
+		MAN = {
+			country_event = min.1122
+			create_wargoal = {
+				type = annex_everything
+				target = NIC
+				expire = 0
+			}
+		}
+	}
+}
+
+#哥斯达黎加
+country_event = {
+	id = min.1104
+	title = min.1104.t
+	desc = min.1104.d
+	picture = GFX_report_event_japan_europe_pact
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = min.1104.a	
+		ai_chance = { factor = 99 }
+		MAN = {
+			country_event = min.1121
+			annex_country = { 
+				target = COS
+				transfer_troops = yes
+			}
+		}
+	}
+	
+	option = {
+		name = min.1104.b
+		ai_chance = { factor = 1 }
+		MAN = {
+			country_event = min.1122
+			create_wargoal = {
+				type = annex_everything
+				target = COS
+				expire = 0
+			}
+		}
+	}
+}
+
+#巴拿马
+country_event = {
+	id = min.1105
+	title = min.1105.t
+	desc = min.1105.d
+	picture = GFX_report_event_japan_europe_pact
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = min.1105.a	
+		ai_chance = { factor = 99 }
+		MAN = {
+			country_event = min.1121
+			annex_country = { 
+				target = PAN
+				transfer_troops = yes
+			}
+		}
+	}
+	
+	option = {
+		name = min.1105.b
+		ai_chance = { factor = 1 }
+		MAN = {
+			country_event = min.1122
+			create_wargoal = {
+				type = annex_everything
+				target = PAN
+				expire = 0
+			}
+		}
+	}
+}
+
+#古巴
+country_event = {
+	id = min.1106
+	title = min.1106.t
+	desc = min.1106.d
+	picture = GFX_report_event_japan_europe_pact
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = min.1106.a	
+		ai_chance = { factor = 99 }
+		MAN = {
+			country_event = min.1121
+			annex_country = { 
+				target = CUB
+				transfer_troops = yes
+			}
+		}
+	}
+	
+	option = {
+		name = min.1106.b
+		ai_chance = { factor = 1 }
+		MAN = {
+			country_event = min.1122
+			create_wargoal = {
+				type = annex_everything
+				target = CUB
+				expire = 0
+			}
+		}
+	}
+}
+
+#海地
+country_event = {
+	id = min.1107
+	title = min.1107.t
+	desc = min.1107.d
+	picture = GFX_report_event_japan_europe_pact
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = min.1107.a	
+		ai_chance = { factor = 99 }
+		MAN = {
+			country_event = min.1121
+			annex_country = { 
+				target = HAI
+				transfer_troops = yes
+			}
+		}
+	}
+	
+	option = {
+		name = min.1107.b
+		ai_chance = { factor = 1 }
+		MAN = {
+			country_event = min.1122
+			create_wargoal = {
+				type = annex_everything
+				target = HAI
+				expire = 0
+			}
+		}
+	}
+}
+
+#多米尼加
+country_event = {
+	id = min.1108
+	title = min.1108.t
+	desc = min.1108.d
+	picture = GFX_report_event_japan_europe_pact
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = min.1108.a	
+		ai_chance = { factor = 99 }
+		MAN = {
+			country_event = min.1121
+			annex_country = { 
+				target = DOM
+				transfer_troops = yes
+			}
+		}
+	}
+	
+	option = {
+		name = min.1108.b
+		ai_chance = { factor = 1 }
+		MAN = {
+			country_event = min.1122
+			create_wargoal = {
+				type = annex_everything
+				target = DOM
+				expire = 0
+			}
+		}
+	}
+} 	  
+
+#同意
+country_event = {
+	id = min.1121
+	title = min.1121.t
+	desc = min.1121.d
+	picture = GFX_report_event_japan_europe_pact
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = min.1121.a	
+	}
+} 	 
+
+#拒绝
+country_event = {
+	id = min.1122
+	title = min.1122.t
+	desc = min.1122.d
+	picture = GFX_report_event_japan_europe_pact
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = min.1122.a	
+	}
+}  
+
+
+#蒙古草原会议
+country_event = {
+	id = min.1110
+	title = min.1110.t
+	desc = min.1110.d
+	picture = GFX_report_event_bose_meeting
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = min.1110.a	
+		ai_chance = { factor = 50 }
+		
+		create_field_marshal = {
+			name = "Anandyn Amar"
+			picture = "anandyn_amar.dds"
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 2
+			traits = { politically_connected }
+		}
+	}
+	
+	option = {
+		name = min.1110.b
+		ai_chance = { factor = 50 }
+		add_popularity = { ideology = communism popularity = -0.32 }
+	}
+	
+}
+
+#许诺投诚者
+country_event = {
+	id = min.1111
+	title = min.1111.t
+	desc = min.1111.d
+	picture = GFX_report_event_chinese_soldiers_running
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = min.1111.a	
+		ai_chance = { factor = 70 }
+		set_country_flag = mon_lwz
+		create_corps_commander = {
+			name = "Qi xieyuan"
+			portrait_path = "gfx/leaders/Asia/Portrait_Asia_Generic_land_3.dds"
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			traits = { career_officer }
+		}
+		
+		create_corps_commander = {
+			name = "Wang qinghan"
+			portrait_path = "gfx/leaders/Asia/Portrait_Asia_Generic_land_5.dds"
+			skill = 1
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+			traits = { career_officer }
+		}
+		
+		create_corps_commander = {
+			name = "Wu huaweng"
+			portrait_path = "gfx/leaders/Asia/Portrait_Asia_Generic_land_2.dds"
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 3
+			traits = { infantry_officer }
+		}
+		
+		create_corps_commander = {
+			name = "Lu fengce"
+			portrait_path = "gfx/leaders/Asia/Portrait_Asia_Generic_land_4.dds"
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 3
+			traits = { }
+		}
+		
+		create_navy_leader = {
+			name = "Huang dawei"
+			picture = "gfx/leaders/Asia/Portrait_Asia_Generic_navy_2.dds"
+			traits = { }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 3
+			maneuvering_skill = 2
+			coordination_skill = 1
+		}
+		
+		create_navy_leader = {
+			name = "Xu jitai"
+			picture = "gfx/leaders/Asia/Portrait_Asia_Generic_navy_1.dds"
+			traits = { }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			maneuvering_skill = 2
+			coordination_skill = 3
+		}
+	}
+	
+	option = {
+		name = min.1111.b
+		ai_chance = { factor = 30 }
+		add_manpower = 28000
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 19000
+			producer = CHI
+		}
+	}	
+}
+
+
+#与清和解
+country_event = {
+	id = min.1112
+	title = min.1112.t
+	desc = min.1112.d
+	picture = GFX_report_event_chinese_soldiers_running
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = min.1112.a	
+		ai_chance = { factor = 60 }
+		MON = {
+			country_event = min.1113
+		}
+	}
+	
+	option = {
+		name = min.1112.b
+		ai_chance = { factor = 40 }
+		MON = {
+			country_event = min.1114
+		}
+	}
+}
+
+#同意
+country_event = {
+	id = min.1113
+	title = min.1113.t
+	desc = min.1113.d
+	picture = GFX_report_event_chinese_soldiers_running
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = min.1113.a	
+		diplomatic_relation = {
+			country = MAN
+			relation = non_aggression_pact
+			active = yes
+		}
+		add_political_power = 70
+		add_war_support = 0.02
+		add_stability = 0.02
+	}
+}
+
+#拒绝
+country_event = {
+	id = min.1114
+	title = min.1114.t
+	desc = min.1114.d
+	picture = GFX_report_event_chinese_soldiers_running
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = min.1114.a	
+		create_wargoal = {
+			type = annex_everything
+			target = MAN
+			expire = 0
+		}
+	}
+}
+
+#迫使朝鲜称臣
+country_event = {
+	id = min.1115
+	title = min.1115.t
+	desc = min.1115.d
+	picture = GFX_report_event_chinese_soldiers_running
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = min.1115.a	
+		ai_chance = { factor = 30 }
+		MON = {
+			country_event = min.1116
+		}
+	}
+	
+	option = {
+		name = min.1115.b
+		ai_chance = { factor = 70 }
+		MON = {
+			country_event = min.1117
+		}
+	}
+}
+
+#同意
+country_event = {
+	id = min.1116
+	title = min.1116.t
+	desc = min.1116.d
+	picture = GFX_report_event_chinese_soldiers_running
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = min.1116.a
+		MON = {
+			puppet = KOR
+		}
+	}
+}
+
+#拒绝
+country_event = {
+	id = min.1117
+	title = min.1117.t
+	desc = min.1117.d
+	picture = GFX_report_event_chinese_soldiers_running
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = min.1117.a	
+		create_wargoal = {
+			type = annex_everything
+			target = KOR
+			expire = 0
+		}
+	}
+}
+
+
+#处理旧贵族
+country_event = {
+	id = min.1118
+	title = min.1118.t
+	desc = min.1118.d
+	picture = GFX_report_event_japan_europe_pact
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = min.1118.a	
+		ai_chance = { factor = 50 }
+		add_political_power = -50
+		add_popularity = { ideology = communism popularity = 0.1 }
+	}
+	
+	option = {
+		name = min.1118.b
+		ai_chance = { factor = 50 }
+		add_war_support = -0.05
+		add_stability = -0.05
+		add_political_power = 50
+		add_popularity = { ideology = neutrality popularity = -0.25 }
+	}
+	
+}
+
+
+
+#宁夏协定
+country_event = {
+	id = min.1130
+	title = min.1130.t
+	desc = min.1130.d
+	picture = GFX_report_event_japan_europe_pact
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = min.1130.a	
+		ai_chance = { factor = 50 }
+		MON = {
+			country_event = min.1131
+		}
+	}
+	
+	option = {
+		name = min.1130.b
+		ai_chance = { factor = 50 }
+		MON = {
+			country_event = min.1132
+		}
+	}
+}
+
+#同意
+country_event = {
+	id = min.1131
+	title = min.1131.t
+	desc = min.1131.d
+	picture = GFX_report_event_japan_europe_pact
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = min.1131.a
+		CHI = {
+			transfer_state = 616
+		}
+		diplomatic_relation = {
+			country = CHI
+			relation = non_aggression_pact
+			active = yes
+		}
+	}
+}
+
+#拒绝
+country_event = {
+	id = min.1132
+	title = min.1132.t
+	desc = min.1132.d
+	picture = GFX_report_event_japan_europe_pact
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = min.1132.a	
+		
+	}
+}
+
+
+
+
+
+#唐努图瓦协定
+country_event = {
+	id = min.1133
+	title = min.1133.t
+	desc = min.1133.d
+	picture = GFX_report_event_japan_europe_pact
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = min.1133.a	
+		ai_chance = { factor = 99 }
+		MON = {
+			country_event = min.1134
+		}
+	}
+	
+	option = {
+		name = min.1133.b
+		ai_chance = { factor = 1 }
+		MON = {
+			country_event = min.1135
+		}
+	}
+}
+
+#同意
+country_event = {
+	id = min.1134
+	title = min.1134.t
+	desc = min.1134.d
+	picture = GFX_report_event_japan_europe_pact
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = min.1134.a
+		SOV = {
+			transfer_state = 329
+		}
+		set_country_flag = MON_tntwxd
+	}
+}
+
+#拒绝
+country_event = {
+	id = min.1135
+	title = min.1135.t
+	desc = min.1135.d
+	picture = GFX_report_event_japan_europe_pact
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = min.1135.a	
+		
+	}
+}
+
+country_event = {
+	id = min.1368
+	title = min.1368.t
+	desc = min.1368.d
+	picture = GFX_idea_montg_begin
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = min.1368.a	
+		ai_chance = { factor = 50 }
+		add_political_power = -50
+		add_country_leader_trait = mon_ljtz
+		remove_country_leader_trait = mon_xl
+	}
+	
+}
+
+country_event = {
+	id = min.1137
+	title = minx.101.t
+	desc = minx.101.d	
+	is_triggered_only = yes
+	
+	option = {
+		name = minx.101.a
+		set_country_flag = accept_tuntian
+	}
+	
+	option = {
+		name = minx.101.b
+	}
+}
+
+country_event = {
+	id = min.1138
+	title = minx.102.t
+	desc = minx.102.d
+	is_triggered_only = yes	
+	option = {
+		name = minx.102.a
+		
+	}	
+}
+country_event = {
+	id = min.1139
+	title = minx.103.t
+	desc = minx.103.d
+	is_triggered_only = yes	
+	option = {
+		name = minx.103.a	
+		add_stability = -0.15
+		add_political_power = -75
+		country_event = min.1140	
+	}	
+	option = {
+		name = minx.103.b		
+	}	
+}
+country_event = {
+	id = min.1140
+	title = minx.104.t
+	picture = GFX_idea_js_begin
+	desc = minx.104.d
+	is_triggered_only = yes	
+	option = {
+		name = minx.104.a	
+		add_ideas = chi_jyggyyjy		
+	}	
+	
+}
+
+country_event = {
+	id = min.1141
+	title = min.1141.t
+	picture = GFX_idea_js_begin
+	desc = min.1141.d
+	is_triggered_only = yes	
+	option = {
+		name = min.1141.a	
+		add_stability = -0.15
+		set_country_flag = chi_cyjjl
+	}	
+	option = {
+		name = min.1141.b	
+		set_country_flag = chi_cyjjl
+		add_timed_idea = {
+				idea = ming_dqx
+				days = 180
+			}
+		army_experience = 75
+	}	
+	
+}
+
+country_event = {
+	id = min.1142
+	title = min.1142.t
+	picture = GFX_idea_js_begin
+	desc = min.1142.d
+	is_triggered_only = yes	
+	option = {
+		name = min.1142.a	
+	}	
+}
+
+country_event = { #黄河水灾 发生
+	id = min.1999
+	title = min.1999.t
+	picture = GFX_idea_js_begin
+	desc = min.1999.d
+	trigger = {
+		original_tag = CHI
+		date > 1937.7.1
+	}
+	fire_only_once = yes
+	option = {
+		name = min.1999.a	
+		set_country_flag = chi_henandashui
+		607 = {
+				add_manpower = -200000
+				damage_building = {
+					type = industrial_complex
+					damage = 0.5
+				}
+				damage_building = {
+					type = infrastructure
+					damage = 1
+				}
+			}
+	}			
+}
+
+
+
+
+country_event = { #黄河水灾 好好对待
+	id = min.2000
+	title = min.2000.t
+	picture = GFX_idea_js_begin
+	desc = min.2000.d
+	is_triggered_only = yes	
+	option = {
+		name = min.2000.a	
+		add_stability = 0.05
+	}			
+}
+
+country_event = { #黄河水灾 不管
+	id = min.2001
+	title = min.2001.t
+	picture = GFX_idea_js_begin
+	desc = min.2001.d
+	is_triggered_only = yes	
+	option = {
+		name = min.2001.a	
+		add_stability = -0.1
+	}	
+	option = {
+		name = min.2001.b	
+		add_political_power = -50
+	}		
+}
+
+
+country_event = { #日月所照，山河所至，皆为汉土。
+	id = min.9999
+	title = min.9999.t
+	picture = GFX_event_CHI_victory
+	desc = min.9999.d
+	fire_only_once = yes
+	trigger = {
+		original_tag = CHI
+		OR = { NOT = { country_exists = USA } USA = { is_subject_of = CHI } }
+		OR = { NOT = { country_exists = GER } GER = { is_subject_of = CHI } }
+		OR = { NOT = { country_exists = ENG } ENG = { is_subject_of = CHI } }
+		OR = { NOT = { country_exists = FRA } FRA = { is_subject_of = CHI } }
+		OR = { NOT = { country_exists = RAJ } RAJ = { is_subject_of = CHI } }
+		OR = { NOT = { country_exists = ITA } ITA = { is_subject_of = CHI } }
+	}
+	mean_time_to_happen = { days = 1 }
+	option = {
+		name = min.9999.a	
+		CHI_victory = yes
+	}	
+	option = {
+		name = min.9999.b	
+		
+	}		
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

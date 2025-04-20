@@ -1,0 +1,95 @@
+bookmarks = {
+	bookmark = {
+		name = "MING_SCENARIO_NAME"
+		desc = "MING_SCENARIO_DESC"
+		date = 1936.1.1.12
+		picture = "GFX_select_date_1936"
+		default_country = "CHI"
+		default = yes
+		
+		
+		"MON"={
+			history = "MON_MIN_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				MON_goongchanyx
+				MON_fenhuacaoy
+				MON_bcanxianz
+			}
+			focuses = {
+				MON_112
+				MON_12
+				MON_67
+			}
+		}
+		
+		"KOR"={
+			history = "KOR_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+			CHI_cg001	
+			KOR_wuyongjundui
+			KOR_dulizhe
+			}
+			focuses = {
+			KOR_01 
+			KOR_tj05
+			KOR_136 
+			}
+		}
+		
+		"CHI"={
+			history = "CHI_MIN_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+			CHI_dong_xi_chang
+			CHI_tianchao
+			CHI_xinanwenti
+			}
+			focuses = {
+			CHI_18		
+			CHI_126
+			CHI_227
+			}
+		}
+		
+		"MAN"={
+			history = "MAN_MIN_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				MAN_jianguodacheng
+				MAN_feizhengtong
+				MAN_luohoukeji
+			}
+			focuses = {
+				MAN_08
+				MAN_19
+				MAN_20
+			}	
+		}
+		
+		"JAP"={
+			history = "JAP_MIN_STORM_DESC"
+			ideology = fascism
+			ideas = {
+				state_shintoism
+				JAP_zaibatsus
+				jap_ribenng
+			}	
+			focuses = {
+				JAP_tj001
+				JAP_23
+				JAP_119
+			}			
+		}
+
+
+		# minors from DLC ####
+		
+		
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

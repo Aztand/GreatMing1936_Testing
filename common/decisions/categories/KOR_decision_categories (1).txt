@@ -1,0 +1,11 @@
+大清训练= {
+	icon = army_reform
+	allowed = {
+
+		always = yes
+	}
+
+	visible = {
+		always = yes
+	}
+}

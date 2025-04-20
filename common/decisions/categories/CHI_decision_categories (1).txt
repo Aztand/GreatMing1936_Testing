@@ -1,0 +1,211 @@
+国内动荡问题 = {
+
+	icon = border_conflicts
+	allowed = {
+		original_tag = CHI
+	}
+	priority = 7
+	visible = {
+	}
+}
+大明的战争措施 = {
+	icon = border_conflicts
+	allowed = {		original_tag = CHI	}
+	available = {			has_completed_focus = CHI_18		}
+	visible = {
+	}
+	priority = 5
+}
+mon_tsj = {
+	
+	icon = border_conflicts
+
+	allowed = {
+		tag = MON
+	}
+
+	visible = {
+		always = yes
+	}
+}
+
+调动老旧军舰 = {
+	icon = generic_naval
+	allowed = {
+		original_tag = CHI
+	}
+
+	visible = {
+		has_completed_focus = CHI_76
+	}
+}
+
+帝国朝堂纷争 = {
+	icon = power_struggle
+	allowed = {
+		original_tag = CHI
+	}
+
+	visible = {
+	}
+}
+
+临时地方巡捕安保队 = {
+	icon = army_reform
+	allowed = {
+		original_tag = CHI
+	}
+
+	visible = {
+		has_completed_focus = CHI_49
+	}
+}
+
+改革政治 = {
+	icon = generic_political_actions
+	allowed = {
+		OR = {
+			original_tag = CHI
+		has_completed_focus = CHI_x04
+		}
+	}
+
+	visible = {
+		always = yes
+		original_tag = CHI
+	}
+}
+新将领 = {
+	icon = army_reform
+	allowed = {
+		original_tag = MON		
+	}
+	visible = {
+		always = yes
+	}
+}
+内政改革 = {
+	icon = generic_industry
+	allowed = {
+		original_tag = CHI			
+	}
+	visible = {
+		always = yes
+	}
+	priority = 18
+}
+
+大明难度调整 = {
+	icon = army_reform
+	allowed = {
+		original_tag = CHI			
+	}
+	visible = {
+		always = no
+		NOT = {   has_country_flag = chi_gbndxt}
+	}
+	priority = 17
+}
+
+大明兵部改革 = {
+	icon = army_reform
+	allowed = {
+		original_tag = CHI			
+	}
+	visible = {
+		always = yes
+	}
+	priority = 16
+}
+
+大明灾难 = {
+	icon = generic_political_actions
+	allowed = {
+		original_tag = CHI			
+	}
+	visible = {
+		always = yes
+	}
+	priority = 40
+}
+
+大明情报部门改革 = {
+	icon = generic_political_actions
+	allowed = {
+		original_tag = CHI			
+	}
+	visible = {
+		always = yes
+	}
+	priority = 15
+}
+
+大明的灵活外交 = {
+	icon = generic_political_actions
+	allowed = {
+		original_tag = CHI			
+	}
+	visible = {
+		always = yes
+	}
+	priority = 0
+}
+
+Set_DHF = {		#设置都护府
+	icon = NOR_monarchist_prep
+	allowed = {
+		original_tag = CHI			
+	}
+	visible = {
+		always = yes
+	}
+	priority = 9
+}
+
+
+
+扩大大明的疆域 = {
+	icon = generic_propaganda
+	allowed = {
+		original_tag = CHI			
+	}
+	visible = {
+		always = yes
+	}
+	priority = 8
+}
+
+大明的科技突破 = {
+	icon = generic_political_actions
+	allowed = {
+		original_tag = CHI			
+	}
+	visible = {
+		always = yes
+	}
+	priority = -10
+}
+
+ming_cxyth = {
+	icon = generic_political_actions
+	allowed = {
+		original_tag = CHI			
+	}
+	visible = {
+		always = yes
+	}
+	priority = 150
+}
+MING_balance_of_power_category = {
+	icon = GFX_decision_category_power_struggle
+	
+	allowed = {
+		original_tag = CHI
+	}
+	
+	priority = 90
+	
+	visible = {
+		
+	}
+}

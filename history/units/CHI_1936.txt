@@ -1,0 +1,1467 @@
+﻿division_template = {
+	name = "地方卫所"				
+	division_names_group = CHI_DWS_01
+									
+	regiments = {					
+		infantry = { x = 0 y = 0 }	
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }	
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 0 }
+	}
+	priority = 0 
+}
+division_template = {
+	name = "神机营"			
+	division_names_group = CHI_SJY_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 }
+        infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 0 } infantry = { x = 2 y = 1 }
+		infantry = { x = 3 y = 0 } infantry = { x = 3 y = 1 }
+		artillery_brigade = { x = 4 y = 0 } artillery_brigade = { x = 4 y = 1 } artillery_brigade = { x = 4 y = 2 }
+	}
+	
+	support = {
+		recon = { x = 0 y = 0 }
+        engineer = { x = 0 y = 1 }
+        artillery = { x = 0 y = 2 }
+	}
+}
+division_template = {
+	name = "京营"			
+	division_names_group = CHI_MJY_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+        infantry = { x = 3 y = 0 }
+		infantry = { x = 3 y = 1 }
+		infantry = { x = 3 y = 2 }
+		artillery_brigade = { x = 4 y = 0 }
+		artillery_brigade = { x = 4 y = 1 }
+		artillery_brigade = { x = 4 y = 2 }
+	}
+	
+	support = {
+        artillery = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "边军"			
+	division_names_group = CHI_BJS_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		artillery_brigade = { x = 2 y = 0 }
+	}
+	support = {
+        artillery = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "神枢营"		
+	division_names_group = CHI_SSY_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+		cavalry = { x = 2 y = 0 }
+		cavalry = { x = 2 y = 1 }
+		cavalry = { x = 2 y = 2 }
+	}
+	support = {
+       recon = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "装甲师"
+
+	division_names_group = CHI_ZJS_01
+
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+		light_armor = { x = 0 y = 2 }
+        light_armor = { x = 1 y = 0 }
+		light_armor = { x = 1 y = 1 }
+		motorized = { x = 2 y = 0 }
+        motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+        motorized = { x = 2 y = 3 }
+		light_armor = { x = 3 y = 0 }
+		light_armor = { x = 3 y = 1 }
+		light_armor = { x = 3 y = 2 }
+		light_armor = { x = 3 y = 3 }
+		motorized = { x = 4 y = 0 }
+        motorized = { x = 4 y = 1 }
+		motorized = { x = 4 y = 2 }
+        motorized = { x = 4 y = 3 }
+	}
+	support = {
+        mot_recon = { x = 0 y = 0 }
+        engineer = { x = 0 y = 1 }
+        artillery = { x = 0 y = 2 }
+	}
+}
+
+division_template = {
+	name = "空输部队"
+
+	division_names_group = CHI_PAR_01
+
+	regiments = {
+		paratrooper = { x = 0 y = 0 }
+		paratrooper = { x = 0 y = 1 }
+		paratrooper = { x = 0 y = 2 }
+        paratrooper = { x = 1 y = 0 }
+		paratrooper = { x = 1 y = 1 }
+		paratrooper = { x = 2 y = 0 }
+
+	}
+	support = {
+        engineer = { x = 0 y = 0 }
+        artillery = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "山地部队"
+
+	division_names_group = CHI_PAR_01
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+        mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 2 y = 0 }
+		mountaineers = { x = 2 y = 1 }
+		artillery_brigade = { x = 3 y = 0 }
+		artillery_brigade = { x = 3 y = 1 }
+
+	}
+	support = {
+        engineer = { x = 0 y = 0 }
+        artillery = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "海岸防卫部队"			
+	division_names_group = CHI_MJY_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+
+	}
+	
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+	priority = 0 
+}
+division_template = {
+	name = "边防巡视部队"				
+	division_names_group = CHI_DWS_01
+									
+	regiments = {					
+		infantry = { x = 0 y = 0 }	
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }	
+		infantry = { x = 1 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+	priority = 0 
+}
+
+### OOB ###
+units = {
+	division = {
+		name = "北直隶右京营"
+		location = 9843
+		division_template = "京营"
+		start_equipment_factor = 1.0
+		start_experience_factor = 1.0
+	}
+	
+	division = {
+		name = "北直隶左京营"
+		location = 9843
+		division_template = "京营"
+		start_equipment_factor = 1.0
+		start_experience_factor = 1.0
+	}
+	
+	division = {
+		name = "北直隶前京营"
+		location = 11761
+		division_template = "京营"
+		start_equipment_factor = 1.0
+		start_experience_factor = 1.0
+	}
+	
+	division = {
+		name = "北直隶后京营"
+		location = 4137
+		division_template = "京营"
+		start_equipment_factor = 1.0
+		start_experience_factor = 1.0
+	}
+	
+	division = {
+		name = "南直隶右京营"
+		location = 11913
+		division_template = "京营"
+		start_equipment_factor = 1.0
+		start_experience_factor = 1.0
+	}
+	
+	division = {
+		name = "南直隶左京营"
+		location = 11913
+		division_template = "京营"
+		start_equipment_factor = 1.0
+		start_experience_factor = 1.0
+	}
+	
+	division = {
+		name = "北京神机营"
+		location = 9843
+		division_template = "神机营"
+		start_equipment_factor = 1.0
+		start_experience_factor = 0.8
+	}
+	
+	division = {
+		name = "天津神机营"
+		location = 4137
+		division_template = "神机营"
+		start_equipment_factor = 1.0
+		start_experience_factor = 0.8
+	}
+	
+	division = {
+		name = "济南神机营"
+		location = 1069
+		division_template = "神机营"
+		start_equipment_factor = 1.0
+		start_experience_factor = 0.8
+	}
+	
+	division = {
+		name = "金陵神机营"
+		location = 11913
+		division_template = "神机营"
+		start_equipment_factor = 1.0
+		start_experience_factor = 0.8
+	}
+
+	division = {
+		name = "重庆神机营"
+		location = 4431
+		division_template = "神机营"
+		start_equipment_factor = 1.0
+		start_experience_factor = 0.8
+	}
+	
+	division = {
+		name = "辽东神机营"
+		location = 11771
+		division_template = "神机营"
+		start_equipment_factor = 1.0
+		start_experience_factor = 0.8
+	}
+	
+	division = {
+		name = "两广神机营"
+		location = 1047
+		division_template = "神机营"
+		start_equipment_factor = 1.0
+		start_experience_factor = 0.8
+	}
+	
+	division = {
+		name = "淞沪神机营"
+		location = 10076
+		division_template = "神机营"
+		start_equipment_factor = 1.0
+		start_experience_factor = 0.8
+	}
+
+	division = {
+		name = "长安神机营"
+		location = 8072
+		division_template = "神机营"
+		start_equipment_factor = 1.0
+		start_experience_factor = 0.8
+	}
+	
+	division = {
+		name = "两湖神机营"
+		location = 7097
+		division_template = "神机营"
+		start_equipment_factor = 1.0
+		start_experience_factor = 0.8
+	}
+	
+	division = {
+		name = "北直隶神枢营"
+		location = 9843
+		division_template = "神枢营"
+		start_equipment_factor = 1.0
+		start_experience_factor = 0.5
+	}
+	
+	division = {
+		name = "通州神枢营"
+		location = 9969
+		division_template = "神枢营"
+		start_equipment_factor = 1.0
+		start_experience_factor = 0.5
+	}
+	
+	division = {
+		name = "南直隶神枢营"
+		location = 996
+		division_template = "神枢营"
+		start_equipment_factor = 1.0
+		start_experience_factor = 0.5
+	}
+	
+	division = {
+		name = "宁波神枢营"
+		location = 9974
+		division_template = "神枢营"
+		start_equipment_factor = 1.0
+		start_experience_factor = 0.5
+	}
+	
+	division = {
+		name = "辽东神枢营"
+		location = 4561
+		division_template = "神枢营"
+		start_equipment_factor = 1.0
+		start_experience_factor = 0.5
+	}
+	
+	division = {
+		name = "直隶装甲左营"
+		location = 9843
+		division_template = "装甲师"
+		start_equipment_factor = 1.0
+		start_experience_factor = 0.7
+	}
+	
+	division = {
+		name = "直隶装甲右营"
+		location = 9843
+		division_template = "装甲师"
+		start_equipment_factor = 1.0
+		start_experience_factor = 0.7
+	}
+	
+	division = {
+		name = "两广装甲左营"
+		location = 1047
+		division_template = "装甲师"
+		start_equipment_factor = 1.0
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "两广装甲右营"
+		location = 1047
+		division_template = "装甲师"
+		start_equipment_factor = 1.0
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "湖广装甲左营"
+		location = 4619
+		division_template = "装甲师"
+		start_equipment_factor = 1.0
+		start_experience_factor = 0.2
+	}
+	
+	division = {
+		name = "湖广装甲右营"
+		location = 4619
+		division_template = "装甲师"
+		start_equipment_factor = 1.0
+		start_experience_factor = 0.2
+	}
+	
+	division = {
+		name = "辽东装甲左营"
+		location = 11771
+		division_template = "装甲师"
+		start_equipment_factor = 1.0
+		start_experience_factor = 0.5
+	}
+	
+	division = {
+		name = "辽东装甲右营"
+		location = 11771
+		division_template = "装甲师"
+		start_equipment_factor = 1.0
+		start_experience_factor = 0.5
+	}
+	
+	division = {
+		name = "西宁装甲左营"
+		location = 12327
+		division_template = "装甲师"
+		start_equipment_factor = 1.0
+		start_experience_factor = 0.5
+	}
+	
+	division = {
+		name = "西宁装甲右营"
+		location = 12327
+		division_template = "装甲师"
+		start_equipment_factor = 1.0
+		start_experience_factor = 0.5
+	}
+	
+	division = {
+		name = "大同靖边左军"
+		location = 1519
+		division_template = "边军"
+		start_equipment_factor = 1.0
+		start_experience_factor = 0.7
+	}
+	
+	division = {
+		name = "大同靖边右军"
+		location = 1203
+		division_template = "边军"
+		start_equipment_factor = 1.0
+		start_experience_factor = 0.7
+	}
+	
+	division = {
+		name = "延安靖边左军"
+		location = 8049
+		division_template = "边军"
+		start_equipment_factor = 1.0
+		start_experience_factor = 0.7
+	}
+	
+	division = {
+		name = "延安靖边右军"
+		location = 8049
+		division_template = "边军"
+		start_equipment_factor = 1.0
+		start_experience_factor = 0.7
+	}
+
+	division = {
+		name = "西南靖边左军"
+		location = 4425
+		division_template = "边军"
+		start_equipment_factor = 1.0
+		start_experience_factor = 0.5
+	}
+	
+	division = {
+		name = "西南靖边右军"
+		location = 1330
+		division_template = "边军"
+		start_equipment_factor = 1.0
+		start_experience_factor = 0.5
+	}
+	
+	division = {
+		name = "台北靖边军"
+		location = 7186
+		division_template = "边军"
+		start_equipment_factor = 1.0
+		start_experience_factor = 0.5
+	}
+	
+	division = {
+		name = "旧港靖边军"
+		location = 7371
+		division_template = "边军"
+		start_equipment_factor = 1.0
+		start_experience_factor = 0.5
+	}
+	
+	division = {
+		name = "辽东靖边中军"
+		location = 11771
+		division_template = "边军"
+		start_equipment_factor = 1.0
+		start_experience_factor = 0.5
+	}
+	
+	division = {
+		name = "辽东靖边左军"
+		location = 11771
+		division_template = "边军"
+		start_equipment_factor = 1.0
+		start_experience_factor = 0.5
+	}
+	
+	division = {
+		name = "辽东靖边右军"
+		location = 9927
+		division_template = "边军"
+		start_equipment_factor = 1.0
+		start_experience_factor = 0.5
+	}
+	
+	division = {
+		name = "旧港后备军"
+		location = 12299
+		division_template = "边军"
+		start_equipment_factor = 1.0
+		start_experience_factor = 0.5
+	}
+	
+	division = {
+		name = "安南靖边军"
+		location = 4075
+		division_template = "边军"
+		start_equipment_factor = 1.0
+		start_experience_factor = 0.5
+	}
+	
+	division = {
+		name = "辽东卫所"
+		location = 11771
+		division_template = "地方卫所"
+		start_equipment_factor = 0.1
+		start_experience_factor = 0.1
+	}
+	
+	division = {
+		name = "热河卫所"
+		location = 11855
+		division_template = "地方卫所"
+		start_equipment_factor = 0.1
+		start_experience_factor = 0.1
+	}
+	
+	division = {
+		name = "甘肃卫所"
+		location = 5057
+		division_template = "地方卫所"
+		start_equipment_factor = 0.1
+		start_experience_factor = 0.1
+	}
+	
+	division = {
+		name = "青海卫所"
+		location = 10834
+		division_template = "地方卫所"
+		start_equipment_factor = 0.1
+		start_experience_factor = 0.1
+	}
+	
+	division = {
+		name = "西藏卫所"
+		location = 5033
+		division_template = "地方卫所"
+		start_equipment_factor = 0.05
+		start_experience_factor = 0.05
+	}
+	
+	division = {
+		name = "云南卫所"
+		location = 7965
+		division_template = "地方卫所"
+		start_equipment_factor = 0.1
+		start_experience_factor = 0.15
+	}
+	
+	division = {
+		name = "云南土司"
+		location = 7965
+		division_template = "地方卫所"
+		start_equipment_factor = 0.05
+		start_experience_factor = 0.1
+	}
+	
+	division = {
+		name = "南宁土司"
+		location = 7137
+		division_template = "地方卫所"
+		start_equipment_factor = 0.05
+		start_experience_factor = 0.1
+	}
+	
+	division = {
+		name = "贵州土司"
+		location = 10404
+		division_template = "地方卫所"
+		start_equipment_factor = 0.05
+		start_experience_factor = 0.1
+	}
+	
+	division = {
+		name = "湖南卫所"
+		location = 7097
+		division_template = "地方卫所"
+		start_equipment_factor = 0.1
+		start_experience_factor = 0.1
+	}
+	
+	division = {
+		name = "湖北卫所"
+		location = 4619
+		division_template = "地方卫所"
+		start_equipment_factor = 0.1
+		start_experience_factor = 0.1
+	}
+	
+	division = {
+		name = "苏州卫所"
+		location = 10076
+		division_template = "地方卫所"
+		start_equipment_factor = 0.3
+		start_experience_factor = 0.15
+	}
+	
+	division = {
+		name = "杭州卫所"
+		location = 7191
+		division_template = "地方卫所"
+		start_equipment_factor = 0.3
+		start_experience_factor = 0.15
+	}
+	
+	division = {
+		name = "福州卫所"
+		location = 4196
+		division_template = "地方卫所"
+		start_equipment_factor = 0.25
+		start_experience_factor = 0.1
+	}
+	
+	division = {
+		name = "高雄卫所"
+		location = 12068
+		division_template = "地方卫所"
+		start_equipment_factor = 0.25
+		start_experience_factor = 0.1
+	}
+	
+	division = {
+		name = "琼州土司"
+		location = 1070
+		division_template = "地方卫所"
+		start_equipment_factor = 0.05
+		start_experience_factor = 0.05
+	}
+	
+	division = {
+		name = "广州卫所"
+		location = 1047
+		division_template = "地方卫所"
+		start_equipment_factor = 0.15
+		start_experience_factor = 0.1
+	}
+	
+	division = {
+		name = "西贡卫所"
+		location = 4401
+		division_template = "地方卫所"
+		start_equipment_factor = 0.05
+		start_experience_factor = 0.05
+	}
+	
+	division = {
+		name = "旧港左守备司"
+		location = 12299
+		division_template = "地方卫所"
+		start_equipment_factor = 0.05
+		start_experience_factor = 0.1
+	}
+	
+	division = {
+		name = "旧港右守备司"
+		location = 10297
+		division_template = "地方卫所"
+		start_equipment_factor = 0.1
+		start_experience_factor = 0.0
+	}
+	
+	division = {
+		name = "果洛卫所"
+		location = 12327
+		division_template = "地方卫所"
+		start_equipment_factor = 0.01
+		start_experience_factor = 0.0
+	}	
+
+	division = {
+		name = "成都卫所"
+		location = 12141
+		division_template = "地方卫所"
+		start_equipment_factor = 0.15
+		start_experience_factor = 0.1
+	}
+	
+	division = {
+		name = "凉山土司"
+		location = 7294
+		division_template = "地方卫所"
+		start_equipment_factor = 0.01
+		start_experience_factor = 0.0
+	}
+	
+	division = {
+		name = "青州卫所"
+		location = 1069
+		division_template = "地方卫所"
+		start_equipment_factor = 0.2
+		start_experience_factor = 0.15
+	}
+		
+	division = {
+		name = "青岛卫所"
+		location = 10000
+		division_template = "地方卫所"
+		start_equipment_factor = 0.2
+		start_experience_factor = 0.15
+	}
+	
+	division = {
+		name = "威海卫所"
+		location = 4205
+		division_template = "地方卫所"
+		start_equipment_factor = 0.05
+		start_experience_factor = 0.1
+	}
+	
+	division = {
+		name = "冀东卫所"
+		location = 3900
+		division_template = "地方卫所"
+		start_equipment_factor = 0.25
+		start_experience_factor = 0.1
+	}
+	
+	division = {
+		name = "南昌卫所"
+		location = 3992
+		division_template = "地方卫所"
+		start_equipment_factor = 0.05
+		start_experience_factor = 0.1
+	}
+	
+	division = {
+		name = "北直隶卫所"
+		location = 9843
+		division_template = "地方卫所"
+		start_equipment_factor = 0.5
+		start_experience_factor = 0.4
+	}
+	
+	division = {
+		name = "北直隶守备司"
+		location = 9843
+		division_template = "地方卫所"
+		start_equipment_factor = 0.5
+		start_experience_factor = 0.4
+	}
+	
+	division = {
+		name = "南直隶卫所"
+		location = 11913
+		division_template = "地方卫所"
+		start_equipment_factor = 0.5
+		start_experience_factor = 0.4
+	}
+	
+	division = {
+		name = "南直隶守备司"
+		location = 4091
+		division_template = "地方卫所"
+		start_equipment_factor = 0.5
+		start_experience_factor = 0.4
+	}
+	
+	division = {
+		name = "太原卫神机营"
+		location = 1519
+		division_template = "神机营"
+		start_equipment_factor = 1.0
+		start_experience_factor = 0.8
+	}
+	division = {
+		name = "延安卫神机营"
+		location = 8049
+		division_template = "神机营"
+		start_equipment_factor = 1.0
+		start_experience_factor = 0.8
+	}
+	division = {
+		name = "西宁卫神机营"
+		location = 12327
+		division_template = "神机营"
+		start_equipment_factor = 1.0
+		start_experience_factor = 0.8
+	}
+	division = {
+		name = "天津卫神机营"
+		location = 10068
+		division_template = "神机营"
+		start_equipment_factor = 1.0
+		start_experience_factor = 0.8
+	}
+	division = {
+		name = "河南卫神机营"
+		location = 9958
+		division_template = "神机营"
+		start_equipment_factor = 1.0
+		start_experience_factor = 0.8
+	}
+	
+	division = {
+		name = "青岛左卫神机营"
+		location = 10000
+		division_template = "神机营"
+		start_equipment_factor = 1.0
+		start_experience_factor = 0.8
+	}
+	division = {
+		name = "青岛右卫神机营"
+		location = 10000
+		division_template = "神机营"
+		start_equipment_factor = 1.0
+		start_experience_factor = 0.8
+	}
+	
+	division = {
+		name = "杭州卫神机营"
+		location = 7191
+		division_template = "神机营"
+		start_equipment_factor = 1.0
+		start_experience_factor = 0.8
+	}
+	division = {
+		name = "西安卫神机营"
+		location = 7948
+		division_template = "神机营"
+		start_equipment_factor = 1.0
+		start_experience_factor = 0.8
+	}
+	
+	division = {
+		name = "兰州左卫神机营"
+		location = 7511
+		division_template = "神机营"
+		start_equipment_factor = 1.0
+		start_experience_factor = 0.4
+	}
+	division = {
+		name = "兰州右卫神机营"
+		location = 7511
+		division_template = "神机营"
+		start_equipment_factor = 1.0
+		start_experience_factor = 0.4
+	}
+	
+	division = {
+		name = "成都左卫神机营"
+		location = 12141
+		division_template = "神机营"
+		start_equipment_factor = 1.0
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "成都右卫神机营"
+		location = 12141
+		division_template = "神机营"
+		start_equipment_factor = 1.0
+		start_experience_factor = 0.1
+	}
+	
+	division = {
+		name = "大同卫边防师"
+		location = 10480
+		division_template = "边军"
+		start_equipment_factor = 1.0
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "大同卫边防师"
+		location = 12432
+		division_template = "边军"
+		start_equipment_factor = 1.0
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "大同卫边防师"
+		location = 10507
+		division_template = "边军"
+		start_equipment_factor = 1.0
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "大同卫边防师"
+		location = 4074
+		division_template = "边军"
+		start_equipment_factor = 1.0
+		start_experience_factor = 0.5
+	}
+	
+	division = {
+		name = "榆林卫边防师"
+		location = 7659
+		division_template = "边军"
+		start_equipment_factor = 1.0
+		start_experience_factor = 0.4
+	}
+	division = {
+		name = "榆林卫边防师"
+		location = 7314
+		division_template = "边军"
+		start_equipment_factor = 1.0
+		start_experience_factor = 0.4
+	}
+	division = {
+		name = "榆林卫边防师"
+		location = 10880
+		division_template = "边军"
+		start_equipment_factor = 1.0
+		start_experience_factor = 0.4
+	}
+	
+	division = {
+		name = "辽东卫边防师"
+		location = 11771
+		division_template = "边军"
+		start_equipment_factor = 1.0
+		start_experience_factor = 0.4
+	}
+	division = {
+		name = "辽东卫边防师"
+		location = 11771
+		division_template = "边军"
+		start_equipment_factor = 1.0
+		start_experience_factor = 0.4
+	}
+	division = {
+		name = "辽东卫边防师"
+		location = 11771
+		division_template = "边军"
+		start_equipment_factor = 1.0
+		start_experience_factor = 0.4
+	}
+	
+	division = {
+		name = "锦衣卫第一空输旅"
+		location = 11761
+		division_template = "空输部队"
+		start_equipment_factor = 1.0
+		start_experience_factor = 0.4
+	}
+	division = {
+		name = "锦衣卫第二空输旅"
+		location = 1134
+		division_template = "空输部队"
+		start_equipment_factor = 1.0
+		start_experience_factor = 0.4
+	}
+	division = {
+		name = "锦衣卫第三空输旅"
+		location = 6951
+		division_template = "空输部队"
+		start_equipment_factor = 1.0
+		start_experience_factor = 0.4
+	}
+	division = {
+		name = "锦衣卫第四空输旅"
+		location = 10043
+		division_template = "空输部队"
+		start_equipment_factor = 1.0
+		start_experience_factor = 0.4
+	}
+	division = {
+		name = "锦衣卫第五空输旅"
+		location = 10043
+		division_template = "空输部队"
+		start_equipment_factor = 1.0
+		start_experience_factor = 0.4
+	}
+	division = {
+		name = "锦衣卫第六空输旅"
+		location = 10076
+		division_template = "空输部队"
+		start_equipment_factor = 1.0
+		start_experience_factor = 0.4
+	}
+	division = {
+		name = "锦衣卫第七空输旅"
+		location = 10076
+		division_template = "空输部队"
+		start_equipment_factor = 1.0
+		start_experience_factor = 0.4
+	}
+	division = {
+		name = "锦衣卫第八空输旅"
+		location = 1087
+		division_template = "空输部队"
+		start_equipment_factor = 1.0
+		start_experience_factor = 0.4
+	}
+	division = {
+		name = "锦衣卫第九空输旅"
+		location = 1087
+		division_template = "空输部队"
+		start_equipment_factor = 1.0
+		start_experience_factor = 0.4
+	}
+	division = {
+		name = "锦衣卫第十空输旅"
+		location = 12068
+		division_template = "空输部队"
+		start_equipment_factor = 1.0
+		start_experience_factor = 0.4
+	}
+	
+	division = {
+		name = "锦衣卫第一山地师"
+		location = 836
+		division_template = "山地部队"
+		start_equipment_factor = 1.0
+		start_experience_factor = 0.4
+	}
+	division = {
+		name = "锦衣卫第二山地师"
+		location = 836
+		division_template = "山地部队"
+		start_equipment_factor = 1.0
+		start_experience_factor = 0.4
+	}
+	division = {
+		name = "锦衣卫第三山地师"
+		location = 892
+		division_template = "山地部队"
+		start_equipment_factor = 1.0
+		start_experience_factor = 0.4
+	}
+	division = {
+		name = "锦衣卫第四山地师"
+		location = 4174
+		division_template = "山地部队"
+		start_equipment_factor = 1.0
+		start_experience_factor = 0.4
+	}
+	division = {
+		name = "锦衣卫第五山地师"
+		location = 4174
+		division_template = "山地部队"
+		start_equipment_factor = 1.0
+		start_experience_factor = 0.4
+	}
+	
+	division = {
+		name = "上海左卫神机营"
+		location = 7014
+		division_template = "神机营"
+		start_equipment_factor = 1.0
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "上海右卫神机营"
+		location = 7014
+		division_template = "神机营"
+		start_equipment_factor = 1.0
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "合肥卫神机营"
+		location = 7222
+		division_template = "神机营"
+		start_equipment_factor = 1.0
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "黄山卫神机营"
+		location = 12019
+		division_template = "神机营"
+		start_equipment_factor = 1.0
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "福州卫神机营"
+		location = 4196
+		division_template = "神机营"
+		start_equipment_factor = 1.0
+		start_experience_factor = 0.4
+	}
+	division = {
+		name = "英德卫神机营"
+		location = 10080
+		division_template = "神机营"
+		start_equipment_factor = 1.0
+		start_experience_factor = 0.15
+	}
+	division = {
+		name = "果洛卫神机营"
+		location = 10750
+		division_template = "神机营"
+		start_equipment_factor = 1.0
+		start_experience_factor = 0.15
+	}
+	
+	division = {
+		name = "天津海岸防卫司令部预备师"
+		location = 10068
+		division_template = "海岸防卫部队"
+		start_equipment_factor = 0.8
+		start_experience_factor = 0.0
+	}
+	division = {
+		name = "天津海岸防卫司令部预备师"
+		location = 10068
+		division_template = "海岸防卫部队"
+		start_equipment_factor = 0.8
+		start_experience_factor = 0.0
+	}
+	
+	division = {
+		name = "大连海岸防卫司令部预备师"
+		location = 1150
+		division_template = "海岸防卫部队"
+		start_equipment_factor = 0.8
+		start_experience_factor = 0.0
+	}
+	division = {
+		name = "大连海岸防卫司令部预备师"
+		location = 1150
+		division_template = "海岸防卫部队"
+		start_equipment_factor = 0.8
+		start_experience_factor = 0.0
+	}
+	division = {
+		name = "大连海岸防卫司令部预备师"
+		location = 1150
+		division_template = "海岸防卫部队"
+		start_equipment_factor = 0.8
+		start_experience_factor = 0.0
+	}
+	
+	division = {
+		name = "山东半岛海岸防卫司令部预备师"
+		location = 4205
+		division_template = "海岸防卫部队"
+		start_equipment_factor = 0.8
+		start_experience_factor = 0.0
+	}
+	division = {
+		name = "山东半岛海岸防卫司令部预备师"
+		location = 4205
+		division_template = "海岸防卫部队"
+		start_equipment_factor = 0.8
+		start_experience_factor = 0.0
+	}
+	division = {
+		name = "山东半岛海岸防卫司令部预备师"
+		location = 4157
+		division_template = "海岸防卫部队"
+		start_equipment_factor = 0.8
+		start_experience_factor = 0.0
+	}
+	division = {
+		name = "山东半岛海岸防卫司令部预备师"
+		location = 4186
+		division_template = "海岸防卫部队"
+		start_equipment_factor = 0.8
+		start_experience_factor = 0.0
+	}
+	
+	division = {
+		name = "江苏海岸防卫司令部预备师"
+		location = 4031
+		division_template = "海岸防卫部队"
+		start_equipment_factor = 0.8
+		start_experience_factor = 0.0
+	}
+	division = {
+		name = "江苏海岸防卫司令部预备师"
+		location = 12067
+		division_template = "海岸防卫部队"
+		start_equipment_factor = 0.8
+		start_experience_factor = 0.0
+	}
+	division = {
+		name = "江苏海岸防卫司令部预备师"
+		location = 9953
+		division_template = "海岸防卫部队"
+		start_equipment_factor = 0.8
+		start_experience_factor = 0.0
+	}
+	
+	division = {
+		name = "宁波海岸防卫司令部预备师"
+		location = 9974
+		division_template = "海岸防卫部队"
+		start_equipment_factor = 0.8
+		start_experience_factor = 0.0
+	}
+	division = {
+		name = "宁波海岸防卫司令部预备师"
+		location = 7058
+		division_template = "海岸防卫部队"
+		start_equipment_factor = 0.8
+		start_experience_factor = 0.0
+	}
+	division = {
+		name = "宁波海岸防卫司令部预备师"
+		location = 4013
+		division_template = "海岸防卫部队"
+		start_equipment_factor = 0.8
+		start_experience_factor = 0.0
+	}
+	
+	division = {
+		name = "台湾海岸防卫司令部预备师"
+		location = 7214
+		division_template = "海岸防卫部队"
+		start_equipment_factor = 0.8
+		start_experience_factor = 0.0
+	}
+	division = {
+		name = "台湾海岸防卫司令部预备师"
+		location = 1091
+		division_template = "海岸防卫部队"
+		start_equipment_factor = 0.8
+		start_experience_factor = 0.0
+	}
+	
+	division = {
+		name = "福建海岸防卫司令部预备师"
+		location = 4169
+		division_template = "海岸防卫部队"
+		start_equipment_factor = 0.8
+		start_experience_factor = 0.0
+	}
+	division = {
+		name = "福建海岸防卫司令部预备师"
+		location = 7071
+		division_template = "海岸防卫部队"
+		start_equipment_factor = 0.8
+		start_experience_factor = 0.0
+	}
+	division = {
+		name = "福建海岸防卫司令部预备师"
+		location = 7027
+		division_template = "海岸防卫部队"
+		start_equipment_factor = 0.8
+		start_experience_factor = 0.0
+	}
+	
+	division = {
+		name = "海南海岸防卫司令部预备师"
+		location = 1070
+		division_template = "海岸防卫部队"
+		start_equipment_factor = 0.8
+		start_experience_factor = 0.0
+	}
+	division = {
+		name = "海南海岸防卫司令部预备师"
+		location = 994
+		division_template = "海岸防卫部队"
+		start_equipment_factor = 0.8
+		start_experience_factor = 0.0
+	}
+	
+	division = {
+		name = "广州湾海岸防卫司令部预备师"
+		location = 4189
+		division_template = "海岸防卫部队"
+		start_equipment_factor = 0.8
+		start_experience_factor = 0.0
+	}
+	division = {
+		name = "广州湾海岸防卫司令部预备师"
+		location = 1047
+		division_template = "海岸防卫部队"
+		start_equipment_factor = 0.8
+		start_experience_factor = 0.0
+	}
+	division = {
+		name = "广州湾海岸防卫司令部预备师"
+		location = 10062
+		division_template = "海岸防卫部队"
+		start_equipment_factor = 0.8
+		start_experience_factor = 0.0
+	}
+	
+	
+	division = {
+		name = "南洋海岸防卫司令部预备师"
+		location = 12299
+		division_template = "海岸防卫部队"
+		start_equipment_factor = 0.7
+		start_experience_factor = 0.0
+	}
+	division = {
+		name = "南洋海岸防卫司令部预备师"
+		location = 10297
+		division_template = "海岸防卫部队"
+		start_equipment_factor = 0.7
+		start_experience_factor = 0.0
+	}
+	division = {
+		name = "南洋海岸防卫司令部预备师"
+		location = 7329
+		division_template = "海岸防卫部队"
+		start_equipment_factor = 0.7
+		start_experience_factor = 0.0
+	}
+	division = {
+		name = "南洋海岸防卫司令部预备师"
+		location = 1208
+		division_template = "海岸防卫部队"
+		start_equipment_factor = 0.65
+		start_experience_factor = 0.0
+	}
+	division = {
+		name = "南洋海岸防卫司令部预备师"
+		location = 7371
+		division_template = "海岸防卫部队"
+		start_equipment_factor = 0.65
+		start_experience_factor = 0.0
+	}
+	
+	division = {
+		name = "锦衣卫青海边防旅"
+		location = 12846
+		division_template = "边防巡视部队"
+		start_equipment_factor = 0.5
+		start_experience_factor = 0.0
+	}
+	division = {
+		name = "锦衣卫青海边防旅"
+		location = 10865
+		division_template = "边防巡视部队"
+		start_equipment_factor = 0.5
+		start_experience_factor = 0.0
+	}
+	
+	division = {
+		name = "锦衣卫那曲边防旅"
+		location = 12801
+		division_template = "边防巡视部队"
+		start_equipment_factor = 0.5
+		start_experience_factor = 0.0
+	}
+	division = {
+		name = "锦衣卫那曲边防旅"
+		location = 1943
+		division_template = "边防巡视部队"
+		start_equipment_factor = 0.5
+		start_experience_factor = 0.0
+	}
+	
+	division = {
+		name = "锦衣卫甘肃边防旅"
+		location = 3742
+		division_template = "边防巡视部队"
+		start_equipment_factor = 0.5
+		start_experience_factor = 0.0
+	}
+	division = {
+		name = "锦衣卫甘肃边防旅"
+		location = 3742
+		division_template = "边防巡视部队"
+		start_equipment_factor = 0.5
+		start_experience_factor = 0.0
+	}
+	division = {
+		name = "锦衣卫热河边防旅"
+		location = 6988
+		division_template = "边防巡视部队"
+		start_equipment_factor = 0.5
+		start_experience_factor = 0.0
+	}
+	division = {
+		name = "锦衣卫热河边防旅"
+		location = 6937
+		division_template = "边防巡视部队"
+		start_equipment_factor = 0.5
+		start_experience_factor = 0.0
+	}
+	
+	division = {
+		name = "锦衣卫辽宁边防旅"
+		location = 7812
+		division_template = "边防巡视部队"
+		start_equipment_factor = 0.5
+		start_experience_factor = 0.0
+	}
+	division = {
+		name = "锦衣卫辽宁边防旅"
+		location = 10429
+		division_template = "边防巡视部队"
+		start_equipment_factor = 0.5
+		start_experience_factor = 0.0
+	}
+	division = {
+		name = "锦衣卫辽宁边防旅"
+		location = 4633
+		division_template = "边防巡视部队"
+		start_equipment_factor = 0.5
+		start_experience_factor = 0.0
+	}
+	
+
+
+}
+
+
+### Air Forces ###
+
+
+
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "CHI"
+		}
+		requested_factories = 2
+		progress = 0.55
+		efficiency = 100
+	}
+}

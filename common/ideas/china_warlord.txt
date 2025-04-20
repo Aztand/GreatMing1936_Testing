@@ -1,0 +1,260 @@
+ideas = {
+	country = {
+		chi_tuntian = { #屯田
+			picture = generic_economic_increase	
+			allowed = {				always = no			}
+			allowed_civil_war = {				always = yes						}
+			removal_cost = -1
+			modifier = {
+				stability_weekly = 0.001
+				monthly_population = 0.05
+				industrial_capacity_factory =  0.05
+				research_speed_factor = 0.01
+			}
+
+		}
+		
+		chi_jyggyyjy = { #教育改革
+			picture = generic_economic_increase	
+			allowed = {				always = no			}
+			allowed_civil_war = {				always = yes						}
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.06
+				industrial_capacity_dockyard = 0.2
+				production_factory_max_efficiency_factor = 0.1
+				research_speed_factor = 0.13
+			}
+
+		}
+		chi_xzyjy = { #教育改革
+			picture = generic_economic_increase	
+			allowed = {				always = no			}
+			allowed_civil_war = {				always = yes						}
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.5
+				stability_factor = 0.1
+				industrial_capacity_factory =  0.05
+			}
+		}
+		
+		chi_xgcyx = { #新工程院校
+			picture = generic_research_bonus
+			allowed = {				always = no			}
+			allowed_civil_war = {				always = yes						}
+			removal_cost = -1
+			modifier = {
+				global_building_slots_factor = 0.2
+				production_speed_buildings_factor = 0.12
+				research_speed_factor = 0.04
+			}
+		}
+		
+		chi_liezbq = { #劣质步枪
+			picture = generic_economic_increase	
+			allowed = {				always = no			}
+			allowed_civil_war = {				always = yes						}
+			removal_cost = -1
+			equipment_bonus = {
+				infantry_equipment = {
+					reliability_factor = -0.4
+					soft_attack = -0.3
+					defense = -0.3
+					breakthrough = -0.5
+					hard_attack = -0.4
+					instant = yes
+					build_cost_ic = 0.15
+					}							
+			}
+
+		}
+		chi_xianjbq = { #劣质步枪
+			picture = generic_economic_increase	
+			allowed = {				always = no			}
+			allowed_civil_war = {				always = yes						}
+			removal_cost = -1
+			equipment_bonus = {
+				infantry_equipment = {
+					reliability_factor = 0.05
+					soft_attack = 0.1
+					defense = 0.15
+					hard_attack = 0.05
+					instant = yes
+					}							
+			}
+
+		}
+
+		chi_bubingzuoz = { #步兵作战
+			picture = generic_research_bonus
+			allowed = {				always = no			}
+			allowed_civil_war = {				always = yes						}
+			removal_cost = -1
+			modifier = {
+				army_infantry_attack_factor = 0.12
+				army_infantry_defence_factor = 0.12
+			}
+		}
+
+		chi_tkbzuoz = { #坦克兵作战
+			picture = generic_research_bonus
+			allowed = {				always = no			}
+			allowed_civil_war = {				always = yes						}
+			removal_cost = -1
+			modifier = {
+				army_armor_attack_factor = 0.12
+				army_armor_defence_factor = 0.12
+			}
+		}
+
+		ming_jiangnanzcc = { #江南造船厂	
+			allowed = {				always = no			}			
+			removal_cost = -1			
+			picture = escort_effort_focus			
+			allowed_civil_war = {				always = yes			}
+			equipment_bonus = {
+				ship_hull_carrier = {
+					build_cost_ic = -0.1
+					reliability = 0.1
+					maximum_speed = 0.35
+					instant = yes
+				}
+				ship_hull_heavy = {
+					build_cost_ic = -0.1
+					reliability = 0.1
+					maximum_speed = 0.4
+					instant = yes
+				}
+				ship_hull_cruiser = {
+					build_cost_ic = -0.1
+					reliability = 0.1
+					maximum_speed = 0.25
+					instant = yes
+				}				
+				ship_hull_light = {
+					build_cost_ic = -0.05
+					reliability = 0.10
+					maximum_speed = 0.25
+					instant = yes
+				}
+			}
+			modifier = {
+				industrial_capacity_dockyard = 0.20
+			}							
+		}
+
+		min_nandu1 = { #高难度
+			picture = generic_research_bonus
+			allowed = {				always = no			}
+			allowed_civil_war = {				always = yes						}
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = -0.4
+				research_speed_factor = -0.4
+				local_resources_factor = -0.5
+				industrial_capacity_dockyard = -0.4
+				production_factory_max_efficiency_factor = -0.4
+				army_attack_factor = -0.5
+				army_defence_factor = -0.5
+			}
+		}
+
+		min_nandu2 = { #高难度
+			picture = generic_research_bonus
+			allowed = {				always = no			}
+			allowed_civil_war = {				always = yes						}
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = -0.3
+				research_speed_factor = -0.3
+				local_resources_factor = -0.4
+				industrial_capacity_dockyard = -0.35
+				production_factory_max_efficiency_factor = -0.35
+				army_attack_factor = -0.35
+				army_defence_factor = -0.35
+			}
+		}
+
+		min_nandu3 = { #高难度
+			picture = generic_research_bonus
+			allowed = {				always = no			}
+			allowed_civil_war = {				always = yes						}
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = -0.2
+				research_speed_factor = -0.2
+				local_resources_factor = -0.3
+				industrial_capacity_dockyard = -0.25
+				production_factory_max_efficiency_factor = -0.25
+				army_attack_factor = -0.25
+				army_defence_factor = -0.25
+			}
+		}
+
+		min_nandu4 = { #高难度
+			picture = generic_research_bonus
+			allowed = {				always = no			}
+			allowed_civil_war = {				always = yes						}
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = -0.1
+				research_speed_factor = -0.1
+				local_resources_factor = -0.2
+				industrial_capacity_dockyard = -0.15
+				production_factory_max_efficiency_factor = -0.15
+				army_attack_factor = -0.15
+				army_defence_factor = -0.15
+			}
+		}
+
+		min_nandu5 = { #高难度
+			picture = generic_research_bonus
+			allowed = {				always = no			}
+			allowed_civil_war = {				always = yes						}
+			removal_cost = -1
+			modifier = {
+				local_resources_factor = -0.1
+				industrial_capacity_dockyard = -0.1
+				production_factory_max_efficiency_factor = -0.1
+				army_attack_factor = -0.1
+				army_defence_factor = -0.1
+			}
+		}
+
+		min_nandu6 = { #高难度
+			picture = generic_research_bonus
+			allowed = {				always = no			}
+			allowed_civil_war = {				always = yes						}
+			removal_cost = -1
+			modifier = {
+				local_resources_factor = 0.1
+				industrial_capacity_dockyard = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				army_attack_factor = 0.1
+				army_defence_factor = 0.1
+			}
+		}
+
+		min_nandu7 = { #高难度
+			picture = generic_research_bonus
+			allowed = {				always = no			}
+			allowed_civil_war = {				always = yes						}
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				research_speed_factor = 0.1
+				local_resources_factor = 0.2
+				industrial_capacity_dockyard = 0.15
+				production_factory_max_efficiency_factor = 0.15
+				army_attack_factor = 0.15
+				army_defence_factor = 0.15
+			}
+		}
+
+
+
+
+
+	}
+}

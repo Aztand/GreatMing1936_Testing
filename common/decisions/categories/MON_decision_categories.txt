@@ -1,0 +1,125 @@
+大元的海军 = {
+	
+	icon = border_conflicts
+
+	allowed = {
+		tag = MON
+	}
+
+	visible = {
+		has_completed_focus = MON_128n
+	}
+}
+
+上帝之鞭 = {
+	
+	icon = border_conflicts
+
+	allowed = {
+		tag = MON
+	}
+
+	visible = {
+		has_completed_focus = MON_11
+	}
+
+}
+
+永不止步的铁蹄 = {
+	
+	icon = border_conflicts
+
+	allowed = {
+		tag = MON
+	}
+
+	visible = {
+		has_completed_focus = MON_14
+	}
+
+}
+
+来自世界各国革命同志们的支持 = {
+	
+	icon = power_struggle
+
+	allowed = {
+		tag = MON
+	}
+
+	visible = {
+		has_completed_focus = MON_65
+	}
+
+}
+
+购买外国飞机 = {
+	
+	icon = generic_air
+
+	allowed = {
+		tag = MON
+	}
+
+	visible = {
+		has_completed_focus = MON_123
+	}
+
+}
+军事发展 = {
+	
+	icon = border_conflicts
+
+	allowed = {
+		tag = MON
+	}
+
+	visible = {
+		always = yes
+	}
+
+}
+地块发展 = {
+	
+	icon = border_conflicts
+
+	allowed = {
+		tag = MON
+	}
+
+	visible = {
+		always = yes
+	}
+
+}
+获得军需用品 = {
+	
+	icon = border_conflicts
+
+	allowed = {
+		tag = MON
+	}
+
+	visible = {
+		always = yes
+	}
+
+}
+
+mon_dzgkeji = {
+	
+	icon = border_conflicts
+
+	allowed = {
+		OR = {
+			tag = MON
+			tag = JAP
+		}
+		
+	}
+
+	visible = {
+		always = yes
+	}
+
+}

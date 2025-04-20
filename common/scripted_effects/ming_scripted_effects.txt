@@ -1,0 +1,273 @@
+CHI_wenguan_clear_all = {
+	remove_ideas = {
+		CHI_wenguan_1
+		CHI_wenguan_2
+		CHI_wenguan_3
+		CHI_wenguan_4
+		CHI_wenguan_5
+	}
+}
+
+CHI_victory = {
+	custom_effect_tooltip = CHI_victory_tt
+	hidden_effect = {
+		every_country = {
+			limit = {
+				NOT = {
+					tag = CHI 
+					is_subject_of = CHI
+				}
+			}
+			
+			every_state = {
+				limit = { 
+					OR = {
+						is_owned_by = PREV
+						is_controlled_by = PREV
+					}
+				}
+				CHI = {
+					transfer_state = PREV
+					add_state_core = PREV
+				}
+			}
+
+			every_state = {
+				limit = { NOT = { is_core_of = CHI } }
+				add_core_of = CHI
+			}
+		}
+	}
+}
+
+#Important to put HIGHEST first
+CHI_wenguan_level_up = {
+	custom_effect_tooltip = CHI_wenguan_up_tt
+	if = {
+		limit = { has_idea = CHI_wenguan_4 }
+		swap_ideas = {
+			remove_idea = CHI_wenguan_4
+			add_idea = CHI_wenguan_5
+		}
+	}
+	else_if = {
+		limit = { has_idea = CHI_wenguan_3 }
+		swap_ideas = {
+			remove_idea = CHI_wenguan_3
+			add_idea = CHI_wenguan_4
+		}
+	}
+	else_if = {
+		limit = { has_idea = CHI_wenguan_2 }
+		swap_ideas = {
+			remove_idea = CHI_wenguan_2
+			add_idea = CHI_wenguan_3
+		}
+	}
+	else_if = {
+		limit = { has_idea = CHI_wenguan_1 }
+		swap_ideas = {
+			remove_idea = CHI_wenguan_1
+			add_idea = CHI_wenguan_2
+		}		
+	}
+	else_if = {
+		limit = { NOT = { has_idea = CHI_wenguan_1 } }
+		add_ideas = CHI_wenguan_1
+	}
+}
+
+#Important to put LOWEST first
+CHI_wenguan_level_down = {
+custom_effect_tooltip = CHI_wenguan_down_tt
+	if = {
+		limit = { has_idea = CHI_wenguan_1 }
+		#Makes the tooltip clearer if player looks at the effect early in the game
+		effect_tooltip = {
+			swap_ideas = {
+				remove_idea = CHI_wenguan_1
+				add_idea = CHI_wenguan_none
+			}
+		}
+		hidden_effect = { remove_ideas = CHI_wenguan_1 }
+	}
+	if = {
+		limit = { has_idea = CHI_wenguan_2 }
+		swap_ideas = {
+			remove_idea = CHI_wenguan_2
+			add_idea = CHI_wenguan_1
+		}
+	}
+	if = {
+		limit = { has_idea = CHI_wenguan_3 }
+		swap_ideas = {
+			remove_idea = CHI_wenguan_3
+			add_idea = CHI_wenguan_2
+		}
+	}
+	if = {
+		limit = { has_idea = CHI_wenguan_4 }
+		swap_ideas = {
+			remove_idea = CHI_wenguan_4
+			add_idea = CHI_wenguan_3
+		}
+	}
+	if = {
+		limit = { has_idea = CHI_wenguan_5 }
+		swap_ideas = {
+			remove_idea = CHI_wenguan_5
+			add_idea = CHI_wenguan_4
+		}
+	}
+}
+
+CHI_wuguan_clear_all = {
+	remove_ideas = {
+		CHI_wuguan_1
+		CHI_wuguan_2
+		CHI_wuguan_3
+		CHI_wuguan_4
+		CHI_wuguan_5
+	}
+}
+
+#Important to put HIGHEST first
+CHI_wuguan_level_up = {
+	custom_effect_tooltip = CHI_wuguan_up_tt
+	if = {
+		limit = { has_idea = CHI_wuguan_4 }
+		swap_ideas = {
+			remove_idea = CHI_wuguan_4
+			add_idea = CHI_wuguan_5
+		}
+	}
+	else_if = {
+		limit = { has_idea = CHI_wuguan_3 }
+		swap_ideas = {
+			remove_idea = CHI_wuguan_3
+			add_idea = CHI_wuguan_4
+		}
+	}
+	else_if = {
+		limit = { has_idea = CHI_wuguan_2 }
+		swap_ideas = {
+			remove_idea = CHI_wuguan_2
+			add_idea = CHI_wuguan_3
+		}
+	}
+	else_if = {
+		limit = { has_idea = CHI_wuguan_1 }
+		swap_ideas = {
+			remove_idea = CHI_wuguan_1
+			add_idea = CHI_wuguan_2
+		}		
+	}
+	else_if = {
+		limit = { NOT = { has_idea = CHI_wuguan_1 } }
+		add_ideas = CHI_wuguan_1
+	}
+}
+
+#Important to put LOWEST first
+CHI_wuguan_level_down = {
+custom_effect_tooltip = CHI_wuguan_down_tt
+	if = {
+		limit = { has_idea = CHI_wuguan_1 }
+		#Makes the tooltip clearer if player looks at the effect early in the game
+		effect_tooltip = {
+			swap_ideas = {
+				remove_idea = CHI_wuguan_1
+				add_idea = CHI_wuguan_none
+			}
+		}
+		hidden_effect = { remove_ideas = CHI_wuguan_1 }
+	}
+	if = {
+		limit = { has_idea = CHI_wuguan_2 }
+		swap_ideas = {
+			remove_idea = CHI_wuguan_2
+			add_idea = CHI_wuguan_1
+		}
+	}
+	if = {
+		limit = { has_idea = CHI_wuguan_3 }
+		swap_ideas = {
+			remove_idea = CHI_wuguan_3
+			add_idea = CHI_wuguan_2
+		}
+	}
+	if = {
+		limit = { has_idea = CHI_wuguan_4 }
+		swap_ideas = {
+			remove_idea = CHI_wuguan_4
+			add_idea = CHI_wuguan_3
+		}
+	}
+	if = {
+		limit = { has_idea = CHI_wuguan_5 }
+		swap_ideas = {
+			remove_idea = CHI_wuguan_5
+			add_idea = CHI_wuguan_4
+		}
+	}
+}
+
+CHI_create_jyw_operative = { #SIM
+	create_operative_leader = {
+		name = "李朵明"
+		GFX = GFX_portrait_ITA_rosa_dainelli
+		traits = { operative_commando operative_demolition_expert }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		nationalities = { CHI JAP MON MAN }
+	}
+}
+
+MING_bop_medium_increase_wenguan_side_effect = {
+	add_power_balance_value = {
+		id = MING_power_balance
+		value = 0.15
+		tooltip_side = MING_wenguan_side
+	}
+}
+
+
+MING_bop_low_increase_wenguan_side_effect = {
+	add_power_balance_value = {
+		id = MING_power_balance
+		value = 0.1
+		tooltip_side = MING_wenguan_side
+	}
+}
+
+MING_bop_very_low_increase_wenguan_side_effect = {
+	add_power_balance_value = {
+		id = MING_power_balance
+		value = 0.05
+		tooltip_side = MING_wenguan_side
+	}
+}
+MING_bop_medium_increase_wuguan_side_effect = {
+	add_power_balance_value = {
+		id = MING_power_balance
+		value = -0.15
+		tooltip_side = MING_wuguan_side
+	}
+}
+MING_bop_low_increase_wuguan_side_effect = {
+	add_power_balance_value = {
+		id = MING_power_balance
+		value = -0.1
+		tooltip_side = MING_wuguan_side
+	}
+}
+
+MING_bop_very_low_increase_wuguan_side_effect = {
+	add_power_balance_value = {
+		id = MING_power_balance
+		value = -0.05
+		tooltip_side = MING_wuguan_side
+	}
+}
+
+

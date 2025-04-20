@@ -1,0 +1,935 @@
+leader_traits = {
+	ming_ymdtz = {
+		random = no
+		political_power_factor = 0.5
+		stability_factor = 0.15
+		production_speed_buildings_factor = 0.3
+		consumer_goods_factor = -0.45
+		attrition = -0.25
+		army_org_factor = 0.25
+		army_morale_factor = 0.5
+		conscription_factor = 0.25
+		army_attack_factor = 0.15
+		army_defence_factor = 0.2
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	ming_zscz = {
+		random = no
+		global_building_slots_factor = 0.6
+		production_speed_buildings_factor = 0.15
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	ming_gbss = {
+		random = no
+		global_building_slots_factor = 0.4
+		production_speed_buildings_factor = 0.1
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	ming_zsylz = {
+		random = no
+		mobilization_laws_cost_factor = -0.15
+		conscription = 0.01
+		industrial_capacity_factory = 0.05
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	ming_tkbfj = {
+		random = no
+		army_armor_attack_factor = 0.15
+		army_armor_defence_factor = 0.15
+		experience_gain_army = 0.3
+		max_command_power = 20
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	ming_lbss = {
+		random = no
+		political_power_gain = 0.5
+		political_advisor_cost_factor =-0.33
+		stability_factor = 0.05
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	ming_hjw1 = {
+		random = no
+		attrition = -0.2
+		army_org_factor = 0.25
+		army_morale_factor = 0.35
+		army_attack_factor = 0.1
+		army_defence_factor = 0.15
+		max_command_power = 50
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	ming_dayuan = {
+		random = no
+		neutrality_drift = 0.15
+		army_attack_factor = 0.05
+		stability_factor = 0.05
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	ming_hkmj = {
+		random = no
+		navy_carrier_air_attack_factor = 0.1
+		sortie_efficiency = 0.2
+		experience_gain_navy = 0.20
+		max_command_power = 10
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	
+	
+	ming_tkzz = {
+		random = no
+		army_armor_attack_factor = 0.2
+		army_armor_defence_factor = 0.2
+		experience_gain_army = 0.3
+		army_armor_speed_factor = 0.1
+		max_command_power = 20
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	
+	
+	zhongguo_tianzi = {
+		random = no
+		political_power_factor = 2
+		political_power_gain = 0.25
+		stability_factor = 0.1
+		production_speed_buildings_factor = 0.1
+		research_speed_factor = 1
+		consumer_goods_factor = 0.15
+		production_factory_efficiency_gain_factor = 1.5
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	zhongguo_tianzi1 = {
+		random = no
+		political_power_factor = 2
+		political_power_gain = 0.25
+		stability_factor = 0.15
+		research_speed_factor = 1
+		production_speed_buildings_factor = 0.2
+		production_factory_efficiency_gain_factor = 1.5
+		
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	gem_daoshi = {
+		random = no
+		political_power_factor = 0.05
+		stability_factor = 0.05
+		production_speed_arms_factory_factor = 0.05
+		production_speed_industrial_complex_factor = 0.05
+		industrial_capacity_factory = 0.05
+		industrial_capacity_dockyard = 0.05
+		political_advisor_cost_factor = -0.5
+		trade_laws_cost_factor = -0.5
+		mobilization_laws_cost_factor = -0.5
+		economy_cost_factor = -0.5
+		
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	dxw_srrm = {		#杀人如麻
+		random = no
+		army_attack_factor = 10
+		cavalry_attack_factor = 20
+		war_support_weekly = 0.5
+		stability_weekly = -0.5
+	}
+
+	daqing_jianguo = {
+		random = no
+		political_power_factor = 0.05
+		stability_factor = -0.1
+		war_support_factor = -0.1
+		consumer_goods_factor = 0.15
+		political_advisor_cost_factor = 0.1
+		trade_laws_cost_factor = 0.1
+		mobilization_laws_cost_factor = 0.1
+		economy_cost_factor = 0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	daqing_dihua = {
+		random = no
+		political_advisor_cost_factor = -0.3
+		trade_laws_cost_factor = -0.3
+		mobilization_laws_cost_factor = -0.3
+		economy_cost_factor = -0.3
+		operative_slot = 1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	daqing_xinpai = {
+		random = no
+		naval_speed_factor = 0.2
+		experience_gain_navy = 0.2
+		production_speed_dockyard_factor = 0.15
+		max_command_power = 10
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	daqing_xihuang = {
+		random = no
+		stability_factor = 0.5
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	daqing_zhenhuang = {
+		random = no
+		stability_factor = 0.2
+		war_support_factor = 0.1
+		consumer_goods_factor = 0.3
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	riben_jianding = {
+		random = no
+		political_power_factor = 0.05
+		democratic_acceptance = 50
+		democratic_drift = 0.08
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	riben_niudai = {
+		random = no
+		political_advisor_cost_factor = -0.25
+		trade_laws_cost_factor = -0.25
+		mobilization_laws_cost_factor = -0.25
+		economy_cost_factor = -0.25
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	riben_houdai = {
+		random = no
+		stability_factor = 0.15
+		consumer_goods_factor = 0.15
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	riben_dongtiao = {
+		random = no
+		war_support_factor = 0.2
+		conscription = 0.05
+		subversive_activites_upkeep = -0.3
+		
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	riben_jingwei = {
+		random = no
+		political_power_factor = 0.3
+		consumer_goods_factor = -0.15
+		trade_opinion_factor = 0.2
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	riben_qijie = {
+		random = no
+		high_command_cost_factor = -0.25
+		air_chief_cost_factor = -0.25
+		army_chief_cost_factor = -0.25
+		navy_chief_cost_factor = -0.25
+		experience_gain_army_factor = 0.02
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	riben_guanliao = {
+		random = no
+		resistance_damage_to_garrison = -0.15
+		stability_weekly = 0.005
+		war_support_weekly = 0.005
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	riben_haijun = {
+		random = no
+		experience_gain_navy = 0.1
+		naval_strike_attack_factor = 0.02
+		naval_strike_targetting_factor = 0.02
+		naval_strike_agility_factor = 0.02
+		navy_carrier_air_attack_factor = 0.03
+		navy_carrier_air_targetting_factor = 0.03
+		navy_carrier_air_agility_factor = 0.04
+		naval_speed_factor = 0.05
+		navy_anti_air_attack_factor = 0.08
+		max_command_power = 10
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	riben_canren = {
+		random = no
+		justify_war_goal_time = -0.5
+		army_core_attack_factor = 0.05
+		army_core_defence_factor = 0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	riben_yexin = {
+		random = no
+		production_speed_buildings_factor = 0.01
+		industrial_capacity_factory = 0.05
+		industrial_capacity_dockyard = 0.05
+		production_speed_infrastructure_factor = 0.25
+		production_speed_industrial_complex_factor = 0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	ming_zzj = {
+		random = no
+		political_power_gain = 0.5
+		production_speed_buildings_factor = 0.05
+		stability_factor = 0.15
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	ming_qqyzz = {
+		random = no
+		land_night_attack = 0.15
+		army_attack_factor = 0.05
+		army_defence_factor = 0.05
+		army_speed_factor = 0.15	
+		invasion_preparation = -0.35
+		no_supply_grace = 240
+		experience_gain_army = 0.4
+		winter_attrition_factor = -0.5
+		acclimatization_hot_climate_gain_factor = 0.25
+		max_command_power = 20
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	ming_ljtp = {
+		random = no
+		experience_gain_army = 0.4
+		breakthrough_factor = 0.35
+		max_command_power = 20
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	ming_zspz = {
+		random = no
+		political_power_gain = 0.6
+		stability_weekly = 0.005
+		global_building_slots_factor = 0.4
+		production_speed_buildings_factor = 0.2
+		conscription = 0.05
+		supply_consumption_factor = -0.25
+		army_morale_factor = 0.25
+		army_defence_factor = 0.25
+		army_morale_factor = 1
+		max_command_power = 20
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	ming_zspz1 = {
+		random = no
+		political_power_gain = 0.3
+		stability_weekly = 0.001
+		army_morale_factor = 0.25
+		production_speed_buildings_factor = 0.15
+		conscription = 0.05
+		supply_consumption_factor = -0.3
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	ming_youcx = {
+		random = no
+		consumer_goods_factor = -0.35
+		political_power_gain = 0.8
+		global_building_slots_factor = 0.8
+		production_speed_buildings_factor = 0.25
+		supply_consumption_factor = -0.15
+		industrial_capacity_factory = 0.35
+		industrial_capacity_dockyard = 0.5
+		production_factory_max_efficiency_factor = 0.15
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	ming_youcx1 = {
+		random = no
+		consumer_goods_factor = -0.15
+		political_power_gain = 0.4
+		production_speed_buildings_factor = 0.2
+		industrial_capacity_factory = 0.2
+		industrial_capacity_dockyard = 0.25
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	ming_youcx2 = {
+		random = no
+		consumer_goods_factor = -0.4
+		political_power_gain = 0.8
+		global_building_slots_factor = 0.8
+		production_speed_buildings_factor = 0.25
+		supply_consumption_factor = -0.15
+		industrial_capacity_factory = 0.35
+		industrial_capacity_dockyard = 0.5
+		production_factory_max_efficiency_factor = 0.15
+		army_attack_factor = 0.25
+		army_defence_factor = 0.25
+		army_speed_factor = 0.5
+		max_command_power = 30
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	mon_xl = {
+		random = no
+		consumer_goods_factor = 0.15
+		political_power_gain = 0.25
+		stability_factor = -0.15
+		industrial_capacity_factory = -0.1
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	mon_zthd = {
+		random = no
+
+		political_power_gain = 0.25
+		neutrality_drift = 0.25
+		army_attack_factor = 0.05
+		army_org_factor = 0.25
+		army_morale_factor = 0.25
+		supply_consumption_factor = -0.1
+		conscription = 0.025
+		max_command_power = 20
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	spirit_of_genghis1 = {
+		random = no
+		cavalry_attack_factor = 0.2
+		equipment_bonus = {
+			small_plane_naval_bomber_airframe = {
+				air_range = 0.5 naval_strike_attack = 0.5
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	mon_ljtz = {
+		random = no
+		consumer_goods_factor = -0.07
+		political_power_gain = 0.5
+		stability_factor = 0.05
+		industrial_capacity_factory = 0.1
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	stalin_heart_of_steel = {
+		random = no
+		production_speed_buildings_factor = 0.05
+		stability_factor = -0.05
+		war_support_factor = 0.1
+		political_power_factor = 0.25
+		opinion_gain_monthly_factor = -0.05
+		subjects_autonomy_gain = -0.25
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	chi_bingbss = { #兵部尚书
+		random = no
+		max_command_power = 50
+		equipment_bonus = {
+				armor = {
+					instant = yes
+					build_cost_ic = -0.2
+				}	
+				artillery_equipment = {
+					instant = yes
+					build_cost_ic = -0.3
+				}		
+				infantry_equipment = {
+					instant = yes
+					build_cost_ic = -0.3
+				}			
+				support_equipment = {
+					instant = yes
+					build_cost_ic = -0.3
+				}
+				motorized_equipment = {
+					instant = yes
+					build_cost_ic = -0.3
+				}
+				mechanized_equipment = {
+					instant = yes
+					build_cost_ic = -0.3
+				}
+			}
+
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	chi_lujunjihua = { #陆军计划
+		random = no
+		planning_speed = 0.25
+		max_planning = 0.15
+		experience_gain_army = 0.4
+		max_command_power = 30
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	chi_lujunhouq = { #陆军后勤
+		random = no
+		supply_consumption_factor = -0.1
+		attrition = -0.06
+		army_fuel_consumption_factor = -0.05
+		experience_gain_army = 0.4
+		max_command_power = 10
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	chi_junswyz = { #陆军后勤
+		random = no
+		defensive_war_stability_factor = 0.25
+		army_core_attack_factor = 0.15
+		army_core_defence_factor = 0.2
+		max_command_power = 30
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	chi_lujunshiqi = { #陆军士气
+		random = no
+		army_org_factor = 0.15
+		army_morale_factor = 0.4
+		experience_gain_army = 0.3
+		max_command_power = 30
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	chi_zuozzh = { #作战指挥
+		random = no
+			breakthrough_factor = 0.1
+			planning_speed = 0.4
+			max_planning = 0.15
+			experience_gain_army = 0.4
+			max_command_power = 50
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	
+
+	jap_cgdgmj = { #成功的革命家
+		random = no
+		justify_war_goal_time = 0.25
+		conscription = -0.01
+		communism_drift = 0.10
+		political_power_gain = 0.6
+		industrial_capacity_dockyard = 0.25
+		production_factory_max_efficiency_factor = 0.15
+		production_speed_buildings_factor = 0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	mon_zsmys = { #知枢密院事
+		random = no
+		planning_speed = 0.33
+		max_planning = 0.15
+		army_attack_factor = 0.1
+		army_defence_factor = 0.1
+		army_speed_factor = 0.5
+		experience_gain_army = 0.4
+		max_command_power = 50
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	mon_zsmys1 = { #知枢密院事
+		random = no
+		experience_gain_army = 0.6
+		planning_speed = 0.6
+		max_planning = 0.35
+		army_attack_factor = 0.2
+		army_defence_factor = 0.2
+		army_speed_factor = 0.75
+		max_command_power = 75
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	chi_gyzj = { #知枢密院事
+		random = no
+		global_building_slots_factor = 0.3
+		production_speed_buildings_factor = 0.08
+		production_speed_industrial_complex_factor = 0.12
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	jap_jywyz = { #教育委员长
+		random = no
+		research_speed_factor = 0.16
+		stability_weekly = 0.001
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	jap_fuxiang = { #副相
+		random = no
+		industrial_capacity_factory = 0.3
+		industrial_capacity_dockyard = 0.3
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	jap_gywyz = { #工业委员长
+		random = no
+		global_building_slots_factor = 2.5
+		production_speed_buildings_factor = 0.15
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	jap_guoziwyz = { #国资委员长
+		random = no
+		consumer_goods_factor = -0.25
+		local_resources_factor = 1.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	jap_lujunhq = { #陆军后勤
+		random = no
+		attrition = -0.25
+		supply_consumption_factor = -0.25
+		no_supply_grace = 240
+		navy_fuel_consumption_factor = -0.3
+		army_fuel_consumption_factor = -0.3
+		air_fuel_consumption_factor = -0.3
+		experience_gain_army = 0.4
+		max_command_power = 20
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	jap_shouxiang = { #陆军后勤
+		random = no
+		attrition = -0.5
+		conscription = 0.1
+		breakthrough_factor = 1.25
+		army_morale_factor = 1.5
+		political_power_gain = 1.25
+		max_command_power = 200
+		equipment_bonus = {
+				ship_hull_carrier = {
+					build_cost_ic = -0.35
+					reliability = 0.15
+					maximum_speed = 0.45
+					instant = yes
+				}
+				ship_hull_heavy = {
+					build_cost_ic = -0.35
+					reliability = 0.15
+					maximum_speed = 0.45
+					instant = yes
+				}
+				ship_hull_cruiser = {
+					build_cost_ic = -0.25
+					reliability = 0.1
+					maximum_speed = 0.4
+					instant = yes
+				}				
+				ship_hull_light = {
+					build_cost_ic = -0.25
+					reliability = 0.10
+					maximum_speed = 0.35
+					instant = yes
+				}
+			small_plane_airframe = {
+			   air_agility = 3.25
+			   build_cost_ic = -0.5
+			   naval_strike_attack = 4
+			   air_attack = 4
+			   air_ground_attack = 4
+			    thrust = 2
+                air_range = 2
+			    instant = yes
+		    }
+		    medium_plane_airframe = {
+			    air_agility = 3.25
+				air_attack = 4
+				 build_cost_ic = -0.55
+				naval_strike_attack = 4
+				air_ground_attack = 4
+				air_bombing = 8
+			    thrust = 2
+                air_range = 2
+			    instant = yes
+		    }
+		    large_plane_airframe = {
+			   air_agility = 3.25
+			   air_bombing = 25
+			    build_cost_ic = -0.6
+			   naval_strike_attack = 4
+			    thrust = 2
+                air_range = 2
+			    instant = yes
+		    }
+		    cv_small_plane_airframe = {
+			   air_agility = 3.25
+			   naval_strike_attack = 4
+			    build_cost_ic = -0.25
+			    thrust = 4
+                air_range = 3
+			    instant = yes
+		    }
+			armor = {
+				reliability_factor = 0.8
+				armor_value = 0.75
+				build_cost_ic = -0.35
+				ap_attack = 1.75
+				instant = yes
+				breakthrough_factor = 1.5
+				breakthrough = 1.25
+				hardness = 0.1
+				}
+			}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	kor_mao = { #革命先驱
+		random = no
+		conscription = 0.05
+		conscription_factor = 0.10
+		breakthrough_factor = 0.35
+		recon_factor = 2
+		land_reinforce_rate = 0.06
+		stability_factor = 0.15
+		war_support_factor = 0.25
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	jap_ljtp = { #陆军突破
+		random = no
+		breakthrough_factor = 0.5
+		army_attack_factor = 0.25
+		experience_gain_army = 0.4
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	jap_hjzz = { #海军作战
+		random = no
+		experience_gain_navy = 0.4
+		navy_screen_attack_factor = 0.5
+		navy_screen_defence_factor = 0.5
+		navy_capital_ship_attack_factor = 0.6
+		navy_capital_ship_defence_factor = 0.6
+		naval_speed_factor = 0.75
+		navy_max_range_factor = 1.5
+		amphibious_invasion =1.5
+		invasion_preparation = -0.75 
+		shore_bombardment_bonus = 5.5
+		sortie_efficiency = 2.5
+		positioning = 1
+		navy_carrier_air_attack_factor = 0.45
+		navy_carrier_air_targetting_factor = 0.85
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	chi_gaigejia = { #改革家
+		random = no
+		political_power_gain = 0.8
+		industrial_capacity_dockyard = 0.4
+		production_factory_max_efficiency_factor = 0.25
+		production_speed_buildings_factor = 0.25
+		global_building_slots_factor = 1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	chi_zhpsf = { #主和派首辅
+		random = no
+		political_power_gain = 0.25
+		stability_factor = 0.05
+		production_speed_industrial_complex_factor = 0.2
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	chi_zzpsf = { #主和派首辅
+		random = no
+		production_speed_arms_factory_factor = 0.15
+		production_speed_dockyard_factor = 0.15
+		war_support_factor = 0.05
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+
+	
+}

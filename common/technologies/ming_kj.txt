@@ -1,0 +1,498 @@
+technologies = {
+
+	yuan_rubber_processing = {
+	industrial_capacity_factory = 0.10
+		on_research_complete = {
+			modify_building_resources = {
+				building = synthetic_refinery
+				resource = rubber
+				amount = 5
+			}
+		}
+		path = {name = land_doctrine_folder			position = { x = 2 y = 16 }		}		
+		research_cost = 1.5
+		start_year = 1941	
+		categories = {
+			industry
+			synth_resources
+			cat_synth_rubber
+		}		
+		ai_will_do = {			factor = 0						}
+		show_effect_as_desc = yes
+	}
+
+	ming_basic_heavy_battery = {
+		research_cost = 1
+		start_year = 1936
+		path = {
+		}
+		enable_equipment_modules = {
+			ming_ship_heavy_battery_2
+			ming_ship_armor_bb_0
+		}
+		on_research_complete = {
+			custom_effect_tooltip = heavy_battery_advice_tt
+		}
+		folder = {
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		categories = {
+			naval_equipment
+			ship_modules_tech
+			cat_ship_heavy_battery
+		}
+	}
+	japan_basic_heavy_battery = {
+		research_cost = 1
+		start_year = 1945
+		path = {
+		}
+		enable_equipment_modules = {
+			japan_ship_armor_bb_1
+			japan_ship_armor_bb_0
+			jap_carrier_ship_engine_1
+			jap_heavy_ship_engine_4
+			jap_ship_deck_space
+		}
+		on_research_complete = {
+			custom_effect_tooltip = heavy_battery_advice_tt
+		}
+		folder = {
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		categories = {
+			naval_equipment
+			ship_modules_tech
+			cat_ship_heavy_battery
+		}
+	}
+	ming_infantry_at = {
+		category_all_infantry = {
+			hard_attack = 0.5
+			ap_attack = 3.5
+		}	
+		path = {
+		}
+		research_cost = 100
+		start_year = 1942
+		folder = {
+		}		
+		categories = {
+			infantry_weapons
+		}		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	ming_antitank3 = {
+		anti_tank = {
+			hard_attack = 0.8
+			ap_attack = 1.75
+		}
+		anti_tank_brigade = {
+			hard_attack = 0.8
+			ap_attack = 1.75
+		}
+		mot_anti_tank_brigade = {
+			hard_attack = 0.8
+			ap_attack = 1.75
+		}
+		light_tank_destroyer_brigade = {
+			hard_attack = 0.8
+			ap_attack = 1.75
+		}
+		medium_tank_destroyer_brigade = {
+			hard_attack = 0.8
+			ap_attack = 1.75
+		}
+		heavy_tank_destroyer_brigade = {
+			hard_attack = 0.8
+			ap_attack = 1.75
+		}
+		super_heavy_tank_destroyer_brigade = {
+			hard_attack = 0.8
+			ap_attack = 1.75
+		}
+		modern_tank_destroyer_brigade = {
+			hard_attack = 0.8
+			ap_attack = 1.75
+		}
+
+		path = {
+			leads_to_tech = antitank4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+
+		start_year = 1941
+
+		folder = {
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		categories = {
+			artillery
+			cat_anti_tank
+		}
+	}
+
+	chi_shandixunlian = {
+
+		category_all_infantry = {
+			hills = {	attack = 0.10		defence = 0.15		}	mountain = {	attack = 0.10		defence = 0.15	}
+		}
+		category_all_armor = {
+			hills = {	attack = 0.10		defence = 0.15		}	mountain = {	attack = 0.10		defence = 0.15	}
+		}
+
+		path = {
+		}
+		research_cost = 10000
+		start_year = 1945
+		folder = {
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		categories = {
+			land_doctrine
+			cat_mobile_warfare
+		}
+	}
+
+	jap_duhai = {
+		category_front_line = {
+			 amphibious = {
+				attack = 0.15
+			}
+		}
+		path = {
+		}
+		research_cost = 10000
+		start_year = 1945
+		folder = {
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		categories = {
+			land_doctrine
+			cat_mobile_warfare
+		}
+	}
+
+	dzgyuan_antitank_1936 = {
+		enable_equipment_modules = {			
+			tank_high_velocity_cannon_a36
+			tank_high_velocity_cannon_b36
+			tank_high_velocity_cannon_c36	
+			}
+		anti_tank = {			hard_attack = 0.1			ap_attack = 0.1		}
+		anti_tank_brigade = {			hard_attack = 0.1			ap_attack = 0.1		}
+		mot_anti_tank_brigade = {			hard_attack = 0.1			ap_attack = 0.1		}
+		light_tank_destroyer_brigade = {			hard_attack = 0.1			ap_attack = 0.05		}
+		medium_tank_destroyer_brigade = {			hard_attack = 0.1			ap_attack = 0.05		}
+		heavy_tank_destroyer_brigade = {			hard_attack = 0.1			ap_attack = 0.05		}
+		super_heavy_tank_destroyer_brigade = {			hard_attack = 0.1			ap_attack = 0.05		}
+		modern_tank_destroyer_brigade = {			hard_attack = 0.1			ap_attack = 0.05		}
+		path = {		}
+		research_cost = 10000
+		start_year = 1936
+		folder = {		}
+		ai_will_do = {			factor = 0					}
+
+		categories = {
+			artillery
+			cat_anti_tank
+			mio_cat_all_artillery_equipment
+		}
+	}
+
+	dzgyuan_antitank_1939 = {
+		enable_equipment_modules = {			
+			tank_high_velocity_cannon_a39
+			tank_high_velocity_cannon_b39
+			tank_high_velocity_cannon_c39	
+			}
+		anti_tank = {			hard_attack = 0.1			ap_attack = 0.1		}
+		anti_tank_brigade = {			hard_attack = 0.1			ap_attack = 0.1		}
+		mot_anti_tank_brigade = {			hard_attack = 0.1			ap_attack = 0.1		}
+		light_tank_destroyer_brigade = {			hard_attack = 0.1			ap_attack = 0.05		}
+		medium_tank_destroyer_brigade = {			hard_attack = 0.1			ap_attack = 0.05		}
+		heavy_tank_destroyer_brigade = {			hard_attack = 0.1			ap_attack = 0.05		}
+		super_heavy_tank_destroyer_brigade = {			hard_attack = 0.1			ap_attack = 0.05		}
+		modern_tank_destroyer_brigade = {			hard_attack = 0.1			ap_attack = 0.05		}
+		path = {		}
+		research_cost = 10000
+		start_year = 1939
+		folder = {		}
+		ai_will_do = {			factor = 0					}
+
+		categories = {
+			artillery
+			cat_anti_tank
+			mio_cat_all_artillery_equipment
+		}
+	}
+
+	dzgyuan_antitank_1941 = {
+		enable_equipment_modules = {			
+			tank_high_velocity_cannon_a41
+			tank_high_velocity_cannon_b41
+			tank_high_velocity_cannon_c41
+			}
+		anti_tank = {			hard_attack = 0.1			ap_attack = 0.1		}
+		anti_tank_brigade = {			hard_attack = 0.1			ap_attack = 0.1		}
+		mot_anti_tank_brigade = {			hard_attack = 0.1			ap_attack = 0.1		}
+		light_tank_destroyer_brigade = {			hard_attack = 0.1			ap_attack = 0.05		}
+		medium_tank_destroyer_brigade = {			hard_attack = 0.1			ap_attack = 0.05		}
+		heavy_tank_destroyer_brigade = {			hard_attack = 0.1			ap_attack = 0.05		}
+		super_heavy_tank_destroyer_brigade = {			hard_attack = 0.1			ap_attack = 0.05		}
+		modern_tank_destroyer_brigade = {			hard_attack = 0.1			ap_attack = 0.05		}
+		path = {		}
+		research_cost = 10000
+		start_year = 1941
+		folder = {		}
+		ai_will_do = {			factor = 0					}
+
+		categories = {
+			artillery
+			cat_anti_tank
+			mio_cat_all_artillery_equipment
+		}
+	}
+
+	dzgyuan_antitank_1943 = {
+		enable_equipment_modules = {			
+			tank_high_velocity_cannon_a43
+			tank_high_velocity_cannon_b43
+			tank_high_velocity_cannon_c43
+			}
+		anti_tank = {			hard_attack = 0.1			ap_attack = 0.1		}
+		anti_tank_brigade = {			hard_attack = 0.1			ap_attack = 0.1		}
+		mot_anti_tank_brigade = {			hard_attack = 0.1			ap_attack = 0.1		}
+		light_tank_destroyer_brigade = {			hard_attack = 0.1			ap_attack = 0.05		}
+		medium_tank_destroyer_brigade = {			hard_attack = 0.1			ap_attack = 0.05		}
+		heavy_tank_destroyer_brigade = {			hard_attack = 0.1			ap_attack = 0.05		}
+		super_heavy_tank_destroyer_brigade = {			hard_attack = 0.1			ap_attack = 0.05		}
+		modern_tank_destroyer_brigade = {			hard_attack = 0.1			ap_attack = 0.05		}
+		path = {		}
+		research_cost = 10000
+		start_year = 1943
+		folder = {		}
+		ai_will_do = {			factor = 0					}
+
+		categories = {
+			artillery
+			cat_anti_tank
+			mio_cat_all_artillery_equipment
+		}
+	}
+
+	dzgyuan_antitank_1945 = {
+		enable_equipment_modules = {			
+			tank_high_velocity_cannon_a45
+			tank_high_velocity_cannon_b45
+			tank_high_velocity_cannon_c45
+			}
+		anti_tank = {			hard_attack = 0.1			ap_attack = 0.1		}
+		anti_tank_brigade = {			hard_attack = 0.1			ap_attack = 0.1		}
+		mot_anti_tank_brigade = {			hard_attack = 0.1			ap_attack = 0.1		}
+		light_tank_destroyer_brigade = {			hard_attack = 0.1			ap_attack = 0.05		}
+		medium_tank_destroyer_brigade = {			hard_attack = 0.1			ap_attack = 0.05		}
+		heavy_tank_destroyer_brigade = {			hard_attack = 0.1			ap_attack = 0.05		}
+		super_heavy_tank_destroyer_brigade = {			hard_attack = 0.1			ap_attack = 0.05		}
+		modern_tank_destroyer_brigade = {			hard_attack = 0.1			ap_attack = 0.05		}
+		path = {		}
+		research_cost = 10000
+		start_year = 1945
+		folder = {		}
+		ai_will_do = {			factor = 0					}
+
+		categories = {
+			artillery
+			cat_anti_tank
+			mio_cat_all_artillery_equipment
+		}
+	}
+
+	dzgyuan_antitank_1947 = {
+		enable_equipment_modules = {			
+			tank_high_velocity_cannon_a47
+			tank_high_velocity_cannon_b47
+			tank_high_velocity_cannon_c47
+			}
+		anti_tank = {			hard_attack = 0.1			ap_attack = 0.1		}
+		anti_tank_brigade = {			hard_attack = 0.1			ap_attack = 0.1		}
+		mot_anti_tank_brigade = {			hard_attack = 0.1			ap_attack = 0.1		}
+		light_tank_destroyer_brigade = {			hard_attack = 0.1			ap_attack = 0.05		}
+		medium_tank_destroyer_brigade = {			hard_attack = 0.1			ap_attack = 0.05		}
+		heavy_tank_destroyer_brigade = {			hard_attack = 0.1			ap_attack = 0.05		}
+		super_heavy_tank_destroyer_brigade = {			hard_attack = 0.1			ap_attack = 0.05		}
+		modern_tank_destroyer_brigade = {			hard_attack = 0.1			ap_attack = 0.05		}
+		path = {		}
+		research_cost = 10000
+		start_year = 1947
+		folder = {		}
+		ai_will_do = {			factor = 0					}
+
+		categories = {
+			artillery
+			cat_anti_tank
+			mio_cat_all_artillery_equipment
+		}
+	}
+
+	dzgyuan_antitank_1950 = {
+		enable_equipment_modules = {			
+			tank_high_velocity_cannon_a50
+			tank_high_velocity_cannon_b50
+			tank_high_velocity_cannon_c50
+			}
+		anti_tank = {			hard_attack = 0.1			ap_attack = 0.1		}
+		anti_tank_brigade = {			hard_attack = 0.1			ap_attack = 0.1		}
+		mot_anti_tank_brigade = {			hard_attack = 0.1			ap_attack = 0.1		}
+		light_tank_destroyer_brigade = {			hard_attack = 0.1			ap_attack = 0.05		}
+		medium_tank_destroyer_brigade = {			hard_attack = 0.1			ap_attack = 0.05		}
+		heavy_tank_destroyer_brigade = {			hard_attack = 0.1			ap_attack = 0.05		}
+		super_heavy_tank_destroyer_brigade = {			hard_attack = 0.1			ap_attack = 0.05		}
+		modern_tank_destroyer_brigade = {			hard_attack = 0.1			ap_attack = 0.05		}
+		path = {		}
+		research_cost = 10000
+		start_year = 1950
+		folder = {		}
+		ai_will_do = {			factor = 0					}
+
+		categories = {
+			artillery
+			cat_anti_tank
+			mio_cat_all_artillery_equipment
+		}
+	}
+
+	dzgyuan_tanktp_1936 = {
+		category_all_armor = {
+			maximum_speed = 0.2
+			default_morale = 0.1
+			breakthrough = 0.5
+		}
+		enable_tactic = tactic_breakthrough
+		path = {		}
+		research_cost = 10000
+		start_year = 1950
+		folder = {		}
+		ai_will_do = {			factor = 0					}
+
+		categories = {
+			artillery
+			cat_anti_tank
+			mio_cat_all_artillery_equipment
+		}
+	}
+
+	dzgyuan_tanktp_1940 = {
+		category_all_armor = {
+			maximum_speed = 0.4
+			default_morale = 0.25
+			breakthrough = 0.5
+			max_organisation = 10
+		}
+		org_loss_when_moving = -0.1
+		path = {		}
+		research_cost = 10000
+		start_year = 1950
+		folder = {		}
+		ai_will_do = {			factor = 0					}
+
+		categories = {
+			artillery
+			cat_anti_tank
+			mio_cat_all_artillery_equipment
+		}
+	}
+
+	dzgyuan_tanktp_1943 = {
+		land_reinforce_rate = 0.03
+		category_all_armor = {
+			maximum_speed = 0.4
+			breakthrough = 0.6
+			soft_attack = 0.15
+			hard_attack = 0.15
+		}
+		path = {		}
+		research_cost = 10000
+		start_year = 1950
+		folder = {		}
+		ai_will_do = {			factor = 0					}
+
+		categories = {
+			artillery
+			cat_anti_tank
+			mio_cat_all_artillery_equipment
+		}
+	}
+
+	dzgyuan_tanktp_1945 = {
+		land_reinforce_rate = 0.06
+		max_planning = 0.25
+		category_all_armor = {
+			maximum_speed = 0.5
+			breakthrough = 0.6
+			soft_attack = 0.15
+			hard_attack = 0.15
+		}
+		org_loss_when_moving = -0.1
+		path = {		}
+		research_cost = 10000
+		start_year = 1950
+		folder = {		}
+		ai_will_do = {			factor = 0					}
+
+		categories = {
+			artillery
+			cat_anti_tank
+			mio_cat_all_artillery_equipment
+		}
+	}
+
+	dzgyuan_yjzz_1940 = {
+		land_night_attack = 0.15
+		path = {		}
+		research_cost = 10000
+		start_year = 1950
+		folder = {		}
+		ai_will_do = {			factor = 0					}
+
+		categories = {
+			artillery
+			cat_anti_tank
+			mio_cat_all_artillery_equipment
+		}
+	}
+
+	dzgyuan_yjzz_1945 = {
+		land_night_attack = 0.25
+		path = {		}
+		research_cost = 10000
+		start_year = 1950
+		folder = {		}
+		ai_will_do = {			factor = 0					}
+
+		categories = {
+			artillery
+			cat_anti_tank
+			mio_cat_all_artillery_equipment
+		}
+	}
+
+
+
+}

@@ -1,0 +1,252 @@
+﻿capital = 330
+
+oob = "MON_1936"
+recruit_character = MON_anandyn_amar1
+recruit_character = MON_anandyn_amar2
+recruit_character = MON_mingzhu_zhanshan
+recruit_character = MON_fu_shangzhi
+recruit_character = MON_songgotu_kangan
+recruit_character = MON_haidav
+recruit_character = MON_dagva
+recruit_character = MON_chimid
+recruit_character = MON_sukhbaataryn_yanjmaa
+recruit_character = MON_ganbaatar
+recruit_character = MON_ulanhu
+recruit_character = MON_vg_pyrselov
+recruit_character = MON_lee_shou_hsin
+recruit_character = MON_buyannmeh
+recruit_character = MON_horloogiyn_choybalsan
+recruit_character = MON_olziytrygyn_badrak
+recruit_character = MON_dashdorj
+recruit_character = MON_gomgchigryn_bumtsend
+recruit_character = MON_dansrabilegyin_dogsam
+recruit_character = MON_yundunwangcug
+recruit_character = MON_pai_yun_ti
+
+recruit_character = MON_qiao_bashan
+recruit_character = mon_jl0
+recruit_character = mon_jl1
+recruit_character = mon_lxj
+
+recruit_character = mon_tl0
+recruit_character = mon_tl1
+recruit_character = mon_tl2
+recruit_character = mon_tl3
+recruit_character = mon_tw0
+recruit_character = mon_tw1
+recruit_character = mon_tw2
+recruit_character = mon_tw3
+recruit_character = mon_tw4
+recruit_character = mon_tw5
+recruit_character = mon_tw6
+
+
+recruit_character = mon_tz0
+recruit_character = mon_tz1
+recruit_character = mon_tz2
+recruit_character = mon_tz3
+
+recruit_character = mon_bhm
+recruit_character = mon_bhm1
+
+recruit_character = mon_antong
+recruit_character = mon_antong1
+recruit_character = mon_tuotuo
+recruit_character = mon_tuotuo1
+set_research_slots = 4
+set_stability = 0.75
+set_war_support = 0.75
+# Starting tech
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+		set_technology = {
+			aa_lmg = 1
+			engines_1 = 1
+			engines_2 = 1
+			early_bombs = 1
+			aircraft_construction = 1
+			iw_small_airframe = 1
+			iw_medium_airframe = 1
+			iw_large_airframe = 1
+			basic_medium_airframe = 1
+			basic_small_airframe = 1
+		}
+	else = {
+		set_technology = {
+			early_fighter = 1
+			cv_early_fighter = 1
+			cv_naval_bomber1 = 1
+			naval_bomber1 = 1
+			early_bomber = 1
+			CAS1 = 1
+		}
+	}
+}
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+		gwtank = 1
+		basic_light_tank = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+	}
+}
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1
+	tech_engineers = 1
+	tech_recon = 1
+	tech_trucks = 1
+	motorised_infantry = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	basic_train = 1
+	trench_warfare = 1
+	fleet_in_being = 1
+	electronic_mechanical_engineering = 1
+	radio = 1
+	radio_detection = 1
+	fuel_silos = 1
+	fuel_refining = 1
+	ming_basic_heavy_battery = 1
+}
+
+
+add_ideas = {
+	MON_goongchanyx
+	MON_fenhuacaoy
+	MON_luohouwuzhuang
+	MON_bcanxianz
+	mon_qb
+	war_economy
+	limited_conscription
+}
+
+1939.1.1 = {
+
+	add_political_power = 1198
+	
+	#generic focuses
+	complete_national_focus = army_effort
+	complete_national_focus = equipment_effort
+	complete_national_focus = motorization_effort
+	complete_national_focus = aviation_effort
+	complete_national_focus = construction_effort_2
+	complete_national_focus = production_effort_2
+	complete_national_focus = infrastructure_effort
+	complete_national_focus = industrial_effort
+	complete_national_focus = construction_effort
+	complete_national_focus = production_effort
+	
+	oob = "MON_1939"
+	set_technology = {
+		support_weapons = 1
+		gw_artillery = 1
+		
+		#doctrines
+		air_superiority = 1
+		
+		mass_assault = 1
+		pocket_defence = 1
+		defence_in_depth = 1
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+		mechanical_computing = 1
+
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		construction1 = 1
+		construction2 = 1
+		concentrated_industry = 1
+		concentrated_industry2 = 1
+	}
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	fascism = 12
+	neutrality = 55
+	communism = 33
+}
+
+if = {
+	limit = {
+		has_dlc = "By Blood Alone"
+	}
+	oob = "JAP_1936_air_bba"
+	create_equipment_variant = {
+		name = "Ki-10"
+		type = small_plane_airframe_1
+		modules = {
+			fixed_main_weapon_slot = light_mg_4x
+			fixed_auxiliary_weapon_slot_1 = light_mg_4x
+			engine_type_slot = engine_3_1x
+			special_type_slot_1 = self_sealing_fuel_tanks_small
+			special_type_slot_2 = drop_tanks
+		}
+	}
+	create_equipment_variant = {
+		name = "Ki-2"
+		type = small_plane_cas_airframe_1
+		modules = {
+			fixed_main_weapon_slot = small_bomb_bay
+			engine_type_slot = engine_3_1x
+			special_type_slot_1 = self_sealing_fuel_tanks_small
+			special_type_slot_2 = drop_tanks
+		}
+		icon = "GFX_JAP_CAS1_medium"
+	}
+	create_equipment_variant = {
+		name = "Ki-1"
+		type = medium_plane_airframe_0
+		modules = {
+			fixed_main_weapon_slot = medium_bomb_bay
+			engine_type_slot = engine_3_2x
+			special_type_slot_1 = self_sealing_fuel_tanks_medium
+		}
+	}
+	create_equipment_variant = {
+		name = "A4N"
+		type = cv_small_plane_airframe_1
+		modules = {
+			fixed_main_weapon_slot = light_mg_4x
+			fixed_auxiliary_weapon_slot_1 = light_mg_4x
+			engine_type_slot = engine_3_1x
+			special_type_slot_1 = self_sealing_fuel_tanks_small
+			special_type_slot_2 = drop_tanks
+		}
+	}
+	create_equipment_variant = {
+		name = "B4Y"
+		type = cv_small_plane_naval_bomber_airframe_1
+		modules = {
+			fixed_main_weapon_slot = torpedo_mounting
+			fixed_auxiliary_weapon_slot_1 = light_mg_2x
+			engine_type_slot = engine_3_1x
+			special_type_slot_1 = drop_tanks
+			special_type_slot_2 = self_sealing_fuel_tanks_small
+		}
+		icon = "GFX_JAP_cv_naval_bomber1_medium"
+	}
+}

@@ -1,0 +1,286 @@
+﻿capital = 328
+
+oob = "MAN_1936"
+recruit_character = MAN_aisin_gioro_puyi
+recruit_character = MAN_zhang_haipeng
+recruit_character = MAN_zhang_jinghui
+recruit_character = MAN_aisin_gioro_xiqia
+recruit_character = MAN_yoshiko_kawashima
+recruit_character = MAN_zhao_shangzhi
+recruit_character = MAN_changlin_linge
+recruit_character = MAN_kyoiji_tomonaga
+recruit_character = MAN_yonimitsu_kasahara
+recruit_character = MAN_deng_linge
+recruit_character = MAN_hung_zhehuang
+recruit_character = MAN_nakajima_kesago
+recruit_character = MAN_yin_zuoqian
+recruit_character = MAN_hesehn_tiemei
+recruit_character = MAN_xian_yuan
+recruit_character = MAN_guan_xingde
+recruit_character = MAN_megata_toshiro
+if = {
+	limit = { has_dlc = "Man the Guns" }
+		set_naval_oob = "MAN_1936_naval_mtg"
+	else = {
+		set_naval_oob = "MAN_1936_naval_legacy"
+	}
+}
+starting_train_buffer = 20
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+	early_fighter = 1
+	basic_train = 1
+	basic_naval_mines = 1
+	submarine_mine_laying = 1
+	early_ship_hull_light = 1
+	basic_ship_hull_light = 1
+	early_ship_hull_submarine = 1
+	basic_ship_hull_submarine = 1
+	early_ship_hull_cruiser = 1
+	basic_ship_hull_cruiser = 1
+	early_ship_hull_heavy = 1
+	basic_battery = 1
+	basic_light_battery = 1
+	basic_medium_battery = 1
+	basic_heavy_battery = 1
+	basic_torpedo = 1
+	sonar = 1
+	basic_depth_charges = 1
+	basic_secondary_battery = 1
+	improved_secondary_battery = 1
+	basic_cruiser_armor_scheme = 1
+	basic_heavy_armor_scheme = 1
+	mtg_transport = 1
+	improved_airplane_launcher = 1
+}
+
+give_guarantee = MON
+set_stability = 0.35
+set_war_support = 0.2
+
+if = {
+	limit = { has_dlc = "Waking the Tiger" }	
+	add_ideas = MAN_feizhengtong
+	add_ideas = MAN_jianguodacheng
+	add_ideas = MAN_kewang
+	add_ideas = MAN_bupd1
+	add_ideas = MAN_luohoukeji
+	add_ideas = man_junshi
+}
+
+set_convoys = 50
+
+1939.1.1 = {
+
+	add_to_war = {
+		targeted_alliance = JAP
+		enemy = CHI
+		hostility_reason = puppet
+	}
+	
+	add_political_power = 1198
+	
+	#generic focuses
+	complete_national_focus = army_effort
+	complete_national_focus = equipment_effort
+	complete_national_focus = motorization_effort
+	complete_national_focus = aviation_effort
+	complete_national_focus = naval_effort
+	complete_national_focus = flexible_navy
+	complete_national_focus = industrial_effort
+	complete_national_focus = construction_effort
+	complete_national_focus = production_effort
+
+
+	if = {
+		limit = { has_dlc = "Waking the Tiger" }
+
+		
+		#No bandits
+		unlock_national_focus = MAN_pacify_the_countryside
+		remove_ideas = MAN_banditry
+
+		complete_national_focus = MAN_army_modernization
+		complete_national_focus = MAN_mukden_military_academy
+		complete_national_focus = MAN_law_university
+		complete_national_focus = MAN_obedience
+
+		#Five year plan
+		unlock_national_focus = MAN_first_five_year_plan
+		add_timed_idea = { days = 1275 idea = MAN_five_year_plan_industry }
+
+		complete_national_focus = MAN_trade_delegation
+		complete_national_focus = MAN_expand_the_textile_industry
+		complete_national_focus = MAN_hoankyoku
+		complete_national_focus = MAN_invite_japanese_investors
+		complete_national_focus = MAN_expand_the_railways
+		complete_national_focus = MAN_develop_aluminum_sources
+		complete_national_focus = MAN_social_research_unit
+	}
+	
+	oob = "MAN_1939"
+	set_technology = {
+		#doctrines
+		grand_battle_plan = 1
+		trench_warfare = 1
+		fleet_in_being = 1
+		battlefleet_concentration = 1
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+		mechanical_computing = 1
+
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		fuel_silos = 1
+		construction1 = 1
+		construction2 = 1
+		dispersed_industry = 1
+		dispersed_industry2 = 1
+	}
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	neutrality = 100
+}
+
+create_country_leader = {
+	name = "摄政监国"
+	
+	picture = "shezheng.dds"
+	expire = "1960.1.1"
+	ideology = despotism
+	traits = {
+		daqing_jianguo
+	}
+}
+
+create_corps_commander = {
+	name = "Zhang Haipeng"
+	GFX = "GFX_portrait_man_zhang_haipeng"
+	traits = {  }
+	skill = 2
+	
+	attack_skill = 4
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Zhang Jinghui"
+	GFX = "GFX_portrait_man_zhang_jinghui"
+	traits = { infantry_officer }
+	skill = 3
+	
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Aisin Gioro Puyi"
+	picture = "Pu_yi.dds"
+	traits = { cavalry_officer }
+	skill = 1
+	
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Aisin Gioro Xiqia"
+	GFX = "GFX_portrait_man_aisin_gioro_xiqia"
+	traits = { career_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Aisin Gioro Xianyu"
+	picture = "Yoshiko_kawashima.dds"
+	traits = { cavalry_officer }
+	skill = 3
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+	female = yes
+}
+
+### VARIANTS ###
+# 1936 Start #
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	create_equipment_variant = {
+		name = "jiefeng Class"			
+		type = ship_hull_light_1
+		name_group = MAN_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = empty
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = empty
+		}
+	}
+	create_equipment_variant = {
+		name = "qianjiang Class"					
+		type = ship_hull_cruiser_coastal_defense_ship
+		name_group = MAN_CL_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			mid_1_custom_slot = empty
+			mid_2_custom_slot = empty
+			rear_1_custom_slot = empty
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "shenglong Class"
+		type = ship_hull_cruiser_coastal_defense_ship
+		name_group = MAN_CA_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_battery_slot = ship_heavy_battery_2
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			rear_1_custom_slot = ship_torpedo_1
+			mid_1_custom_slot = ship_airplane_launcher_1
+		}
+		obsolete = yes
+	}
+}

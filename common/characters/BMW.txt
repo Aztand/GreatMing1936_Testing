@@ -1,0 +1,16 @@
+characters={
+	WuKong = {
+		name = WuKong
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_Wukong"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			#traits={ dxw_srrm }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

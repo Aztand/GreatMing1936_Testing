@@ -1,0 +1,983 @@
+改革政治 = {
+	启用大明的二次元将领 = {
+		icon = generic_army_support		
+		available = {
+			is_ai = no			
+		}
+		cost = 100
+		fire_only_once = yes
+		ai_will_do = {			factor = 0		}		
+		visible = {
+			always = yes	
+		}
+		remove_effect = {
+			set_country_flag = ming_chi_ecy
+		}
+	}
+	启用重置版国策树 = {
+		icon = generic_army_support		
+		available = {
+			is_ai = no			
+		}
+		cost = 1
+		fire_only_once = yes
+		ai_will_do = {			factor = 0		}		
+		visible = {
+			always = yes	
+		}
+		remove_effect = {
+			load_focus_tree = MingNeverSetRedux
+		}
+	}
+	实现君主立宪 = {
+		icon = generic_army_support		
+		available = {
+			has_completed_focus = CHI_x04
+			
+		}
+		cost = 100
+		fire_only_once = yes
+		ai_will_do = {			factor = 0		}		
+		visible = {
+			always = yes	
+			NOT = {has_completed_focus = CHI_x03 }
+		}
+		remove_effect = {
+			mzd_become_leader = yes
+			add_ideas = ming_tz
+		}
+	}
+	进行爱国教育宣传 = {
+		icon = generic_army_support		
+		available = {
+			surrender_progress > 0.1
+					
+		}
+		cost = 50
+		fire_only_once = no
+		ai_will_do = {			factor = 15		}		
+		visible = {
+			NOT = { has_idea = chi_agjy   }	
+		}
+		remove_effect = {
+			add_ideas = chi_agjy
+		}
+	}
+	不许后退一步 = {
+		icon = generic_army_support		
+		available = {
+			surrender_progress > 0.4
+			NOT = { has_idea = chi_bxhtyb   }
+		}
+		cost = 50
+		fire_only_once = no
+		ai_will_do = {			factor = 40		}		
+		visible = {
+			always = yes	
+			
+		}
+		remove_effect = {
+			add_ideas = chi_bxhtyb
+		}
+	}
+	移除不许后退一步 = {
+		icon = generic_army_support		
+		available = {
+			NOT = { has_war = yes   }
+			has_idea = chi_bxhtyb	
+		}
+		cost = 0
+		fire_only_once = no
+		ai_will_do = {			factor = 100		}		
+		visible = {
+			always = yes	
+			
+		}
+		remove_effect = {
+			remove_ideas = chi_bxhtyb
+		}
+	}
+	chi_mbfl = {
+		icon = generic_army_support		
+		available = {
+			surrender_progress > 0.1			
+		}
+		cost = 0
+		fire_only_once = no
+		ai_will_do = {			factor = 0		}		
+		visible = {
+			always = yes	
+		}
+		remove_effect = {
+			add_ideas = chi_zuob
+		}
+	}
+	chi_mbfl1 = {
+		icon = generic_army_support		
+		available = {
+			NOT = { has_war = yes   }
+			has_idea = chi_agjy	
+		}
+		cost = 0
+		fire_only_once = no
+		ai_will_do = {			factor = 0		}		
+		visible = {
+			always = yes	
+			
+		}
+		remove_effect = {
+			remove_ideas = chi_zuob
+		}
+	}
+	chi_military_cisha = {
+		priority = -10
+		icon = generic_ignite_civil_war
+		available = {			NOT = { has_country_flag = chi_cyjjl   }		}
+		days_mission_timeout = 70
+		fire_only_once = yes
+
+		activation = {
+			OR = {has_idea = CHI_wenguan_5 has_idea = CHI_wuguan_1}
+		}
+
+		visible = {
+			tag = CHI
+			NOT = { has_country_flag = chi_cyjjl   }
+			always = no
+		}
+		cancel_if_not_visible = yes
+		is_good = yes
+		timeout_effect = {
+			country_event = min.1141
+		}
+	}
+}
+新将领 = {
+	二次元虚构将领 = {
+		icon = generic_army_support		
+		available = {
+			is_ai = no
+		}
+		cost = 0
+		fire_only_once = no
+		ai_will_do = {			factor = 0		}		
+		visible = {
+			always = yes
+			NOT = {has_country_flag = ming_not_jl }
+		}
+		remove_effect = {
+			set_country_flag = ming_ecy_jl
+		}
+	}
+	劝说顺帝 = {
+		icon = generic_army_support		
+		available = {
+			is_ai = no
+		}
+		cost = 0
+		fire_only_once = yes
+		ai_will_do = {			factor = 0		}		
+		visible = {
+			has_completed_focus = MON_02x
+		}
+		remove_effect = {
+			country_event = min.1368
+			
+		}
+	}
+	安童成为领导人 = {
+		icon = generic_army_support		
+		available = {
+			is_ai = no
+		}
+		cost = 0
+		fire_only_once = no
+		ai_will_do = {			factor = 0		}		
+		visible = {
+			always = yes
+			
+		}
+		remove_effect = {
+			anton_become_leader = yes
+		}
+	}
+	安童领导人 = {
+		icon = generic_army_support		
+		available = {
+			is_ai = no
+		}
+		cost = 0
+		fire_only_once = no
+		ai_will_do = {			factor = 0		}		
+		visible = {
+			always = yes
+			
+		}
+		remove_effect = {
+			a_become_leader = yes
+		}
+	}
+	不想看到二次元虚构将领决议 = {
+		icon = generic_army_support		
+		available = {
+			is_ai = no
+		}
+		cost = 0
+		fire_only_once = yes
+		ai_will_do = {			factor = 0		}		
+		visible = {
+			always = yes
+		}
+		remove_effect = {
+			set_country_flag = ming_not_jl
+		}
+	}
+	苏联开局修正 = {
+		icon = generic_army_support		
+		available = {
+			always = yes
+		}
+		cost = 0
+		fire_only_once = yes
+		ai_will_do = {			factor = 100		}		
+		visible = {
+			is_ai = yes
+		}
+		remove_effect = {
+			SOV = {
+				add_offsite_building = { type = industrial_complex level = 15 }
+				add_offsite_building = { type = arms_factory level = 15 }
+			}
+		}
+	}
+
+	苏联开局修正一 = {
+		icon = generic_army_support		
+		available = {
+			always = yes
+			date > 1938.1.1
+		}
+		cost = 0
+		fire_only_once = yes
+		ai_will_do = {			factor = 60		}		
+		visible = {
+			is_ai = yes
+		}
+		remove_effect = {
+			SOV = {
+				add_offsite_building = { type = industrial_complex level = 25 }
+				add_offsite_building = { type = arms_factory level = 25 }
+			}
+		}
+	}
+}
+MING_balance_of_power_category = {
+	ming_gslj = {
+		priority = 11
+		icon = GFX_decision_generic_tank
+		allowed = {			original_tag = CHI		}
+		visible = {			always = yes		}
+		available = {
+			power_balance_value = {
+					id = MING_power_balance
+					value < 1
+			}
+		}
+		cost = 25
+		days_re_enable = 180
+		complete_effect = {
+			MING_bop_very_low_increase_wuguan_side_effect = yes
+		}
+		modifier = {			
+			army_org_factor = 0.1
+			army_morale_factor = 0.25
+				}
+		days_remove = 60
+		ai_will_do = {
+			base = 1
+			modifier = {
+				factor = 25
+				power_balance_value = {
+					id = MING_power_balance
+					value < -0.6
+				}
+			}
+			modifier = {
+				factor = 15
+				power_balance_value = {
+					id = MING_power_balance
+					value < -0.3
+				}
+			}
+			modifier = {
+				factor = 5
+				power_balance_value = {
+					id = MING_power_balance
+					value < 0
+				}
+			}
+			modifier = {
+				factor = 0
+				power_balance_value = {
+					id = MING_power_balance
+					value > 0.6
+				}
+			}
+		}
+	}
+	ming_gshj = {
+		priority = 9
+		icon = GFX_decision_generic_naval
+		allowed = {			original_tag = CHI		}
+		visible = {			always = yes		}
+		available = {
+			power_balance_value = {
+					id = MING_power_balance
+					value < 1
+			}
+		}
+		cost = 25
+		days_re_enable = 180
+		complete_effect = {
+			MING_bop_very_low_increase_wuguan_side_effect = yes
+		}
+		modifier = {			
+			navy_org_factor = 0.15
+			positioning = 0.15
+				}
+		days_remove = 60
+		ai_will_do = {
+			base = 1
+			modifier = {
+				factor = 15
+				power_balance_value = {
+					id = MING_power_balance
+					value < -0.6
+				}
+			}
+			modifier = {
+				factor = 5
+				power_balance_value = {
+					id = MING_power_balance
+					value < -0.3
+				}
+			}
+			modifier = {
+				factor = 2
+				power_balance_value = {
+					id = MING_power_balance
+					value < 0
+				}
+			}
+			modifier = {
+				factor = 0
+				power_balance_value = {
+					id = MING_power_balance
+					value > 0.2
+				}
+			}
+		}
+	}
+	ming_gskj = {
+		priority = 10
+		icon = GFX_decision_generic_air
+		allowed = {			original_tag = CHI		}
+		visible = {			always = yes		}
+		available = {
+			power_balance_value = {
+					id = MING_power_balance
+					value < 1
+			}
+		}
+		cost = 25
+		days_re_enable = 180
+		complete_effect = {
+			MING_bop_very_low_increase_wuguan_side_effect = yes
+		}
+		modifier = {			
+			air_ace_generation_chance_factor = 0.05
+			air_mission_efficiency = 0.05
+				}
+		days_remove = 60
+		ai_will_do = {
+			base = 1
+			modifier = {
+				factor = 20
+				power_balance_value = {
+					id = MING_power_balance
+					value < -0.6
+				}
+			}
+			modifier = {
+				factor = 10
+				power_balance_value = {
+					id = MING_power_balance
+					value < -0.3
+				}
+			}
+			modifier = {
+				factor = 5
+				power_balance_value = {
+					id = MING_power_balance
+					value < 0
+				}
+			}
+			modifier = {
+				factor = 0
+				power_balance_value = {
+					id = MING_power_balance
+					value > 0.3
+				}
+			}
+		}
+	}
+	
+	ming_gszf = {
+		priority = 8
+		icon = GFX_decision_generic_police_action
+		allowed = {			original_tag = CHI		}
+		visible = {			always = yes		}
+		available = {
+			power_balance_value = {
+					id = MING_power_balance
+					value > -0.95
+			}
+		}
+		cost = 25
+		days_re_enable = 180
+		complete_effect = {
+			MING_bop_very_low_increase_wenguan_side_effect = yes
+		}
+		modifier = {			
+			consumer_goods_factor = -0.1
+			political_power_factor = 0.1
+				}
+		days_remove = 60
+		ai_will_do = {
+			base = 1
+			modifier = {
+				factor = 20
+				power_balance_value = {
+					id = MING_power_balance
+					value > 0.6
+				}
+			}
+			modifier = {
+				factor = 10
+				power_balance_value = {
+					id = MING_power_balance
+					value > 0.3
+				}
+			}
+			modifier = {
+				factor = 5
+				power_balance_value = {
+					id = MING_power_balance
+					value > 0
+				}
+			}
+			modifier = {
+				factor = 0
+				power_balance_value = {
+					id = MING_power_balance
+					value < -0.3
+				}
+			}
+		}
+	}
+	
+	ming_syndca = {
+		priority = 25
+		icon = GFX_decision_SWI_swiss_democratic_tradition_campaign
+		allowed = {			original_tag = CHI		}
+		visible = {			always = yes		}
+		available = {
+			power_balance_value = {
+					id = MING_power_balance
+					value < 0.9
+				}	
+			NOT = {has_country_flag = ming_wenguanys}
+		}
+		cost = 50
+		days_re_enable = 0
+		complete_effect = {
+			MING_bop_medium_increase_wuguan_side_effect = yes
+			set_country_flag = ming_wuguanys
+		}
+		modifier = {			
+			industrial_capacity_factory = 0.15
+			industrial_capacity_dockyard = 0.4
+			production_factory_max_efficiency_factor = 0.2
+				}
+		remove_effect = {
+			clr_country_flag = ming_wuguanys
+		}
+		days_remove = 365
+		ai_will_do = {
+			base = 20
+			modifier = {
+				factor = 40
+				power_balance_value = {
+					id = MING_power_balance
+					value < -0.8
+				}
+			}
+			modifier = {
+				factor = 30
+				power_balance_value = {
+					id = MING_power_balance
+					value < -0.5
+				}
+			}
+			modifier = {
+				factor = 25
+				power_balance_value = {
+					id = MING_power_balance
+					value < -0.1
+				}
+			}
+			modifier = {
+				factor = 0
+				power_balance_value = {
+					id = MING_power_balance
+					value > 0.3
+				}
+			}
+		}
+	}
+	
+	ming_syndca1 = {
+		priority = 25
+		icon = GFX_decision_SWI_swiss_democratic_tradition_campaign
+		allowed = {			original_tag = CHI		}
+		visible = {			always = yes		}
+		available = {
+			power_balance_value = {
+					id = MING_power_balance
+					value > -0.9
+				}	
+			NOT = {has_country_flag = ming_wuguanys}
+		}
+		cost = 50
+		days_re_enable = 0
+		complete_effect = {
+			MING_bop_medium_increase_wenguan_side_effect = yes
+			set_country_flag = ming_wenguanys
+		}
+		modifier = {			
+			political_power_gain = 0.5
+			production_speed_buildings_factor = 0.15
+			consumer_goods_factor = -0.25
+				}
+		remove_effect = {
+			clr_country_flag = ming_wenguanys
+		}
+		days_remove = 365
+		ai_will_do = {
+			base = 20
+			modifier = {
+				factor = 40
+				power_balance_value = {
+					id = MING_power_balance
+					value > 0.8
+				}
+			}
+			modifier = {
+				factor = 30
+				power_balance_value = {
+					id = MING_power_balance
+					value > 0.5
+				}
+			}
+			modifier = {
+				factor = 25
+				power_balance_value = {
+					id = MING_power_balance
+					value > 0.1
+				}
+			}
+			modifier = {
+				factor = 0
+				power_balance_value = {
+					id = MING_power_balance
+					value < -0.3
+				}
+			}
+		}
+	}
+	
+	采纳文官派系 = {
+
+		icon = generic_scorched_earth
+
+		available = {	
+				power_balance_value = {
+					id = MING_power_balance
+					value > -0.9
+				}			
+		}
+
+		cost = 30
+		
+		fire_only_once = no
+		days_remove = 70
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+		}
+		
+		remove_effect = {
+				MING_bop_medium_increase_wenguan_side_effect = yes
+		}
+	}
+	
+	信任武官派系 = {
+
+		icon = generic_army_support
+
+		available = {	
+				power_balance_value = {
+					id = MING_power_balance
+					value < 0.9
+				}
+		}
+
+		cost = 30
+		
+		fire_only_once = no
+		days_remove = 70
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+		}
+		
+		remove_effect = {
+				MING_bop_medium_increase_wuguan_side_effect = yes			
+		}
+	}
+
+	贿赂亲近文官派系的宦官 = {
+
+		icon = generic_political_discourse
+
+		available = {
+			power_balance_value = {
+					id = MING_power_balance
+					value > -0.95
+			}
+		}
+
+		cost = 30
+		
+		fire_only_once = no
+		days_remove = 1
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+		}
+		complete_effect = {
+			MING_bop_very_low_increase_wenguan_side_effect = yes
+		}
+
+	}
+
+	贿赂亲近武官派系的宦官 = {
+
+		icon = generic_political_discourse
+
+		available = {
+			power_balance_value = {
+					id = MING_power_balance
+					value < 0.95
+			}
+		}
+
+		cost = 30
+		
+		fire_only_once = no
+		days_remove = 1
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+		}
+		
+		complete_effect = {
+			MING_bop_very_low_increase_wuguan_side_effect = yes
+		}
+	}
+
+	准许文官的奏折 = {
+
+		icon = generic_operation
+
+		available = {
+			power_balance_value = {
+					id = MING_power_balance
+					value > -0.95
+			}	
+		}
+		cost = 100		
+		fire_only_once = no
+		days_remove = 70
+		ai_will_do = {
+			factor = 10
+		}
+		visible = {		}		
+		remove_effect = {
+			MING_bop_very_low_increase_wenguan_side_effect = yes
+			add_stability = 0.025
+			random_owned_controlled_state = {
+				limit = {	   is_core_of = ROOT		}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				
+			}
+		}
+	}
+	
+	批准武官的计划 = {
+
+		icon = generic_operation
+
+		available = {
+			power_balance_value = {
+					id = MING_power_balance
+					value < 0.95
+			}	
+		}
+
+		cost = 60
+		
+		fire_only_once = no
+		days_remove = 80
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+		}
+		
+		remove_effect = {
+			MING_bop_very_low_increase_wuguan_side_effect = yes
+			add_war_support = 0.025
+			add_command_power = 50
+		}
+	}
+	
+	执行文官的政策 = {
+
+		icon = oppression
+
+		available = {
+			power_balance_value = {
+					id = MING_power_balance
+					value > -0.95
+			}		
+		}
+
+		cost = 40
+		
+		fire_only_once = no
+		days_remove = 70
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+		}
+		
+		remove_effect = {
+			MING_bop_very_low_increase_wenguan_side_effect = yes
+			add_stability = 0.025
+			add_offsite_building = { type = industrial_complex level = 1 }
+		}
+	}
+	
+	赞成武官的方案 = {
+
+		icon = generic_prepare_civil_war
+
+		available = {
+			power_balance_value = {
+					id = MING_power_balance
+					value < 0.95
+			}		
+		}
+
+		cost = 40
+		
+		fire_only_once = no
+		days_remove = 70
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+		}
+		
+		remove_effect = {
+			MING_bop_very_low_increase_wuguan_side_effect = yes
+			army_experience = 30
+			navy_experience = 30
+			air_experience = 30
+		}
+	}
+	
+	向文官让步 = {
+
+		icon = generic_nationalism
+
+		available = {
+			has_idea = CHI_tanhuan	
+		}
+
+		cost = 150
+		
+		fire_only_once = no
+		days_remove = 70
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+		}
+		
+		remove_effect = {
+			add_political_power = -300
+			remove_ideas = CHI_tanhuan	
+		}
+	}
+	
+	许以离京武官好处 = {
+
+		icon = generic_army_support
+
+		available = {
+			is_ai = no
+			XSM = {
+				exists = yes
+			}
+			YUN = {
+				exists = yes
+			}
+			SHX = {
+				exists = yes
+			}
+			GXC = {
+				exists = yes
+			}
+			SIK = {
+				exists = yes
+			}
+		}
+
+		cost = 300
+		
+		fire_only_once = yes
+		days_remove = 70
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+		}
+		
+		remove_effect = {
+			annex_country = { 
+				target = SHX 
+				transfer_troops = no 
+			}
+			annex_country = { 
+				target = GXC 
+				transfer_troops = no 
+			}
+			annex_country = { 
+				target = YUN
+				transfer_troops = no 
+			}
+			annex_country = { 
+				target = XSM 
+				transfer_troops = no 
+			}
+			annex_country = { 
+				target = SIK 
+				transfer_troops = no 
+			}
+		}
+	}
+
+	准备向叛徒开战 = {
+
+		icon = generic_break_treaty
+
+		available = {
+			XSM = {
+				exists = yes
+			}
+			YUN = {
+				exists = yes
+			}
+			SHX = {
+				exists = yes
+			}
+			GXC = {
+				exists = yes
+			}
+			SIK = {
+				exists = yes
+			}
+		}
+
+		cost = 30
+		
+		fire_only_once = yes
+		days_remove = 30
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+		}
+		
+		remove_effect = {
+			create_wargoal = {
+				type = annex_everything
+				target = SIK
+				expire = 0
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = XSM
+				expire = 0
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = GXC
+				expire = 0
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = SHX
+				expire = 0
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = YUN
+				expire = 0
+			}
+		}
+	}
+	
+}

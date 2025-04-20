@@ -1,0 +1,125 @@
+MON_historical_plan = {
+	name = "MON historical plan"
+	desc = "Historical behavior for MON"
+	allowed = {		original_tag = MON	}
+	enable = {
+			AND = {
+				is_historical_focus_on = yes
+				OR = {
+					not = { has_dlc = "Waking the Tiger" }
+					has_game_rule = {
+						rule = MON_ai_behavior
+						option = default
+					}
+				}
+			}				
+	}
+	abort = {			}
+	ai_national_focuses = {
+		MON_01
+		MON_02
+		MON_03
+		MON_03x
+		MON_201
+		MON_202
+		MON_211
+		MON_204
+		MON_203
+		MON_205
+		MON_208
+		MON_212
+		#1937 
+		MON_213
+		MON_214
+		MON_101
+		MON_106
+		MON_117
+		MON_107
+		MON_113
+		MON_108
+		MON_112
+		#1938 
+		MON_04
+		MON_05
+		MON_06
+		MON_11
+		MON_07
+		MON_08
+		MON_09
+		MON_10
+		MON_12
+		MON_13
+		#1939 
+		MON_15
+		MON_16
+		MON_17
+		MON_18
+		MON_19
+		MON_20
+		MON_21
+		MON_25
+		#1940 
+		MON_110
+		MON_109
+		MON_114
+		MON_115
+		MON_118
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}
+
+MON_random_plan = {
+	name = "MON random plan"
+	desc = "ramdom behavior for MON"
+	allowed = {		original_tag = MON	}
+	enable = {
+		OR = {
+				is_historical_focus_on = no
+				OR = {
+					not = { has_dlc = "Waking the Tiger" }
+					has_game_rule = {
+						rule = MON_ai_behavior
+						option = random
+					}
+				}		
+		}		
+	}
+	abort = {			}
+	ai_national_focuses = {
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}

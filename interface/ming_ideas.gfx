@@ -1,0 +1,18 @@
+spriteTypes = {	
+	
+	
+	spriteType = {
+		name = "GFX_idea_CHI_wenguanpai"
+		texturefile = "gfx/interface/ideas/CHI_wenguanpai.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_CHI_wuguanpai"
+		texturefile = "gfx/interface/ideas/CHI_wuguanpai.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_MAN_szheng"
+		texturefile = "gfx/interface/ideas/MAN_szheng.dds"
+	}
+}

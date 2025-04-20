@@ -1,0 +1,7 @@
+# Can be used in state scope, to check if the owner is ROOT or an ally/subject of ROOT
+is_owned_by_ROOT_or_ally = {
+	OR = {
+		owner = { is_ally_with = ROOT }
+		owner = { tag = ROOT }
+	}
+}

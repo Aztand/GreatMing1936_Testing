@@ -1,0 +1,30 @@
+# Characters shared by the chinese countries
+# for each country, generate one instance of the characters
+every_possible_country = {
+	limit = {
+	}
+	
+	
+	generate_character ={
+		name = CHI_liu_shaoqi
+		portraits={
+			civilian={
+				small = "GFX_idea_PRC_liu_shaoqi"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = CHI_liu_shaoqi
+			available  = {
+				has_completed_focus  = CHI_31
+			}
+			allowed  = {
+				original_tag  = CHI
+			}
+			traits  = {
+				silent_workhorse 
+			}
+		}
+	}
+}
+

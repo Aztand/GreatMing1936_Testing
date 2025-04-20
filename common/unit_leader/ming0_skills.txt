@@ -1,0 +1,751 @@
+leader_traits = {
+	mjs_lgb = { 
+		type = land
+		trait_type = personality_trait
+		attack_skill = -2
+		defense_skill = 2
+		modifier = {
+			army_morale_factor = 0.25
+			max_dig_in = 20
+			reassignment_duration_factor = -1.0
+			defence = 0.75
+			army_org_factor = 0.25
+			supply_consumption_factor = -0.25
+			terrain_penalty_reduction = 1
+			army_armor_speed_factor = 0.25
+			army_speed_factor = 0.25
+			desert = {
+				movement = 1.25
+				defence = 1.25
+			}
+			hills = {
+				movement = 1.25
+				defence = 1.25
+			}
+			forest = {
+				movement = 1.25
+				defence = 1.25
+			}
+			mountain = {
+				movement = 1.25
+				defence = 1.25
+			}
+			plains = {
+				movement = 1.25
+				defence = 1.25
+			}
+			urban = {
+				movement = 1.25
+				defence = 1.25
+			}
+			jungle = {
+				movement = 1.25
+				defence = 1.25
+			}
+			marsh = {
+				movement = 1.25
+				defence = 1.25
+			}
+			fort = {
+				movement = 1.25
+				defence = 1.25
+			}
+			amphibious = {
+				movement = 3.25
+				defence = 1.25
+			}
+		}
+		non_shared_modifier = {
+			experience_gain_factor = 5.75
+		}
+		corps_commander_modifier = {
+			max_commander_army_size = 216
+		}
+		field_marshal_modifier = {
+			max_army_group_size = 40
+		}
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+	
+	 chi_byx = { 
+		type = land
+		trait_type = personality_trait
+		modifier = {
+			breakthrough_factor = 0.1
+			army_armor_attack_factor = 0.1
+		}
+		non_shared_modifier = {
+			experience_gain_factor = 0.25
+		}
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+	
+	min_gugu = { 
+		type = land
+		trait_type = personality_trait
+		defense_skill = 1
+		modifier = {
+			max_dig_in = 10
+			reassignment_duration_factor = -1.0
+			supply_consumption_factor = -0.15
+			terrain_penalty_reduction = 1
+			army_defence_factor = 0.15
+		}
+		non_shared_modifier = {
+			experience_gain_factor = 0.75
+		}
+		corps_commander_modifier = {
+			max_commander_army_size = 24
+		}
+		field_marshal_modifier = {
+			max_army_group_size = 5
+		}
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+	
+	mjs_lgb1 = { 
+		type = navy
+		trait_type = personality_trait
+		
+		modifier = {
+			critical_receive_chance = -0.25	
+			navy_org = 20
+			sortie_efficiency = 0.25
+			naval_retreat_chance = 0.25
+			navy_visibility = -0.25
+			navy_carrier_air_targetting_factor = 0.25
+			navy_anti_air_attack_factor = 0.15
+			positioning = 0.15
+			spotting_chance = 0.35
+			reassignment_duration_factor = -1.0
+		}
+		new_commander_weight = {
+			factor = 0  
+			
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	JAP_ljbhj = { 
+		type = navy
+		trait_type = personality_trait
+		
+		modifier = {
+			critical_receive_chance = -0.75
+			sortie_efficiency = 0.25
+			navy_visibility = -0.8
+			spotting_chance = 0.35
+			reassignment_duration_factor = -1.0
+			navy_screen_attack_factor = 0.6
+			navy_screen_defence_factor = 0.6
+			navy_capital_ship_attack_factor = 0.75
+			navy_capital_ship_defence_factor = 0.75
+			naval_speed_factor = 1
+			sortie_efficiency = 4
+			positioning = 1
+			navy_carrier_air_attack_factor = 0.45
+			navy_carrier_air_targetting_factor = 0.85
+		}
+		new_commander_weight = {
+			factor = 0  
+			
+		}
+		non_shared_modifier = {
+			experience_gain_factor = 20
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	mon_yuanx = { 
+		type = land
+		trait_type = personality_trait
+		modifier = {
+			army_attack_factor = 0.15
+			army_defence_factor = 0.05
+			army_speed_factor = 0.25
+			supply_consumption_factor = -0.1
+		}
+		non_shared_modifier = {
+			experience_gain_factor = 2.5
+		}
+		corps_commander_modifier = {
+			max_commander_army_size = 6
+		}
+		field_marshal_modifier = {
+			max_army_group_size = 2
+		}
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+
+	mon_yuanx1 = { 
+		type = land
+		trait_type = personality_trait
+		modifier = {
+			army_attack_factor = 0.05
+			army_speed_factor = 0.15
+		}
+		non_shared_modifier = {
+			experience_gain_factor = 0.5
+		}
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+
+	mon_antong = { 
+		type = land
+		trait_type = personality_trait
+		modifier = {
+			army_attack_factor = 0.4
+			army_defence_factor = 0.25
+			army_speed_factor = 0.5
+			supply_consumption_factor = -0.15
+			army_fuel_consumption_factor = -0.25
+		}
+		non_shared_modifier = {
+			experience_gain_factor = 1000
+		}
+		corps_commander_modifier = {
+			max_commander_army_size = 6
+		}
+		field_marshal_modifier = {
+			max_army_group_size = 1
+		}
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+
+	mjs_zxy = { 
+		type = land
+		trait_type = personality_trait
+		modifier = {
+			army_morale_factor = 0.1
+			max_dig_in = 2
+			defence = 0.25
+			supply_consumption_factor = -0.05
+		}
+		non_shared_modifier = {
+			experience_gain_factor = 2.5
+		}
+		corps_commander_modifier = {
+			max_commander_army_size = 6
+		}
+		field_marshal_modifier = {
+			max_army_group_size = 2
+		}
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+	mjs_lgbsfp = { 
+		type = land
+		trait_type = personality_trait
+		modifier = {
+			army_morale_factor = 0.1
+			defence = 0.25
+		}
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+	mjs_lgb1sfp = { 
+		type = navy
+		trait_type = personality_trait
+		modifier = {
+			naval_retreat_chance = 0.05
+			navy_visibility = -0.05
+		}
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+	mjs_zxysfp = { 
+		type = land
+		trait_type = personality_trait
+		modifier = {
+			army_morale_factor = 0.1
+			defence = 0.25
+		}
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+
+	mon_buhumu = { 
+		type = land
+		trait_type = personality_trait
+		modifier = {
+			army_morale_factor = 1
+			attrition = -0.25
+			army_org_factor = 0.5
+		}
+		non_shared_modifier = {
+			experience_gain_factor = 5
+		}
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+
+	mon_buhumu1 = { 
+		type = land
+		trait_type = personality_trait
+		modifier = {
+			army_morale_factor = 0.25
+			attrition = -0.1
+			army_org_factor = 0.15
+		}
+		non_shared_modifier = {
+			experience_gain_factor = 1
+		}
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+
+	mon_tuotuo= { 
+		type = land
+		trait_type = personality_trait
+		modifier = {
+			army_attack_factor = 0.15
+			army_defence_factor = 0.15
+		}
+		non_shared_modifier = {
+			experience_gain_factor = 5
+		}
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+
+	chi_tangsz= { 
+		type = land
+		trait_type = personality_trait
+		modifier = {
+			planning_speed = 0.2
+			max_planning = 0.1
+		}
+		non_shared_modifier = {
+			experience_gain_factor = 0.25
+		}
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+
+	chi_chengqian = { 
+		type = land
+		trait_type = personality_trait
+		modifier = {
+			supply_consumption_factor = -0.1
+			attrition = -0.06
+		}
+		non_shared_modifier = {
+			experience_gain_factor = 0.25
+		}
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+
+	chi_weicao = { #委员长
+		type = land
+		trait_type = personality_trait
+		modifier = {
+			planning_speed = 0.3
+			max_planning = -0.2
+			army_speed_factor = 0.1
+		}
+		non_shared_modifier = {
+			experience_gain_factor = -0.25
+		}
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+
+	chi_liuxiang = { #刘湘
+		type = land
+		trait_type = personality_trait
+		modifier = {
+			army_org_factor = 0.1
+			army_morale_factor = 0.3
+		}
+		non_shared_modifier = {
+			experience_gain_factor = 0.25
+		}
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+
+	chi_liufei = { #刘斐
+		type = land
+		trait_type = personality_trait
+		modifier = {
+			breakthrough_factor = 0.1
+			planning_speed = 0.5
+			max_planning = 0.2
+		}
+		non_shared_modifier = {
+			experience_gain_factor = 0.25
+		}
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+
+	chi_chengmingren = { #陈明仁
+		type = land
+		trait_type = personality_trait
+		modifier = {
+			army_org_factor = 0.1
+			forest = {
+				attack = 0.10		defence = 0.15
+			}
+			urban = {
+				attack = 0.10		defence = 0.15
+			}
+			fort = {
+				attack = 0.10		defence = 0.15
+			}
+			amphibious = {
+				attack = 0.10		defence = 0.15
+			}
+		}
+		non_shared_modifier = {
+			experience_gain_factor = 0.25
+		}
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+
+	mon_tuotuo1 = { 
+		type = land
+		trait_type = personality_trait
+		modifier = {
+			army_attack_factor = 0.25
+			army_defence_factor = 0.25
+			max_planning = 0.25
+		}
+		non_shared_modifier = {
+			experience_gain_factor = 1
+		}
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+
+	mjs_hjw = { 
+		type = land
+		trait_type = personality_trait
+		defense_skill = 1
+		modifier = {
+			army_morale_factor = 0.5
+			max_dig_in = 20
+			reassignment_duration_factor = -1.0
+			army_org_factor = 0.2
+			supply_consumption_factor = -0.1
+			terrain_penalty_reduction = 0.5
+			army_speed_factor = 0.25
+			desert = {
+				movement = 1.25
+				defence = 1.25
+			}
+			hills = {
+				movement = 1.25
+				defence = 1.25
+			}
+			forest = {
+				movement = 1.25
+				defence = 1.25
+			}
+			mountain = {
+				movement = 1.25
+				defence = 1.25
+			}
+			plains = {
+				movement = 1.25
+				defence = 1.25
+			}
+			urban = {
+				movement = 1.25
+				defence = 1.25
+			}
+			jungle = {
+				movement = 1.25
+				defence = 1.25
+			}
+			marsh = {
+				movement = 1.25
+				defence = 1.25
+			}
+			fort = {
+				movement = 1.25
+				defence = 1.25
+			}
+			amphibious = {
+				movement = 3.25
+				defence = 1.25
+			}
+		}
+		non_shared_modifier = {
+			experience_gain_factor = 2
+		}
+		corps_commander_modifier = {
+			max_commander_army_size = 176
+		}
+		field_marshal_modifier = {
+			max_army_group_size = 24
+		}
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+	mjs_hmr = { 
+		type = land
+		trait_type = personality_trait
+		attack_skill = 3
+		defense_skill = -1
+		modifier = {
+			army_morale_factor = 0.25
+			reassignment_duration_factor = -1.0
+			army_attack_factor = 0.15
+			supply_consumption_factor = -0.1
+			terrain_penalty_reduction = 1
+			army_armor_speed_factor = 0.5
+		}
+		non_shared_modifier = {
+			experience_gain_factor = 1.5
+		}
+		corps_commander_modifier = {
+			max_commander_army_size = 24
+		}
+		field_marshal_modifier = {
+			max_army_group_size = 5
+		}
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+	mjs_yxy = { 
+		type = land
+		trait_type = personality_trait
+		attack_skill = 2
+		modifier = {
+			army_morale_factor = 0.25
+			reassignment_duration_factor = -0.5
+			terrain_penalty_reduction = 0.25
+			army_armor_speed_factor = 0.1
+			army_speed_factor = 0.1
+			army_attack_factor = 0.25
+			army_defence_factor = -0.1
+			
+		}
+		non_shared_modifier = {
+			experience_gain_factor = 0.5
+		}
+		corps_commander_modifier = {
+			max_commander_army_size = 12
+		}
+		field_marshal_modifier = {
+			max_army_group_size = 3
+		}
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+	mon_lxj = { 
+		type = land
+		trait_type = personality_trait
+		attack_skill = 1
+		defense_skill = 1
+		modifier = {
+			army_morale_factor = 0.25
+			reassignment_duration_factor = -1
+			wounded_chance_factor = -1
+			terrain_penalty_reduction = 0.5
+			army_speed_factor = 0.5
+			army_attack_factor = 0.25
+			army_defence_factor = 0.2
+			
+		}
+		non_shared_modifier = {
+			experience_gain_factor = 0.75
+		}
+		corps_commander_modifier = {
+			max_commander_army_size = 24
+		}
+		field_marshal_modifier = {
+			max_army_group_size = 5
+		}
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+	mon_dxzz = { 
+		type = land
+		trait_type = personality_trait
+		modifier = {
+			desert = {
+				attack = 0.1
+				movement = 0.25
+				defence = 0.1
+			}
+			hills = {
+				attack = 0.1
+				movement = 0.25
+				defence = 0.15
+			}
+			forest = {
+				attack = 0.1
+				movement = 0.25
+				defence = 0.15
+			}
+			mountain = {
+				attack = 0.1
+				movement = 0.25
+				defence = 0.2
+			}
+			plains = {
+				attack = 0.1
+				movement = 0.25
+				defence = 0.05
+			}
+			urban = {
+				attack = 0.1
+				movement = 0.25
+				defence = 0.15
+			}
+			jungle = {
+				attack = 0.1
+				movement = 0.25
+				defence = 0.15
+			}
+			marsh = {
+				attack = 0.1
+				movement = 0.25
+				defence = 0.15
+			}
+			fort = {
+				attack = 0.1
+				movement = 0.25
+				defence = 0.1
+			}
+			amphibious = {
+				attack = 0.1
+				movement = 0.25
+				defence = 0.05
+			}
+			
+		}
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+
+	JAP_tjy = { 
+		type = land
+		trait_type = personality_trait
+		modifier = {
+			reassignment_duration_factor = -1
+			wounded_chance_factor = -1
+			terrain_penalty_reduction = 1
+			breakthrough_factor = 0.5
+			army_attack_factor = 0.2			
+		}
+		non_shared_modifier = {
+			experience_gain_factor = 1.5
+		}
+		corps_commander_modifier = {
+			max_commander_army_size = 12
+		}
+		field_marshal_modifier = {
+			max_army_group_size = 2
+		}
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+
+	jap_lgb = { 
+		type = land
+		trait_type = personality_trait
+		defense_skill = 2
+		modifier = {
+			max_dig_in = 30
+			reassignment_duration_factor = -1.0
+			supply_consumption_factor = -0.25
+			terrain_penalty_reduction = 1
+			army_armor_speed_factor = 0.25
+			army_speed_factor = 0.25
+			desert = {
+				movement = 0.25
+				defence = 0.25
+			}
+			hills = {
+				movement = 0.25
+				defence = 0.25
+			}
+			forest = {
+				movement = 0.25
+				defence = 0.25
+			}
+			mountain = {
+				movement = 0.25
+				defence = 0.25
+			}
+			plains = {
+				movement = 0.25
+				defence = 0.25
+			}
+			urban = {
+				movement = 0.25
+				defence = 0.25
+			}
+			jungle = {
+				movement = 0.25
+				defence = 0.25
+			}
+			marsh = {
+				movement = 0.25
+				defence = 0.25
+			}
+			fort = {
+				movement = 0.25
+				defence = 0.25
+			}
+			amphibious = {
+				movement = 0.25
+				defence = 0.25
+			}
+		}
+		non_shared_modifier = {
+			experience_gain_factor = 11
+		}
+		corps_commander_modifier = {
+			max_commander_army_size = 216
+		}
+		field_marshal_modifier = {
+			max_army_group_size = 40
+		}
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+	
+}

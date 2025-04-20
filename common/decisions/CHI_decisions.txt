@@ -1,0 +1,780 @@
+国内动荡问题 = {
+	
+	满洲拥护者的袭击 = {
+
+		icon = generic_civil_support
+
+		allowed = {
+			original_tag = CHI
+		}
+		
+		available = {
+			MAN = {
+				OR = {
+					has_war_with = CHI
+					exists = no
+					is_subject = yes
+				}
+				
+			}
+		}
+
+		days_mission_timeout = 100
+		#days_remove = 1
+
+		activation = {
+			MAN = {
+				exists = yes
+				is_subject = no
+			}
+		}
+
+		fixed_random_seed = no
+
+		fire_only_once = no
+
+		is_good = no
+
+		timeout_effect = {
+			random_list = {
+				25 = {
+					country_event = min.517
+				}
+				25 = {
+					country_event = min.518
+				}
+				25 = {
+					country_event = min.519
+				}
+				25 = {
+					
+				}
+			}	
+		}
+	}
+	
+	蒙古土匪的劫掠 = {
+
+		icon = generic_civil_support
+
+		allowed = {
+			original_tag = CHI
+		}
+		
+		available = {
+			MON = {
+					OR = {
+					has_war_with = CHI
+					exists = no
+					is_subject = yes
+					}
+					
+			}
+		}
+
+		days_mission_timeout = 100
+		#days_remove = 1
+
+		activation = {
+			MON = {
+				exists = yes
+				is_subject = no
+			}
+		}
+
+		fixed_random_seed = no
+
+		fire_only_once = no
+
+		is_good = no
+
+		timeout_effect = {
+			random_list = {
+				25 = {
+					country_event = min.514
+				}
+				25 = {
+					country_event = min.515
+				}
+				25 = {
+					country_event = min.516
+				}
+				25 = {
+					
+				}
+			}	
+		}
+	}
+	
+	不满足于现状的武官派系 = {
+
+		icon = generic_civil_support
+
+		allowed = {
+			original_tag = CHI
+			is_ai = no
+		}
+		
+		available = {
+			power_balance_value = {
+					id = MING_power_balance
+					value < 0
+				}		
+		}
+
+		days_mission_timeout = 450
+		#days_remove = 1
+
+		activation = {
+			is_ai = no
+				power_balance_value = {
+					id = MING_power_balance
+					value < -0.9
+				}				
+			XSM = {
+				exists = no
+			}
+			YUN = {
+				exists = no
+			}
+			SHX = {
+				exists = no
+			}
+			GXC = {
+				exists = no
+			}
+			SIK = {
+				exists = no
+			}
+		}
+
+		fixed_random_seed = no
+
+		fire_only_once = no
+
+		is_good = no
+
+		timeout_effect = {
+			country_event = min.701	
+			country_event = min.702
+			country_event = min.703	
+			country_event = min.704
+			country_event = min.705	
+		}
+	}
+	
+	不满足于现状的文官派系 = {
+
+		icon = generic_civil_support
+
+		allowed = {
+			original_tag = CHI
+			is_ai = no
+		}
+		
+		available = {
+			is_ai = no
+				power_balance_value = {
+					id = MING_power_balance
+					value > 0
+				}
+		}
+
+		days_mission_timeout = 450
+		#days_remove = 1
+
+		activation = {
+			is_ai = no
+			NOT = {
+				has_idea = CHI_tanhuan
+			}
+				power_balance_value = {
+					id = MING_power_balance
+					value > 0.9
+				}			
+		}
+
+		fixed_random_seed = no
+
+		fire_only_once = no
+
+		is_good = no
+
+		timeout_effect = {
+			country_event = min.512
+		}
+	}
+}
+
+帝国朝堂纷争 = {
+
+	
+}
+
+
+
+
+临时地方巡捕安保队 = {
+	
+	召集辽东巡捕安保部队 = {
+
+		icon = generic_prepare_civil_war
+
+		available = {
+			716 = { is_controlled_by = CHI }
+			has_army_experience > 9
+			has_completed_focus = CHI_49
+		}
+
+		cost = 5
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		visible = {
+		}
+		
+		remove_effect = {
+			army_experience = -10		
+			random_owned_controlled_state = {
+				limit = { ROOT = { has_full_control_of_state = PREV } }
+				prioritize = { 716 }
+				create_unit = {
+					division = "name = \"辽东临时巡捕安保左队\" division_template = \"临时巡捕安保队\" start_experience_factor = 0.5" 
+					owner = CHI
+				}
+				create_unit = {
+					division = "name = \"辽东临时巡捕安保右队\" division_template = \"临时巡捕安保队\" start_experience_factor = 0.5" 
+					owner = CHI
+				}
+			}
+		}
+	}
+	
+	召集北直隶巡捕安保部队 = {
+
+		icon = generic_prepare_civil_war
+
+		available = {
+			608 = { is_controlled_by = CHI }
+			has_army_experience > 9
+			has_completed_focus = CHI_49
+		}
+
+		cost = 5
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		visible = {
+		}
+		
+		remove_effect = {
+			army_experience = -10		
+			random_owned_controlled_state = {
+				limit = { ROOT = { has_full_control_of_state = PREV } }
+				prioritize = { 608 }
+				create_unit = {
+					division = "name = \"北直隶临时巡捕安保左队\" division_template = \"临时巡捕安保队\" start_experience_factor = 0.5" 
+					owner = CHI
+				}
+				create_unit = {
+					division = "name = \"北直隶临时巡捕安保中队\" division_template = \"临时巡捕安保队\" start_experience_factor = 0.5" 
+					owner = CHI
+				}
+				create_unit = {
+					division = "name = \"北直隶临时巡捕安保右队\" division_template = \"临时巡捕安保队\" start_experience_factor = 0.5" 
+					owner = CHI
+				}
+			}
+		}
+	}
+	
+	召集山东巡捕安保部队 = {
+
+		icon = generic_prepare_civil_war
+
+		available = {
+			597 = { is_controlled_by = CHI }
+			has_army_experience > 9
+			has_completed_focus = CHI_49
+		}
+
+		cost = 5
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		visible = {
+		}
+		
+		remove_effect = {
+			army_experience = -10		
+			random_owned_controlled_state = {
+				limit = { ROOT = { has_full_control_of_state = PREV } }
+				prioritize = { 597 }
+				create_unit = {
+					division = "name = \"山东临时巡捕安保左队\" division_template = \"临时巡捕安保队\" start_experience_factor = 0.5" 
+					owner = CHI
+				}
+				create_unit = {
+					division = "name = \"山东临时巡捕安保中队\" division_template = \"临时巡捕安保队\" start_experience_factor = 0.5" 
+					owner = CHI
+				}
+				create_unit = {
+					division = "name = \"山东临时巡捕安保右队\" division_template = \"临时巡捕安保队\" start_experience_factor = 0.5" 
+					owner = CHI
+				}
+			}
+		}
+	}
+	
+	召集江苏巡捕安保部队 = {
+
+		icon = generic_prepare_civil_war
+
+		available = {
+			598 = { is_controlled_by = CHI }
+			has_army_experience > 9
+			has_completed_focus = CHI_49
+		}
+
+		cost = 5
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		visible = {
+		}
+		
+		remove_effect = {
+			army_experience = -10		
+			random_owned_controlled_state = {
+				limit = { ROOT = { has_full_control_of_state = PREV } }
+				prioritize = { 598 }
+				create_unit = {
+					division = "name = \"江苏临时巡捕安保左队\" division_template = \"临时巡捕安保队\" start_experience_factor = 0.5" 
+					owner = CHI
+				}
+				create_unit = {
+					division = "name = \"江苏临时巡捕安保中队\" division_template = \"临时巡捕安保队\" start_experience_factor = 0.5" 
+					owner = CHI
+				}
+				create_unit = {
+					division = "name = \"江苏临时巡捕安保右队\" division_template = \"临时巡捕安保队\" start_experience_factor = 0.5" 
+					owner = CHI
+				}
+			}
+		}
+	}
+	
+	召集淞沪巡捕安保部队 = {
+
+		icon = generic_prepare_civil_war
+
+		available = {
+			613 = { is_controlled_by = CHI }
+			has_army_experience > 9
+			has_completed_focus = CHI_49
+		}
+
+		cost = 5
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		visible = {
+		}
+		
+		remove_effect = {
+			army_experience = -10		
+			random_owned_controlled_state = {
+				limit = { ROOT = { has_full_control_of_state = PREV } }
+				prioritize = { 613 }
+				create_unit = {
+					division = "name = \"淞沪临时巡捕安保左队\" division_template = \"临时巡捕安保队\" start_experience_factor = 0.5" 
+					owner = CHI
+				}
+				create_unit = {
+					division = "name = \"淞沪临时巡捕安保中队\" division_template = \"临时巡捕安保队\" start_experience_factor = 0.5" 
+					owner = CHI
+				}
+				create_unit = {
+					division = "name = \"淞沪临时巡捕安保右队\" division_template = \"临时巡捕安保队\" start_experience_factor = 0.5" 
+					owner = CHI
+				}
+			}
+		}
+	}
+	
+	召集浙江巡捕安保部队 = {
+
+		icon = generic_prepare_civil_war
+
+		available = {
+			596 = { is_controlled_by = CHI }
+			has_army_experience > 9
+			has_completed_focus = CHI_49
+		}
+
+		cost = 5
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		visible = {
+		}
+		
+		remove_effect = {
+			army_experience = -10		
+			random_owned_controlled_state = {
+				limit = { ROOT = { has_full_control_of_state = PREV } }
+				prioritize = { 596 }
+				create_unit = {
+					division = "name = \"浙江临时巡捕安保左队\" division_template = \"临时巡捕安保队\" start_experience_factor = 0.5" 
+					owner = CHI
+				}
+				create_unit = {
+					division = "name = \"浙江临时巡捕安保中队\" division_template = \"临时巡捕安保队\" start_experience_factor = 0.5" 
+					owner = CHI
+				}
+				create_unit = {
+					division = "name = \"浙江临时巡捕安保右队\" division_template = \"临时巡捕安保队\" start_experience_factor = 0.5" 
+					owner = CHI
+				}
+			}
+		}
+	}
+	
+	召集两广巡捕安保部队 = {
+
+		icon = generic_prepare_civil_war
+
+		available = {
+			592 = { is_controlled_by = CHI }
+			593 = { is_controlled_by = CHI }
+			has_army_experience > 9
+			has_completed_focus = CHI_49
+		}
+
+		cost = 5
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		visible = {
+		}
+		
+		remove_effect = {
+			army_experience = -10		
+			random_owned_controlled_state = {
+				limit = { ROOT = { has_full_control_of_state = PREV } }
+				prioritize = { 592 }
+				create_unit = {
+					division = "name = \"两广临时巡捕安保左队\" division_template = \"临时巡捕安保队\" start_experience_factor = 0.5" 
+					owner = CHI
+				}
+				create_unit = {
+					division = "name = \"两广临时巡捕安保中队\" division_template = \"临时巡捕安保队\" start_experience_factor = 0.5" 
+					owner = CHI
+				}
+				create_unit = {
+					division = "name = \"两广临时巡捕安保右队\" division_template = \"临时巡捕安保队\" start_experience_factor = 0.5" 
+					owner = CHI
+				}
+			}
+			random_owned_controlled_state = {
+				limit = { ROOT = { has_full_control_of_state = PREV } }
+				prioritize = { 593 }
+				create_unit = {
+					division = "name = \"两广临时巡捕安保前队\" division_template = \"临时巡捕安保队\" start_experience_factor = 0.5" 
+					owner = CHI
+				}
+				create_unit = {
+					division = "name = \"两广临时巡捕安保后队\" division_template = \"临时巡捕安保队\" start_experience_factor = 0.5" 
+					owner = CHI
+				}
+				create_unit = {
+					division = "name = \"两广临时巡捕安保预备队\" division_template = \"临时巡捕安保队\" start_experience_factor = 0.5" 
+					owner = CHI
+				}
+			}
+		}
+	}
+	
+	召集台湾巡捕安保部队 = {
+
+		icon = generic_prepare_civil_war
+
+		available = {
+			524 = { is_controlled_by = CHI }
+			has_army_experience > 9
+			has_completed_focus = CHI_49
+		}
+
+		cost = 5
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		visible = {
+		}
+		
+		remove_effect = {
+			army_experience = -10		
+			random_owned_controlled_state = {
+				limit = { ROOT = { has_full_control_of_state = PREV } }
+				prioritize = { 524 }
+				create_unit = {
+					division = "name = \"台湾临时巡捕安保左队\" division_template = \"临时巡捕安保队\" start_experience_factor = 0.5" 
+					owner = CHI
+				}
+				create_unit = {
+					division = "name = \"台湾临时巡捕安保中队\" division_template = \"临时巡捕安保队\" start_experience_factor = 0.5" 
+					owner = CHI
+				}
+				create_unit = {
+					division = "name = \"台湾临时巡捕安保右队\" division_template = \"临时巡捕安保队\" start_experience_factor = 0.5" 
+					owner = CHI
+				}
+			}
+		}
+	}
+	
+	召集西南巡捕安保部队 = {
+
+		icon = generic_prepare_civil_war
+
+		available = {
+			605 = { is_controlled_by = CHI }
+			has_army_experience > 9
+			has_completed_focus = CHI_49
+		}
+
+		cost = 5
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		visible = {
+		}
+		
+		remove_effect = {
+			army_experience = -10		
+			random_owned_controlled_state = {
+				limit = { ROOT = { has_full_control_of_state = PREV } }
+				prioritize = { 605 }
+				create_unit = {
+					division = "name = \"西南临时巡捕安保左队\" division_template = \"临时巡捕安保队\" start_experience_factor = 0.5" 
+					owner = CHI
+				}
+				create_unit = {
+					division = "name = \"西南临时巡捕安保右队\" division_template = \"临时巡捕安保队\" start_experience_factor = 0.5" 
+					owner = CHI
+				}
+				create_unit = {
+					division = "name = \"西南临时巡捕安保前队\" division_template = \"临时巡捕安保队\" start_experience_factor = 0.5" 
+					owner = CHI
+				}
+				create_unit = {
+					division = "name = \"西南临时巡捕安保后队\" division_template = \"临时巡捕安保队\" start_experience_factor = 0.5" 
+					owner = CHI
+				}
+				create_unit = {
+					division = "name = \"西南临时巡捕安保中队\" division_template = \"临时巡捕安保队\" start_experience_factor = 0.5" 
+					owner = CHI
+				}
+				create_unit = {
+					division = "name = \"西南临时巡捕安保预备队\" division_template = \"临时巡捕安保队\" start_experience_factor = 0.5" 
+					owner = CHI
+				}
+				create_unit = {
+					division = "name = \"西南临时巡捕安保预备队\" division_template = \"临时巡捕安保队\" start_experience_factor = 0.5" 
+					owner = CHI
+				}
+			}
+		}
+	}
+}
+
+调动老旧军舰 = {
+	
+	老旧战列舰重新服役 = {
+
+		icon = generic_naval
+
+		available = {
+			has_completed_focus = CHI_76
+		}
+
+		cost = 50
+		fire_only_once = yes
+		ai_will_do = {
+				factor = 100
+		}
+
+		visible = {
+		}
+		remove_effect = {
+			add_equipment_production = {
+				equipment = {
+					type = ship_hull_pre_dreadnought
+					creator = "CHI" 
+					version_name = "Xuanwu Class"
+				}
+				requested_factories = 1
+				progress = 0.99
+				amount = 1
+			}
+			add_equipment_production = {
+				equipment = {
+					type = ship_hull_pre_dreadnought
+					creator = "CHI" 
+					version_name = "Xuanwu Class"
+				}
+				requested_factories = 1
+				progress = 0.99
+				amount = 1
+			}	
+			add_equipment_production = {
+				equipment = {
+					type = ship_hull_pre_dreadnought
+					creator = "CHI" 
+					version_name = "Xuanwu Class"
+				}
+				requested_factories = 1
+				progress = 0.95
+				amount = 1
+			}
+			add_equipment_production = {
+				equipment = {
+					type = ship_hull_pre_dreadnought
+					creator = "CHI" 
+					version_name = "Xuanwu Class"
+				}
+				requested_factories = 1
+				progress = 0.9
+				amount = 1
+			}
+			add_equipment_production = {
+				equipment = {
+					type = ship_hull_pre_dreadnought
+					creator = "CHI" 
+					version_name = "Xuanwu Class"
+				}
+				requested_factories = 1
+				progress = 0.9
+				amount = 1
+			}
+		}
+	}
+	
+	召回老旧巡洋舰 = {
+
+		icon = generic_naval
+
+		available = {
+			has_completed_focus = CHI_76
+		}
+
+		cost = 30
+		fire_only_once = yes
+		ai_will_do = {
+				factor = 100
+		}
+
+		visible = {
+		}
+		remove_effect = {
+			add_equipment_production = {
+				equipment = {
+					type = ship_hull_cruiser_panzerschiff
+					creator = "CHI" 
+					version_name = "Dingyuan Class"
+				}
+				requested_factories = 1
+				progress = 1
+				amount = 1
+			}
+			add_equipment_production = {
+				equipment = {
+					type = ship_hull_cruiser_panzerschiff
+					creator = "CHI" 
+					version_name = "Dingyuan Class"
+				}
+				requested_factories = 1
+				progress = 1
+				amount = 1
+			}	
+			add_equipment_production = {
+				equipment = {
+					type = ship_hull_cruiser_panzerschiff
+					creator = "CHI" 
+					version_name = "Dingyuan Class"
+				}
+				requested_factories = 1
+				progress = 1
+				amount = 1
+			}
+			add_equipment_production = {
+				equipment = {
+					type = ship_hull_cruiser_coastal_defense_ship
+					creator = "CHI" 
+					version_name = "Wusheng Class"
+				}
+				requested_factories = 1
+				progress = 1
+				amount = 1
+			}
+			add_equipment_production = {
+				equipment = {
+					type = ship_hull_cruiser_coastal_defense_ship
+					creator = "CHI" 
+					version_name = "Wusheng Class"
+				}
+				requested_factories = 1
+				progress = 1
+				amount = 1
+			}
+			add_equipment_production = {
+				equipment = {
+					type = ship_hull_cruiser_coastal_defense_ship
+					creator = "CHI" 
+					version_name = "Wusheng Class"
+				}
+				requested_factories = 1
+				progress = 1
+				amount = 1
+			}
+			add_equipment_production = {
+				equipment = {
+					type = ship_hull_cruiser_coastal_defense_ship
+					creator = "CHI" 
+					version_name = "Wusheng Class"
+				}
+				requested_factories = 1
+				progress = 1
+				amount = 1
+			}
+			add_equipment_production = {
+				equipment = {
+					type = ship_hull_cruiser_coastal_defense_ship
+					creator = "CHI" 
+					version_name = "Wusheng Class"
+				}
+				requested_factories = 1
+				progress = 0.95
+				amount = 1
+			}
+		}
+	}
+}

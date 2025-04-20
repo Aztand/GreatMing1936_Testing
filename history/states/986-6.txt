@@ -1,0 +1,23 @@
+state={
+	id=986
+	name="STATE_986"
+
+	history={
+		owner = SOV
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = SOV
+		add_core_of = CHI
+
+	}
+
+	provinces={
+		8027 10417 12805 
+	}
+	manpower=30000
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+}

@@ -1,0 +1,134 @@
+equipment_modules = {
+	limit = {
+		has_dlc = "Man the Guns" 
+	}
+
+
+#  # ###  ##  #   # #   #     ###   ##  ### ### ### ###  #   # 
+#  # #   #  # #   #  # #      #  # #  #  #   #  #   #  #  # #  
+#### ##  ####  # #    #       ###  ####  #   #  ##  ###    #   
+#  # #   #  #  # #    #       #  # #  #  #   #  #   #  #   #   
+#  # ### #  #   #     #       ###  #  #  #   #  ### #  #   #   
+
+
+
+	ming_ship_heavy_battery_2 = {
+		abbreviation = "sai"
+		category = ship_heavy_battery
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = capital_ship
+		
+		add_stats = {
+			lg_attack = 0.5
+			hg_attack = 1
+			build_cost_ic = 60
+			anti_air_attack = 6
+		}
+		multiply_stats = {
+			naval_speed = 0.05
+			build_cost_ic = -0.1
+		}
+		add_average_stats = {
+			hg_armor_piercing = 20
+			lg_armor_piercing = 5
+		}
+		build_cost_resources = {
+			steel = -1
+		}
+		can_convert_from = {
+			module_category = ship_heavy_battery
+			convert_cost_ic = 10
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ming_ship_armor_bb_0 = {
+		abbreviation = "sdi"
+		category = ship_heavy_armor
+		gfx = ship_armor_thick_1
+		parent = ship_armor_bb_2
+		multiply_stats = {
+			build_cost_ic = -0.15
+			naval_speed = 0.05
+			max_strength = -0.05
+		}
+		build_cost_resources = {
+			steel = 0
+			chromium = 0
+		}
+		add_stats = {
+			armor_value = 5
+		}
+		dismantle_cost_ic = 150
+		
+	}
+	
+	jap_heavy_ship_engine_4 = {
+		abbreviation = "scc"
+		category = heavy_ship_engine
+		parent = heavy_ship_engine_3
+		gfx = japan_engine
+
+		
+		add_stats = {
+			naval_speed = 12
+			fuel_consumption = 40
+			build_cost_ic = 3000
+		}		
+		multiply_stats = {
+			naval_speed = 0.8
+			
+			
+		}		
+		can_convert_from = {
+			module_category = heavy_ship_engine
+			convert_cost_ic = 4000
+		}		
+		can_convert_from = {
+			module = heavy_ship_engine_3
+			convert_cost_ic = 3500
+		}
+	}
+	jap_carrier_ship_engine_1 = {
+		abbreviation = "scd"
+		category = carrier_ship_engine
+		gfx = japan_engine
+		
+		
+		add_stats = {
+			naval_speed = 10
+			fuel_consumption = 15
+			build_cost_ic = 1500
+		}
+		
+		multiply_stats = {
+			naval_speed = 0.5
+			
+		}
+		
+		can_convert_from = {
+			module_category = carrier_ship_engine
+			convert_cost_ic = 2200
+		}
+	}
+	jap_ship_deck_space = {
+		abbreviation = "sda"
+		category = ship_deck_space
+		gfx = ship_deck_space
+
+		add_equipment_type = capital_ship
+		add_stats = {
+			carrier_size = 4
+			build_cost_ic = 2800
+		}
+		manpower = 400 #outside the add_stats section for code reasons
+		multiply_stats = {
+			naval_speed = -0.03
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		dismantle_cost_ic = 1200
+	}
+
+
+}

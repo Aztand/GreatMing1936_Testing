@@ -1,0 +1,172 @@
+与英国的合作 = {
+
+	icon = border_conflicts
+	allowed = {
+		original_tag = JAP
+	}
+
+	visible = {
+		has_completed_focus = JAP_04
+	}
+}
+初始空军修正 = {
+
+	icon = border_conflicts
+	allowed = {
+		OR = {
+			original_tag = JAP
+			original_tag = MON
+		}
+		
+	}
+
+	visible = {
+		always = yes
+	}
+}
+
+与大清的合作 = {
+
+	icon = border_conflicts
+	allowed = {
+		original_tag = JAP
+	}
+
+	visible = {
+		has_completed_focus = JAP_24
+	}
+}
+
+与蒙古的合作 = {
+
+	icon = border_conflicts
+	allowed = {
+		original_tag = JAP
+	}
+
+	visible = {
+		has_completed_focus = JAP_32
+	}
+}
+
+jap_gyfzz = {
+
+	icon = border_conflicts
+	allowed = {
+		original_tag = JAP
+	}
+
+	visible = {
+		always = yes
+		NOT = {has_idea = jap_gyfz6}
+	}
+}
+
+jap_ghsx = {
+
+	icon = generic_political_discourse
+	allowed = {
+		original_tag = JAP
+	}
+
+	visible = {
+		has_completed_focus = JAP_tj001
+	}
+}
+
+大陆作战计划 = {
+
+	icon = jap_conquer_china
+	allowed = {
+		original_tag = JAP
+	}
+
+	visible = {
+		has_completed_focus = JAP_30
+	}
+}
+
+汲取财阀利益 = {
+
+	icon = generic_political_discourse
+	allowed = {
+		original_tag = JAP
+	}
+
+	visible = {
+		has_completed_focus = JAP_111
+	}
+}
+
+JAP_interservice_rivalry = {
+	allowed = {
+		original_tag = JAP
+		has_dlc = "Waking the Tiger"
+	}
+}
+日本内政改革 = {
+	icon = border_conflicts
+	allowed = {
+		original_tag = JAP
+	}
+	available = {
+		OR = {
+			has_completed_focus = JAP_101
+			has_completed_focus = JAP_x09
+			has_completed_focus = JAP_01
+
+		}
+	}
+	priority = 5
+}
+
+日本军事改革 = {
+	icon = border_conflicts
+	allowed = {
+		original_tag = JAP
+	}
+	available = {
+		OR = {
+			has_completed_focus = JAP_101
+			has_completed_focus = JAP_x09
+			has_completed_focus = JAP_01
+
+		}
+	}
+	priority = 15
+}
+
+加强德国 = {
+	icon = border_conflicts
+	allowed = {
+		OR = {   
+				#original_tag = JAP
+				#original_tag = MON
+				#original_tag = CHI
+		}
+		
+		
+	}
+	available = {
+		is_ai = no
+	}
+	priority = 330
+}
+
+日本战略规划 = {
+	icon = border_conflicts
+	allowed = {
+		OR = {   
+				#original_tag = JAP
+				#original_tag = MON
+				#original_tag = CHI
+				#has_completed_focus = JAP_x09
+		}
+		
+		
+	}
+	available = {
+		is_ai = no
+	}
+	priority = 0
+}

@@ -1,0 +1,556 @@
+﻿division_template = {
+	name = "流民营"		# Represents two-division infantry corps (generally poorly-equipped militias), and local militia groups
+	division_names_group = XSM_INF_01
+
+	regiments = {					
+		infantry = { x = 0 y = 0 }	# Note: Chinese divisions were brigade-sized compared other nations' armies
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+
+}
+division_template = {
+	name = "大西军"				# Represents two-division cavalry corps (generally poorly-equipped)
+	division_names_group = XSM_CAV_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 2 y = 0 }
+		cavalry = { x = 2 y = 1 }
+	}
+}
+
+
+units = {
+	#Ma Clique units - 15 inf divisions, 6 cav divisions
+	division = { # "80 流民营"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 80
+		}
+		location = 7940
+		division_template = "流民营"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
+	division = { # "81 流民营"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 81
+		}
+		location = 1647
+		division_template = "流民营"
+		start_experience_factor = 0.1	
+		start_equipment_factor = 1.0
+
+	}
+	division = { # "82 流民营"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 82
+		}
+		location = 1933
+		division_template = "流民营"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
+	division = { # "1 Ma 大西军"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7911
+		division_template = "大西军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
+	division = { # "2 Ma 大西军"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 531
+		division_template = "大西军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
+	division = { # "3 Ma 大西军"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 7940
+		division_template = "大西军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = { # "3 Ma 大西军"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 12732
+		division_template = "大西军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = { # "3 Ma 大西军"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 12732
+		division_template = "大西军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = { # "3 Ma 大西军"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 2022
+		division_template = "大西军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = { # "3 Ma 大西军"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 4925
+		division_template = "大西军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = { # "3 Ma 大西军"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location = 4925
+		division_template = "大西军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = { # "3 Ma 大西军"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 10
+		}
+		location = 6999
+		division_template = "大西军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = { # "3 Ma 大西军"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 10
+		}
+		location = 6999
+		division_template = "大西军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = { # "3 Ma 大西军"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 10
+		}
+		location = 6999
+		division_template = "大西军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = { # "3 Ma 大西军"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 11
+		}
+		location = 2045
+		division_template = "大西军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = { # "3 Ma 大西军"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 12
+		}
+		location = 2045
+		division_template = "大西军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = { # "3 Ma 大西军"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 13
+		}
+		location = 2045
+		division_template = "大西军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = { # "3 Ma 大西军"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 14
+		}
+		location = 2045
+		division_template = "大西军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = { # "3 Ma 大西军"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 15
+		}
+		location = 2045
+		division_template = "大西军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+
+	division = { # "82 流民营"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 20
+		}
+		location = 12705
+		division_template = "流民营"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = { # "82 流民营"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 21
+		}
+		location = 1395
+		division_template = "流民营"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = { # "82 流民营"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 22
+		}
+		location = 4375
+		division_template = "流民营"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = { # "82 流民营"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 23
+		}
+		location = 11865
+		division_template = "流民营"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = { # "82 流民营"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 24
+		}
+		location = 10144
+		division_template = "流民营"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = { # "82 流民营"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 25
+		}
+		location = 2006
+		division_template = "流民营"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = { # "82 流民营"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 27
+		}
+		location = 5025
+		division_template = "流民营"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = { # "82 流民营"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 28
+		}
+		location = 10490
+		division_template = "流民营"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = { # "82 流民营"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 29
+		}
+		location = 1882
+		division_template = "流民营"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = { # "82 流民营"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 30
+		}
+		location = 3745
+		division_template = "流民营"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = { # "82 流民营"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 31
+		}
+		location = 10755
+		division_template = "流民营"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = { # "82 流民营"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 32
+		}
+		location = 8068
+		division_template = "流民营"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = { # "82 流民营"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 33
+		}
+		location = 10741
+		division_template = "流民营"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = { # "82 流民营"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 34
+		}
+		location = 7988
+		division_template = "流民营"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = { # "82 流民营"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 35
+		}
+		location = 1893
+		division_template = "流民营"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = { # "82 流民营"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 36
+		}
+		location = 7418
+		division_template = "流民营"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = { # "82 流民营"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 37
+		}
+		location = 7406
+		division_template = "流民营"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = { # "82 流民营"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 38
+		}
+		location = 5092
+		division_template = "流民营"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = { # "82 流民营"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 39
+		}
+		location = 12713
+		division_template = "流民营"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = { # "82 流民营"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 40
+		}
+		location = 7301
+		division_template = "流民营"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = { # "82 流民营"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 41
+		}
+		location = 1976
+		division_template = "流民营"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = { # "82 流民营"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 6638
+		division_template = "流民营"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = { # "82 流民营"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 43
+		}
+		location = 1985
+		division_template = "流民营"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = { # "82 流民营"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 44
+		}
+		location = 1630
+		division_template = "流民营"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = { # "82 流民营"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 45
+		}
+		location = 4536
+		division_template = "流民营"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = { # "82 流民营"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 46
+		}
+		location = 8018
+		division_template = "流民营"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = { # "82 流民营"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 47
+		}
+		location = 12815
+		division_template = "流民营"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = { # "82 流民营"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 48
+		}
+		location = 4999
+		division_template = "流民营"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = { # "82 流民营"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 49
+		}
+		location = 9966
+		division_template = "流民营"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = { # "82 流民营"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 50
+		}
+		location = 1918
+		division_template = "流民营"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = { # "82 流民营"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 51
+		}
+		location = 10856
+		division_template = "流民营"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+
+	division = {
+		location = 7940
+		division_template = "流民营"		# Provincial militia unit (poor equipment and training)
+		start_equipment_factor = 0.3
+
+	}
+}
+
+### STARTING PRODUCTION ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "XSM"
+		}
+		requested_factories = 1
+		progress = 0.74
+		efficiency = 100
+	}
+}

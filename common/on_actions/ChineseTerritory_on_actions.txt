@@ -1,0 +1,107 @@
+on_actions = {
+
+	on_startup = {
+	
+		effect = {
+			434 = { remove_core_of = RAJ }
+			430 = { remove_core_of = RAJ }
+			431 = { remove_core_of = RAJ }
+			432 = { remove_core_of = RAJ }
+			441 = { remove_core_of = RAJ }
+			442 = { remove_core_of = RAJ }
+			443 = { remove_core_of = RAJ }
+			444 = { remove_core_of = RAJ }
+			445 = { remove_core_of = RAJ }
+
+			985 = { remove_core_of = RAJ }
+
+			561 = { add_core_of = CHI add_core_of = MAN }
+			560 = { add_core_of = CHI	add_core_of = MAN }
+			657 = { add_core_of = CHI	add_core_of = MAN }
+			409 = { add_core_of = CHI	add_core_of = MAN }
+			408 = { add_core_of = CHI	add_core_of = MAN }
+			655 = { add_core_of = CHI	add_core_of = MAN }
+			537 = { add_core_of = CHI add_core_of = MAN }
+			434 = { add_core_of = CHI }
+			986 = { add_core_of = CHI }
+			987 = { add_core_of = CHI }
+			431 = { add_core_of = BAN }
+			432 = { add_core_of = BAN }
+
+			# 西
+			654 = { add_core_of = CHI }
+			589 = { add_core_of = CHI }
+			586 = { add_core_of = CHI }
+			732 = { add_core_of = CHI }
+			985 = { add_core_of = CHI }
+			441 = { add_claim_by = CHI}
+			982 = { add_claim_by = CHI}
+			983 = { add_claim_by = CHI}
+			984 = { add_claim_by = CHI}
+
+			322 = { add_claim_by = CHI}
+			757 = { add_claim_by = CHI}
+			758 = { add_claim_by = CHI}
+			every_country = { every_state = { limit = { is_core_of = MON } add_claim_by = CHI} }
+			every_country = { every_state = { limit = { is_core_of = TAN } add_claim_by = CHI} }
+
+			if = {
+				limit = {
+					country_exists = PRC
+					PRC = { is_puppet = no }
+					PRC = { has_idea = CHI_ineffective_bureaucracy_AC }
+				}
+				every_state = { 
+					limit = { 
+						is_core_of = CHI 
+					} 
+					remove_core_of = CHI
+					441 = { remove_claim_by = CHI remove_claim_by = PRC }
+					982 = { remove_claim_by = CHI remove_claim_by = PRC }
+					983 = { remove_claim_by = CHI remove_claim_by = PRC } 
+					984 = { remove_claim_by = CHI remove_claim_by = PRC }
+					441 = { }
+					982 = { }
+					983 = { }
+					984 = { }
+					every_country = { every_state = { limit = { is_core_of = TIB } remove_claim_by = CHI remove_claim_by = PRC } }
+					every_country = { every_state = { limit = { is_core_of = MON } remove_claim_by = CHI remove_claim_by = PRC } }
+					every_country = { every_state = { limit = { is_core_of = TAN } remove_claim_by = CHI remove_claim_by = PRC } }
+				}
+			}
+			
+			329 = { set_state_name = "唐努乌梁海" }
+			654 = { set_state_name = "阿尔泰乌梁海" }
+			408 = { set_state_name = "海参崴" }
+			409 = { set_state_name = "伯力" }
+			434 = { set_state_name = "藏南" }
+			441 = { set_state_name = "拉达克" }
+			526 = { set_state_name = "琉球" }
+			537 = { set_state_name = "南库页" }
+			560 = { set_state_name = "庙街" }
+			561 = { set_state_name = "外兴安岭" }
+			586 = { set_state_name = "乌什" }
+			589 = { set_state_name = "巴尔喀什" }
+			655 = { set_state_name = "北库页" }
+			657 = { set_state_name = "海兰泡" }
+			728 = { set_state_name = "湛江" }
+			732 = { set_state_name = "帕米尔" }
+			526 = { set_state_name = "琉球" }
+
+			982 = { set_state_name = "江心坡" }
+			983 = { set_state_name = "葫芦地" }
+			984 = { set_state_name = "瓦罕走廊" }
+			985 = { set_state_name = "阿克赛钦" }
+			986 = { set_state_name = "苏满" }
+			987 = { set_state_name = "南阿尔泰" }
+
+			set_province_name = { id = 957 name = "海参崴" }
+			set_province_name = { id = 12446 name = "苦兀" }
+			set_province_name = { id = 12189 name = "伯利" }
+		}
+			
+	}
+}
+	
+
+

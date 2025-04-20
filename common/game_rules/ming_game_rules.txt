@@ -1,0 +1,67 @@
+MAN_ai_behavior = {
+	name = "MAN_AI_BEHAVIOR"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+	default = {
+		name = default
+		text = "man_default"
+		desc = "man_default_desc"
+		allow_achievements = yes
+	}
+	option = {
+		name = default
+		text = "man_default"
+		desc = "man_default_desc"
+		allow_achievements = yes
+	}
+	option = {
+		name = random
+		text = "man_random"
+		desc = "man_random_desc"
+		allow_achievements = yes
+	}
+}
+
+MON_ai_behavior = {
+	name = "MON_AI_BEHAVIOR"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+	default = {
+		name = default
+		text = "mon_default"
+		desc = "mon_default_desc"
+		allow_achievements = yes
+	}
+	option = {
+		name = default
+		text = "mon_default"
+		desc = "mon_default_desc"
+		allow_achievements = yes
+	}
+	option = {
+		name = random
+		text = "mon_random"
+		desc = "mon_random_desc"
+		allow_achievements = yes
+	}
+}
+JAP_ai_behavior = {
+	name = "JAP_AI_BEHAVIOR"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+	default = {
+		name = default
+		text = "jap_default"
+		desc = "jap_default_desc"
+		allow_achievements = yes
+	}
+	option = {
+		name = default
+		text = "jap_default"
+		desc = "jap_default_desc"
+		allow_achievements = yes
+	}
+	option = {
+		name = random
+		text = "jap_random"
+		desc = "jap_random_desc"
+		allow_achievements = yes
+	}
+}

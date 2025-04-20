@@ -1,0 +1,84 @@
+#####################
+
+###  ##  #  # # #  ## 
+ #  #  # ## # # # #   
+ #  #### # ## ##   #  
+ #  #  # #  # # #   # 
+ #  #  # #  # # # ## 
+
+ #################### 
+MON_porsche_organization = {
+	include = generic_tank_organization_mon
+	icon = GFX_idea_porsche
+	
+	allowed = {	
+			tag = MON 
+	}
+
+	available = {
+		owner = {is_ai = no}
+	}
+}
+
+
+#####################
+
+ ## #  # ### ###   ## 
+#   #  #  #  #  # #   
+ #  ####  #  ###   #  
+  # #  #  #  #      # 
+##  #  # ### #    ##  
+ 
+#####################
+
+MON_germaniawerft_organization = {
+	include = generic_black_sea_fleet_organization_mon
+	icon = GFX_idea_germaniawerft
+	
+	allowed = {	
+		tag = MON 
+	}
+}
+
+###########################
+
+###  #    ##  #  # ###  ## 
+#  # #   #  # ## # #   #   
+###  #   #### # ## ##   #  
+#    #   #  # #  # #     # 
+#    ### #  # #  # ### ##  
+
+###########################
+MON_focke_wulf_organization = {
+	include = generic_general_aircraft_organization_mon
+	icon = GFX_idea_focke_wulf
+	
+	allowed = {	
+		tag = MON
+	}
+}
+
+
+
+################################### 
+
+#   #  ##  ### ### ###  ### ### #   
+## ## #  #  #  #   #  #  #  #   #   
+# # # ####  #  ##  ###   #  ##  #   
+#   # #  #  #  #   #  #  #  #   #   
+#   # #  #  #  ### #  # ### ### ### 
+
+
+###################################
+
+mon_artillery_organization = {
+	include = mon_artillery_organization
+	icon = GFX_idea_generic_artillery_manufacturer_1
+	allowed = {	
+		tag = MON
+	}
+	available = {
+		owner = {is_ai = no}
+		owner = { controls_state = 605 }
+	}
+}

@@ -1,0 +1,1878 @@
+大清训练 = {
+	大清的军队 = {
+		icon = generic_prepare_civil_war
+		available = {
+			has_army_experience > 19
+			date > 1938.6.1
+		}
+		cost = 0
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 100
+		}
+		visible = {
+				original_tag = MAN
+				is_ai = yes
+		}
+		
+		remove_effect = {
+			army_experience = -20		
+			division_template = {
+					name = "骑兵师I"
+					division_names_group = MAN_CAV_01
+					priority = 1.5
+					regiments = {
+						cavalry = { x = 0 y = 0 }	
+						cavalry = { x = 0 y = 1 }
+						cavalry = { x = 0 y = 2 }	
+						cavalry = { x = 1 y = 0 }	
+						cavalry = { x = 1 y = 1 }
+						cavalry = { x = 1 y = 2 }
+						cavalry = { x = 2 y = 0 }
+						cavalry = { x = 2 y = 1 }
+						cavalry = { x = 2 y = 2 }
+					}
+					support = {   
+					}
+				               }
+							   
+			division_template = {
+					name = "步兵师I"
+					division_names_group = MAN_INF_01
+					priority = 1.5
+					regiments = {
+						infantry = { x = 0 y = 0 }	
+						infantry = { x = 0 y = 1 }	
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 2 y = 2 }
+						infantry = { x = 1 y = 0 }	
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						artillery = { x = 3 y = 0 }
+
+					}
+					support = {   
+					}
+				               }
+							   
+				capital_scope = {
+				
+				create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				
+				   
+				   
+				   
+				   
+				   
+				   
+				   
+				   
+			    }
+			
+		}
+	}
+	
+	大清的军队1 = {
+		icon = generic_prepare_civil_war
+		available = {
+			has_army_experience > 19
+			date > 1939.10.1
+		}
+		cost = 200
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		visible = {
+				original_tag = MAN
+				is_ai = yes
+		}
+		
+		remove_effect = {
+			army_experience = -20		
+			division_template = {
+					name = "骑兵师I"
+					division_names_group = MAN_CAV_01
+					priority = 1.5
+					regiments = {
+		cavalry = { x = 0 y = 0 }	
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }	
+		cavalry = { x = 1 y = 0 }	
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+		cavalry = { x = 2 y = 0 }
+		cavalry = { x = 2 y = 1 }
+		cavalry = { x = 2 y = 2 }
+					}
+					support = {   
+					}
+				               }
+							   
+			division_template = {
+					name = "步兵师I"
+					division_names_group = MAN_INF_01
+					priority = 1.5
+					regiments = {
+		infantry = { x = 0 y = 0 }	
+		infantry = { x = 0 y = 1 }	
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 1 y = 0 }	
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		artillery = { x = 3 y = 0 }
+
+					}
+					support = {   
+					}
+				               }
+							   
+				capital_scope = {
+				
+				create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+
+				
+				   
+				   
+				   
+				   
+				   
+				   
+				   
+				   
+			    }
+			
+		}
+	}
+	大清的军队2 = {
+		icon = generic_prepare_civil_war
+		available = {
+			has_army_experience > 19
+			date > 1938.12.1
+		}
+		cost = 0
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+				original_tag = MAN
+		}
+		
+		remove_effect = {
+			army_experience = -20		
+			division_template = {
+					name = "骑兵师I"
+					division_names_group = MAN_CAV_01
+					priority = 1.5
+					regiments = {
+		cavalry = { x = 0 y = 0 }	
+		cavalry = { x = 0 y = 1 }	
+		cavalry = { x = 1 y = 0 }	
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 2 y = 0 }
+		cavalry = { x = 2 y = 1 }
+					}
+					support = {   
+					}
+				               }
+							   
+			division_template = {
+					name = "步兵师I"
+					division_names_group = MAN_INF_01
+					priority = 1.5
+					regiments = {
+						infantry = { x = 0 y = 0 }	
+						infantry = { x = 0 y = 1 }	
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 2 y = 2 }
+						infantry = { x = 1 y = 0 }	
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						artillery = { x = 3 y = 0 }
+
+					}
+					support = {   
+					}
+				               }
+							   
+				capital_scope = {
+				
+				create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				
+				   
+				   
+			    }
+			
+		}
+	}
+	大清的军队3 = {
+		icon = generic_prepare_civil_war
+		available = {
+			has_army_experience > 19
+			date > 1938.9.1
+		}
+		cost = 0
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+				original_tag = MAN
+		}
+		
+		remove_effect = {
+			army_experience = -20		
+			division_template = {
+					name = "骑兵师I"
+					division_names_group = MAN_CAV_01
+					priority = 1.5
+					regiments = {
+						cavalry = { x = 0 y = 0 }	
+						cavalry = { x = 0 y = 1 }
+						cavalry = { x = 0 y = 2 }	
+						cavalry = { x = 1 y = 0 }	
+						cavalry = { x = 1 y = 1 }
+						cavalry = { x = 1 y = 2 }
+						cavalry = { x = 2 y = 0 }
+						cavalry = { x = 2 y = 1 }
+						cavalry = { x = 2 y = 2 }
+					}
+					support = {   
+					}
+				               }
+							   
+			division_template = {
+					name = "步兵师I"
+					division_names_group = MAN_INF_01
+					priority = 1.5
+					regiments = {
+						infantry = { x = 0 y = 0 }	
+						infantry = { x = 0 y = 1 }	
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 2 y = 2 }
+						infantry = { x = 1 y = 0 }	
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						artillery = { x = 3 y = 0 }
+
+					}
+					support = {   
+					}
+				               }
+							   
+				capital_scope = {
+				
+				create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"骑兵师\" division_template = \"骑兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"步兵师\" division_template = \"步兵师I\" start_experience_factor = 0.1 start_equipment_factor = 0.99" 
+					owner = ROOT
+				   }
+				
+				   
+				   
+			    }
+			
+		}
+	}
+	
+	大元的军队 = {
+		icon = generic_prepare_civil_war
+		available = {
+			date > 1940.1.1
+		}
+		cost = 0
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+				original_tag = MON
+		}
+		
+		remove_effect = {
+			army_experience = -20		
+			division_template = {
+					name = "坦克师I"
+					division_names_group = MAN_CAV_01
+					priority = 1.5
+					regiments = {
+		medium_armor = { x = 0 y = 0 }	
+		medium_armor = { x = 0 y = 1 }	
+		medium_armor = { x = 1 y = 0 }	
+		medium_armor = { x = 1 y = 1 }
+		mechanized = { x = 2 y = 0 }
+		mechanized = { x = 2 y = 1 }
+		mechanized = { x = 3 y = 0 }
+		mechanized = { x = 3 y = 1 }
+					}
+					support = {   
+					}
+				               }
+							   
+			division_template = {
+					name = "坦克师II"
+					division_names_group = MAN_INF_01
+					priority = 1.5
+					regiments = {
+		medium_armor = { x = 0 y = 0 }	
+		medium_armor = { x = 0 y = 1 }	
+		medium_armor = { x = 1 y = 0 }	
+		medium_armor = { x = 1 y = 1 }
+		mechanized = { x = 2 y = 0 }
+		mechanized = { x = 2 y = 1 }
+		mechanized = { x = 3 y = 0 }
+		mechanized = { x = 3 y = 1 }
+		mechanized = { x = 4 y = 0 }
+		mechanized = { x = 4 y = 1 }
+
+					}
+					support = {   
+					}
+				               }
+							   
+				capital_scope = {
+				
+				create_unit = {
+					division = "name = \"坦克师\" division_template = \"坦克师I\" start_experience_factor = 0.25 start_equipment_factor = 1" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"坦克师1\" division_template = \"坦克师II\" start_experience_factor = 0.25 start_equipment_factor = 1" 
+					owner = ROOT
+				   } 
+				create_unit = {
+					division = "name = \"坦克师\" division_template = \"坦克师I\" start_experience_factor = 0.25 start_equipment_factor = 1" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"坦克师1\" division_template = \"坦克师II\" start_experience_factor = 0.25 start_equipment_factor = 1" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"坦克师\" division_template = \"坦克师I\" start_experience_factor = 0.25 start_equipment_factor = 1" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"坦克师1\" division_template = \"坦克师II\" start_experience_factor = 0.25 start_equipment_factor = 1" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"坦克师\" division_template = \"坦克师I\" start_experience_factor = 0.25 start_equipment_factor = 1" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"坦克师1\" division_template = \"坦克师II\" start_experience_factor = 0.25 start_equipment_factor = 1" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"坦克师\" division_template = \"坦克师I\" start_experience_factor = 0.25 start_equipment_factor = 1" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"坦克师1\" division_template = \"坦克师II\" start_experience_factor = 0.25 start_equipment_factor = 1" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"坦克师\" division_template = \"坦克师I\" start_experience_factor = 0.25 start_equipment_factor = 1" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"坦克师1\" division_template = \"坦克师II\" start_experience_factor = 0.25 start_equipment_factor = 1" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"坦克师\" division_template = \"坦克师I\" start_experience_factor = 0.25 start_equipment_factor = 1" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"坦克师1\" division_template = \"坦克师II\" start_experience_factor = 0.25 start_equipment_factor = 1" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"坦克师\" division_template = \"坦克师I\" start_experience_factor = 0.25 start_equipment_factor = 1" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"坦克师1\" division_template = \"坦克师II\" start_experience_factor = 0.25 start_equipment_factor = 1" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"坦克师\" division_template = \"坦克师I\" start_experience_factor = 0.25 start_equipment_factor = 1" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"坦克师1\" division_template = \"坦克师II\" start_experience_factor = 0.25 start_equipment_factor = 1" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"坦克师\" division_template = \"坦克师I\" start_experience_factor = 0.25 start_equipment_factor = 1" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"坦克师1\" division_template = \"坦克师II\" start_experience_factor = 0.25 start_equipment_factor = 1" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"坦克师\" division_template = \"坦克师I\" start_experience_factor = 0.25 start_equipment_factor = 1" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"坦克师1\" division_template = \"坦克师II\" start_experience_factor = 0.25 start_equipment_factor = 1" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"坦克师\" division_template = \"坦克师I\" start_experience_factor = 0.25 start_equipment_factor = 1" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"坦克师1\" division_template = \"坦克师II\" start_experience_factor = 0.25 start_equipment_factor = 1" 
+					owner = ROOT
+				   } 
+				   create_unit = {
+					division = "name = \"坦克师\" division_template = \"坦克师I\" start_experience_factor = 0.25 start_equipment_factor = 1" 
+					owner = ROOT
+				   }
+				create_unit = {
+					division = "name = \"坦克师1\" division_template = \"坦克师II\" start_experience_factor = 0.25 start_equipment_factor = 1" 
+					owner = ROOT
+				   } 
+				   
+				 
+				
+				
+				   
+				   
+				   
+				   
+				   
+				   
+				   
+				   
+			    }
+			
+		}
+	}
+	
+}
+
+获得军需用品 = {
+	抢劫大明军用物资 = {
+		icon = generic_civil_support
+		allowed = {
+			original_tag = MON
+		}		
+		available = {
+			CHI = {
+				OR = {
+					exists = no
+					is_subject = yes
+				}				
+			}
+		}
+		days_mission_timeout = 60
+		#days_remove = 1
+		activation = {
+			CHI = {
+				exists = yes
+				is_subject = no
+			}
+		}
+		fixed_random_seed = no
+		fire_only_once = no
+		is_good = yes
+		timeout_effect = {
+			random_list = {
+				25 = {
+					add_equipment_to_stockpile = { 
+						type =  support_equipment
+						amount = 40 
+					}
+				}
+				25 = {
+					add_equipment_to_stockpile = { 
+						type =  artillery_equipment
+						amount = 40 
+					}
+				}
+				25 = {
+					add_equipment_to_stockpile = { 
+						type =  infantry_equipment
+						amount = 400 
+					}
+				}
+				25 = {
+					add_equipment_to_stockpile = { 
+						type =  train_equipment
+						amount = 2 
+					}
+				}
+			}	
+		}
+	}
+
+	大元的遗产 = {
+		available = {
+			always = yes
+		}
+		visible = { 
+			is_ai = no
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		fire_only_once = yes
+		cost = 0
+		complete_effect = {  
+			add_equipment_to_stockpile = { 
+						type =  support_equipment
+						amount = 100 
+			}
+			add_equipment_to_stockpile = { 
+						type =  artillery_equipment
+						amount = 120 
+					}
+					add_equipment_to_stockpile = { 
+						type =  infantry_equipment
+						amount = 10200 
+					}
+			add_manpower = 160000
+			
+							}
+		
+	}
+
+}

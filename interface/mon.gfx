@@ -1,0 +1,21 @@
+spriteTypes = {
+	
+SpriteType = {
+		name = "GFX_idea_montg_begin"
+		texturefile = "gfx/mon_tguo.png"
+	}
+spriteType = {
+		name = "GFX_tank_module_high_velocity_cannon_a"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_high_velocity_cannon.dds"
+	}
+spriteType = {
+		name = "GFX_tank_module_high_velocity_cannon_b"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_high_velocity_cannon_2.dds"
+	}
+spriteType = {
+		name = "GFX_tank_module_high_velocity_cannon_c"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_high_velocity_cannon_3.dds"
+	}
+
+
+}

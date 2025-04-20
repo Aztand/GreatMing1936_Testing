@@ -1,0 +1,18 @@
+spriteTypes = {
+    spriteType = {
+        name = "GFX_autonomy_fanshu_icon"
+        textureFile = "gfx/interface/autonomy_icon/fanshu.png"
+    }
+    spriteType = {
+        name = "GFX_autonomy_duhufu_icon"
+        textureFile = "gfx/interface/autonomy_icon/duhufu.png"
+    }
+    spriteType = {
+        name = "GFX_autonomy_liufang_icon"
+        textureFile = "gfx/interface/autonomy_icon/liufang.png"
+    }
+    spriteType = {
+        name = "GFX_autonomy_nuketest_icon"
+        textureFile = "gfx/interface/autonomy_icon/nuke.png"
+    }
+}

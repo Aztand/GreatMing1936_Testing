@@ -1,0 +1,279 @@
+
+MING_power_balance = {
+	initial_value = 0
+	left_side = 	MING_wuguan_side
+	right_side = 	MING_wenguan_side
+	decision_category = MING_balance_of_power_category
+
+	### Neutral status
+	range = {
+		id = MING_balance_range
+		min = -0.15
+		max = 0.15
+		modifier = {
+				stability_factor = 0.1
+				war_support_factor = 0.1
+				political_power_gain = 0
+				command_power_gain_mult = 0
+				production_speed_buildings_factor = 0.1
+				conscription_factor = 0
+				army_attack_factor = 0.1
+				army_defence_factor = 0.1
+				production_speed_arms_factory_factor = 0
+				production_speed_dockyard_factor = 0
+				production_speed_industrial_complex_factor = 0
+				consumer_goods_factor = -0.1
+				political_power_factor = -0
+		}
+		on_activate = {
+
+		}
+		on_deactivate = {
+			
+		}
+	}
+
+	### Grand Council
+	side = {
+		id = MING_wuguan_side
+		icon = GFX_bop_ITA_grand_council_side 
+
+		range = {
+			id = MING_wuguan_side_B_range
+			min = -0.15
+			max = -0.4
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.15
+				political_power_gain = -0.1
+				command_power_gain_mult = 0.15
+				production_speed_buildings_factor = 0.05
+				conscription_factor = 0.15
+				army_attack_factor = 0.15
+				army_defence_factor = 0.15
+				production_speed_arms_factory_factor = 0.1
+				production_speed_dockyard_factor = 0.1
+				production_speed_industrial_complex_factor = -0.1
+				consumer_goods_factor = -0
+				political_power_factor = -0.1
+				mobilization_speed = 0.2
+			}
+			on_activate = {
+				
+			}
+			on_deactivate = {
+				
+			}
+		}
+		
+		range = {
+			id = MING_wuguan_side_A_range
+			min = -0.4
+			max = -0.7
+			modifier = {
+				stability_factor = 0
+				war_support_factor = 0.2
+				political_power_gain = -0.2
+				command_power_gain_mult = 0.3
+				production_speed_buildings_factor = -0.05
+				conscription_factor = 0.3
+				army_attack_factor = 0.2
+				army_defence_factor = 0.2
+				production_speed_arms_factory_factor = 0.2
+				production_speed_dockyard_factor = 0.2
+				production_speed_industrial_complex_factor = -0.2
+				consumer_goods_factor = 0.1
+				political_power_factor = -0.2
+				mobilization_speed = 0.5
+				land_doctrine_cost_factor = -0.15
+				air_doctrine_cost_factor = -0.15
+				naval_doctrine_cost_factor = -0.15
+			}
+			on_activate = {
+			}
+			on_deactivate = {
+				
+			}
+		}
+		range = {
+			id = MING_wuguan_side_S_range
+			min = -0.7
+			max = -0.9
+			modifier = {
+				stability_factor = -0.1
+				war_support_factor = 0.3
+				political_power_gain = -0.35
+				command_power_gain_mult = 0.45
+				production_speed_buildings_factor = -0.2
+				conscription_factor = 0.5
+				army_attack_factor = 0.3
+				army_defence_factor = 0.3
+				production_speed_arms_factory_factor = 0.35
+				production_speed_dockyard_factor = 0.35
+				production_speed_industrial_complex_factor = -0.35
+				consumer_goods_factor = 0.25
+				political_power_factor = -0.35
+				mobilization_speed = 1
+				land_doctrine_cost_factor = -0.3
+				air_doctrine_cost_factor = -0.3
+				naval_doctrine_cost_factor = -0.3
+			}
+			on_activate = {
+				
+			}
+			on_deactivate = {
+				
+			}
+		}
+		range = {
+			id = MING_wuguan_side_SS_range
+			min = -0.9
+			max = -1
+			modifier = {
+				stability_factor = -0.25
+				war_support_factor = 0.45
+				political_power_gain = -0.6
+				command_power_gain_mult = 0.6
+				production_speed_buildings_factor = -0.4
+				conscription_factor = 0.75
+				army_attack_factor = 0.4
+				army_defence_factor = 0.4
+				production_speed_arms_factory_factor = 0.5
+				production_speed_dockyard_factor = 0.5
+				production_speed_industrial_complex_factor = -0.5
+				consumer_goods_factor = 0.4
+				political_power_factor = -0.5
+				mobilization_speed = 2
+				land_doctrine_cost_factor = -0.5
+				air_doctrine_cost_factor = -0.5
+				naval_doctrine_cost_factor = -0.5
+			}
+			on_activate = {
+				
+			}
+			on_deactivate = {
+				
+			}
+		}
+	}
+	
+	side = {
+		id = MING_wenguan_side
+		icon = GFX_bop_ITA_democratic_side
+
+		range = {
+			id = MING_wenguan_side_B_range
+			min = 0.4
+			max = 0.15
+			modifier = {
+				stability_factor = 0.15
+				war_support_factor = 0.05
+				political_power_gain = 0.1
+				command_power_gain_mult = -0.15
+				production_speed_buildings_factor = 0.15
+				conscription_factor = -0.15
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				production_speed_arms_factory_factor = -0.1
+				production_speed_dockyard_factor = -0.1
+				production_speed_industrial_complex_factor = 0.1
+				consumer_goods_factor = -0.2
+				political_power_factor = 0.1
+			}
+			on_activate = {
+				
+			}
+			on_deactivate = {
+				
+			}
+		}
+
+		range = {
+			id = MING_wenguan_side_A_range
+			min = 0.7
+			max = 0.4
+			modifier = {
+				stability_factor = 0.2
+				war_support_factor = 0
+				political_power_gain = 0.2
+				command_power_gain_mult = -0.3
+				production_speed_buildings_factor = 0.25
+				conscription_factor = -0.3
+				army_attack_factor = 0.0
+				army_defence_factor = 0.0
+				production_speed_arms_factory_factor = -0.2
+				production_speed_dockyard_factor = -0.2
+				production_speed_industrial_complex_factor = 0.2
+				consumer_goods_factor = -0.3
+				political_power_factor = 0.2
+				land_doctrine_cost_factor = 0.15
+				air_doctrine_cost_factor = 0.15
+				naval_doctrine_cost_factor = 0.15
+			}
+			on_activate = {
+			}
+			on_deactivate = {
+				
+			}
+		}
+		
+		range = {
+			id = MING_wenguan_side_S_range
+			min = 0.9
+			max = 0.7
+			modifier = {
+				stability_factor = 0.3
+				war_support_factor = -0.1
+				political_power_gain = 0.35
+				command_power_gain_mult = -0.45
+				production_speed_buildings_factor = 0.4
+				conscription_factor = -0.5
+				army_attack_factor = -0.1
+				army_defence_factor = -0.1
+				production_speed_arms_factory_factor = -0.35
+				production_speed_dockyard_factor = -0.35
+				production_speed_industrial_complex_factor = 0.35
+				consumer_goods_factor = -0.45
+				political_power_factor = 0.35
+				land_doctrine_cost_factor = 0.3
+				air_doctrine_cost_factor = 0.3
+				naval_doctrine_cost_factor = 0.3
+			}
+			on_activate = {
+			}
+			on_deactivate = {
+				
+			}
+		}
+		
+		range = {
+			id = MING_wenguan_side_SS_range
+			min = 1
+			max = 0.9
+			modifier = {
+				stability_factor = 0.45
+				war_support_factor = -0.25
+				political_power_gain = 0.6
+				command_power_gain_mult = -0.6
+				production_speed_buildings_factor = 0.6
+				conscription_factor = -0.75
+				army_attack_factor = -0.25
+				army_defence_factor = -0.25
+				production_speed_arms_factory_factor = -0.5
+				production_speed_dockyard_factor = -0.5
+				production_speed_industrial_complex_factor = 0.5
+				consumer_goods_factor = -0.6
+				political_power_factor = 0.5
+				land_doctrine_cost_factor = 0.5
+				air_doctrine_cost_factor = 0.5
+				naval_doctrine_cost_factor = 0.5
+			}
+			on_activate = {
+			}
+			on_deactivate = {
+				
+			}
+		}
+	}
+}
+

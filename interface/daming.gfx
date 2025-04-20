@@ -1,0 +1,26 @@
+spriteTypes = {
+
+SpriteType = {
+		name = "GFX_SMI_japan_engine"
+		texturefile = "gfx/engine_icn_4.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_portrait_Zhang_Xianzhong"
+		texturefile = "gfx/leaders/XSM/Zhang_Xianzhong.png"
+	}
+
+	SpriteType = {
+		name = "GFX_portrait_Li_xi"
+		texturefile = "gfx/leaders/KOR/Li_xi.png"
+	}
+
+	SpriteType = {
+		name = "GFX_portrait_Wukong"
+		texturefile = "gfx/leaders/BMW/WuKong.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_duhufu_chaogong"
+		texturefile = "gfx/ideas/CHI_duhufu_chaogong.dds"
+	}
+}
