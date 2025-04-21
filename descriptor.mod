@@ -6,6 +6,13 @@ tags={
 }
 name="日月不落-大明1936(重置测试版)"
 replace_path="common/bookmarks"
+replace_path="history/countries"
+replace_path="history/states"
+replace_path="history/units"
+replace_path="map"
+replace_path="map/strategicregions"
+replace_path="map/supplyareas"
+replace_path="map/terrain"
 supported_version="1.15.*"
 path="D:/Documents/Paradox Interactive/Hearts of Iron IV/mod/GreatMing1936_Testing"
 remote_file_id="3378344672"
